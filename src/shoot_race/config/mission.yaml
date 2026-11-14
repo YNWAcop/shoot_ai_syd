@@ -1,0 +1,43 @@
+# ============================================================
+# mission.yaml：比赛流程。从上到下依次执行。
+#
+# 每一步的字段：
+#   id        英文标识，单步测试时用（race.launch from_step:=xxx to_step:=xxx）
+#   name      中文名，日志里显示
+#   type      步骤类型：say / drive / align / recognize / shoot_ring / shoot_ar / pause
+#   timeout_s 这一步最多用多少秒。必须 < 20（规则：20 秒状态不变会被判结束）。
+#             例外：旋转靶（转轮 43 秒一圈），等待时会定期小幅平移（shooting.yaml rotating.keepalive_still_s）
+#   skip_if_less_than_s（可选，只用于打靶步骤）开始这一步前，比赛剩余时间少于它就跳过。
+#             设置方法：这一步的 timeout_s + 后面所有"必须做"的步骤（行驶、精定位、终点播报）的典型用时。
+#             典型用时看每局记录 events.csv 里的 done 用时。行驶步骤不能跳过（路线会接不上）。
+#   on_timeout（打靶步骤可选）fire = 超时仍开火；skip = 不打
+#   其它字段见各类型说明：
+#     say: message（voice.yaml 里的播报名）
+#     drive: path（field.yaml 里的路径名），mode（可选 direct/move_base），speed_scale（可选，降速比例）
+#     align: box（field.yaml 里的任务框名）
+#     shoot_ar: target（rotating 或 moving）
+#     pause: seconds
+# ============================================================
+
+match_time_s: 120          # 比赛总时长（规则 2 分钟）
+drive_timeout_scale: 1.0   # 行驶步骤的时间上限乘这个数。比赛用 1；整局演练限速跑时菜单自动按 0.35/限速 放宽
+rehearsal_pause_s: 0       # > 0：整局演练，三个打靶步骤换成"原地停这么多秒"（不射击）。比赛必须是 0；菜单 10 自动设成 3
+
+steps:
+  - {id: say_start,    name: 播报比赛开始,   type: say,        message: start,   timeout_s: 5}
+  - {id: go_recog,     name: 去识别区,       type: drive,      path: to_recog,   timeout_s: 8}
+  - {id: align_recog,  name: 识别区精定位,   type: align,      box: recog,       timeout_s: 5}
+  - {id: recognize,    name: 识别卡片,       type: recognize,  timeout_s: 12}
+  - {id: say_targets,  name: 播报靶号,       type: say,        message: targets, timeout_s: 6}
+  - {id: go_p1,        name: 去1号点,        type: drive,      path: to_p1,      timeout_s: 8}
+  - {id: align_p1,     name: 1号点精定位,    type: align,      box: p1,          timeout_s: 6}
+  - {id: shoot_ring,   name: 打环形靶,       type: shoot_ring, timeout_s: 8,  on_timeout: fire, skip_if_less_than_s: 35}
+  - {id: go_p2,        name: 去2号点,        type: drive,      path: p1_to_p2,   timeout_s: 15}
+  - {id: align_p2,     name: 2号点精定位,    type: align,      box: p2,          timeout_s: 6}
+  - {id: shoot_rot,    name: 打旋转靶,       type: shoot_ar,   target: rotating, timeout_s: 55, on_timeout: fire, skip_if_less_than_s: 40}
+  - {id: go_p3,        name: 去3号点,        type: drive,      path: p2_to_p3,   timeout_s: 15}
+  - {id: align_p3,     name: 3号点精定位,    type: align,      box: p3,          timeout_s: 6}
+  - {id: shoot_move,   name: 打移动靶,       type: shoot_ar,   target: moving,   timeout_s: 19, on_timeout: fire, skip_if_less_than_s: 25}
+  - {id: go_end,       name: 去终点,         type: drive,      path: p3_to_end,  timeout_s: 10}
+  - {id: align_end,    name: 终点精定位,     type: align,      box: end,         timeout_s: 6}
+  - {id: say_end,      name: 播报比赛结束,   type: say,        message: end,     timeout_s: 5}

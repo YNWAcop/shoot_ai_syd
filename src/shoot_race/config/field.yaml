@@ -1,0 +1,94 @@
+# ============================================================
+# field.yaml：场地相关（路径点、路径、任务框贴墙基准）
+#
+# !!! 下面的坐标和墙距来自旧程序（2025 年的场地和地图 sheji_lab）。
+# !!! 2026 年场地布局不同（多了识别区、挡板位置等），必须重新建图，并用 teach.py 示教：
+#       rosrun shoot_race teach.py pose <路径点名>
+#       rosrun shoot_race teach.py box  <任务框名>
+#     示教结果写进 field_taught.yaml，自动覆盖这里的同名项。
+#
+# 坐标系：地图 map 坐标，单位米；朝向单位度，逆时针为正。
+# 旧程序约定：起点在地图原点、车头朝 +x（朝靶子方向），y 负方向是场地右侧。
+# ============================================================
+
+waypoints:
+  start: [0.00, 0.00, 0]       # 起点框中心（开赛前设置 AMCL 初始位姿用）
+  recog: [0.40, -0.10, 90]     # 识别区拍照位置：车头朝左墙上的卡片（占位值，必须示教）
+  p1: [1.00, -0.50, 0]         # 1 号任务点（环形靶），旧程序 goal 0
+  lane_p1: [0.10, -0.357, 0]   # 1 号点正后方的通道点。x 取后围栏和挡板端头之间走廊的中间：
+                               #   2026-10-18 实测后围栏 x=-0.195、挡板端头 x=0.43~0.45，车头(含枪管)0.21、车尾约 0.18
+                               #   → x=0.10 时前后各留约 10 cm（之前 0.20，车头蹭到 1 号挡板端头）
+  lane_p2: [0.10, -1.541, 0]   # 2 号点正后方的通道点
+  p2: [0.91, -1.45, 0]         # 2 号任务点（旋转靶），旧程序 goal 2
+  lane_p2b: [0.10, -1.541, 0]  # 从 2 号点退回通道（同 lane_p2）
+  lane_p3: [0.10, -2.733, 0]   # 3 号点正后方的通道点
+  p3: [0.98, -2.85, 0]         # 3 号任务点（移动靶），旧程序 goal 4
+  end: [0.40, -2.85, 0]        # 终点框，旧程序 goal 5
+
+# 路径 = 依次经过的路径点。车头朝向按每个路径点自己的朝向。
+# 任务点之间有挡板隔开，所以要先退到下方通道，侧向平移（麦轮不用转身），再前进进框。
+# 终点框如果在角落，建议加一个中间点：先直退到终点框前，再侧移进框，不要斜着冲向墙角
+# （斜着靠近围栏会被安全检查提前拦下，剩下的距离只能靠慢速精定位走完）。
+# 每一项可以直接写路径点名（常规档），或写成 {to: 路径点名, profile: burst}（这一段用 system.yaml path_follower.profiles.burst）。
+# 爆发段只用在离开任务框和通道横移；进任务框的最后一段用常规档（停得准，精定位剩得少）。
+# {to: end, offset: [0.12, 0.0]}：开到 end 再往 +x 挪 12 cm 的地方（地图坐标）。终点框在后围栏角上，
+# 爆发段开到它前面一点就停，剩下的交给贴墙精定位（2026-10-20 用户：最后一段倒车入库也爆发到附近点再精定位）。
+paths:
+  to_recog: [recog]
+  to_p1: [p1]
+  p1_to_p2: [{to: lane_p1, profile: burst}, {to: lane_p2, profile: burst}, p2]
+  p2_to_p3: [{to: lane_p2b, profile: burst}, {to: lane_p3, profile: burst}, p3]
+  p3_to_end: [{to: end, offset: [0.08, 0.0], profile: burst}]
+
+# 通道点按激光量后围栏定前后位置（不靠 AMCL 的 x）。
+# 2026-10-20 16:19 录包：通道里横移时，2 号挡板端头在 AMCL 坐标里比 10-18 那局近了 3~4 cm，车又没退到通道线，
+# 车头离挡板端头最近 0.6 cm。后围栏是整面直墙，横移全程都在车正后方：行驶时每个周期量一次"激光到后围栏的距离"，
+# 把这条路径上的通道点挪到"这个距离 = distance"的位置（车开过最后一个通道点、往任务框里开时就不再挪）。
+# distance = 激光在车中心前 0.06 + 车尾 0.18 + 车尾间隙。图纸走廊 60 cm、车长 41 cm（含枪管），前后各剩约 9.5 cm；
+# 16:19 实测 1 号挡板端头处走廊约 64 cm、2 号处约 61 cm。那局车尾离后围栏 13~18 cm、车头离挡板端头只剩 0.6~4 cm。
+# 用户（2026-10-20）：车头离端头 7 cm 左右就行，少退一点、少走路。按窄的 2 号端头算：车尾间隙 12 cm，distance = 0.36
+# （1 号端头前约 11 cm）。仿真（通道拐角停车误差 + 横移纠偏）车头最近 5~6.5 cm。
+lane_wall:
+  enabled: true
+  side: back
+  distance: 0.36
+  waypoints: [lane_p1, lane_p2, lane_p2b, lane_p3]
+  max_shift: 0.15            # 最多挪 15 cm（防止把别的东西拟合成后围栏）
+  smooth: 0.4                # 每个周期朝新测量值挪 40%（激光墙距噪声约 1~2 mm，AMCL 跳动在这里抵消）
+
+# 任务框贴墙基准：walls 列出要看的墙和"激光到墙的目标距离"（米）；
+# yaw_side 是用来校正朝向的墙；yaw_ref_deg 是示教时测到的偏角（0 = 正对墙）。
+# 下面的距离来自旧程序 POSITION_CONFIGS（取扇区最近几个点的平均，和直线拟合的垂直距离接近，但仍需示教）。
+boxes:
+  recog:                       # 识别区：车头正对围栏上的卡片。贴前方围栏定距离和朝向（相机正对卡片），左侧围栏定横向
+    walls:                     # 下面是 2026-10-18 示教前 teach.py show 的读数，正式值用 teach.py box recog front left yaw=front 示教
+      - {side: front, distance: 0.329}
+      - {side: left, distance: 0.633}
+    yaw_side: front
+    yaw_ref_deg: -6.83
+    distance_tolerance: 0.02   # 识别区只要相机拍得到卡片就行，容差放宽（默认 0.008 见 system.yaml wall_align）
+    yaw_tolerance_deg: 2.0
+  p1:
+    walls:
+      - {side: left, distance: 0.600}
+      - {side: back, distance: 1.282}
+    yaw_side: back
+    yaw_ref_deg: 0.0
+  p2:
+    walls:
+      - {side: right, distance: 0.618}
+      - {side: back, distance: 1.282}
+    yaw_side: back
+    yaw_ref_deg: 0.0
+  p3:
+    walls:
+      - {side: right, distance: 0.618}
+      - {side: back, distance: 1.281}
+    yaw_side: back
+    yaw_ref_deg: 0.0
+  end:
+    walls:
+      - {side: right, distance: 0.218}
+      - {side: back, distance: 0.266}
+    yaw_side: back
+    yaw_ref_deg: 0.0

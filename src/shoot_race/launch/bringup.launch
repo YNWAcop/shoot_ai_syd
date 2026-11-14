@@ -1,0 +1,49 @@
+<!--
+  bringup.launch：比赛需要的全部底层节点（不含主程序）。
+  和旧 N8NNWC.sh 的区别：
+    - 不再启动 abot_bringup/shoot.launch（串口只由主程序使用，避免两个程序同时占用 /dev/shoot）；
+    - AR 识别不再开 rviz，省下 CPU，降低识别延迟；
+    - 不启动语音唤醒和语音识别（2026 规则改为识别卡片）。
+-->
+<launch>
+  <arg name="map_name" default="sheji_lab.yaml"/>   <!-- 2026 场地重新建图后改成新地图文件名 -->
+  <!-- find_object 必须开界面（gui=true）：车上这版 find_object_2d 的无界面模式有 bug，
+       find_object_2d_node.cpp 第 182 行把相机信号连到一个不存在的 detect(...QString, double...) 槽，
+       启动时打印 "QObject::connect: No such slot FindObjectROS::detect"，之后永远不做识别（2026-10-16 实测）。
+       有界面时走另一条代码路径，旧程序一直是这样用的。界面窗口会显示在车自己的桌面上（DISPLAY=:0）。 -->
+  <arg name="find_object_gui" default="true"/>
+
+  <!-- 底盘驱动 + IMU + 里程计融合 + 车体模型 + 激光雷达（含车身滤波 /scan_filtered） -->
+  <include file="$(find abot_bringup)/launch/robot_with_imu.launch"/>
+
+  <!-- 地图 + AMCL 定位 + move_base（move_base 只在 drive 步骤用 mode: move_base 时才会被调用） -->
+  <include file="$(find robot_slam)/launch/navigation.launch">
+    <arg name="map_name" value="$(arg map_name)"/>
+  </include>
+
+  <!-- 相机（640x480，带标定文件） -->
+  <include file="$(find track_tag)/launch/usb_cam_with_calibration.launch"/>
+
+  <!-- AR 码识别：与 track_tag/ar_track_camera.launch 相同，但不开 rviz -->
+  <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0.0 0 0 0 world map 10"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_cam" args="0 0 0.3 0 1.57 -1.57 base_link usb_cam 10"/>
+  <node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="false" output="screen">
+    <param name="marker_size" type="double" value="9"/>
+    <param name="max_new_marker_error" type="double" value="0.08"/>
+    <param name="max_track_error" type="double" value="0.2"/>
+    <param name="output_frame" type="string" value="/usb_cam"/>
+    <!-- 默认只有 8 Hz（旧启动文件也没设置），动靶预测需要更高帧率；上车后用 rostopic hz /ar_pose_marker 确认 -->
+    <param name="max_frequency" type="double" value="30"/>
+    <remap from="camera_image" to="/usb_cam/image_raw"/>
+    <remap from="camera_info" to="/usb_cam/camera_info"/>
+  </node>
+
+  <!-- 环形靶识别：find_object（模板在 abot_find/object）。界面开关见上面 find_object_gui 的说明 -->
+  <!-- 注意：用的是工作空间里 abot_find 包（包名 find_object_2d）自带的 launch，
+       它会同时启动 print_objects_detected，把检测结果转成 /object_position -->
+  <include file="$(find find_object_2d)/launch/find_object_2d.launch">
+    <arg name="gui" value="$(arg find_object_gui)"/>
+    <arg name="image_topic" value="/usb_cam/image_raw"/>
+    <arg name="objects_path" value="$(find find_object_2d)/object"/>
+  </include>
+</launch>

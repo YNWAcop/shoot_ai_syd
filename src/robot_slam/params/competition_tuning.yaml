@@ -1,0 +1,58 @@
+# 比赛常用调参入口。当前数值与集中配置前一致；改完重启比赛节点读取。
+# 靶号单独在 competition_targets.yaml 中设置。
+tuning:
+  navigation:
+    # map 坐标，顺序为 [x米, y米, 朝向度]，必须保留8项。
+    # 实际路线索引：0 -> 1 -> 6 -> 2 -> 3 -> 7 -> 4 -> 5。
+    goals:
+      - [1.00, -0.50, 0.0]
+      - [0.17, -0.55, 0.0]
+      - [0.91, -1.45, 0.0]
+      - [0.17, -1.65, 0.0]
+      - [0.98, -2.85, 0.0]
+      - [0.40, -2.85, 0.0]
+      - [0.25, -1.60, 0.0]
+      - [0.25, -2.65, 0.0]
+    server_timeout_s: 60.0
+    goal_timeout_s: 60.0
+  positioning:
+    # 距离单位米，必须保留5项，分别对应精调位置0..4。
+    configs:
+      - {left_target: 0.600, back_target: 1.282}
+      - {right_target: 0.618, back_target: 1.282}
+      - {right_target: 0.618, back_target: 1.281}
+      - {right_target: 0.218, back_target: 0.266}
+      - {back_target: 0.400}
+    move_speed_mps: 0.13
+    terminal_speed_mps: 0.13  # 位置3的前后/横移速度
+    back_only_speed_mps: 0.18 # 位置4的前后速度
+    tolerance_m: 0.02
+    interval_s: 0.10
+    max_iterations: 1000
+  ar:
+    offset_x_m: 0.024 # 摄像头坐标下的横向对准基准，不是地图坐标
+    stage2:
+      x_tolerance_m: 0.030 # 横向位置误差；不是角度
+      y_min_m: -0.480
+      y_max_m: -0.470
+      frames_required: 1
+      kp: 1.45
+      ki: 0.50 # 可设0以先调纯P
+      max_angular_rps: 1.50
+    stage3:
+      x_tolerance_m: 0.020
+      frames_required: 3
+      kp: 1.40
+      ki: 0.50
+      max_angular_rps: 1.00
+  circular:
+    template_id: 31 # 模板编号，255是丢失标记
+    image_center_x_px: 340.0 # 实测对准基准，不自动按图像宽度除2
+    alignment_tolerance_px: 0.5
+    kp_rps_per_px: 0.01
+    max_angular_rps: 0.30
+    lock_delay_s: 2.0 # 从上一阶段计时起点算，不是连续锁定时长
+    fallback_fire_s: 9.0 # 到位后超过这么多秒仍未锁定就直接打；0 表示关闭
+  timing:
+    start_delay_s: 5.0 # 现在是输入 1 回车后到出发前的等待时间
+    post_position_settle_s: 1.0

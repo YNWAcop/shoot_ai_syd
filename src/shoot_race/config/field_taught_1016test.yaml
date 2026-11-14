@@ -1,0 +1,7 @@
+# 由 teach.py 自动生成，覆盖 field.yaml 中的同名项。可以手动删除某一项恢复 field.yaml 的值。
+boxes:
+  p1:
+    walls:
+    - {distance: 0.2323, side: left}
+    - {distance: 0.2183, side: back}
+    yaw_ref_deg: -8.43

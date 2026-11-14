@@ -1,0 +1,31 @@
+<!--
+  race.launch：比赛主程序。必须在终端里运行（要在这个终端输入 1 开赛）。
+  常用参数：
+    from_step / to_step  只跑其中一段（填 mission.yaml 里的步骤 id），例如单独练环形靶：
+                         roslaunch shoot_race race.launch from_step:=shoot_ring to_step:=shoot_ring
+    dry_fire:=true       演练：全流程照跑，但不真正发射
+    force:=true          自检有关键项不通过也允许开始（仅调试）
+    auto_start:=true     不等输入 1 直接开始（仅调试）
+    set:="a.b=值; c.d=值"  临时改参数（不改 yaml 文件），例如限速、切换环形靶打法：
+                         set:="system.path_follower.max_speed=0.2; shooting.ring.mode=taught"
+-->
+<launch>
+  <arg name="from_step" default=""/>
+  <arg name="to_step" default=""/>
+  <arg name="dry_fire" default="false"/>
+  <arg name="force" default="false"/>
+  <arg name="auto_start" default="false"/>
+  <arg name="set" default=""/>
+
+  <!-- required="true"：主程序跑完（或出错退出）后 roslaunch 也跟着退出，不用再按 Ctrl+C -->
+  <node pkg="shoot_race" type="race_node.py" name="shoot_race" output="screen" required="true">
+    <!-- Python2 输出中文时按 UTF-8 编码，避免终端编码不是 UTF-8 时报 UnicodeEncodeError -->
+    <env name="PYTHONIOENCODING" value="utf-8"/>
+    <param name="from_step" value="$(arg from_step)"/>
+    <param name="to_step" value="$(arg to_step)"/>
+    <param name="dry_fire" value="$(arg dry_fire)"/>
+    <param name="force" value="$(arg force)"/>
+    <param name="auto_start" value="$(arg auto_start)"/>
+    <param name="set" type="str" value="$(arg set)"/>
+  </node>
+</launch>

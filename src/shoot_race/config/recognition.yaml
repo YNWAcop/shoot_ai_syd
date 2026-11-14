@@ -1,0 +1,73 @@
+# ============================================================
+# recognition.yaml：识别区卡片识别
+#
+# 卡片来自 2026 规则附件（15 张）：题目答案 1~5 = 旋转靶号；水果 → 移动靶号。
+# !!! fruit_to_moving_id（水果和移动靶号的对应）规则文件里没写，下面是按附件顺序的猜测，赛前必须确认 !!!
+# ============================================================
+
+# 识别策略：
+#   vlm_first     先等豆包（最多 vlm.wait_s 秒），豆包失败再用离线结果。离线方法没在真车上验证前用这个
+#   offline_first 离线结果可信就立即用（最快，省 2~5 秒），不可信再等豆包。离线方法验证可靠后改用这个
+#   offline_only  只用离线（比赛现场没有网络时）
+#   vlm_only      只用豆包
+policy: vlm_first
+
+capture_s: 0.4                 # 停稳后采集多长时间的图像，从中选最清晰的一张
+
+default_targets:               # 全部识别失败时使用的靶号（保证流程能继续）
+  rotating: 1
+  moving: 6
+
+fruit_to_moving_id:            # 待确认！
+  durian: 6
+  starfruit: 7
+  mangosteen: 8
+
+fruit_aliases:                 # 豆包回答里可能出现的水果名写法
+  durian: [榴莲, 榴梿]
+  starfruit: [杨桃, 阳桃, 洋桃, 五角星果]
+  mangosteen: [山竹, 莽吉柿]
+
+# 15 张卡片：模板图片文件、题目、答案、水果
+cards:
+  - {file: card01.jpg, answer: 1, fruit: durian,     text: 盘子里有2个苹果，吃掉1个，还剩几个苹果？}
+  - {file: card02.jpg, answer: 2, fruit: durian,     text: 小红有5块糖果，分给小伙伴3块，小红还剩几块糖果？}
+  - {file: card03.jpg, answer: 3, fruit: durian,     text: 笔筒里有4支蜡笔，拿走1支，还剩几支蜡笔？}
+  - {file: card04.jpg, answer: 4, fruit: durian,     text: 树上有3只松鼠，又跑来1只，现在一共有几只松鼠？}
+  - {file: card05.jpg, answer: 5, fruit: durian,     text: 桌子上有3个橙子，拿来2个，现在一共有几个橙子？}
+  - {file: card06.jpg, answer: 1, fruit: starfruit,  text: 小明手里有3支铅笔，送给同学2支，小明还剩几支铅笔？}
+  - {file: card07.jpg, answer: 2, fruit: starfruit,  text: 停车场有3辆小车，开走1辆，停车场还有几辆小车？}
+  - {file: card08.jpg, answer: 3, fruit: starfruit,  text: 地上有2只小鸡，又来了1只小鸡，一共有多少只小鸡？}
+  - {file: card09.jpg, answer: 4, fruit: starfruit,  text: 一共有5朵小花，摘走1朵，还剩几朵小花？}
+  - {file: card10.jpg, answer: 5, fruit: starfruit,  text: 草地上有4只小羊，再走来1只，一共有几只小羊？}
+  - {file: card11.jpg, answer: 1, fruit: mangosteen, text: 树上停了4只小鸟，飞走3只，树上还剩几只小鸟？}
+  - {file: card12.jpg, answer: 2, fruit: mangosteen, text: 花丛有1只蝴蝶，又飞来1只，现在一共有几只蝴蝶？}
+  - {file: card13.jpg, answer: 3, fruit: mangosteen, text: 一共有5个气球，破掉2个，还剩下几个气球？}
+  - {file: card14.jpg, answer: 4, fruit: mangosteen, text: 盒子里有2块橡皮，再放进去2块，盒子里一共有几块橡皮？}
+  - {file: card15.jpg, answer: 5, fruit: mangosteen, text: 书包里有5本本子，没有拿走本子，书包里还有几本本子？}
+
+# ---------- 离线模板匹配 ----------
+offline:
+  cards_dir: cards             # 相对 config/ 目录
+  template_scale: 0.6          # 模板缩小比例（越小越快）
+  orb_features: 2000
+  min_inliers: 12              # 单应性内点少于这个数，认为不是这张卡
+  min_score: 0.35              # 文字区相关系数 ≥ 这个值才算可信（合成测试中正确结果最低 0.32~0.81）
+  min_margin: 0.08             # 比第二名高出这么多才算可信
+
+# ---------- 豆包视觉模型（火山方舟）----------
+# API Key 不要写在这里：放到环境变量 ARK_API_KEY，或文件 ~/.ark_api_key（只有一行 key）。
+vlm:
+  base_url: https://ark.cn-beijing.volces.com/api/v3
+  model: ep-20261025102352-j8gp4            # 你在火山方舟创建的推理接入点，形如 ep-2026xxxxxxxx-xxxxx
+  api_key_env: ARK_API_KEY
+  api_key_file: ~/.ark_api_key
+  request_timeout_s: 15         # 单次请求超时
+  wait_s: 10                    # vlm_first 策略下最多等豆包多久，之后改用离线结果
+  max_image_width: 1024        # 发送前把图片缩到这个宽度以内，减少上传时间
+  jpeg_quality: 85
+  extra_body: {thinking: {type: disabled}}               # 额外请求字段。如果回答太慢，可尝试关闭深度思考：{thinking: {type: disabled}}
+  prompt: >-
+    这是一张任务卡片，上方是一道算术应用题，下方是一张水果图片。
+    请计算题目的答案（1到5之间的整数），并判断水果是榴莲、杨桃、山竹中的哪一种。
+    只输出一行JSON，不要输出其他内容，格式：{"answer": 数字, "fruit": "水果名"}

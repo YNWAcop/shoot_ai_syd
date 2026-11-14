@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="startGame" type="start.py" name="game_node" output="screen"/>
+</launch>

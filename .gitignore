@@ -1,0 +1,28 @@
+# Catkin build outputs
+/build/
+/devel/
+/install/
+/logs/
+/.catkin_workspace
+__pycache__/
+*.py[cod]
+*.bak*
+*.save
+*.save.*
+*.swp
+*.bag
+*.bag.active
+/race_logs/
+/run_logs/
+/vlm_shoot/temp/
+/vlm_shoot/temp_*.jpg
+# Local credentials
+.env
+.env.*
+!.env.example
+.ark_api_key
+*.pem
+id_rsa*
+id_ed25519*
+# Large voice model, provision separately (see README)
+/src/robot_slam/scripts/paraformer-zh/model.pt

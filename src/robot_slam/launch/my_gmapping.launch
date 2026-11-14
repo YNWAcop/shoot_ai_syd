@@ -1,0 +1,9 @@
+<launch>
+
+ <include file="$(find abot_bringup)/launch/robot_with_imu.launch"></include>
+
+ <include file="$(find robot_slam)/launch/gmapping.launch"></include>
+
+ <include file="$(find robot_slam)/launch/view_mapping.launch"></include>
+
+</launch>

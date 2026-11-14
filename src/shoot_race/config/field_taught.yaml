@@ -1,0 +1,43 @@
+# 由 teach.py 自动生成，覆盖 field.yaml 中的同名项。可以手动删除某一项恢复 field.yaml 的值。
+boxes:
+  end:
+    walls:
+    - {distance: 0.2659, side: right}
+    - {distance: 0.2693, side: back}
+    yaw_ref_deg: -7.44
+    yaw_side: back
+  p1:
+    walls:
+    - {distance: 0.5858, side: right}
+    - {distance: 1.216, side: back}
+    yaw_ref_deg: -2.78
+    yaw_side: right
+  p2:
+    walls:
+    - {distance: 0.5994, side: right}
+    - {distance: 1.2033, side: back}
+    yaw_ref_deg: -1.29
+    yaw_side: right
+  p3:
+    walls:
+    - {distance: 0.6176, side: left}
+    - {distance: 1.2462, side: back}
+    yaw_ref_deg: -1.54
+    yaw_side: left
+  recog:
+    walls:
+    - {distance: 0.3727, side: front}
+    - {distance: 0.5998, side: left}
+    yaw_ref_deg: -6.57
+    yaw_side: front
+waypoints:
+  end: [0.028, -3.255, -1.2]
+  lane_p1: [0.1, -0.371, 0.0]
+  lane_p2: [0.1, -1.603, 0.0]
+  lane_p2b: [0.1, -1.603, 0.0]
+  lane_p3: [0.1, -2.854, 0.0]
+  p1: [0.974, -0.371, 2.5]
+  p2: [0.947, -1.603, 2.1]
+  p3: [0.986, -2.854, 0.2]
+  recog: [0.333, -0.132, 91.9]
+  start: [-0.056, 0.089, 0.1]

@@ -1,0 +1,17 @@
+<launch>
+
+  <include file="$(find abot_bringup)/launch/robot_with_imu.launch"></include>
+
+  <include file="$(find abot_bringup)/launch/shoot.launch"></include>
+
+  <include file="$(find robot_slam)/launch/navigation.launch"></include>
+
+  <include file="$(find track_tag)/launch/usb_cam_with_calibration.launch"></include>
+
+  <include file="$(find track_tag)/launch/ar_track_camera.launch"></include>
+
+  <include file="$(find find_object_2d)/launch/find_object_2d.launch"></include>
+
+  <include file="$(find robot_slam)/launch/multi_goal_shoot.launch"></include>
+
+</launch>

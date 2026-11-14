@@ -1,0 +1,5 @@
+# 固定靶号：输入1并回车启动，靶号直接由此配置读取。
+# target_id_rotating 对应原语音“一”至“五”，在 current_stage == 2 使用。
+# target_id_moving 对应原语音“六”至“八”，在 current_stage == 3 使用。
+target_id_rotating: 1
+target_id_moving: 6

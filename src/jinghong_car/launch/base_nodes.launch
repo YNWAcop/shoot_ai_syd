@@ -1,0 +1,37 @@
+<!-- jinghong_car 底层节点：全部用车上现成的 ROS 包。
+     启动：roslaunch ~/N8NNWC/src/jinghong_car/launch/base_nodes.launch
+     地图换了就改 map_name。 -->
+<launch>
+  <arg name="map_name" default="sheji_lab.yaml"/>
+  <!-- shoot:=false 时不启动开枪节点：程序照常跑，到开枪那一步什么也不发生（试流程用） -->
+  <arg name="shoot" default="true"/>
+
+  <!-- 底盘、IMU、激光 -->
+  <include file="$(find abot_bringup)/launch/robot_with_imu.launch"/>
+  <!-- 开枪：厂家的 shoot 节点，收到 /shoot 话题开一枪 -->
+  <include if="$(arg shoot)" file="$(find abot_bringup)/launch/shoot.launch"/>
+  <!-- 地图 + AMCL 定位 + move_base 导航 -->
+  <include file="$(find robot_slam)/launch/navigation.launch">
+    <arg name="map_name" value="$(arg map_name)"/>
+  </include>
+  <!-- 速度上限（主程序启动时还会按 game.yaml 的 speed 再设一次） -->
+  <param name="/move_base/DWAPlannerROS/max_vel_x" value="0.2"/>
+  <param name="/move_base/DWAPlannerROS/max_vel_y" value="0.2"/>
+  <param name="/move_base/DWAPlannerROS/max_vel_trans" value="0.2"/>
+
+  <!-- 相机 -->
+  <include file="$(find track_tag)/launch/usb_cam_with_calibration.launch"/>
+  <!-- AR 码（旋转靶 1~5、移动靶 6~8） -->
+  <include file="$(find track_tag)/launch/ar_track_camera.launch"/>
+
+  <!-- find_object：环形靶模板 28~31 + 卡片模板 101~115 都放在本包 objects 文件夹。
+       车上这版 find_object 必须开界面（gui=true）才会识别，窗口显示在车自己的桌面上。 -->
+  <node name="find_object_2d" pkg="find_object_2d" type="find_object_2d">
+    <remap from="image" to="/usb_cam/image_raw"/>
+    <param name="gui" value="true" type="bool"/>
+    <param name="objects_path" value="$(dirname)/../objects" type="str"/>
+    <param name="settings_path" value="~/.ros/jinghong_find_object.ini" type="str"/>
+  </node>
+  <!-- 把识别结果转成 /object_position（x, y = 中心像素，z = 模板号） -->
+  <node name="print_objects_detected" pkg="find_object_2d" type="print_objects_detected"/>
+</launch>
