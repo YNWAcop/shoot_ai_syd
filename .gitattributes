@@ -11,3 +11,4 @@
 *.wav binary
 *.mp3 binary
 *.so binary
+debug_logs/** -text

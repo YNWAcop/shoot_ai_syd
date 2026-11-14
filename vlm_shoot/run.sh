@@ -8,7 +8,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PYTHON_BIN="/home/abot/anaconda3/envs/py39/bin/python"
 
 source /opt/ros/melodic/setup.bash
-source /home/abot/abot_ws/devel/setup.bash 2>/dev/null || true
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)/env_syd.sh"
 
 echo "=========================================================="
 echo "          ★ VLM Shoot 视觉大模型射击系统 ★              "

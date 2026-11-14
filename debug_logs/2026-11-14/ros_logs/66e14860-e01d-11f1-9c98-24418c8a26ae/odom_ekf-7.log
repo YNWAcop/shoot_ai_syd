@@ -1,0 +1,18 @@
+[rospy.client][INFO] 2026-11-14 19:20:41,714: init_node, name[/odom_ekf], pid[20605]
+[xmlrpc][INFO] 2026-11-14 19:20:41,714: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-14 19:20:41,714: Started XML-RPC server [http://abot-robot:36975/]
+[rospy.init][INFO] 2026-11-14 19:20:41,714: ROS Slave URI: [http://abot-robot:36975/]
+[rospy.impl.masterslave][INFO] 2026-11-14 19:20:41,714: _ready: http://abot-robot:36975/
+[rospy.registration][INFO] 2026-11-14 19:20:41,715: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2026-11-14 19:20:41,715: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-11-14 19:20:41,815: registered with master
+[rospy.rosout][INFO] 2026-11-14 19:20:41,815: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-11-14 19:20:41,827: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-11-14 19:20:41,829: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-11-14 19:20:41,854: topic[/robot_pose_ekf/odom_combined] adding connection to [http://abot-robot:42411/], count 0
+[rospy.internal][INFO] 2026-11-14 19:20:42,065: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2026-11-14 19:20:43,067: topic impl's ref count is zero, deleting topic /robot_pose_ekf/odom_combined...
+[rospy.internal][INFO] 2026-11-14 19:20:43,068: topic[/robot_pose_ekf/odom_combined] removing connection to http://abot-robot:42411/
+[rosout][INFO] 2026-11-14 19:20:43,071: Publishing combined odometry on
+[rospy.internal][INFO] 2026-11-14 19:20:43,081: topic[/robot_pose_ekf/odom_combined] adding connection to [http://abot-robot:42411/], count 0
+[rospy.internal][INFO] 2026-11-14 19:20:46,079: topic[/odom] adding connection to [/move_base], count 0

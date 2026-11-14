@@ -1,0 +1,1810 @@
+[0m[ INFO] [1794659187.635729409]: gui=1[0m
+[0m[ INFO] [1794659187.636646833]: objects_path=/home/abot/syd/src/abot_find/object[0m
+[0m[ INFO] [1794659187.636659728]: session_path=[0m
+[0m[ INFO] [1794659187.636681564]: settings_path=~/.ros/find_object_2d.ini[0m
+[0m[ INFO] [1794659187.636689875]: subscribe_depth = false[0m
+[0m[ INFO] [1794659187.655405663]: object_prefix = object[0m
+[0m[ INFO] [1794659187.655427670]: pnp = true[0m
+[0m[ INFO] (2026-11-14 20:26:27.674) Added object 28 (/home/abot/syd/src/abot_find/object/28.png)[0m
+[0m[ INFO] (2026-11-14 20:26:27.676) Added object 29 (/home/abot/syd/src/abot_find/object/29.png)[0m
+[0m[ INFO] (2026-11-14 20:26:27.677) Added object 30 (/home/abot/syd/src/abot_find/object/30.png)[0m
+[0m[ INFO] (2026-11-14 20:26:27.683) Added object 31 (/home/abot/syd/src/abot_find/object/31.png)[0m
+[0m[ INFO] (2026-11-14 20:26:27.683) Update 4 objects...[0m
+[0m[ INFO] (2026-11-14 20:26:27.683) Features extraction from 4 objects... (threads=1)[0m
+[0m[ INFO] (2026-11-14 20:26:27.703) 1072 descriptors extracted from object 28 (in 19 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:27.706) 473 descriptors extracted from object 29 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:27.707) 239 descriptors extracted from object 30 (in 1 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:27.708) 52 descriptors extracted from object 31 (in 1 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:27.708) Features extraction from 4 objects... done! (25 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:27.708) Updating vocabulary with 4 objects and 1836 descriptors...[0m
+[0m[ INFO] (2026-11-14 20:26:27.708) Updating global descriptors matrix: Objects=4, total descriptors=1836, dim=32, type=0[0m
+[0m[ INFO] (2026-11-14 20:26:27.708) Creating vocabulary...[0m
+[0m[ INFO] (2026-11-14 20:26:27.710) Object 28, 1072 words from 1072 descriptors (1072 words, 2 ms) [0m
+[0m[ INFO] (2026-11-14 20:26:27.710) Object 29, 473 words from 473 descriptors (1545 words, 0 ms) [0m
+[0m[ INFO] (2026-11-14 20:26:27.710) Object 30, 239 words from 239 descriptors (1784 words, 0 ms) [0m
+[0m[ INFO] (2026-11-14 20:26:27.710) Object 31, 52 words from 52 descriptors (1836 words, 0 ms) [0m
+[0m[ INFO] (2026-11-14 20:26:27.710) Updating vocabulary...[0m
+[0m[ INFO] (2026-11-14 20:26:27.711) Creating vocabulary... done! size=1836 (3 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:27.985) Window settings loaded from /home/abot/.ros/find_object_2d.ini[0m
+[0m[ INFO] (2026-11-14 20:26:28.051) Detection sent on port: 40683 (IP=10.137.231.79)[0m
+[0m[ INFO] (2026-11-14 20:26:28.051) Creating 4 object widgets...[0m
+[0m[ INFO] (2026-11-14 20:26:28.059) Creating 4 object widgets... done![0m
+[0m[ INFO] (2026-11-14 20:26:28.068) Starting camera...[0m
+[0m[ INFO] (2026-11-14 20:26:28.809) 1516 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:28.922) (20:26:28.922) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:28.970) 1079 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.037) (20:26:29.037) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.076) 906 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.144) (20:26:29.144) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.192) 1257 descriptors extracted from object -1 (in 15 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.262) (20:26:29.262) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.298) 1543 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.392) (20:26:29.391) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.433) 1551 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.531) (20:26:29.531) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.574) 1566 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.665) (20:26:29.665) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.713) 1599 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.797) (20:26:29.797) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.838) 1551 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:29.910) (20:26:29.910) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:29.953) 1581 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.046) (20:26:30.046) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.102) 1557 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.175) (20:26:30.175) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.221) 1545 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.295) (20:26:30.295) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.340) 1541 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.430) (20:26:30.430) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.476) 1551 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.545) (20:26:30.545) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.586) 1559 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.663) (20:26:30.663) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.713) 1542 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.785) (20:26:30.785) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.823) 1600 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:30.903) (20:26:30.903) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:30.935) 1547 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.010) (20:26:31.009) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.067) 1570 descriptors extracted from object -1 (in 18 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.145) (20:26:31.145) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.178) 1572 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.248) (20:26:31.248) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.281) 1557 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.371) (20:26:31.371) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.402) 1557 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.497) (20:26:31.497) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.549) 1568 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.659) (20:26:31.659) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.708) 1532 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.781) (20:26:31.781) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.822) 1533 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:31.902) (20:26:31.902) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:31.945) 1532 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.037) (20:26:32.037) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.074) 1536 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.163) (20:26:32.163) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.203) 1543 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.279) (20:26:32.279) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.318) 1566 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.406) (20:26:32.406) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.444) 1558 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.527) (20:26:32.526) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.557) 1542 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.640) (20:26:32.640) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.677) 1563 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.749) (20:26:32.749) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.799) 1563 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:32.867) (20:26:32.867) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:32.923) 1554 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:33.005) (20:26:33.005) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:33.054) 1552 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:33.133) (20:26:33.133) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:33.177) 1529 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:33.262) (20:26:33.262) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:33.309) 1578 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:33.452) (20:26:33.452) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:33.523) 1563 descriptors extracted from object -1 (in 18 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:33.620) (20:26:33.620) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:33.671) 1574 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:33.810) (20:26:33.810) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:33.851) 1581 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:33.981) (20:26:33.981) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:34.038) 1571 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:34.104) (20:26:34.104) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:34.156) 1567 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:34.238) (20:26:34.238) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:34.289) 1578 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:34.404) (20:26:34.404) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:34.460) 1578 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:34.563) (20:26:34.563) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:34.612) 1557 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:34.700) (20:26:34.700) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:34.755) 1518 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:34.870) (20:26:34.870) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:34.923) 1585 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:35.049) (20:26:35.049) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:35.129) 1567 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:35.263) (20:26:35.263) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:35.327) 1518 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:35.414) (20:26:35.414) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:35.461) 1573 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:35.548) (20:26:35.548) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:35.599) 1583 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:35.688) (20:26:35.688) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:35.731) 1533 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:35.815) (20:26:35.815) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:35.873) 1534 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:35.985) (20:26:35.985) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:36.039) 1553 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:36.147) (20:26:36.147) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:36.198) 1528 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:36.277) (20:26:36.277) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:36.345) 1566 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:36.428) (20:26:36.428) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:36.461) 1550 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:36.546) (20:26:36.546) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:36.577) 1543 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:36.647) (20:26:36.647) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:36.687) 1524 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:36.791) (20:26:36.791) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:36.863) 1559 descriptors extracted from object -1 (in 22 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:36.963) (20:26:36.963) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:37.009) 1550 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:37.123) (20:26:37.123) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:37.153) 1571 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:37.242) (20:26:37.242) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:37.287) 1558 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:37.372) (20:26:37.372) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:37.424) 1545 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:37.504) (20:26:37.504) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:37.567) 1531 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:37.692) (20:26:37.692) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:37.759) 1570 descriptors extracted from object -1 (in 18 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:37.898) (20:26:37.897) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:37.946) 1565 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.043) (20:26:38.043) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.091) 1566 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.163) (20:26:38.163) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.199) 1560 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.273) (20:26:38.273) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.305) 1561 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.385) (20:26:38.385) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.418) 1578 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.497) (20:26:38.496) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.533) 1560 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.619) (20:26:38.619) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.651) 1568 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.737) (20:26:38.737) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.781) 1559 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:38.863) (20:26:38.863) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:38.906) 1580 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.005) (20:26:39.005) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.051) 1574 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.133) (20:26:39.133) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.176) 1580 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.250) (20:26:39.250) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.302) 1559 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.360) (20:26:39.360) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.396) 1524 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.459) (20:26:39.459) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.491) 1555 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.572) (20:26:39.572) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.608) 1539 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.692) (20:26:39.692) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.727) 1557 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.806) (20:26:39.806) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.842) 1557 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:39.920) (20:26:39.920) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:39.964) 1561 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.051) (20:26:40.051) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.102) 1542 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.173) (20:26:40.173) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.221) 1595 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.311) (20:26:40.311) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.344) 1570 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.405) (20:26:40.405) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.438) 1574 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.504) (20:26:40.504) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.541) 1560 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.606) (20:26:40.606) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.642) 1527 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.719) (20:26:40.719) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.752) 1543 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.833) (20:26:40.833) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.867) 1532 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:40.945) (20:26:40.945) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:40.978) 1519 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.059) (20:26:41.059) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.094) 1547 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.170) (20:26:41.170) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.204) 1532 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.282) (20:26:41.282) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.327) 1542 descriptors extracted from object -1 (in 16 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.408) (20:26:41.408) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.444) 1565 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.532) (20:26:41.532) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.571) 1573 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.673) (20:26:41.673) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.704) 1507 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.783) (20:26:41.783) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.823) 1531 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:41.906) (20:26:41.906) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:41.938) 1553 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.010) (20:26:42.010) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.045) 1529 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.123) (20:26:42.123) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.162) 1556 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.257) (20:26:42.256) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.299) 1549 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.386) (20:26:42.386) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.434) 1551 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.510) (20:26:42.510) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.561) 1530 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.651) (20:26:42.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.706) 1537 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.798) (20:26:42.798) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.850) 1574 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:42.939) (20:26:42.939) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:42.994) 1562 descriptors extracted from object -1 (in 17 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.080) (20:26:43.080) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:43.132) 1574 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.234) (20:26:43.234) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:43.281) 1585 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.367) (20:26:43.367) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:43.402) 1559 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.487) (20:26:43.487) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:43.527) 1585 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.612) (20:26:43.612) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:43.652) 1583 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.738) (20:26:43.738) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:43.775) 1579 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.864) (20:26:43.864) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:43.905) 1565 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:43.993) (20:26:43.993) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.035) 1554 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:44.125) (20:26:44.124) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.161) 1574 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:44.241) (20:26:44.241) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.276) 1554 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:44.368) (20:26:44.368) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.407) 1555 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:44.495) (20:26:44.495) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.543) 1563 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:44.612) (20:26:44.612) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.659) 1562 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:44.738) (20:26:44.738) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.782) 1567 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:44.881) (20:26:44.881) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:44.936) 1553 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.015) (20:26:45.015) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.063) 1558 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.152) (20:26:45.152) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.209) 1550 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.273) (20:26:45.273) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.318) 1511 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.384) (20:26:45.384) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.445) 1562 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.515) (20:26:45.514) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.565) 1538 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.652) (20:26:45.652) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.698) 1538 descriptors extracted from object -1 (in 15 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.765) (20:26:45.765) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.819) 1541 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:45.909) (20:26:45.909) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:45.960) 1561 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:46.036) (20:26:46.036) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:46.073) 1523 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:46.148) (20:26:46.148) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:46.185) 1584 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:46.280) (20:26:46.280) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:46.333) 1550 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:46.426) (20:26:46.426) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:46.475) 1546 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:46.594) (20:26:46.594) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:46.666) 1552 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:46.754) (20:26:46.754) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:46.811) 1561 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:46.911) (20:26:46.910) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:46.969) 1566 descriptors extracted from object -1 (in 16 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:47.035) (20:26:47.035) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:47.085) 1547 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:47.171) (20:26:47.170) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:47.239) 1564 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:47.338) (20:26:47.338) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:47.372) 1532 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:47.474) (20:26:47.474) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:47.515) 1554 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:47.596) (20:26:47.596) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:47.641) 1560 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:47.713) (20:26:47.713) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:47.770) 1537 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:47.871) (20:26:47.871) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:47.917) 1572 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.011) (20:26:48.011) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.054) 1574 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.167) (20:26:48.167) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.216) 1572 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.305) (20:26:48.305) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.357) 1568 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.428) (20:26:48.428) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.473) 1549 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.541) (20:26:48.541) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.580) 1590 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.666) (20:26:48.666) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.714) 1574 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.787) (20:26:48.787) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.844) 1557 descriptors extracted from object -1 (in 15 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:48.939) (20:26:48.939) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:48.993) 1401 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.104) (20:26:49.104) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.149) 932 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.206) (20:26:49.206) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.253) 770 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.319) (20:26:49.319) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.360) 713 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.407) (20:26:49.407) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.439) 694 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.479) (20:26:49.479) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.535) 672 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.575) (20:26:49.575) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.624) 661 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.671) (20:26:49.671) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.715) 612 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.745) (20:26:49.745) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.810) 566 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.847) (20:26:49.847) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:49.905) 584 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:49.943) (20:26:49.943) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.002) 602 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.045) (20:26:50.045) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.101) 554 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.141) (20:26:50.141) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.209) 492 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.236) (20:26:50.236) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.303) 519 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.333) (20:26:50.333) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.402) 536 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.438) (20:26:50.438) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.506) 539 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.540) (20:26:50.540) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.602) 536 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.650) (20:26:50.650) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.707) 517 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.739) (20:26:50.739) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.806) 517 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.842) (20:26:50.842) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:50.903) 520 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:50.932) (20:26:50.932) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.002) 534 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.042) (20:26:51.041) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.103) 512 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.146) (20:26:51.146) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.204) 557 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.242) (20:26:51.242) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.301) 745 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.348) (20:26:51.348) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.401) 713 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.446) (20:26:51.446) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.501) 606 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.548) (20:26:51.548) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.600) 627 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.635) (20:26:51.635) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.702) 620 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.749) (20:26:51.749) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.802) 816 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.857) (20:26:51.853) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:51.902) 850 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:51.962) (20:26:51.962) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.002) 864 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.101) (20:26:52.101) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.132) 863 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.201) (20:26:52.201) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.239) 896 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.312) (20:26:52.312) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.345) 864 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.402) (20:26:52.402) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.427) 853 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.473) (20:26:52.473) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.503) 876 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.586) (20:26:52.586) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.614) 799 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.675) (20:26:52.675) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.718) 768 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.777) (20:26:52.777) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.826) 752 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.872) (20:26:52.872) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:52.903) 712 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:52.956) (20:26:52.956) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.004) 712 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.070) (20:26:53.069) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.105) 721 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.160) (20:26:53.160) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.206) 726 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.273) (20:26:53.273) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.301) 690 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.350) (20:26:53.350) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.402) 717 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.452) (20:26:53.452) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.504) 711 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.558) (20:26:53.558) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.601) 681 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.644) (20:26:53.644) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.702) 707 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.747) (20:26:53.747) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.802) 666 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.853) (20:26:53.853) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:53.903) 708 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:53.955) (20:26:53.955) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.009) 670 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.063) (20:26:54.063) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.103) 675 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.145) (20:26:54.145) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.203) 669 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.246) (20:26:54.246) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.305) 650 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.349) (20:26:54.349) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.402) 652 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.443) (20:26:54.443) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.501) 674 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.546) (20:26:54.546) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.602) 692 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.646) (20:26:54.646) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.701) 685 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.747) (20:26:54.747) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.802) 667 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.846) (20:26:54.846) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:54.905) 701 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:54.964) (20:26:54.964) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.008) 689 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.056) (20:26:55.056) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.109) 689 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.160) (20:26:55.160) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.207) 690 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.252) (20:26:55.252) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.305) 703 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.351) (20:26:55.351) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.405) 693 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.449) (20:26:55.449) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.504) 716 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.556) (20:26:55.556) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.608) 685 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.643) (20:26:55.643) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.716) 699 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.801) (20:26:55.801) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.837) 695 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:55.914) (20:26:55.914) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:55.969) 708 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:56.075) (20:26:56.075) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:56.133) 686 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:56.191) (20:26:56.191) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:56.246) 700 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:56.301) (20:26:56.301) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:56.382) 698 descriptors extracted from object -1 (in 26 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:56.455) (20:26:56.455) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:56.535) 703 descriptors extracted from object -1 (in 29 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:56.604) (20:26:56.604) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:56.750) 701 descriptors extracted from object -1 (in 85 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:56.837) (20:26:56.837) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:56.949) 703 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.061) (20:26:57.061) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.146) 697 descriptors extracted from object -1 (in 18 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.196) (20:26:57.195) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.217) 697 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.266) (20:26:57.266) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.310) 712 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.356) (20:26:57.356) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.401) 723 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.448) (20:26:57.448) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.502) 704 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.548) (20:26:57.548) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.603) 686 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.659) (20:26:57.659) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.706) 698 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.763) (20:26:57.763) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.802) 708 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.852) (20:26:57.852) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:57.902) 683 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:57.943) (20:26:57.943) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.002) 704 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.058) (20:26:58.058) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.113) 699 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.179) (20:26:58.179) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.232) 701 descriptors extracted from object -1 (in 15 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.302) (20:26:58.302) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.338) 684 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.378) (20:26:58.378) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.413) 704 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.455) (20:26:58.455) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.503) 692 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.565) (20:26:58.565) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.604) 704 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.663) (20:26:58.663) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.710) 710 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.758) (20:26:58.758) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.810) 697 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.846) (20:26:58.846) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:58.907) 696 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:58.960) (20:26:58.960) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.008) 704 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.049) (20:26:59.049) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.107) 691 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.154) (20:26:59.154) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.208) 708 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.262) (20:26:59.262) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.308) 690 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.366) (20:26:59.366) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.404) 706 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.453) (20:26:59.453) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.504) 700 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.557) (20:26:59.557) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.603) 685 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.651) (20:26:59.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.703) 684 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.739) (20:26:59.739) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.804) 689 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.842) (20:26:59.842) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:26:59.904) 711 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:26:59.937) (20:26:59.937) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.003) 691 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.057) (20:27:00.057) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.101) 680 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.137) (20:27:00.137) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.200) 681 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.239) (20:27:00.239) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.300) 687 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.339) (20:27:00.339) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.401) 694 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.443) (20:27:00.442) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.501) 696 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.541) (20:27:00.541) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.601) 697 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.645) (20:27:00.645) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.702) 687 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.743) (20:27:00.743) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.802) 684 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.842) (20:27:00.842) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:00.915) 680 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:00.995) (20:27:00.995) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.033) 689 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.080) (20:27:01.080) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.120) 698 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.149) (20:27:01.149) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.201) 701 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.241) (20:27:01.241) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.301) 677 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.344) (20:27:01.344) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.404) 675 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.454) (20:27:01.454) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.503) 711 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.549) (20:27:01.549) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.605) 686 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.651) (20:27:01.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.704) 696 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.763) (20:27:01.763) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.807) 687 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.849) (20:27:01.849) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:01.911) 682 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:01.953) (20:27:01.953) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.007) 693 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.052) (20:27:02.052) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.104) 663 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.139) (20:27:02.139) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.207) 692 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.257) (20:27:02.257) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.304) 680 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.350) (20:27:02.350) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.408) 688 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.451) (20:27:02.451) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.505) 684 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.543) (20:27:02.543) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.602) 673 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.651) (20:27:02.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.707) 694 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.751) (20:27:02.751) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.807) 686 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.852) (20:27:02.852) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:02.907) 688 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:02.953) (20:27:02.953) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.006) 693 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.047) (20:27:03.047) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.107) 712 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.157) (20:27:03.157) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.208) 674 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.246) (20:27:03.246) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.302) 687 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.344) (20:27:03.343) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.403) 671 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.451) (20:27:03.451) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.504) 687 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.539) (20:27:03.539) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.611) 674 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.655) (20:27:03.655) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.708) 685 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.746) (20:27:03.746) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.804) 684 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.851) (20:27:03.850) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:03.905) 669 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:03.957) (20:27:03.957) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.004) 468 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.040) (20:27:04.040) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.105) 367 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.134) (20:27:04.134) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.205) 317 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.235) (20:27:04.235) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.304) 310 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.348) (20:27:04.348) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.403) 300 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.429) (20:27:04.429) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.503) 289 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.536) (20:27:04.536) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.613) 257 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.651) (20:27:04.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.703) 252 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.732) (20:27:04.732) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.801) 260 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.828) (20:27:04.828) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:04.904) 275 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:04.927) (20:27:04.927) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.002) 278 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.030) (20:27:05.030) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.107) 319 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.145) (20:27:05.145) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.201) 316 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.230) (20:27:05.230) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.302) 343 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.331) (20:27:05.331) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.402) 319 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.429) (20:27:05.429) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.507) 362 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.544) (20:27:05.544) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.602) 347 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.634) (20:27:05.634) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.702) 392 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.730) (20:27:05.730) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.806) 413 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.844) (20:27:05.844) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:05.902) 412 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:05.939) (20:27:05.939) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.001) 458 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.036) (20:27:06.036) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.106) 598 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.155) (20:27:06.155) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.203) 571 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.246) (20:27:06.246) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.306) 650 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.359) (20:27:06.359) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.404) 721 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.442) (20:27:06.442) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.502) 758 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.546) (20:27:06.546) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.601) 747 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.652) (20:27:06.652) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.705) 812 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.746) (20:27:06.746) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.801) 793 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.846) (20:27:06.846) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:06.901) 843 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:06.950) (20:27:06.950) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:07.001) 810 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.063) (20:27:07.063) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:07.102) 845 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.154) (20:27:07.154) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:07.202) 870 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.265) (20:27:07.265) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:07.304) 948 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.357) (20:27:07.357) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:07.403) 1152 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.470) (20:27:07.470) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:07.503) 1174 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.578) (20:27:07.578) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:07.615) 1239 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.684) (20:27:07.684) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:07.721) 1201 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.803) (20:27:07.803) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:07.847) 1115 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:07.916) (20:27:07.916) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:07.965) 1166 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.039) (20:27:08.039) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.080) 1131 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.154) (20:27:08.154) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.181) 1145 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.248) (20:27:08.248) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.277) 1133 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.339) (20:27:08.338) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.367) 1103 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.431) (20:27:08.431) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.459) 1126 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.526) (20:27:08.526) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.562) 1152 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.619) (20:27:08.619) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.652) 1121 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.705) (20:27:08.705) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.736) 1126 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.810) (20:27:08.810) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.840) 1118 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.902) (20:27:08.902) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:08.931) 1138 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:08.995) (20:27:08.995) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.024) 1125 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.066) (20:27:09.066) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.104) 1112 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.175) (20:27:09.175) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.215) 1094 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.291) (20:27:09.291) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.326) 1115 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.389) (20:27:09.389) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.433) 1124 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.487) (20:27:09.487) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.534) 1084 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.595) (20:27:09.595) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.645) 1093 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.708) (20:27:09.708) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.747) 1085 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.833) (20:27:09.833) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.875) 1078 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:09.940) (20:27:09.940) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:09.981) 1096 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.051) (20:27:10.051) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.095) 1120 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.176) (20:27:10.176) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.209) 1099 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.267) (20:27:10.267) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.305) 1125 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.363) (20:27:10.363) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.403) 1101 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.469) (20:27:10.469) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.505) 1109 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.579) (20:27:10.579) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.612) 1070 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.676) (20:27:10.676) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.709) 1089 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.777) (20:27:10.777) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.809) 1088 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.882) (20:27:10.882) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:10.921) 1083 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:10.988) (20:27:10.988) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.023) 1070 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.084) (20:27:11.084) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.117) 1062 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.223) (20:27:11.223) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.257) 1096 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.320) (20:27:11.320) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.355) 1095 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.417) (20:27:11.417) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.450) 1096 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.539) (20:27:11.539) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.574) 1072 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.646) (20:27:11.646) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.678) 1102 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.752) (20:27:11.752) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.783) 1112 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.830) (20:27:11.830) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.867) 1085 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:11.933) (20:27:11.933) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:11.968) 1129 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:12.044) (20:27:12.044) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:12.103) 1139 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:12.183) (20:27:12.183) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:12.247) 1135 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:12.322) (20:27:12.322) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:12.368) 1125 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:12.451) (20:27:12.451) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:12.521) 1144 descriptors extracted from object -1 (in 16 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:12.594) (20:27:12.593) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:12.659) 1137 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:12.764) (20:27:12.764) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:12.819) 1116 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:12.908) (20:27:12.908) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:12.948) 1121 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.055) (20:27:13.055) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.091) 1141 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.157) (20:27:13.157) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.191) 1088 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.257) (20:27:13.257) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.294) 1130 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.363) (20:27:13.363) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.396) 1114 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.455) (20:27:13.455) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.485) 1086 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.561) (20:27:13.561) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.595) 1070 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.661) (20:27:13.661) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.696) 1117 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.779) (20:27:13.778) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.808) 1091 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:13.880) (20:27:13.880) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:13.912) 1118 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.008) (20:27:14.008) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.045) 1086 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.113) (20:27:14.113) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.151) 1092 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.217) (20:27:14.217) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.257) 1111 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.329) (20:27:14.329) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.364) 1109 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.473) (20:27:14.473) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.538) 1045 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.649) (20:27:14.649) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.708) 1046 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.801) (20:27:14.801) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.845) 1058 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:14.910) (20:27:14.910) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:14.952) 1065 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.010) (20:27:15.010) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.059) 1047 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.128) (20:27:15.128) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.171) 1075 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.303) (20:27:15.303) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.363) 1052 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.441) (20:27:15.441) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.503) 1065 descriptors extracted from object -1 (in 17 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.580) (20:27:15.580) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.617) 1080 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.705) (20:27:15.705) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.739) 1072 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.798) (20:27:15.798) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.832) 1046 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:15.895) (20:27:15.895) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:15.928) 1070 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.002) (20:27:16.002) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.034) 1048 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.107) (20:27:16.107) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.141) 1045 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.210) (20:27:16.210) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.241) 1066 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.284) (20:27:16.284) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.314) 1053 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.375) (20:27:16.375) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.404) 1069 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.464) (20:27:16.464) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.503) 1047 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.564) (20:27:16.564) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.604) 1075 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.680) (20:27:16.680) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.717) 1066 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.780) (20:27:16.780) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.824) 1062 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:16.911) (20:27:16.911) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:16.953) 1050 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.030) (20:27:17.030) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.067) 1085 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.114) (20:27:17.114) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.150) 1083 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.224) (20:27:17.224) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.278) 1088 descriptors extracted from object -1 (in 19 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.407) (20:27:17.406) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.444) 1065 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.525) (20:27:17.525) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.577) 1083 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.659) (20:27:17.659) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.702) 1063 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.773) (20:27:17.773) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.814) 1071 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.882) (20:27:17.882) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:17.927) 1068 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:17.980) (20:27:17.980) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.026) 1102 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.094) (20:27:18.094) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.135) 1081 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.216) (20:27:18.216) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.255) 1071 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.318) (20:27:18.318) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.351) 988 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.408) (20:27:18.408) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.442) 1064 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.507) (20:27:18.507) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.542) 991 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.608) (20:27:18.608) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.642) 1086 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.704) (20:27:18.704) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.741) 1219 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.833) (20:27:18.833) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.869) 1295 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:18.951) (20:27:18.951) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:18.989) 1396 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.075) (20:27:19.075) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:19.117) 1478 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.212) (20:27:19.212) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:19.259) 1507 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.325) (20:27:19.325) Object 31 detected![0m
+[0m[ INFO] (2026-11-14 20:27:19.372) 1499 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.458) (20:27:19.458) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:19.502) 1434 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.556) (20:27:19.556) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:19.603) 1413 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.679) (20:27:19.679) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:19.718) 1381 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.798) (20:27:19.798) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:19.839) 1352 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:19.919) (20:27:19.919) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:19.958) 1287 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.040) (20:27:20.040) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.073) 1217 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.146) (20:27:20.146) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.175) 1278 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.258) (20:27:20.258) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.296) 1026 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.365) (20:27:20.365) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.399) 1124 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.472) (20:27:20.472) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.505) 977 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.562) (20:27:20.562) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.604) 1140 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.677) (20:27:20.677) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.709) 995 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.774) (20:27:20.774) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.809) 984 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:20.882) (20:27:20.882) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:20.919) 921 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.008) (20:27:21.008) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.041) 783 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.096) (20:27:21.096) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.127) 777 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.182) (20:27:21.182) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.211) 840 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.273) (20:27:21.273) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.303) 786 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.362) (20:27:21.362) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.406) 583 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.439) (20:27:21.439) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.503) 633 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.544) (20:27:21.544) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.606) 869 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.652) (20:27:21.652) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.702) 897 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.758) (20:27:21.758) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.806) 523 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.848) (20:27:21.848) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:21.900) 487 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:21.932) (20:27:21.932) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.002) 476 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.037) (20:27:22.037) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.102) 471 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.140) (20:27:22.140) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.202) 527 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.233) (20:27:22.233) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.300) 511 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.331) (20:27:22.331) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.400) 591 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.437) (20:27:22.437) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.502) 647 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.541) (20:27:22.541) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.600) 630 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.638) (20:27:22.638) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.701) 696 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.744) (20:27:22.744) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.802) 741 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.842) (20:27:22.842) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:22.903) 716 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:22.946) (20:27:22.946) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.002) 800 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.049) (20:27:23.049) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.100) 853 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.142) (20:27:23.141) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.202) 872 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.250) (20:27:23.250) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.302) 859 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.349) (20:27:23.349) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.403) 844 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.449) (20:27:23.449) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.502) 887 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.544) (20:27:23.544) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.602) 795 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.646) (20:27:23.646) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.702) 867 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.747) (20:27:23.747) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.807) 879 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.877) (20:27:23.877) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:23.922) 820 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:23.979) (20:27:23.979) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.034) 965 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.101) (20:27:24.101) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.146) 1003 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.205) (20:27:24.205) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.243) 1040 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.316) (20:27:24.316) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.353) 842 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.420) (20:27:24.420) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.451) 1038 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.506) (20:27:24.505) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.545) 1036 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.596) (20:27:24.595) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.620) 715 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.656) (20:27:24.656) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.705) 824 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.759) (20:27:24.759) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.809) 1070 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.871) (20:27:24.871) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:24.911) 1015 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:24.971) (20:27:24.971) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.012) 1051 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.094) (20:27:25.093) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.149) 946 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.207) (20:27:25.207) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.250) 1034 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.305) (20:27:25.305) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.347) 1076 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.437) (20:27:25.437) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.471) 1075 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.547) (20:27:25.547) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.607) 1116 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.696) (20:27:25.696) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.729) 1114 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.784) (20:27:25.784) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.823) 1118 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.871) (20:27:25.871) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:25.922) 1106 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:25.982) (20:27:25.982) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.025) 1117 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.083) (20:27:26.083) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.125) 1131 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.191) (20:27:26.191) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.227) 1126 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.303) (20:27:26.303) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.344) 1104 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.417) (20:27:26.417) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.460) 1117 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.528) (20:27:26.528) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.572) 1123 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.651) (20:27:26.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.697) 1100 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.778) (20:27:26.778) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.827) 1108 descriptors extracted from object -1 (in 16 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:26.897) (20:27:26.897) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:26.940) 1104 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.006) (20:27:27.006) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.059) 1115 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.117) (20:27:27.117) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.161) 1108 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.217) (20:27:27.217) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.255) 1121 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.329) (20:27:27.329) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.374) 1052 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.451) (20:27:27.451) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.495) 1066 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.544) (20:27:27.544) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.585) 1094 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.631) (20:27:27.631) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.658) 1089 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.708) (20:27:27.708) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.742) 1081 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.799) (20:27:27.799) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.834) 1071 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:27.906) (20:27:27.906) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:27.955) 1106 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.017) (20:27:28.016) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.068) 1061 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.136) (20:27:28.136) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.174) 1071 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.240) (20:27:28.240) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.281) 1096 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.384) (20:27:28.384) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.444) 1106 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.527) (20:27:28.527) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.574) 1057 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.645) (20:27:28.645) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.685) 1063 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.730) (20:27:28.730) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.767) 1104 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.848) (20:27:28.848) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:28.897) 1072 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:28.978) (20:27:28.978) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.018) 1064 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.105) (20:27:29.105) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.148) 1052 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.219) (20:27:29.219) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.262) 1054 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.345) (20:27:29.345) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.372) 1083 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.445) (20:27:29.445) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.472) 1069 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.554) (20:27:29.554) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.598) 1093 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.650) (20:27:29.650) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.682) 1084 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.765) (20:27:29.765) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.803) 1061 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.872) (20:27:29.872) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:29.910) 1050 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:29.980) (20:27:29.979) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.025) 1060 descriptors extracted from object -1 (in 16 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:30.114) (20:27:30.114) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.166) 1057 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:30.264) (20:27:30.264) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.308) 1048 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:30.373) (20:27:30.373) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.407) 1039 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:30.501) (20:27:30.501) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.545) 1058 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:30.608) (20:27:30.608) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.652) 1100 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:30.722) (20:27:30.722) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.765) 1121 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:30.889) (20:27:30.888) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:30.945) 1174 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.044) (20:27:31.044) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.092) 1170 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.190) (20:27:31.190) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.245) 1170 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.304) (20:27:31.304) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.348) 1158 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.448) (20:27:31.448) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.496) 1139 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.554) (20:27:31.554) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.583) 1151 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.652) (20:27:31.652) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.694) 1150 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.762) (20:27:31.762) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.809) 1144 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:31.872) (20:27:31.872) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:31.923) 1147 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.004) (20:27:32.004) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.034) 1164 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.116) (20:27:32.116) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.151) 1148 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.245) (20:27:32.245) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.282) 1154 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.376) (20:27:32.376) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.425) 1143 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.508) (20:27:32.508) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.553) 1163 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.631) (20:27:32.631) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.681) 1167 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.762) (20:27:32.762) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.809) 1165 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:32.910) (20:27:32.910) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:32.964) 1195 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.059) (20:27:33.059) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:33.104) 1176 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.190) (20:27:33.190) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:33.229) 1153 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.306) (20:27:33.306) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:33.363) 1174 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.451) (20:27:33.451) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:33.505) 1159 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.593) (20:27:33.593) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:33.631) 1146 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.716) (20:27:33.716) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:33.752) 1133 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.835) (20:27:33.835) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:33.875) 1115 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:33.953) (20:27:33.953) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.009) 1115 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.082) (20:27:34.082) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.144) 1136 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.230) (20:27:34.230) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.283) 1130 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.365) (20:27:34.365) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.412) 1086 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.513) (20:27:34.513) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.572) 1107 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.647) (20:27:34.647) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.704) 1106 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.775) (20:27:34.775) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.817) 1113 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.884) (20:27:34.884) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:34.916) 1091 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:34.979) (20:27:34.979) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.023) 1140 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.101) (20:27:35.101) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.136) 1104 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.183) (20:27:35.183) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.220) 1095 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.297) (20:27:35.297) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.341) 1092 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.426) (20:27:35.426) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.472) 1142 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.548) (20:27:35.548) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.596) 1090 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.712) (20:27:35.712) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.750) 1095 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.815) (20:27:35.815) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:35.855) 1101 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:35.948) (20:27:35.948) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:36.006) 1076 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:36.075) (20:27:36.075) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:36.123) 1100 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:36.230) (20:27:36.230) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:36.286) 1092 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:36.403) (20:27:36.403) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:36.464) 1102 descriptors extracted from object -1 (in 15 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:36.590) (20:27:36.590) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:36.640) 1099 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:36.746) (20:27:36.746) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:36.800) 1134 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:36.880) (20:27:36.880) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:36.948) 1120 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.043) (20:27:37.043) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.091) 1118 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.158) (20:27:37.158) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.194) 1125 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.278) (20:27:37.278) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.330) 1174 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.409) (20:27:37.409) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.459) 1160 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.517) (20:27:37.517) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.552) 1109 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.608) (20:27:37.608) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.671) 1144 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.761) (20:27:37.761) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.808) 1137 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:37.899) (20:27:37.899) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:37.934) 1080 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.004) (20:27:38.004) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.034) 1086 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.103) (20:27:38.103) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.131) 1117 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.211) (20:27:38.211) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.249) 1146 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.330) (20:27:38.330) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.398) 1110 descriptors extracted from object -1 (in 24 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.464) (20:27:38.464) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.509) 1086 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.574) (20:27:38.574) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.608) 1103 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.681) (20:27:38.681) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.733) 1125 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.795) (20:27:38.795) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.849) 1106 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:38.927) (20:27:38.927) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:38.971) 1105 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.045) (20:27:39.045) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.095) 1097 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.170) (20:27:39.170) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.202) 1096 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.262) (20:27:39.262) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.302) 1104 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.365) (20:27:39.365) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.404) 1057 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.481) (20:27:39.481) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.519) 1031 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.588) (20:27:39.588) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.620) 1050 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.692) (20:27:39.692) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.722) 1068 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.803) (20:27:39.803) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.835) 1055 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:39.908) (20:27:39.908) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:39.942) 1097 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.007) (20:27:40.007) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.048) 1047 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.126) (20:27:40.126) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.176) 1070 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.258) (20:27:40.258) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.314) 1071 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.409) (20:27:40.409) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.465) 1053 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.556) (20:27:40.556) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.595) 1062 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.670) (20:27:40.670) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.713) 1060 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.783) (20:27:40.783) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.832) 1057 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:40.907) (20:27:40.907) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:40.952) 1088 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.051) (20:27:41.051) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.091) 1046 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.169) (20:27:41.169) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.209) 1076 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.271) (20:27:41.271) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.312) 1063 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.372) (20:27:41.372) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.406) 1062 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.469) (20:27:41.469) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.511) 1045 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.574) (20:27:41.574) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.609) 1079 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.703) (20:27:41.703) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.746) 1056 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.812) (20:27:41.812) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.864) 1014 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:41.943) (20:27:41.943) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:41.989) 1027 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.076) (20:27:42.075) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.130) 1003 descriptors extracted from object -1 (in 15 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.217) (20:27:42.217) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.273) 1038 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.344) (20:27:42.344) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.386) 1022 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.444) (20:27:42.444) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.488) 1061 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.547) (20:27:42.547) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.578) 1061 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.642) (20:27:42.642) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.674) 1085 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.739) (20:27:42.739) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.769) 1110 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.842) (20:27:42.842) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:42.875) 1091 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:42.970) (20:27:42.970) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.006) 1076 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.074) (20:27:43.074) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.110) 1096 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.184) (20:27:43.183) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.242) 1110 descriptors extracted from object -1 (in 23 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.318) (20:27:43.318) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.358) 1123 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.429) (20:27:43.429) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.468) 1100 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.547) (20:27:43.547) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.580) 1110 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.669) (20:27:43.669) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.708) 1118 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.797) (20:27:43.797) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.829) 1094 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:43.914) (20:27:43.914) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:43.968) 1100 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.075) (20:27:44.075) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.118) 1124 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.207) (20:27:44.206) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.248) 1087 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.309) (20:27:44.309) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.358) 1125 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.445) (20:27:44.445) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.479) 1107 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.541) (20:27:44.541) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.585) 1088 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.645) (20:27:44.644) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.688) 1075 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.758) (20:27:44.758) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.807) 1089 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.873) (20:27:44.873) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:44.909) 1076 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:44.985) (20:27:44.985) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.023) 1085 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:45.130) (20:27:45.130) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.180) 1066 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:45.261) (20:27:45.261) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.303) 1070 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:45.384) (20:27:45.384) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.448) 1068 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:45.533) (20:27:45.533) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.595) 1082 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:45.668) (20:27:45.668) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.711) 1063 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:45.801) (20:27:45.801) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.852) 1075 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:45.934) (20:27:45.933) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:45.970) 1044 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.027) (20:27:46.027) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.085) 1071 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.148) (20:27:46.148) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.204) 1064 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.273) (20:27:46.273) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.316) 1058 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.377) (20:27:46.377) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.436) 1062 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.511) (20:27:46.511) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.552) 1077 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.617) (20:27:46.617) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.657) 1051 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.711) (20:27:46.711) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.757) 1052 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.827) (20:27:46.827) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.874) 1094 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:46.939) (20:27:46.939) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:46.975) 1037 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.044) (20:27:47.044) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.077) 1092 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.148) (20:27:47.148) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.180) 1077 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.244) (20:27:47.244) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.276) 1036 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.347) (20:27:47.347) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.376) 1087 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.436) (20:27:47.436) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.467) 1034 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.563) (20:27:47.563) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.600) 1020 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.666) (20:27:47.666) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.702) 1010 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.760) (20:27:47.760) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.799) 989 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.855) (20:27:47.855) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.883) 1019 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:47.946) (20:27:47.946) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:47.977) 1068 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.042) (20:27:48.042) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.076) 876 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.128) (20:27:48.128) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.150) 1041 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.209) (20:27:48.209) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.238) 1028 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.302) (20:27:48.302) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.338) 993 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.398) (20:27:48.398) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.432) 930 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.494) (20:27:48.494) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.528) 915 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.571) (20:27:48.571) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.604) 947 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.648) (20:27:48.648) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.704) 973 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.770) (20:27:48.770) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.816) 978 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.876) (20:27:48.876) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:48.924) 962 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:48.994) (20:27:48.994) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.047) 921 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.112) (20:27:49.112) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.149) 845 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.215) (20:27:49.215) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.251) 903 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.304) (20:27:49.304) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.351) 862 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.396) (20:27:49.396) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.420) 754 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.452) (20:27:49.452) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.501) 689 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.536) (20:27:49.536) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.600) 794 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.651) (20:27:49.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.703) 662 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.744) (20:27:49.744) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.806) 723 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.847) (20:27:49.847) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:49.905) 629 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:49.946) (20:27:49.946) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.005) 584 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.037) (20:27:50.037) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.106) 616 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.149) (20:27:50.148) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.203) 603 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.243) (20:27:50.243) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.309) 784 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.358) (20:27:50.358) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.403) 718 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.447) (20:27:50.447) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.505) 608 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.548) (20:27:50.548) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.601) 338 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.629) (20:27:50.629) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.701) 404 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.731) (20:27:50.731) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.803) 377 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.840) (20:27:50.840) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:50.904) 550 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:50.948) (20:27:50.948) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.004) 483 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.039) (20:27:51.039) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.102) 612 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.130) (20:27:51.130) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.201) 640 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.247) (20:27:51.247) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.302) 664 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.347) (20:27:51.347) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.401) 686 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.444) (20:27:51.444) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.505) 722 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.543) (20:27:51.543) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.602) 763 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.653) (20:27:51.653) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.702) 794 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.752) (20:27:51.752) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.802) 818 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.858) (20:27:51.858) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:51.904) 885 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:51.957) (20:27:51.957) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.004) 830 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.057) (20:27:52.057) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.101) 722 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.135) (20:27:52.135) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.201) 691 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.241) (20:27:52.241) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.302) 724 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.344) (20:27:52.344) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.402) 758 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.448) (20:27:52.448) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.502) 770 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.553) (20:27:52.553) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.602) 730 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.647) (20:27:52.647) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.703) 674 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.750) (20:27:52.750) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.804) 776 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.856) (20:27:52.855) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:52.902) 812 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:52.948) (20:27:52.948) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.002) 794 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.058) (20:27:53.058) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.102) 722 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.145) (20:27:53.145) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.203) 827 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.263) (20:27:53.263) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.302) 839 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.352) (20:27:53.352) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.402) 782 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.459) (20:27:53.459) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.502) 747 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.552) (20:27:53.552) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.603) 807 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.649) (20:27:53.649) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.702) 861 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.752) (20:27:53.752) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.801) 853 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.852) (20:27:53.852) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:53.902) 840 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:53.953) (20:27:53.953) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.003) 879 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.057) (20:27:54.057) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.102) 844 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.150) (20:27:54.150) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.203) 817 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.247) (20:27:54.247) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.302) 840 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.356) (20:27:54.355) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.411) 817 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.479) (20:27:54.479) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.518) 834 descriptors extracted from object -1 (in 13 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.583) (20:27:54.583) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.623) 864 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.705) (20:27:54.704) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.747) 847 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.808) (20:27:54.807) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.853) 834 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.905) (20:27:54.905) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:54.936) 839 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:54.992) (20:27:54.992) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.036) 866 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.082) (20:27:55.082) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.113) 862 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.167) (20:27:55.167) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.203) 866 descriptors extracted from object -1 (in 3 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.252) (20:27:55.252) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.306) 908 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.376) (20:27:55.376) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.415) 906 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.478) (20:27:55.478) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.534) 929 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.624) (20:27:55.624) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.664) 893 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.736) (20:27:55.736) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.777) 924 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.848) (20:27:55.848) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:55.898) 929 descriptors extracted from object -1 (in 17 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:55.969) (20:27:55.969) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.017) 924 descriptors extracted from object -1 (in 12 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.080) (20:27:56.080) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.112) 934 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.168) (20:27:56.168) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.204) 924 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.260) (20:27:56.260) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.303) 964 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.361) (20:27:56.361) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.406) 914 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.467) (20:27:56.467) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.506) 916 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.552) (20:27:56.552) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.603) 923 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.651) (20:27:56.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.705) 929 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.784) (20:27:56.784) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.828) 935 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.884) (20:27:56.884) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:56.915) 940 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:56.981) (20:27:56.981) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.014) 900 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.076) (20:27:57.076) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.126) 920 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.189) (20:27:57.189) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.225) 819 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.286) (20:27:57.286) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.316) 878 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.356) (20:27:57.356) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.402) 883 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.456) (20:27:57.456) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.503) 869 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.561) (20:27:57.561) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.602) 864 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.658) (20:27:57.658) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.702) 807 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.752) (20:27:57.751) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.803) 788 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.876) (20:27:57.876) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:57.913) 779 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:57.952) (20:27:57.952) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.002) 697 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.038) (20:27:58.038) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.104) 771 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.154) (20:27:58.154) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.204) 771 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.262) (20:27:58.262) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.312) 775 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.375) (20:27:58.375) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.424) 763 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.478) (20:27:58.478) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.510) 750 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.566) (20:27:58.566) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.601) 779 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.636) (20:27:58.636) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.702) 821 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.747) (20:27:58.747) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.803) 789 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.842) (20:27:58.842) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:58.907) 876 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:58.964) (20:27:58.964) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.003) 926 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.064) (20:27:59.064) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.107) 819 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.165) (20:27:59.165) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.203) 854 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.257) (20:27:59.257) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.308) 877 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.365) (20:27:59.365) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.405) 806 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.462) (20:27:59.462) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.517) 795 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.569) (20:27:59.569) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.602) 919 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.659) (20:27:59.659) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.702) 869 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.753) (20:27:59.753) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.802) 883 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.850) (20:27:59.850) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:27:59.903) 943 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:27:59.967) (20:27:59.967) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.003) 984 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.061) (20:28:00.061) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.102) 991 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.163) (20:28:00.163) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.203) 994 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.258) (20:28:00.258) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.306) 1055 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.359) (20:28:00.359) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.403) 1032 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.464) (20:28:00.464) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.504) 1018 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.568) (20:28:00.568) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.614) 1002 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.685) (20:28:00.685) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.740) 1027 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.802) (20:28:00.802) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.842) 1036 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:00.907) (20:28:00.907) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:00.948) 1026 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.006) (20:28:01.006) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.048) 1029 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.114) (20:28:01.114) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.149) 1018 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.206) (20:28:01.206) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.240) 1000 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.284) (20:28:01.283) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.317) 1005 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.379) (20:28:01.379) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.410) 1037 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.477) (20:28:01.477) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.506) 1028 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.566) (20:28:01.565) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.603) 1051 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.664) (20:28:01.664) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.703) 1047 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.765) (20:28:01.765) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.804) 1033 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.867) (20:28:01.867) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:01.905) 1050 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:01.971) (20:28:01.971) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.008) 1020 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.068) (20:28:02.068) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.106) 1015 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.166) (20:28:02.165) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.207) 1001 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.272) (20:28:02.272) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.307) 1059 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.371) (20:28:02.371) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.405) 1043 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.466) (20:28:02.466) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.503) 1036 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.561) (20:28:02.561) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.613) 1028 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.673) (20:28:02.673) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.706) 1023 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.772) (20:28:02.772) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.812) 1024 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.879) (20:28:02.879) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:02.908) 1036 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:02.971) (20:28:02.971) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.004) 1036 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.059) (20:28:03.059) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.106) 1028 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.170) (20:28:03.170) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.204) 1061 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.264) (20:28:03.264) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.304) 1037 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.360) (20:28:03.360) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.405) 1029 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.464) (20:28:03.464) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.502) 1030 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.567) (20:28:03.567) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.606) 1030 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.670) (20:28:03.670) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.702) 1061 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.761) (20:28:03.761) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.816) 1063 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.876) (20:28:03.876) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:03.915) 1032 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:03.984) (20:28:03.984) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.036) 1000 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.103) (20:28:04.103) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.152) 1076 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.223) (20:28:04.223) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.272) 1029 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.355) (20:28:04.355) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.388) 1011 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.449) (20:28:04.449) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.481) 1042 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.558) (20:28:04.558) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.596) 1030 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.659) (20:28:04.659) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.703) 1009 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.764) (20:28:04.764) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.804) 1050 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.875) (20:28:04.875) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:04.912) 1037 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:04.961) (20:28:04.961) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.008) 1040 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.071) (20:28:05.071) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.108) 997 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.197) (20:28:05.197) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.255) 975 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.359) (20:28:05.359) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.405) 999 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.458) (20:28:05.458) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.509) 1022 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.556) (20:28:05.556) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.596) 986 descriptors extracted from object -1 (in 11 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.651) (20:28:05.651) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.695) 1037 descriptors extracted from object -1 (in 14 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.756) (20:28:05.756) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.797) 1035 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.852) (20:28:05.852) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.894) 1026 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:05.942) (20:28:05.942) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:05.985) 1032 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.049) (20:28:06.048) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.084) 1032 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.146) (20:28:06.145) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.174) 1026 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.229) (20:28:06.229) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.262) 1023 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.314) (20:28:06.314) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.351) 1043 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.416) (20:28:06.416) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.446) 1002 descriptors extracted from object -1 (in 4 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.505) (20:28:06.505) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.535) 1013 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.589) (20:28:06.589) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.614) 1044 descriptors extracted from object -1 (in 5 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.676) (20:28:06.676) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.707) 1032 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.757) (20:28:06.757) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.807) 1025 descriptors extracted from object -1 (in 10 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.851) (20:28:06.851) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:06.905) 1042 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:06.966) (20:28:06.966) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.004) 1024 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.050) (20:28:07.050) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.105) 999 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.159) (20:28:07.159) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.208) 1021 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.275) (20:28:07.275) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.318) 1000 descriptors extracted from object -1 (in 8 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.405) (20:28:07.405) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.460) 1036 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.545) (20:28:07.545) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.588) 1019 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.652) (20:28:07.652) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.711) 992 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.764) (20:28:07.764) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.808) 1020 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.867) (20:28:07.867) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:07.908) 1030 descriptors extracted from object -1 (in 7 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:07.968) (20:28:07.968) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:08.003) 1013 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:08.055) (20:28:08.055) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:08.122) 1028 descriptors extracted from object -1 (in 9 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:08.207) (20:28:08.207) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:08.239) Window settings saved to /home/abot/.ros/find_object_2d.ini[0m
+[0m[ INFO] (2026-11-14 20:28:08.248) 985 descriptors extracted from object -1 (in 6 ms)[0m
+[0m[ INFO] (2026-11-14 20:28:08.410) (20:28:08.410) No objects detected.[0m
+[0m[ INFO] (2026-11-14 20:28:08.410) Settings saved to /home/abot/.ros/find_object_2d.ini[0m

@@ -1,0 +1,693 @@
+config_dir: /home/abot/syd/src/shoot_race/config
+field:
+  boxes:
+    end:
+      walls:
+      - distance: 0.2659
+        side: right
+      - distance: 0.2693
+        side: back
+      yaw_ref_deg: -7.44
+      yaw_side: back
+    p1:
+      walls:
+      - distance: 0.5858
+        side: right
+      - distance: 1.216
+        side: back
+      yaw_ref_deg: -2.78
+      yaw_side: right
+    p2:
+      walls:
+      - distance: 0.5994
+        side: right
+      - distance: 1.2033
+        side: back
+      yaw_ref_deg: -1.29
+      yaw_side: right
+    p3:
+      walls:
+      - distance: 0.6176
+        side: left
+      - distance: 1.2462
+        side: back
+      yaw_ref_deg: -1.54
+      yaw_side: left
+    recog:
+      distance_tolerance: 0.02
+      walls:
+      - distance: 0.3727
+        side: front
+      - distance: 0.5998
+        side: left
+      yaw_ref_deg: -6.57
+      yaw_side: front
+      yaw_tolerance_deg: 2.0
+  lane_wall:
+    distance: 0.36
+    enabled: true
+    max_shift: 0.15
+    side: back
+    smooth: 0.4
+    waypoints:
+    - lane_p1
+    - lane_p2
+    - lane_p2b
+    - lane_p3
+  paths:
+    p1_to_p2:
+    - profile: burst
+      to: lane_p1
+    - profile: burst
+      to: lane_p2
+    - p2
+    p2_to_p3:
+    - profile: burst
+      to: lane_p2b
+    - profile: burst
+      to: lane_p3
+    - p3
+    p3_to_end:
+    - offset:
+      - 0.08
+      - 0.0
+      profile: burst
+      to: end
+    to_p1:
+    - p1
+    to_recog:
+    - recog
+  waypoints:
+    end:
+    - 0.028
+    - -3.255
+    - -1.2
+    lane_p1:
+    - 0.1
+    - -0.371
+    - 0.0
+    lane_p2:
+    - 0.1
+    - -1.603
+    - 0.0
+    lane_p2b:
+    - 0.1
+    - -1.603
+    - 0.0
+    lane_p3:
+    - 0.1
+    - -2.854
+    - 0.0
+    p1:
+    - 0.974
+    - -0.371
+    - 2.5
+    p2:
+    - 0.947
+    - -1.603
+    - 2.1
+    p3:
+    - 0.986
+    - -2.854
+    - 0.2
+    recog:
+    - 0.333
+    - -0.132
+    - 91.9
+    start:
+    - -0.056
+    - 0.089
+    - 0.1
+mission:
+  drive_timeout_scale: 1.0
+  match_time_s: 120
+  rehearsal_pause_s: 0
+  steps:
+  - id: say_start
+    message: start
+    name: 播报比赛开始
+    timeout_s: 5
+    type: say
+  - id: go_recog
+    name: 去识别区
+    path: to_recog
+    timeout_s: 8
+    type: drive
+  - box: recog
+    id: align_recog
+    name: 识别区精定位
+    timeout_s: 5
+    type: align
+  - id: recognize
+    name: 识别卡片
+    timeout_s: 12
+    type: recognize
+  - id: say_targets
+    message: targets
+    name: 播报靶号
+    timeout_s: 6
+    type: say
+  - id: go_p1
+    name: 去1号点
+    path: to_p1
+    timeout_s: 8
+    type: drive
+  - box: p1
+    id: align_p1
+    name: 1号点精定位
+    timeout_s: 6
+    type: align
+  - id: shoot_ring
+    name: 打环形靶
+    on_timeout: fire
+    skip_if_less_than_s: 35
+    timeout_s: 8
+    type: shoot_ring
+  - id: go_p2
+    name: 去2号点
+    path: p1_to_p2
+    timeout_s: 15
+    type: drive
+  - box: p2
+    id: align_p2
+    name: 2号点精定位
+    timeout_s: 6
+    type: align
+  - id: shoot_rot
+    name: 打旋转靶
+    on_timeout: fire
+    skip_if_less_than_s: 40
+    target: rotating
+    timeout_s: 55
+    type: shoot_ar
+  - id: go_p3
+    name: 去3号点
+    path: p2_to_p3
+    timeout_s: 15
+    type: drive
+  - box: p3
+    id: align_p3
+    name: 3号点精定位
+    timeout_s: 6
+    type: align
+  - id: shoot_move
+    name: 打移动靶
+    on_timeout: fire
+    skip_if_less_than_s: 25
+    target: moving
+    timeout_s: 19
+    type: shoot_ar
+  - id: go_end
+    name: 去终点
+    path: p3_to_end
+    timeout_s: 10
+    type: drive
+  - box: end
+    id: align_end
+    name: 终点精定位
+    timeout_s: 6
+    type: align
+  - id: say_end
+    message: end
+    name: 播报比赛结束
+    timeout_s: 5
+    type: say
+recognition:
+  capture_s: 0.4
+  cards:
+  - answer: 1
+    file: card01.jpg
+    fruit: durian
+    text: 盘子里有2个苹果，吃掉1个，还剩几个苹果？
+  - answer: 2
+    file: card02.jpg
+    fruit: durian
+    text: 小红有5块糖果，分给小伙伴3块，小红还剩几块糖果？
+  - answer: 3
+    file: card03.jpg
+    fruit: durian
+    text: 笔筒里有4支蜡笔，拿走1支，还剩几支蜡笔？
+  - answer: 4
+    file: card04.jpg
+    fruit: durian
+    text: 树上有3只松鼠，又跑来1只，现在一共有几只松鼠？
+  - answer: 5
+    file: card05.jpg
+    fruit: durian
+    text: 桌子上有3个橙子，拿来2个，现在一共有几个橙子？
+  - answer: 1
+    file: card06.jpg
+    fruit: starfruit
+    text: 小明手里有3支铅笔，送给同学2支，小明还剩几支铅笔？
+  - answer: 2
+    file: card07.jpg
+    fruit: starfruit
+    text: 停车场有3辆小车，开走1辆，停车场还有几辆小车？
+  - answer: 3
+    file: card08.jpg
+    fruit: starfruit
+    text: 地上有2只小鸡，又来了1只小鸡，一共有多少只小鸡？
+  - answer: 4
+    file: card09.jpg
+    fruit: starfruit
+    text: 一共有5朵小花，摘走1朵，还剩几朵小花？
+  - answer: 5
+    file: card10.jpg
+    fruit: starfruit
+    text: 草地上有4只小羊，再走来1只，一共有几只小羊？
+  - answer: 1
+    file: card11.jpg
+    fruit: mangosteen
+    text: 树上停了4只小鸟，飞走3只，树上还剩几只小鸟？
+  - answer: 2
+    file: card12.jpg
+    fruit: mangosteen
+    text: 花丛有1只蝴蝶，又飞来1只，现在一共有几只蝴蝶？
+  - answer: 3
+    file: card13.jpg
+    fruit: mangosteen
+    text: 一共有5个气球，破掉2个，还剩下几个气球？
+  - answer: 4
+    file: card14.jpg
+    fruit: mangosteen
+    text: 盒子里有2块橡皮，再放进去2块，盒子里一共有几块橡皮？
+  - answer: 5
+    file: card15.jpg
+    fruit: mangosteen
+    text: 书包里有5本本子，没有拿走本子，书包里还有几本本子？
+  default_targets:
+    moving: 6
+    rotating: 1
+  fruit_aliases:
+    durian:
+    - 榴莲
+    - 榴梿
+    mangosteen:
+    - 山竹
+    - 莽吉柿
+    starfruit:
+    - 杨桃
+    - 阳桃
+    - 洋桃
+    - 五角星果
+  fruit_to_moving_id:
+    durian: 6
+    mangosteen: 8
+    starfruit: 7
+  offline:
+    cards_dir: cards
+    min_inliers: 12
+    min_margin: 0.08
+    min_score: 0.35
+    orb_features: 2000
+    template_scale: 0.6
+  policy: vlm_first
+  vlm:
+    api_key_env: SYD_ARK_API_KEY
+    api_key_file: ~/.ark_api_key_syd
+    base_url: https://ark.cn-beijing.volces.com/api/v3
+    extra_body:
+      thinking:
+        type: disabled
+    jpeg_quality: 85
+    max_image_width: 1024
+    model: doubao-seed-2-1-pro-260915
+    prompt: '这是一张任务卡片，上方是一道算术应用题，下方是一张水果图片。 请计算题目的答案（1到5之间的整数），并判断水果是榴莲、杨桃、山竹中的哪一种。
+      只输出一行JSON，不要输出其他内容，格式：{"answer": 数字, "fruit": "水果名"}'
+    request_timeout_s: 15
+    wait_s: 10
+shooting:
+  moving:
+    aim_u_px: 350.5
+    aim_v_px: 199.5
+    end_margin_px: 6.0
+    end_margin_s: 0.15
+    fire:
+      burst_s: 0.07
+      interval_s: 1.2
+      post_fire_wait_s: 0.2
+      shots: 1
+    fit_window_s: 0.3
+    fuse_codes:
+    - 6
+    - 7
+    - 8
+    fuse_layout_px:
+      6: 0.0
+      7: 27.1
+      8: 53.2
+    fuse_min_pairs: 3
+    history_s: 16.0
+    hit_tolerance_px: 4.0
+    intercept:
+      buffer_s: 0.5
+      dwell_s: 0.4
+      enabled: false
+      end_margin_px: 15.0
+      max_turn_deg: 8.0
+      max_twist_deg: 6.0
+      max_twists: 2
+      min_gain_s: 2.5
+      min_span_s: 0.5
+      settle_s: 1.2
+      stroke_heading_deg: -2.0
+      stroke_px:
+        6:
+        - 254.0
+        - 363.0
+        7:
+        - 281.0
+        - 390.0
+        8:
+        - 307.0
+        - 416.0
+      twist_coast_s: 0.5
+      twist_margin_deg: 0.8
+      twist_min_rate: 0.4
+      twist_px_per_deg: 8.8
+      twist_rate_deg_s: 4.0
+      twist_start_s: 0.8
+      twist_timeout_s: 5.0
+      unsure_margin_px: 8.0
+    latency_s: 0.15
+    max_sample_age_s: 0.3
+    max_speed_px_s: 120.0
+    min_samples: 4
+    min_speed_px_s: 8.0
+    outlier_px: 8.0
+    run_window_s: 0.6
+    settle_s: 0.3
+    static_speed_px_s: 2.0
+    target_distance_m: 1.5
+    tolerance_v_px: 8.0
+    use_v: false
+  ring:
+    accept_ids:
+    - 28
+    - 29
+    - 30
+    - 31
+    aim_x_px: 363.0
+    check_frames: 2
+    check_px: 8.0
+    check_wait_s: 1.5
+    confirm_frames: 3
+    detector: rings
+    fire:
+      burst_s: 0.07
+      interval_s: 1.2
+      post_fire_wait_s: 0.2
+      shots: 2
+    frame_noise_px: 3.6
+    hold_yaw_on_shift: true
+    image_gain: 0.7
+    look_more_px: 6.0
+    max_look_frames: 6
+    max_obs_age_s: 1.5
+    max_shift_m: 0.025
+    max_sigma_px: null
+    mode: vision
+    model_error: 0.3
+    recheck_frames: 2
+    reset_px: 8.0
+    rings:
+      aim_x_px: 353.0
+      confirm_frames: 3
+      finder:
+        max_rate_hz: 6.0
+        min_score: 5.0
+        r_max_px: 32.0
+        r_min_px: 4.0
+        search_u:
+        - 200
+        - 480
+        search_v:
+        - 120
+        - 320
+      frame_noise_px: 0.5
+      look_more_px: 2.0
+      max_look_frames: 5
+      max_obs_age_s: 1.5
+      overshoot_scale: 0.6
+      recheck_frames: 2
+      tolerance_px: 2.0
+      vision_latency_s: 0.1
+    settle_s: 0.3
+    shift_yaw_px: 2.5
+    target_distance_m: 1.9
+    tolerance_px: 3.0
+    vision_latency_s: 0.3
+  rotating:
+    aim_u_px: 350.5
+    aim_v_px: 199.5
+    blind_timeout_s: 5.0
+    correction: servo
+    fire:
+      burst_s: 0.07
+      interval_s: 1.2
+      post_fire_wait_s: 0.2
+      shots: 1
+    fire_side: any
+    fit_window_s: 3.0
+    fresh_after_s: 0.1
+    give_up_observe_s: 3.0
+    history_s: 4.0
+    hit_tolerance_px: 4.0
+    hold_yaw_on_shift: true
+    keepalive_min_lead_s: 6.0
+    keepalive_nudge_s: 0.6
+    keepalive_speed_mps: 0.05
+    keepalive_still_s: 12.0
+    latency_s: 0.15
+    max_corrections: 3
+    max_shift_m: 0.05
+    max_twist_deg: 6.0
+    max_wait_s: 50.0
+    min_markers: 3
+    min_omega_deg_s: 0.5
+    observe_s: 1.0
+    outlier_px: 3.0
+    plan_overhead_s: 2.5
+    plan_speed_mps: 0.05
+    plan_twist_deg_s: 3.0
+    plan_twist_overhead_s: 4.0
+    reserve_after_s: 30.0
+    servo:
+      coarse_max_px: 14.0
+      coarse_px: 10.0
+      corner_lever_m: 0.23
+      fire_max_rate_px_s: 8.0
+      hold_gain: 3.0
+      hold_heading: true
+      hold_s: 0.3
+      late_s: 0.3
+      lateral_bump: 0.01
+      lateral_coast_s: 0.4
+      lateral_gain: 0.004
+      lateral_max_speed: 0.05
+      lateral_min_speed: 0.03
+      lateral_px_per_m: 313.0
+      max_align_s: 8.0
+      max_corner_m: 0.06
+      max_flips: 3
+      max_move_s: 4.0
+      max_moves: 8
+      observe_s: 0.8
+      prep_base_s: 1.5
+      realign_min_s: 3.0
+      realign_px: 4.0
+      release_px: 1.0
+      servo_px_s: 15.0
+      stable_px_s: 3.0
+      stall_s: 1.0
+      start_s: 0.4
+      tolerance_px: 3.0
+      twist_px_per_deg: 8.8
+      window_s: 6.0
+      yaw_bump: 0.05
+      yaw_coast_s: 0.8
+      yaw_gain: 0.01
+      yaw_max_rate: 0.4
+      yaw_min_rate: 0.25
+    settle_s: 0.3
+    target_distance_m: 1.5
+    twist_min_px: 10.0
+    twist_px_per_deg: 8.8
+    wait_keep_px: 5.5
+    wheel_ids:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  shooter:
+    baudrate: 9600
+    port: /dev/shoot
+    start_hex: 55 01 12 00 00 00 01 69
+    stop_hex: 55 01 11 00 00 00 01 68
+system:
+  accel_limits:
+    angular: 3.0
+    linear: 1.5
+  camera:
+    cx: 332.72
+    cy: 274.54
+    fx: 671.39
+    fy: 668.23
+  chassis:
+    dead_time_s: 0.25
+    gain_backward: 0.92
+    gain_forward: 0.85
+    gain_lateral: 0.92
+    gain_yaw: 0.36
+    gain_yaw_inplace: 0.25
+    time_constant_s: 0.3
+    wheel_blend: 0.2
+    wheel_blend_yaw: 0.0
+  drive_mode: direct
+  frames:
+    base: base_link
+    map: map
+    odom: odom
+  image_buffer_size: 15
+  laser_offset_x: 0.06
+  lateral_shift:
+    coast_s: 0.25
+    fine_below_m: 0.025
+    fine_speed: 0.03
+    gain: 2.0
+    max_speed: 0.08
+    min_speed: 0.05
+    stall_s: 2.0
+    tolerance_m: 0.003
+  log_dir: ~/race_logs
+  loop_hz: 20
+  path_follower:
+    burst_switch_m: 0.015
+    close_finish_m: 0.08
+    corner_reach_m: 0.05
+    corner_speed: 0.15
+    cross_gain: 4.0
+    cross_max: 0.15
+    decel: 0.8
+    goal_tolerance: 0.04
+    handoff_yaw_deg: 6.0
+    lookahead_m: 0.2
+    lookahead_s: 0.4
+    max_speed: 0.5
+    max_yaw_rate: 2.2
+    min_turn_rate: 0.45
+    profiles:
+      burst:
+        accel: 1.5
+        decel: 0.8
+        end_speed: 0.0
+        max_speed: 0.5
+        settle: false
+        settle_speed: 0.15
+        track: true
+        wheel_limit: 0.5
+    profiles_enabled: true
+    sharp_corner_deg: 60
+    turn_hold_m: 0.05
+    turn_release_m: 0.1
+    wheel_k: 0.225
+    wheel_limit: 0.5
+    yaw_bandwidth: 1.5
+    yaw_gain: 3.0
+    yaw_sync: 1.0
+    yaw_tolerance_deg: 4.0
+  preflight:
+    max_topic_age_s: 2.0
+    warmup_s: 30
+  safety:
+    brake_decel: 0.54
+    enabled: true
+    finish_if_blocked_within: 0.25
+    front_length: 0.23
+    half_width: 0.155
+    rear_length: 0.18
+    self_depth: 0.02
+    sensor_latency_s: 0.15
+    side_margin: 0.03
+    stop_distance: 0.08
+  set_initial_pose: true
+  still_hold_s: 0.25
+  still_speed:
+    angular: 0.02
+    linear: 0.01
+  surface: mats
+  surfaces:
+    mats:
+      chassis:
+        gain_backward: 0.92
+        gain_forward: 0.85
+        gain_lateral: 0.92
+        gain_yaw: 0.36
+        gain_yaw_inplace: 0.25
+      wall_align:
+        min_yaw_rate: 0.1
+    other:
+      chassis:
+        gain_backward: 0.9
+        gain_forward: 0.85
+        gain_lateral: 0.8
+        gain_yaw: 0.9
+        gain_yaw_inplace: 0.4
+      wall_align:
+        min_yaw_rate: 0.04
+  topics:
+    ar: /ar_pose_marker
+    camera: /usb_cam/image_raw
+    cmd_vel: /cmd_vel
+    initial_pose: /initialpose
+    ring: /object_position
+    scan: /scan_filtered
+    wheel_odom: /wheel_odom
+  wall_align:
+    boost_max: 2.5
+    distance_tolerance: 0.008
+    linear_gain: 2.0
+    max_linear_speed: 0.15
+    max_yaw_rate: 1.0
+    min_linear_speed: 0.02
+    min_yaw_rate: 0.1
+    misfit_deg: 12.0
+    missing_finish_s: 1.5
+    near_factor: 1.6
+    near_factor_yaw: 1.3
+    near_hold_s: 0.6
+    ok_cycles: 3
+    settle_deg: 0.1
+    settle_m: 0.002
+    stall_s: 0.6
+    yaw_bandwidth: 1.0
+    yaw_gain: 2.0
+    yaw_tolerance_deg: 0.5
+  wall_fit:
+    distance_band: 0.4
+    max_yaw_offset_deg: 20
+    min_points: 8
+    outlier_threshold: 0.02
+    sector_half_angle_deg: 30
+  yaw_twist:
+    coast_s: 0.6
+    gain: 2.0
+    max_rate: 0.5
+    min_rate: 0.25
+    stall_s: 2.0
+    timeout_s: 4.0
+    tolerance_deg: 0.4
+voice:
+  audio_dir: /home/abot/syd/src/robot_slam/mp3
+  messages:
+    end:
+    - final.mp3
+    start:
+    - 00.mp3
+    targets:
+    - x{rotating}.mp3
+    - y{moving}.mp3
+  player_command:
+  - mplayer
+  - -really-quiet

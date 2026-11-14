@@ -1,0 +1,19 @@
+match_time,step,event,detail
+-1.00,config,override,mission.rehearsal_pause_s: 0 -> 0
+0.00,say_start,start,播报比赛开始
+0.26,say_start,play,00.mp3
+2.36,say_start,done,用时 2.35 秒
+2.37,go_recog,start,去识别区
+2.38,go_recog,profile,第 1 段：normal（最高 0.50 m/s）
+5.42,go_recog,done,用时 3.04 秒
+5.43,go_recog,pose,x=0.299 y=-0.117 yaw=87.2deg
+5.44,align_recog,start,识别区精定位
+10.46,align_recog,timeout,超过 5.0 秒
+10.47,align_recog,align_error,
+10.47,align_recog,pose,box=recog ok=0 x=0.315 y=-0.128 yaw=83.4deg
+10.48,recognize,start,识别卡片
+12.93,recognize,targets,rotating=3 moving=7 source=vlm
+12.94,recognize,done,用时 2.45 秒
+12.95,say_targets,start,播报靶号
+12.96,say_targets,play,x3.mp3 y7.mp3
+17.79,mission,end,总用时 17.8 秒

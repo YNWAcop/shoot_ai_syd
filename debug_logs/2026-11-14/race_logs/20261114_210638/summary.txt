@@ -1,0 +1,22 @@
+==================== 本局用时 ====================
+步骤               用时(秒)  结果   备注
+say_start         2.20       
+go_recog          3.78       
+align_recog       1.09       误差 front=0.8cm left=0.9cm yaw=-1.1deg
+recognize         3.10       
+say_targets       5.52       
+go_p1             4.18       
+align_p1          5.81       误差 back=0.3cm right=0.5cm yaw=-0.4deg；蹭不动加大最小速度 3 次
+shoot_ring        5.58       
+go_p2             7.67       通道按激光量后墙定位：墙距 1.215 米，通道点挪 -0.1 cm
+align_p2          2.88       误差 back=0.1cm right=-0.8cm yaw=0.3deg；蹭不动加大最小速度 1 次
+shoot_rot         5.06       
+go_p3             8.32       通道按激光量后墙定位：墙距 1.204 米，通道点挪 -1.6 cm
+align_p3          2.43       误差 back=0.3cm left=0.3cm yaw=-0.0deg
+shoot_move        4.69       
+go_end            3.81       
+align_end         3.28       误差 back=-0.5cm right=0.3cm yaw=0.3deg
+say_end           2.22       
+--------------------------------------------------
+行驶 27.8  精定位 15.5  播报/识别 13.0  打靶/停靠 15.3  （路上 = 行驶 + 精定位 43.2 秒）
+总用时 72.1 秒；超时：无

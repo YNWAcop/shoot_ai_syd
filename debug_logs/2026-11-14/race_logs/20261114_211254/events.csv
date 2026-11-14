@@ -1,0 +1,13 @@
+match_time,step,event,detail
+-1.00,config,override,mission.rehearsal_pause_s: 0 -> 0
+0.00,say_start,start,播报比赛开始
+0.26,say_start,play,00.mp3
+2.21,say_start,done,用时 2.20 秒
+2.21,go_recog,start,去识别区
+2.22,go_recog,profile,第 1 段：normal（最高 0.50 m/s）
+5.21,go_recog,done,用时 2.99 秒
+5.21,go_recog,pose,x=0.303 y=-0.108 yaw=92.2deg
+5.22,align_recog,start,识别区精定位
+10.07,align_recog,align_error,
+10.08,align_recog,pose,box=recog ok=0 x=0.314 y=-0.128 yaw=84.1deg
+10.09,mission,end,总用时 10.1 秒

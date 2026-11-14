@@ -24,7 +24,7 @@ OUT="$LOG_DIR/check_$(date +%Y%m%d_%H%M%S)_${PART}.txt"
 # 所以先清空 PYTHONPATH 再加载 ROS 环境（旧的 N8NNWC.sh 也是这样做的）
 unset PYTHONPATH
 source /opt/ros/melodic/setup.bash
-[ -f "$WS_DIR/devel/setup.bash" ] && source "$WS_DIR/devel/setup.bash"
+source "$WS_DIR/env_syd.sh"
 export ROS_PACKAGE_PATH="$WS_DIR/src:$ROS_PACKAGE_PATH"
 # Python2 输出中文到管道时默认按 ASCII 编码会报错，统一指定 UTF-8
 export PYTHONIOENCODING=utf-8
@@ -93,8 +93,8 @@ EOF
   echo "voice.yaml 用到但缺少的文件：${missing:- 无}"
 
   section "豆包（只检查是否配置，不显示 key）"
-  if [ -n "$ARK_API_KEY" ]; then echo "环境变量 ARK_API_KEY 已设置"; else echo "环境变量 ARK_API_KEY 未设置"; fi
-  if [ -s "$HOME/.ark_api_key" ]; then echo "~/.ark_api_key 存在"; else echo "~/.ark_api_key 不存在"; fi
+  if [ -n "$SYD_ARK_API_KEY" ]; then echo "环境变量 SYD_ARK_API_KEY 已设置"; else echo "环境变量 SYD_ARK_API_KEY 未设置"; fi
+  if [ -s "$HOME/.ark_api_key_syd" ]; then echo "~/.ark_api_key_syd 存在"; else echo "~/.ark_api_key_syd 不存在"; fi
   grep -E "^\s*model:" "$PKG_DIR/config/recognition.yaml"
   python2 - <<'EOF'
 # -*- coding: utf-8 -*-

@@ -1,0 +1,94 @@
+match_time,step,event,detail
+-1.00,config,override,mission.rehearsal_pause_s: 0 -> 0
+0.00,say_start,start,播报比赛开始
+0.26,say_start,play,00.mp3
+2.16,say_start,done,用时 2.15 秒
+2.17,go_recog,start,去识别区
+2.17,go_recog,profile,第 1 段：normal（最高 0.50 m/s）
+6.16,go_recog,done,用时 3.99 秒
+6.17,go_recog,pose,x=0.316 y=-0.126 yaw=86.2deg
+6.18,align_recog,start,识别区精定位
+7.90,align_recog,done,用时 1.72 秒
+7.91,align_recog,align_error,front=0.3cm left=1.2cm yaw=-1.1deg
+7.92,align_recog,pose,box=recog ok=1 x=0.326 y=-0.129 yaw=89.5deg
+7.93,recognize,start,识别卡片
+10.64,recognize,targets,rotating=3 moving=7 source=vlm
+10.65,recognize,done,用时 2.72 秒
+10.66,say_targets,start,播报靶号
+10.67,say_targets,play,x3.mp3 y7.mp3
+16.19,say_targets,done,用时 5.53 秒
+16.21,go_p1,start,去1号点
+16.22,go_p1,profile,第 1 段：normal（最高 0.50 m/s）
+20.24,go_p1,done,用时 4.03 秒
+20.25,go_p1,pose,x=0.940 y=-0.358 yaw=6.8deg
+20.26,align_p1,start,1号点精定位
+24.80,align_p1,done,用时 4.53 秒
+24.80,align_p1,align_error,back=0.6cm right=0.1cm yaw=0.1deg
+24.81,align_p1,pose,box=p1 ok=1 x=0.945 y=-0.335 yaw=-1.8deg
+24.82,shoot_ring,start,打环形靶
+25.08,shoot_ring,aim,横向位置用 right 墙测量
+25.09,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+25.23,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+25.40,shoot_ring,aim,fresh=2 reason=waiting_frames state=look
+25.65,shoot_ring,aim,err_px=10.750 frames=3 looks=1 shift_mm=-25.000 shifts=0 sigma_px=0.361 state=look
+25.70,shoot_ring,aim,left_mm=-24.770 state=shift
+28.19,shoot_ring,aim,left_mm=-1.287 reason=shift_done state=look
+28.24,shoot_ring,aim,reason=settling state=look
+28.69,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+28.83,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+28.96,shoot_ring,aim,err_px=2.791 frames=2 looks=2 reason=max_shift_reached shifts=1 sigma_px=0.437 state=look
+31.04,shoot_ring,done,用时 6.21 秒
+31.04,go_p2,start,去2号点
+31.05,go_p2,lane,通道按激光量后墙定位：墙距 1.222 米，通道点挪 -1.8 cm
+31.06,go_p2,profile,第 1 段：burst（最高 0.50 m/s）
+35.97,go_p2,profile,第 3 段：normal（最高 0.50 m/s）
+38.77,go_p2,done,用时 7.72 秒
+38.78,go_p2,pose,x=0.911 y=-1.598 yaw=3.3deg
+38.80,align_p2,start,2号点精定位
+39.82,align_p2,boost,车不动，最小速度加大到 1.5 倍
+42.02,align_p2,done,用时 3.21 秒
+42.03,align_p2,align_error,back=0.1cm right=-0.5cm yaw=-0.2deg
+42.05,align_p2,pose,box=p2 ok=1 x=0.910 y=-1.579 yaw=1.6deg
+42.06,shoot_rot,start,打旋转靶
+42.09,shoot_rot,marker,id=3 最多等 47.9 秒
+42.11,shoot_rot,aim,横向位置用 right 墙测量
+42.12,shoot_rot,heading,车头相对侧墙 -1.5 度（扭的上限按正对侧墙算）
+42.17,shoot_rot,aim,center=360.8;191.1 err_px=36.307 k_px_deg=8.800 omega_deg_s=15.646 radius=27.374 reach_px=50.558 reason=plan shifted_mm=0.000 side=right state=align twisted_deg=-1.534 wait_s=9.537
+42.19,shoot_rot,aim,coast_s=0.800 err_px=36.388 lead_s=9.309 predicted_px=38.176 rate_px_s=2.235 reason=twist shifted_mm=0.000 side=right state=align twisted_deg=-1.537
+43.09,shoot_rot,aim,err_px=25.243 lead_s=8.418 limit=yaw rate_px_s=-23.789 reason=coasting shifted_mm=0.013 side=right state=align twisted_deg=-2.848
+43.99,shoot_rot,aim,coast_s=0.400 err_px=9.025 lead_s=7.431 predicted_px=8.556 rate_px_s=-1.174 reason=shift shifted_mm=9.998 side=right state=align twisted_deg=-4.731
+45.09,shoot_rot,aim,err_px=6.986 lead_s=6.386 rate_px_s=-19.723 reason=coasting shifted_mm=-9.972 side=right state=align twisted_deg=-5.013
+45.59,shoot_rot,aim,err_px=2.213 lead_s=5.611 rate_px_s=-1.450 reason=holding shifted_mm=-20.444 side=right state=align twisted_deg=-5.156
+46.29,shoot_rot,aim,err_px=0.364 lead_s=5.016 rate_px_s=-0.485 reason=aligned shifted_mm=-20.444 side=right state=wait twisted_deg=-5.252
+46.34,shoot_rot,aim,err_px=0.381 lead_s=4.968 miss_px=34.715 rate_px_s=-0.214 reason=waiting shifted_mm=-20.444 side=right state=wait twisted_deg=-5.251
+51.24,shoot_rot,aim,aligns=1 err_px=-0.178 flips=0 k_px_deg=8.683 lat_coast_s=0.321 lat_px_cm=2.348 lead_s=0.024 miss_px=0.208 misses=0 rate_px_s=0.081 reason=fire shifted_mm=-20.444 side=right state=wait twisted_deg=-5.272 yaw_coast_s=0.741
+51.66,shoot_rot,done,用时 9.56 秒
+51.66,go_p3,start,去3号点
+51.71,go_p3,lane,通道按激光量后墙定位：墙距 1.203 米，通道点挪 -3.2 cm
+51.72,go_p3,profile,第 1 段：burst（最高 0.50 m/s）
+56.53,go_p3,profile,第 3 段：normal（最高 0.50 m/s）
+59.38,go_p3,done,用时 7.71 秒
+59.39,go_p3,pose,x=0.951 y=-2.839 yaw=0.9deg
+59.40,align_p3,start,3号点精定位
+60.44,align_p3,near,误差都在"差一点"范围内（墙距 1.6 倍、朝向 1.3 倍容差）、车已不动，算到位
+60.89,align_p3,done,用时 1.48 秒
+60.90,align_p3,align_error,back=0.9cm left=-0.2cm yaw=-0.0deg
+60.91,align_p3,pose,box=p3 ok=1 x=0.984 y=-2.838 yaw=1.5deg
+60.92,shoot_move,start,打移动靶
+60.93,shoot_move,marker,id=7
+60.94,shoot_move,aim,age=0.029 err_px=-58.160 lead_s=3.130 reason=waiting samples=13 speed=18.579 u=289.553 v=203.290
+64.04,shoot_move,aim,age=0.045 delay_s=0.027 err_px=0.000 lead_s=0.027 reason=fire samples=96 speed=18.388 u=347.238 v=202.620
+64.46,shoot_move,done,用时 3.54 秒
+64.47,go_end,start,去终点
+64.49,go_end,profile,第 1 段：burst（最高 0.50 m/s）
+68.30,go_end,done,用时 3.81 秒
+68.30,go_end,pose,x=0.144 y=-3.238 yaw=-1.4deg
+68.32,align_end,start,终点精定位
+71.55,align_end,boost,车不动，最小速度加大到 1.5 倍
+72.40,align_end,done,用时 4.07 秒
+72.42,align_end,align_error,back=-0.6cm right=0.7cm yaw=0.4deg
+72.43,align_end,pose,box=end ok=1 x=0.005 y=-3.246 yaw=-1.2deg
+72.44,say_end,start,播报比赛结束
+72.45,say_end,play,final.mp3
+74.59,say_end,done,用时 2.15 秒
+74.60,mission,end,总用时 74.6 秒

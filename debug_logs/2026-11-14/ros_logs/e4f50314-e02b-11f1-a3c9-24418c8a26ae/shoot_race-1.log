@@ -1,0 +1,484 @@
+[rospy.client][INFO] 2026-11-14 21:04:27,586: init_node, name[/shoot_race], pid[22793]
+[xmlrpc][INFO] 2026-11-14 21:04:27,589: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2026-11-14 21:04:27,590: ROS Slave URI: [http://abot-robot:39289/]
+[xmlrpc][INFO] 2026-11-14 21:04:27,590: Started XML-RPC server [http://abot-robot:39289/]
+[rospy.impl.masterslave][INFO] 2026-11-14 21:04:27,590: _ready: http://abot-robot:39289/
+[xmlrpc][INFO] 2026-11-14 21:04:27,590: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2026-11-14 21:04:27,591: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2026-11-14 21:04:27,690: registered with master
+[rospy.rosout][INFO] 2026-11-14 21:04:27,690: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-11-14 21:04:27,709: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-11-14 21:04:27,710: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-11-14 21:04:27,955: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2026-11-14 21:04:28,194: [  -1.0s] 日志目录：/home/abot/race_logs/20261114_210428
+[rosout][INFO] 2026-11-14 21:04:28,201: [  -1.0s] config | override mission.rehearsal_pause_s: 0 -> 0
+[rosout][INFO] 2026-11-14 21:04:28,226: [  -1.0s] 串口 /dev/shoot 已打开
+[rospy.internal][INFO] 2026-11-14 21:04:28,260: topic[/wheel_odom] adding connection to [http://abot-robot:41405/], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,261: topic[/tf_static] adding connection to [http://abot-robot:38953/], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,277: topic[/tf] adding connection to [http://abot-robot:41405/], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,278: topic[/tf] adding connection to [http://abot-robot:42195/], count 1
+[rospy.internal][INFO] 2026-11-14 21:04:28,288: topic[/tf] adding connection to [http://abot-robot:36549/], count 2
+[rospy.internal][INFO] 2026-11-14 21:04:28,289: topic[/tf] adding connection to [http://abot-robot:41801/], count 3
+[rospy.internal][INFO] 2026-11-14 21:04:28,294: topic[/tf] adding connection to [http://abot-robot:35563/], count 4
+[rospy.internal][INFO] 2026-11-14 21:04:28,379: topic[/tf] adding connection to [http://abot-robot:40129/], count 5
+[rospy.internal][INFO] 2026-11-14 21:04:28,382: topic[/tf] adding connection to [http://abot-robot:38953/], count 6
+[rospy.internal][INFO] 2026-11-14 21:04:28,383: topic[/tf] adding connection to [http://abot-robot:34613/], count 7
+[rospy.internal][INFO] 2026-11-14 21:04:28,393: topic[/tf] adding connection to [http://abot-robot:43867/], count 8
+[rospy.internal][INFO] 2026-11-14 21:04:28,394: topic[/tf] adding connection to [http://abot-robot:45313/], count 9
+[rospy.internal][INFO] 2026-11-14 21:04:28,399: topic[/usb_cam/image_raw] adding connection to [http://abot-robot:46089/], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,403: topic[/tf] adding connection to [http://abot-robot:42399/], count 10
+[rospy.internal][INFO] 2026-11-14 21:04:28,405: topic[/ar_pose_marker] adding connection to [http://abot-robot:42399/], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,425: topic[/object_position] adding connection to [http://abot-robot:37997/], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,430: topic[/scan_filtered] adding connection to [http://abot-robot:40603/], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,491: topic[/cmd_vel] adding connection to [/abot_driver], count 0
+[rospy.internal][INFO] 2026-11-14 21:04:28,493: topic[/initialpose] adding connection to [/amcl], count 0
+[rosout][INFO] 2026-11-14 21:04:31,326: [  -1.0s] ========== 开局自检 ==========
+[rosout][INFO] 2026-11-14 21:04:31,328: [  -1.0s] [通过] 配置文件  无错误
+[rosout][INFO] 2026-11-14 21:04:31,347: [  -1.0s] [通过] 发射器串口  /dev/shoot
+[rosout][INFO] 2026-11-14 21:04:31,360: [  -1.0s] [通过] 激光雷达  0.1 秒前
+[rosout][INFO] 2026-11-14 21:04:31,362: [  -1.0s] [通过] 轮速里程计  0.0 秒前
+[rosout][INFO] 2026-11-14 21:04:31,365: [  -1.0s] [通过] 相机图像  0.0 秒前
+[rosout][INFO] 2026-11-14 21:04:31,366: [  -1.0s] [通过] AR码识别  0.0 秒前
+[rosout][INFO] 2026-11-14 21:04:31,369: [  -1.0s] [通过] AMCL 定位(TF map→base_link)  x=0.02 y=-0.02
+[rosout][INFO] 2026-11-14 21:04:31,370: [  -1.0s] [通过] 播报音频  齐全
+[rosout][INFO] 2026-11-14 21:04:31,374: [  -1.0s] [通过] 播放器 mplayer  
+[rosout][INFO] 2026-11-14 21:04:31,376: [  -1.0s] [通过] 离线卡片模板  已加载
+[rosout][INFO] 2026-11-14 21:04:31,377: [  -1.0s] [通过] 豆包 API  已配置
+[rosout][INFO] 2026-11-14 21:04:31,379: [  -1.0s] ==============================
+[rosout][INFO] 2026-11-14 21:04:31,380: [  -1.0s] 已设置初始位姿：起点 (-0.06, 0.09)
+[rosout][INFO] 2026-11-14 21:04:31,382: [  -1.0s] >>> 准备就绪：输入 1 并回车开始比赛 <<<
+[rosout][INFO] 2026-11-14 21:04:34,028: [   0.0s] say_start | start 播报比赛开始
+[rosout][INFO] 2026-11-14 21:04:34,286: [   0.3s] say_start | play 00.mp3
+[rosout][INFO] 2026-11-14 21:04:36,387: [   2.4s] say_start | done 用时 2.35 秒
+[rosout][INFO] 2026-11-14 21:04:36,399: [   2.4s] go_recog | start 去识别区
+[rosout][INFO] 2026-11-14 21:04:36,405: [   2.4s] go_recog | profile 第 1 段：normal（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:04:39,452: [   5.4s] go_recog | done 用时 3.04 秒
+[rosout][INFO] 2026-11-14 21:04:39,458: [   5.4s] go_recog | pose x=0.299 y=-0.117 yaw=87.2deg
+[rosout][INFO] 2026-11-14 21:04:39,465: [   5.4s] align_recog | start 识别区精定位
+[rosout][INFO] 2026-11-14 21:04:44,488: [  10.5s] align_recog | timeout 超过 5.0 秒
+[rosout][INFO] 2026-11-14 21:04:44,494: [  10.5s] align_recog | align_error 
+[rosout][INFO] 2026-11-14 21:04:44,500: [  10.5s] align_recog | pose box=recog ok=0 x=0.315 y=-0.128 yaw=83.4deg
+[rosout][INFO] 2026-11-14 21:04:44,507: [  10.5s] recognize | start 识别卡片
+[rosout][INFO] 2026-11-14 21:04:46,957: [  12.9s] recognize | targets rotating=3 moving=7 source=vlm
+[rosout][INFO] 2026-11-14 21:04:46,966: [  12.9s] recognize | done 用时 2.45 秒
+[rosout][INFO] 2026-11-14 21:04:46,977: [  13.0s] say_targets | start 播报靶号
+[rosout][INFO] 2026-11-14 21:04:46,989: [  13.0s] say_targets | play x3.mp3 y7.mp3
+[rospy.core][INFO] 2026-11-14 21:04:51,158: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2026-11-14 21:04:51,174: topic[/initialpose] removing connection to /amcl
+[rospy.internal][INFO] 2026-11-14 21:04:51,176: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2026-11-14 21:04:51,177: topic[/cmd_vel] removing connection to /abot_driver
+[rospy.internal][INFO] 2026-11-14 21:04:51,177: topic[/usb_cam/image_raw] removing connection to http://abot-robot:46089/
+[rospy.internal][INFO] 2026-11-14 21:04:51,177: topic[/ar_pose_marker] removing connection to http://abot-robot:42399/
+[rospy.internal][INFO] 2026-11-14 21:04:51,178: topic[/tf] removing connection to http://abot-robot:41405/
+[rospy.internal][INFO] 2026-11-14 21:04:51,178: topic[/tf] removing connection to http://abot-robot:42195/
+[rospy.internal][INFO] 2026-11-14 21:04:51,179: topic[/tf] removing connection to http://abot-robot:36549/
+[rospy.internal][INFO] 2026-11-14 21:04:51,180: topic[/tf] removing connection to http://abot-robot:41801/
+[rospy.internal][INFO] 2026-11-14 21:04:51,180: topic[/tf] removing connection to http://abot-robot:35563/
+[rospy.internal][INFO] 2026-11-14 21:04:51,180: topic[/tf] removing connection to http://abot-robot:40129/
+[rospy.internal][INFO] 2026-11-14 21:04:51,180: topic[/tf] removing connection to http://abot-robot:38953/
+[rospy.internal][INFO] 2026-11-14 21:04:51,183: topic[/tf] removing connection to http://abot-robot:34613/
+[rospy.internal][INFO] 2026-11-14 21:04:51,184: topic[/tf] removing connection to http://abot-robot:43867/
+[rospy.internal][INFO] 2026-11-14 21:04:51,184: topic[/tf] removing connection to http://abot-robot:45313/
+[rospy.internal][INFO] 2026-11-14 21:04:51,184: topic[/tf] removing connection to http://abot-robot:42399/
+[rospy.internal][INFO] 2026-11-14 21:04:51,185: topic[/tf_static] removing connection to http://abot-robot:38953/
+[rospy.internal][INFO] 2026-11-14 21:04:51,185: topic[/scan_filtered] removing connection to http://abot-robot:40603/
+[rospy.internal][INFO] 2026-11-14 21:04:51,185: topic[/wheel_odom] removing connection to http://abot-robot:41405/
+[rospy.internal][INFO] 2026-11-14 21:04:51,186: topic[/object_position] removing connection to http://abot-robot:37997/
+[rospy.impl.masterslave][INFO] 2026-11-14 21:04:51,186: signal-2
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,854: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,816: [  17.8s] mission | end 总用时 17.8 秒
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,855: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,855: ==================== 本局用时 ====================
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,856: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,855: 步骤               用时(秒)  结果   备注
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,856: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,856: say_start         2.35       
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,857: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,857: go_recog          3.04       
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,858: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,857: align_recog       5.00  超时   误差 
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,859: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,858: recognize         2.45       
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,860: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,859: say_targets         --       
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,860: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,860: --------------------------------------------------
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,861: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,860: 行驶 3.0  精定位 5.0  播报/识别 4.8  打靶/停靠 0.0  （路上 = 行驶 + 精定位 8.0 秒）
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,861: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,861: 总用时 17.8 秒；超时：align_recog
+[rospy.rosout][ERROR] 2026-11-14 21:04:51,870: Unable to report rosout: [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/rosout.py", line 91, in _rosout
+    disable_topics_ = rospy.get_param_cached("/rosout_disable_topics_generation", False)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/client.py", line 490, in get_param_cached
+    return _param_server.get_param_cached(param_name)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/msproxy.py", line 168, in get_param_cached
+    code, msg, value = self.target.subscribeParam(rospy.names.get_caller_id(), rospy.core.get_node_uri(), resolved_key)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/core.py", line 670, in _ServerProxy__request
+    self, methodname, params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosout][INFO] 2026-11-14 21:04:51,870: [  17.8s] 程序结束，记录保存在 /home/abot/race_logs/20261114_210428
+[rospy.core][INFO] 2026-11-14 21:04:51,872: signal_shutdown [atexit]

@@ -1,0 +1,53 @@
+match_time,step,event,detail
+-1.00,config,override,mission.rehearsal_pause_s: 0 -> 0
+0.00,say_start,start,播报比赛开始
+0.26,say_start,play,00.mp3
+2.21,say_start,done,用时 2.20 秒
+2.22,go_recog,start,去识别区
+2.23,go_recog,profile,第 1 段：normal（最高 0.50 m/s）
+5.21,go_recog,done,用时 2.99 秒
+5.22,go_recog,pose,x=0.296 y=-0.119 yaw=91.3deg
+5.23,align_recog,start,识别区精定位
+10.27,align_recog,timeout,超过 5.0 秒
+10.28,align_recog,align_error,
+10.29,align_recog,pose,box=recog ok=0 x=0.309 y=-0.122 yaw=83.0deg
+10.29,recognize,start,识别卡片
+12.68,recognize,targets,rotating=4 moving=6 source=vlm
+12.69,recognize,done,用时 2.39 秒
+12.70,say_targets,start,播报靶号
+12.72,say_targets,play,x4.mp3 y6.mp3
+18.38,say_targets,done,用时 5.67 秒
+18.40,go_p1,start,去1号点
+18.40,go_p1,profile,第 1 段：normal（最高 0.50 m/s）
+21.34,go_p1,blocked,前方有障碍，停车等待
+22.64,go_p1,near_goal,离终点 0.17 米处被墙挡住，交给精定位
+22.64,go_p1,done,用时 4.24 秒
+22.65,go_p1,pose,x=0.812 y=-0.340 yaw=6.1deg
+22.66,align_p1,start,1号点精定位
+24.24,align_p1,wall_rejected,right 墙拟合偏角 -19.9 度，按定位应约 -1.7 度，这面墙只用距离、不按它转向
+28.69,align_p1,timeout,超过 6.0 秒
+28.70,align_p1,align_error,back=0.7cm right=-2.0cm yaw=-0.3deg
+28.70,align_p1,pose,box=p1 ok=0 x=1.141 y=0.099 yaw=6.6deg
+28.71,shoot_ring,start,打环形靶
+28.72,shoot_ring,aim,横向位置用 right 墙测量
+28.72,shoot_ring,aim,reason=settling state=look
+29.75,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+29.88,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+30.02,shoot_ring,aim,fresh=2 reason=waiting_frames state=look
+30.18,shoot_ring,aim,err_px=17.750 frames=3 looks=1 shift_mm=-25.000 shifts=0 sigma_px=0.361 state=look
+30.21,shoot_ring,aim,left_mm=-25.000 state=shift
+32.95,shoot_ring,aim,left_mm=2.907 reason=shift_done state=look
+32.99,shoot_ring,aim,reason=settling state=look
+33.86,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+33.95,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+34.09,shoot_ring,aim,err_px=8.790 frames=2 looks=2 reason=max_shift_reached shifts=1 sigma_px=0.438 state=look
+36.16,shoot_ring,done,用时 7.45 秒
+36.17,go_p2,start,去2号点
+36.18,go_p2,lane,通道按激光量后墙定位：墙距 1.218 米，通道点挪 +15.0 cm
+36.19,go_p2,profile,第 1 段：burst（最高 0.50 m/s）
+38.46,go_p2,blocked,前方有障碍，停车等待
+38.71,go_p2,blocked,前方有障碍，停车等待
+38.86,go_p2,blocked,前方有障碍，停车等待
+38.96,go_p2,blocked,前方有障碍，停车等待
+42.17,go_p2,pose,x=0.445 y=-0.269 yaw=-7.6deg
+42.18,mission,end,总用时 42.2 秒

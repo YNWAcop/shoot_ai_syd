@@ -6,7 +6,7 @@
 # !!! 官方公布统一播报内容后，按内容重新录音替换这些文件。
 # ============================================================
 
-audio_dir: /home/abot/748573/src/robot_slam/mp3
+audio_dir: /home/abot/syd/src/robot_slam/mp3
 player_command: [mplayer, -really-quiet]
 
 # 每条播报 = 按顺序播放的音频文件列表。

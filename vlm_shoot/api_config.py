@@ -1,19 +1,31 @@
 # -*- coding: utf-8 -*-
 """
 火山引擎方舟 (Volcengine Ark) VLM 配置参数
-API Key 从环境变量 ARK_API_KEY 读取，推理接入点在下方配置。
+读取 syd 主程序的模型配置和专用密钥文件。运行 configure_syd_api.py 配置。
 """
 import os
+import yaml
+
+_config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                            'src', 'shoot_race', 'config', 'recognition.yaml')
+with open(_config_path, 'rb') as _handle:
+    _vlm = yaml.safe_load(_handle)['vlm']
+
 
 # 1. 火山引擎 API Key
-ARK_API_KEY = os.environ.get("ARK_API_KEY", "")
+ARK_API_KEY = os.environ.get(_vlm['api_key_env'], '').strip()
+if not ARK_API_KEY:
+    _key_path = os.path.expanduser(_vlm['api_key_file'])
+    if os.path.isfile(_key_path):
+        with open(_key_path) as _handle:
+            ARK_API_KEY = _handle.read().strip()
 
 # 2. 火山引擎方舟服务地址 (默认北京地域)
-BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
+BASE_URL = _vlm['base_url']
 
 # 3. 推理接入点 ID (Model Endpoint)
 # 对应在火山引擎控制台创建的 Doubao-seed-2.0-pro 推理接入点
-MODEL_ENDPOINT = "ep-20261025102352-j8gp4"
+MODEL_ENDPOINT = _vlm['model']
 
 # 4. 水果识别代号映射规则
 # 识别到榴莲返回 6，识别到杨桃返回 7，识别到山竹返回 8

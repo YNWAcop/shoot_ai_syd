@@ -36,6 +36,7 @@ drop_python3_paths()   # 去掉 PYTHONPATH 里的 Python3 库目录，必须在 
 import rospy  # noqa: E402
 
 from shoot_race.config import apply_overrides, check_config, load_config, waypoint  # noqa: E402
+from shoot_race.imu_ready import wait_for_imu_ready  # noqa: E402
 from shoot_race.mission import Context, MissionRunner  # noqa: E402
 from shoot_race.preflight import format_report, has_critical_failure, run_preflight  # noqa: E402
 from shoot_race.recognition import CardMatcher, CardRecognizer, VlmClient  # noqa: E402
@@ -108,6 +109,11 @@ def main():
     for path, old_value, new_value in changes:
         log.event('config', 'override', '%s: %s -> %s' % (path, old_value, new_value))
 
+    # abot_imu emits data_raw only after stationary calibration. Gate before
+    # creating motion modules and before setting AMCL's initial pose.
+    if not wait_for_imu_ready(log):
+        return
+
     io = RosIO(cfg['system'])
     shooter_cfg = cfg['shooting']['shooter']
     shooter = Shooter(shooter_cfg['port'], shooter_cfg['baudrate'],
@@ -147,6 +153,10 @@ def main():
         return
 
     try:
+        # The operator may have waited at the keyboard or restarted the IMU.
+        # Recheck fresh streams immediately before starting any mission step.
+        if not wait_for_imu_ready(log):
+            return
         runner.run(from_step=from_step, to_step=to_step)
     finally:
         ctx.stop_robot()

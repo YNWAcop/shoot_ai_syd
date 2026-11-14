@@ -1,0 +1,92 @@
+[rospy.client][INFO] 2026-11-14 22:09:25,347: init_node, name[/shoot_race], pid[9017]
+[xmlrpc][INFO] 2026-11-14 22:09:25,360: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-14 22:09:25,361: Started XML-RPC server [http://abot-robot:44855/]
+[rospy.impl.masterslave][INFO] 2026-11-14 22:09:25,365: _ready: http://abot-robot:44855/
+[rospy.init][INFO] 2026-11-14 22:09:25,361: ROS Slave URI: [http://abot-robot:44855/]
+[rospy.registration][INFO] 2026-11-14 22:09:25,373: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2026-11-14 22:09:25,373: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-11-14 22:09:25,466: registered with master
+[rospy.rosout][INFO] 2026-11-14 22:09:25,466: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-11-14 22:09:25,477: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-11-14 22:09:25,484: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-11-14 22:09:25,705: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2026-11-14 22:09:25,851: [  -1.0s] 日志目录：/home/abot/race_logs/20261114_220925
+[rosout][INFO] 2026-11-14 22:09:25,858: [  -1.0s] config | override mission.rehearsal_pause_s: 0 -> 0
+[rosout][INFO] 2026-11-14 22:09:25,864: [  -1.0s] config | override system.preflight.warmup_s: 2.0 -> 30
+[rospy.internal][INFO] 2026-11-14 22:09:25,907: topic[/usb_cam/image_raw] adding connection to [http://abot-robot:35631/], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:25,909: topic[/ar_pose_marker] adding connection to [http://abot-robot:39175/], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:25,927: topic[/tf_static] adding connection to [http://abot-robot:37757/], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:25,928: topic[/tf] adding connection to [http://abot-robot:34183/], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:25,934: topic[/tf] adding connection to [http://abot-robot:34343/], count 1
+[rospy.internal][INFO] 2026-11-14 22:09:25,941: topic[/tf] adding connection to [http://abot-robot:34311/], count 2
+[rospy.internal][INFO] 2026-11-14 22:09:25,956: topic[/tf] adding connection to [http://abot-robot:43477/], count 3
+[rospy.internal][INFO] 2026-11-14 22:09:25,961: topic[/tf] adding connection to [http://abot-robot:37433/], count 4
+[rospy.internal][INFO] 2026-11-14 22:09:26,012: topic[/tf] adding connection to [http://abot-robot:37757/], count 5
+[rospy.internal][INFO] 2026-11-14 22:09:26,023: topic[/tf] adding connection to [http://abot-robot:43363/], count 6
+[rospy.internal][INFO] 2026-11-14 22:09:26,032: topic[/tf] adding connection to [http://abot-robot:36233/], count 7
+[rospy.internal][INFO] 2026-11-14 22:09:26,035: topic[/tf] adding connection to [http://abot-robot:42023/], count 8
+[rospy.internal][INFO] 2026-11-14 22:09:26,036: topic[/tf] adding connection to [http://abot-robot:41793/], count 9
+[rospy.internal][INFO] 2026-11-14 22:09:26,038: topic[/tf] adding connection to [http://abot-robot:39175/], count 10
+[rospy.internal][INFO] 2026-11-14 22:09:26,040: topic[/object_position] adding connection to [http://abot-robot:36443/], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:26,043: topic[/wheel_odom] adding connection to [http://abot-robot:34311/], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:26,044: topic[/cmd_vel] adding connection to [/abot_driver], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:26,053: topic[/scan_filtered] adding connection to [http://abot-robot:36833/], count 0
+[rospy.internal][INFO] 2026-11-14 22:09:26,163: topic[/initialpose] adding connection to [/amcl], count 0
+[rosout][INFO] 2026-11-14 22:09:56,808: [  -1.0s] ========== 开局自检 ==========
+[rosout][INFO] 2026-11-14 22:09:56,809: [  -1.0s] [通过] 配置文件  无错误
+[rosout][INFO] 2026-11-14 22:09:56,810: [  -1.0s] [通过] 发射器串口  演练模式，不使用串口
+[rosout][INFO] 2026-11-14 22:09:56,811: [  -1.0s] [通过] 激光雷达  0.1 秒前
+[rosout][INFO] 2026-11-14 22:09:56,812: [  -1.0s] [通过] 轮速里程计  0.0 秒前
+[rosout][INFO] 2026-11-14 22:09:56,813: [  -1.0s] [通过] 相机图像  0.0 秒前
+[rosout][INFO] 2026-11-14 22:09:56,815: [  -1.0s] [通过] AR码识别  0.1 秒前
+[rosout][INFO] 2026-11-14 22:09:56,816: [  -1.0s] [通过] AMCL 定位(TF map→base_link)  x=0.00 y=-0.02
+[rosout][INFO] 2026-11-14 22:09:56,820: [  -1.0s] [通过] 播报音频  齐全
+[rosout][INFO] 2026-11-14 22:09:56,822: [  -1.0s] [通过] 播放器 mplayer  
+[rosout][INFO] 2026-11-14 22:09:56,824: [  -1.0s] [通过] 离线卡片模板  已加载
+[rosout][INFO] 2026-11-14 22:09:56,825: [  -1.0s] [通过] 豆包 API  已配置
+[rosout][INFO] 2026-11-14 22:09:56,827: [  -1.0s] ==============================
+[rosout][INFO] 2026-11-14 22:09:56,828: [  -1.0s] 已设置初始位姿：起点 (-0.06, 0.09)
+[rosout][INFO] 2026-11-14 22:09:56,829: [  -1.0s] >>> 准备就绪：输入 1 并回车开始比赛 <<<
+[rosout][INFO] 2026-11-14 22:10:01,001: [   0.0s] say_start | start 播报比赛开始
+[rosout][INFO] 2026-11-14 22:10:01,262: [   0.3s] say_start | play 00.mp3
+[rosout][INFO] 2026-11-14 22:10:03,259: [   2.3s] say_start | done 用时 2.25 秒
+[rosout][INFO] 2026-11-14 22:10:03,268: [   2.3s] go_recog | start 去识别区
+[rosout][INFO] 2026-11-14 22:10:03,276: [   2.3s] go_recog | profile 第 1 段：normal（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 22:10:07,009: [   6.0s] go_recog | done 用时 3.73 秒
+[rosout][INFO] 2026-11-14 22:10:07,017: [   6.0s] go_recog | pose x=0.306 y=-0.130 yaw=86.0deg
+[rosout][INFO] 2026-11-14 22:10:07,028: [   6.0s] align_recog | start 识别区精定位
+[rosout][INFO] 2026-11-14 22:10:08,466: [   7.5s] align_recog | done 用时 1.43 秒
+[rosout][INFO] 2026-11-14 22:10:08,493: [   7.5s] align_recog | align_error front=0.4cm left=0.4cm yaw=-1.4deg
+[rosout][INFO] 2026-11-14 22:10:08,504: [   7.5s] align_recog | pose box=recog ok=1 x=0.329 y=-0.109 yaw=87.9deg
+[rosout][INFO] 2026-11-14 22:10:08,510: [   7.5s] mission | end 总用时 7.5 秒
+[rosout][INFO] 2026-11-14 22:10:08,512: ==================== 本局用时 ====================
+[rosout][INFO] 2026-11-14 22:10:08,514: 步骤               用时(秒)  结果   备注
+[rosout][INFO] 2026-11-14 22:10:08,516: say_start         2.25       
+[rosout][INFO] 2026-11-14 22:10:08,518: go_recog          3.73       
+[rosout][INFO] 2026-11-14 22:10:08,521: align_recog       1.43       误差 front=0.4cm left=0.4cm yaw=-1.4deg
+[rosout][INFO] 2026-11-14 22:10:08,526: --------------------------------------------------
+[rosout][INFO] 2026-11-14 22:10:08,528: 行驶 3.7  精定位 1.4  播报/识别 2.2  打靶/停靠 0.0  （路上 = 行驶 + 精定位 5.2 秒）
+[rosout][INFO] 2026-11-14 22:10:08,530: 总用时 7.5 秒；超时：无
+[rosout][INFO] 2026-11-14 22:10:08,533: [   7.5s] 程序结束，记录保存在 /home/abot/race_logs/20261114_220925
+[rospy.core][INFO] 2026-11-14 22:10:08,538: signal_shutdown [atexit]
+[rospy.internal][INFO] 2026-11-14 22:10:08,546: topic[/initialpose] removing connection to /amcl
+[rospy.internal][INFO] 2026-11-14 22:10:08,546: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2026-11-14 22:10:08,547: topic[/cmd_vel] removing connection to /abot_driver
+[rospy.internal][INFO] 2026-11-14 22:10:08,547: topic[/usb_cam/image_raw] removing connection to http://abot-robot:35631/
+[rospy.internal][INFO] 2026-11-14 22:10:08,548: topic[/ar_pose_marker] removing connection to http://abot-robot:39175/
+[rospy.internal][INFO] 2026-11-14 22:10:08,548: topic[/tf] removing connection to http://abot-robot:34183/
+[rospy.internal][INFO] 2026-11-14 22:10:08,549: topic[/tf] removing connection to http://abot-robot:34343/
+[rospy.internal][INFO] 2026-11-14 22:10:08,549: topic[/tf] removing connection to http://abot-robot:34311/
+[rospy.internal][INFO] 2026-11-14 22:10:08,549: topic[/tf] removing connection to http://abot-robot:43477/
+[rospy.internal][INFO] 2026-11-14 22:10:08,549: topic[/tf] removing connection to http://abot-robot:37433/
+[rospy.internal][INFO] 2026-11-14 22:10:08,550: topic[/tf] removing connection to http://abot-robot:37757/
+[rospy.internal][INFO] 2026-11-14 22:10:08,550: topic[/tf] removing connection to http://abot-robot:43363/
+[rospy.internal][INFO] 2026-11-14 22:10:08,550: topic[/tf] removing connection to http://abot-robot:36233/
+[rospy.internal][INFO] 2026-11-14 22:10:08,550: topic[/tf] removing connection to http://abot-robot:42023/
+[rospy.internal][INFO] 2026-11-14 22:10:08,551: topic[/tf] removing connection to http://abot-robot:41793/
+[rospy.internal][INFO] 2026-11-14 22:10:08,552: topic[/tf] removing connection to http://abot-robot:39175/
+[rospy.internal][INFO] 2026-11-14 22:10:08,552: topic[/tf_static] removing connection to http://abot-robot:37757/
+[rospy.internal][INFO] 2026-11-14 22:10:08,552: topic[/scan_filtered] removing connection to http://abot-robot:36833/
+[rospy.internal][INFO] 2026-11-14 22:10:08,553: topic[/wheel_odom] removing connection to http://abot-robot:34311/
+[rospy.internal][INFO] 2026-11-14 22:10:08,553: topic[/object_position] removing connection to http://abot-robot:36443/
+[rospy.impl.masterslave][INFO] 2026-11-14 22:10:08,553: atexit

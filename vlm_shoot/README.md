@@ -52,8 +52,6 @@
    ```
 
 ## 4. 后续接入真实 API 说明
-启动前设置环境变量，并在 `api_config.py` 中更新推理接入点。
-- 环境变量 `ARK_API_KEY` 存放火山引擎控制台生成的 API Key
+在 `api_config.py` 中更新两个变量即可：
+- `ARK_API_KEY`: 火山引擎控制台生成的 API Key
 - `MODEL_ENDPOINT`: 火山引擎创建的 Doubao-seed-2.0-pro 推理接入点 ID (形如 `ep-2025xxxxxx`)
-
-

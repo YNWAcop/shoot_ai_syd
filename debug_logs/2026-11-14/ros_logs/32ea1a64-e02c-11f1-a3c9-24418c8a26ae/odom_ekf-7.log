@@ -1,0 +1,24 @@
+[rospy.client][INFO] 2026-11-14 21:06:29,989: init_node, name[/odom_ekf], pid[26232]
+[xmlrpc][INFO] 2026-11-14 21:06:29,989: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-14 21:06:29,990: Started XML-RPC server [http://abot-robot:38995/]
+[rospy.init][INFO] 2026-11-14 21:06:29,990: ROS Slave URI: [http://abot-robot:38995/]
+[rospy.impl.masterslave][INFO] 2026-11-14 21:06:29,990: _ready: http://abot-robot:38995/
+[rospy.registration][INFO] 2026-11-14 21:06:29,990: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2026-11-14 21:06:29,990: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-11-14 21:06:30,090: registered with master
+[rospy.rosout][INFO] 2026-11-14 21:06:30,090: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-11-14 21:06:30,093: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-11-14 21:06:30,095: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-11-14 21:06:30,101: topic[/robot_pose_ekf/odom_combined] adding connection to [http://abot-robot:40673/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:30,363: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:31,310: topic impl's ref count is zero, deleting topic /robot_pose_ekf/odom_combined...
+[rospy.internal][INFO] 2026-11-14 21:06:31,310: topic[/robot_pose_ekf/odom_combined] removing connection to http://abot-robot:40673/
+[rosout][INFO] 2026-11-14 21:06:31,316: Publishing combined odometry on
+[rospy.internal][INFO] 2026-11-14 21:06:31,322: topic[/robot_pose_ekf/odom_combined] adding connection to [http://abot-robot:40673/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:34,178: topic[/odom] adding connection to [/move_base], count 0
+[rospy.internal][INFO] 2026-11-14 21:07:59,719: topic[/odom] removing connection to /move_base
+[rospy.core][INFO] 2026-11-14 21:07:59,761: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2026-11-14 21:07:59,763: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2026-11-14 21:07:59,763: topic[/robot_pose_ekf/odom_combined] removing connection to http://abot-robot:40673/
+[rospy.impl.masterslave][INFO] 2026-11-14 21:07:59,764: signal-2
+[rospy.core][INFO] 2026-11-14 21:08:00,363: signal_shutdown [atexit]

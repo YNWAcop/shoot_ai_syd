@@ -1,0 +1,119 @@
+match_time,step,event,detail
+-1.00,config,override,mission.rehearsal_pause_s: 0 -> 0
+0.00,say_start,start,播报比赛开始
+0.26,say_start,play,00.mp3
+2.51,say_start,done,用时 2.50 秒
+2.52,go_recog,start,去识别区
+2.52,go_recog,profile,第 1 段：normal（最高 0.50 m/s）
+6.16,go_recog,done,用时 3.63 秒
+6.17,go_recog,pose,x=0.317 y=-0.140 yaw=85.9deg
+6.17,align_recog,start,识别区精定位
+9.21,align_recog,done,用时 3.04 秒
+9.22,align_recog,align_error,front=-0.4cm left=0.6cm yaw=0.1deg
+9.23,align_recog,pose,box=recog ok=1 x=0.305 y=-0.098 yaw=90.8deg
+9.24,recognize,start,识别卡片
+12.00,recognize,targets,rotating=3 moving=7 source=vlm
+12.01,recognize,done,用时 2.77 秒
+12.02,say_targets,start,播报靶号
+12.03,say_targets,play,x3.mp3 y7.mp3
+17.55,say_targets,done,用时 5.52 秒
+17.56,go_p1,start,去1号点
+17.57,go_p1,profile,第 1 段：normal（最高 0.50 m/s）
+21.75,go_p1,done,用时 4.18 秒
+21.76,go_p1,pose,x=0.941 y=-0.350 yaw=6.1deg
+21.77,align_p1,start,1号点精定位
+25.06,align_p1,boost,车不动，最小速度加大到 1.5 倍
+25.98,align_p1,done,用时 4.21 秒
+25.99,align_p1,align_error,back=-0.1cm right=0.1cm yaw=0.3deg
+26.00,align_p1,pose,box=p1 ok=1 x=0.945 y=-0.346 yaw=0.2deg
+26.01,shoot_ring,start,打环形靶
+26.02,shoot_ring,aim,横向位置用 right 墙测量
+26.03,shoot_ring,aim,reason=settling state=look
+26.55,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+26.69,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+26.82,shoot_ring,aim,fresh=2 reason=waiting_frames state=look
+26.97,shoot_ring,aim,err_px=6.750 frames=3 looks=1 shift_mm=-25.000 shifts=0 sigma_px=0.361 state=look
+27.01,shoot_ring,aim,left_mm=-25.000 state=shift
+28.75,shoot_ring,aim,left_mm=0.456 reason=shift_done state=look
+28.80,shoot_ring,aim,reason=settling state=look
+29.30,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+29.44,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+29.67,shoot_ring,aim,err_px=-0.729 frames=2 looks=2 shifts=1 sigma_px=0.438 state=look
+31.71,shoot_ring,done,用时 5.69 秒
+31.72,go_p2,start,去2号点
+31.73,go_p2,lane,通道按激光量后墙定位：墙距 1.215 米，通道点挪 -1.4 cm
+31.74,go_p2,profile,第 1 段：burst（最高 0.50 m/s）
+36.90,go_p2,profile,第 3 段：normal（最高 0.50 m/s）
+39.65,go_p2,done,用时 7.92 秒
+39.65,go_p2,pose,x=0.910 y=-1.591 yaw=2.4deg
+39.66,align_p2,start,2号点精定位
+42.25,align_p2,done,用时 2.58 秒
+42.26,align_p2,align_error,back=0.1cm right=0.4cm yaw=0.1deg
+42.27,align_p2,pose,box=p2 ok=1 x=0.933 y=-1.557 yaw=2.1deg
+42.28,shoot_rot,start,打旋转靶
+42.29,shoot_rot,marker,id=3 最多等 47.7 秒
+42.31,shoot_rot,aim,横向位置用 left 墙测量
+42.31,shoot_rot,heading,车头相对侧墙 -2.1 度（扭的上限按正对侧墙算）
+42.36,shoot_rot,aim,center=364.8;191.0 err_px=40.258 k_px_deg=8.800 omega_deg_s=15.256 radius=27.284 reach_px=45.913 reason=plan shifted_mm=0.000 side=right state=align twisted_deg=-2.062 wait_s=8.413
+42.37,shoot_rot,aim,coast_s=0.800 err_px=40.240 lead_s=8.163 predicted_px=38.059 rate_px_s=-2.726 reason=twist shifted_mm=0.000 side=right state=align twisted_deg=-2.061
+43.02,shoot_rot,aim,err_px=37.183 lead_s=7.508 limit=yaw rate_px_s=-14.629 reason=coasting shifted_mm=0.000 side=right state=align twisted_deg=-2.811
+43.71,shoot_rot,aim,coast_s=0.891 err_px=22.803 lead_s=6.798 predicted_px=22.654 rate_px_s=-0.168 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-4.133
+44.42,shoot_rot,aim,err_px=22.247 lead_s=6.086 limit=yaw rate_px_s=-3.338 reason=coasting shifted_mm=0.010 side=right state=align twisted_deg=-4.434
+44.95,shoot_rot,aim,coast_s=0.891 err_px=14.163 lead_s=5.597 predicted_px=13.393 rate_px_s=-0.863 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-5.122
+45.47,shoot_rot,aim,err_px=14.139 lead_s=5.090 limit=yaw rate_px_s=-0.070 reason=coasting shifted_mm=0.001 side=right state=align twisted_deg=-5.141
+45.90,shoot_rot,aim,coast_s=0.891 err_px=12.525 lead_s=4.604 predicted_px=10.814 rate_px_s=-1.919 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-5.276
+46.04,shoot_rot,aim,err_px=12.530 lead_s=4.476 limit=yaw rate_px_s=0.243 reason=coasting shifted_mm=0.001 side=right state=align twisted_deg=-5.272
+46.45,shoot_rot,aim,coast_s=0.891 err_px=12.512 lead_s=4.078 predicted_px=12.437 rate_px_s=-0.085 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-5.261
+46.60,shoot_rot,aim,err_px=12.517 lead_s=3.923 limit=yaw rate_px_s=0.097 reason=coasting shifted_mm=0.001 side=right state=align twisted_deg=-5.262
+47.01,shoot_rot,aim,coast_s=0.891 err_px=12.526 lead_s=3.504 predicted_px=12.535 rate_px_s=0.009 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-5.260
+47.11,shoot_rot,aim,err_px=12.612 lead_s=3.416 limit=yaw rate_px_s=0.087 reason=coasting shifted_mm=0.001 side=right state=align twisted_deg=-5.261
+47.56,shoot_rot,aim,coast_s=0.891 err_px=12.496 lead_s=2.967 predicted_px=13.165 rate_px_s=0.750 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-5.253
+47.67,shoot_rot,aim,err_px=12.355 lead_s=2.850 limit=yaw rate_px_s=-1.561 reason=coasting shifted_mm=0.001 side=right state=align twisted_deg=-5.257
+48.12,shoot_rot,aim,coast_s=0.891 err_px=12.483 lead_s=2.399 predicted_px=13.559 rate_px_s=1.207 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-5.256
+48.27,shoot_rot,aim,err_px=12.456 lead_s=2.241 limit=yaw rate_px_s=-0.282 reason=coasting shifted_mm=0.001 side=right state=align twisted_deg=-5.259
+48.70,shoot_rot,aim,coast_s=0.891 err_px=12.419 lead_s=1.780 predicted_px=12.471 rate_px_s=0.058 reason=twist shifted_mm=0.001 side=right state=align twisted_deg=-5.247
+48.77,shoot_rot,aim,err_px=12.327 lead_s=1.733 rate_px_s=0.653 reason=align_timeout shifted_mm=0.001 side=right state=wait twisted_deg=-5.243
+48.82,shoot_rot,aim,err_px=12.314 lead_s=1.692 miss_px=18.017 rate_px_s=-0.087 reason=waiting shifted_mm=0.001 side=right state=wait twisted_deg=-5.244
+50.76,shoot_rot,aim,err_px=12.066 lead_s=-0.305 miss_px=11.778 rate_px_s=1.688 reason=missed shifted_mm=0.001 side=right state=observe twisted_deg=-5.219
+50.81,shoot_rot,aim,center=336.4;191.6 err_px=-40.197 k_px_deg=8.608 omega_deg_s=15.201 radius=27.299 reach_px=107.824 reason=plan shifted_mm=0.001 side=left state=align twisted_deg=-5.218 wait_s=9.417
+50.85,shoot_rot,aim,coast_s=0.891 err_px=-40.239 lead_s=9.217 predicted_px=-40.761 rate_px_s=-0.586 reason=twist shifted_mm=0.001 side=left state=align twisted_deg=-5.220
+51.81,shoot_rot,aim,err_px=-26.385 lead_s=8.316 rate_px_s=30.821 reason=coasting shifted_mm=0.009 side=left state=align twisted_deg=-3.625
+52.63,shoot_rot,aim,coast_s=0.706 err_px=-10.348 lead_s=7.547 predicted_px=-8.303 rate_px_s=2.897 reason=twist shifted_mm=-0.001 side=left state=align twisted_deg=-1.917
+53.45,shoot_rot,aim,err_px=-6.126 lead_s=6.674 rate_px_s=13.101 reason=coasting shifted_mm=-0.001 side=left state=align twisted_deg=-1.283
+54.01,shoot_rot,aim,coast_s=0.400 err_px=4.869 lead_s=6.193 predicted_px=5.941 rate_px_s=2.681 reason=shift shifted_mm=-0.002 side=left state=align twisted_deg=-0.040
+54.84,shoot_rot,aim,err_px=3.257 lead_s=5.307 rate_px_s=-5.890 reason=coasting shifted_mm=-0.002 side=left state=align twisted_deg=-0.358
+55.21,shoot_rot,aim,coast_s=0.400 err_px=3.607 lead_s=4.904 predicted_px=4.730 rate_px_s=2.808 reason=shift shifted_mm=-9.859 side=left state=align twisted_deg=-0.192
+56.20,shoot_rot,aim,err_px=2.456 lead_s=3.886 rate_px_s=-5.395 reason=coasting shifted_mm=-9.859 side=left state=align twisted_deg=-0.284
+56.67,shoot_rot,aim,err_px=1.107 lead_s=3.458 rate_px_s=1.150 reason=holding shifted_mm=-9.859 side=left state=align twisted_deg=-0.316
+57.05,shoot_rot,aim,err_px=1.219 lead_s=3.049 rate_px_s=-0.227 reason=aligned shifted_mm=-9.859 side=left state=wait twisted_deg=-0.302
+57.13,shoot_rot,aim,err_px=1.137 lead_s=3.020 miss_px=22.377 rate_px_s=2.144 reason=waiting shifted_mm=-9.859 side=left state=wait twisted_deg=-0.303
+60.06,shoot_rot,aim,aligns=2 err_px=1.550 flips=1 k_px_deg=8.468 lat_coast_s=0.400 lat_px_cm=2.348 lead_s=0.001 miss_px=1.563 misses=1 rate_px_s=0.074 reason=fire shifted_mm=-9.859 side=left state=wait twisted_deg=-0.294 yaw_coast_s=0.773
+60.45,shoot_rot,done,用时 18.16 秒
+60.46,go_p3,start,去3号点
+60.47,go_p3,lane,通道按激光量后墙定位：墙距 1.202 米，通道点挪 -1.1 cm
+60.47,go_p3,profile,第 1 段：burst（最高 0.50 m/s）
+65.33,go_p3,profile,第 3 段：normal（最高 0.50 m/s）
+68.13,go_p3,done,用时 7.67 秒
+68.14,go_p3,pose,x=0.950 y=-2.849 yaw=-0.3deg
+68.15,align_p3,start,3号点精定位
+70.34,align_p3,done,用时 2.19 秒
+70.35,align_p3,align_error,back=0.5cm left=0.7cm yaw=0.2deg
+70.36,align_p3,pose,box=p3 ok=1 x=1.012 y=-2.836 yaw=1.9deg
+70.37,shoot_move,start,打移动靶
+70.38,shoot_move,marker,id=7
+70.39,shoot_move,aim,age=0.052 delay_s=0.000 err_px=-0.734 lead_s=-0.039 reason=fire samples=19 speed=-18.748 u=352.578 v=202.822
+70.79,shoot_move,done,用时 0.42 秒
+70.82,go_end,start,去终点
+70.83,go_end,profile,第 1 段：burst（最高 0.50 m/s）
+74.74,go_end,done,用时 3.91 秒
+74.75,go_end,pose,x=0.136 y=-3.235 yaw=-1.4deg
+74.76,align_end,start,终点精定位
+77.40,align_end,boost,车不动，最小速度加大到 1.5 倍
+78.49,align_end,near,误差都在"差一点"范围内（墙距 1.6 倍、朝向 1.3 倍容差）、车已不动，算到位
+79.00,align_end,done,用时 4.23 秒
+79.00,align_end,align_error,back=-0.7cm right=-0.6cm yaw=-0.2deg
+79.01,align_end,pose,box=end ok=1 x=0.025 y=-3.245 yaw=-1.7deg
+79.02,say_end,start,播报比赛结束
+79.09,say_end,play,final.mp3
+81.34,say_end,done,用时 2.32 秒
+81.35,mission,end,总用时 81.3 秒

@@ -1,0 +1,18 @@
+[rospy.client][INFO] 2026-11-14 21:00:07,710: init_node, name[/joint_state_publisher], pid[9391]
+[xmlrpc][INFO] 2026-11-14 21:00:07,711: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-14 21:00:07,711: Started XML-RPC server [http://abot-robot:44231/]
+[rospy.impl.masterslave][INFO] 2026-11-14 21:00:07,711: _ready: http://abot-robot:44231/
+[rospy.init][INFO] 2026-11-14 21:00:07,711: ROS Slave URI: [http://abot-robot:44231/]
+[xmlrpc][INFO] 2026-11-14 21:00:07,712: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2026-11-14 21:00:07,712: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2026-11-14 21:00:07,812: registered with master
+[rospy.rosout][INFO] 2026-11-14 21:00:07,812: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-11-14 21:00:07,814: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-11-14 21:00:07,815: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-11-14 21:00:08,100: topic[/joint_states] adding connection to [/robot_state_publisher], count 0
+[rospy.internal][INFO] 2026-11-14 21:00:08,102: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2026-11-14 21:01:42,482: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2026-11-14 21:01:42,487: topic[/joint_states] removing connection to /robot_state_publisher
+[rospy.internal][INFO] 2026-11-14 21:01:42,488: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2026-11-14 21:01:42,488: signal-2
+[rospy.core][INFO] 2026-11-14 21:01:42,681: signal_shutdown [atexit]

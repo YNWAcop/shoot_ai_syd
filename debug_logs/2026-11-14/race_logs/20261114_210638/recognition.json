@@ -1,0 +1,39 @@
+{
+  "policy": "vlm_first", 
+  "offline": {
+    "seconds": 1.539, 
+    "index": 7, 
+    "score": 0.20266468822956085, 
+    "margin": 0.07757027447223663, 
+    "scores": [
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -0.033, 
+      -0.035, 
+      0.203, 
+      0.028, 
+      0.125, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0
+    ]
+  }, 
+  "vlm": {
+    "answer": 3, 
+    "text": "{\"answer\": 3, \"fruit\": \"杨桃\"}", 
+    "fruit": "starfruit", 
+    "seconds": 2.501
+  }, 
+  "final": {
+    "rotating": 3, 
+    "answer": 3, 
+    "fruit": "starfruit", 
+    "moving": 7, 
+    "source": "vlm"
+  }
+}

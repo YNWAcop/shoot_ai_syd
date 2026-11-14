@@ -1,0 +1,2521 @@
+[31mWARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+warning: xacro.py is deprecated; please use xacro instead
+... logging to /home/abot/.ros/log/feb0ea8e-e026-11f1-8ed6-24418c8a26ae/roslaunch-abot-robot-15915.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/abot/syd/src/shoot_race/launch/bringup.launch
+[1mstarted roslaunch server http://abot-robot:44337/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /amcl/
+
+PARAMETERS
+ * /abot_driver/base_frame: base_link
+ * /abot_driver/buadrate: 921600
+ * /abot_driver/cmd_vel_topic: cmd_vel
+ * /abot_driver/odom_frame: odom
+ * /abot_driver/odom_topic: wheel_odom
+ * /abot_driver/out_pid_debug_enable: False
+ * /abot_driver/port: /dev/abot
+ * /abot_driver/publish_tf: False
+ * /abot_imu/imu/accelerometer_bias/x: 0.005436
+ * /abot_imu/imu/accelerometer_bias/y: 0.014684
+ * /abot_imu/imu/accelerometer_bias/z: -0.395418
+ * /abot_imu/imu/gyroscope_bias/x: -0.035592
+ * /abot_imu/imu/gyroscope_bias/y: 0.08067
+ * /abot_imu/imu/gyroscope_bias/z: 0.001216
+ * /abot_imu/imu/perform_calibration: True
+ * /amcl/gui_publish_rate: 10.0
+ * /amcl/kld_err: 0.05
+ * /amcl/kld_z: 0.99
+ * /amcl/laser_lambda_short: 0.1
+ * /amcl/laser_likelihood_max_dist: 2.0
+ * /amcl/laser_max_beams: 60
+ * /amcl/laser_max_range: 12.0
+ * /amcl/laser_model_type: likelihood_field
+ * /amcl/laser_sigma_hit: 0.2
+ * /amcl/laser_z_hit: 0.5
+ * /amcl/laser_z_max: 0.05
+ * /amcl/laser_z_rand: 0.5
+ * /amcl/laser_z_short: 0.05
+ * /amcl/max_particles: 2000
+ * /amcl/min_particles: 500
+ * /amcl/odom_alpha1: 0.2
+ * /amcl/odom_alpha2: 0.2
+ * /amcl/odom_alpha3: 0.2
+ * /amcl/odom_alpha4: 0.2
+ * /amcl/odom_alpha5: 0.1
+ * /amcl/odom_frame_id: odom
+ * /amcl/odom_model_type: omni
+ * /amcl/recovery_alpha_fast: 0.0
+ * /amcl/recovery_alpha_slow: 0.0
+ * /amcl/resample_interval: 1
+ * /amcl/transform_tolerance: 1.0
+ * /amcl/update_min_a: 0.2
+ * /amcl/update_min_d: 0.25
+ * /amcl/use_map_topic: False
+ * /ar_track_alvar/marker_size: 9.0
+ * /ar_track_alvar/max_frequency: 30.0
+ * /ar_track_alvar/max_new_marker_error: 0.08
+ * /ar_track_alvar/max_track_error: 0.2
+ * /ar_track_alvar/output_frame: /usb_cam
+ * /find_object_2d/gui: True
+ * /find_object_2d/objects_path: /home/abot/syd/sr...
+ * /find_object_2d/settings_path: ~/.ros/find_objec...
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /joint_state_publisher/rate: 20.0
+ * /laser_filter/scan_filter_chain: [{'type': 'laser_...
+ * /move_base/DWAPlannerROS/acc_lim_theta: 3.0
+ * /move_base/DWAPlannerROS/acc_lim_x: 2.5
+ * /move_base/DWAPlannerROS/acc_lim_y: 2.5
+ * /move_base/DWAPlannerROS/controller_frequency: 10.0
+ * /move_base/DWAPlannerROS/forward_point_distance: 0.325
+ * /move_base/DWAPlannerROS/goal_distance_bias: 24.0
+ * /move_base/DWAPlannerROS/holonomic_robot: True
+ * /move_base/DWAPlannerROS/latch_xy_goal_tolerance: False
+ * /move_base/DWAPlannerROS/max_scaling_factor: 0.2
+ * /move_base/DWAPlannerROS/max_vel_theta: 2
+ * /move_base/DWAPlannerROS/max_vel_trans: 0.5
+ * /move_base/DWAPlannerROS/max_vel_x: 0.4
+ * /move_base/DWAPlannerROS/max_vel_y: 0.3
+ * /move_base/DWAPlannerROS/min_vel_theta: 1
+ * /move_base/DWAPlannerROS/min_vel_trans: 0.05
+ * /move_base/DWAPlannerROS/min_vel_x: -0.4
+ * /move_base/DWAPlannerROS/min_vel_y: -0.3
+ * /move_base/DWAPlannerROS/occdist_scale: 0.03
+ * /move_base/DWAPlannerROS/oscillation_reset_dist: 0.05
+ * /move_base/DWAPlannerROS/path_distance_bias: 32.0
+ * /move_base/DWAPlannerROS/publish_cost_grid_pc: True
+ * /move_base/DWAPlannerROS/publish_traj_pc: True
+ * /move_base/DWAPlannerROS/scaling_speed: 0.25
+ * /move_base/DWAPlannerROS/sim_time: 2.0
+ * /move_base/DWAPlannerROS/stop_time_buffer: 0.2
+ * /move_base/DWAPlannerROS/vth_samples: 20
+ * /move_base/DWAPlannerROS/vx_samples: 10
+ * /move_base/DWAPlannerROS/vy_samples: 0
+ * /move_base/DWAPlannerROS/xy_goal_tolerance: 0.14
+ * /move_base/DWAPlannerROS/yaw_goal_tolerance: 0.15
+ * /move_base/GlobalPlanner/allow_unknown: True
+ * /move_base/GlobalPlanner/cost_factor: 3.0
+ * /move_base/GlobalPlanner/default_tolerance: 0.5
+ * /move_base/GlobalPlanner/lethal_cost: 253
+ * /move_base/GlobalPlanner/neutral_cost: 50
+ * /move_base/GlobalPlanner/old_navfn_behavior: False
+ * /move_base/GlobalPlanner/planner_costmap_publish_frequency: 0.0
+ * /move_base/GlobalPlanner/planner_window_x: 0.0
+ * /move_base/GlobalPlanner/planner_window_y: 0.0
+ * /move_base/GlobalPlanner/publish_potential: True
+ * /move_base/GlobalPlanner/publish_scale: 100
+ * /move_base/GlobalPlanner/use_dijkstra: True
+ * /move_base/GlobalPlanner/use_grid_path: False
+ * /move_base/GlobalPlanner/use_quadratic: True
+ * /move_base/base_global_planner: global_planner/Gl...
+ * /move_base/base_local_planner: dwa_local_planner...
+ * /move_base/controller_frequency: 10.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/cost_scaling_factor: 0.05
+ * /move_base/global_costmap/footprint: [[-0.17, -0.15], ...
+ * /move_base/global_costmap/global_frame: map
+ * /move_base/global_costmap/inflation_radius: 0.05
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/observation_sources: scan
+ * /move_base/global_costmap/obstacle_range: 3.0
+ * /move_base/global_costmap/publish_frequency: 10.0
+ * /move_base/global_costmap/raytrace_range: 3.5
+ * /move_base/global_costmap/resolution: 0.1
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/scan/clearing: True
+ * /move_base/global_costmap/scan/data_type: LaserScan
+ * /move_base/global_costmap/scan/marking: True
+ * /move_base/global_costmap/scan/sensor_frame: laser_link
+ * /move_base/global_costmap/scan/topic: scan_filtered
+ * /move_base/global_costmap/static_map: True
+ * /move_base/global_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/cost_scaling_factor: 0.05
+ * /move_base/local_costmap/footprint: [[-0.17, -0.15], ...
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 2.0
+ * /move_base/local_costmap/inflation_radius: 0.05
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/observation_sources: scan
+ * /move_base/local_costmap/obstacle_range: 3.0
+ * /move_base/local_costmap/publish_frequency: 10.0
+ * /move_base/local_costmap/raytrace_range: 3.5
+ * /move_base/local_costmap/resolution: 0.02
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/scan/clearing: True
+ * /move_base/local_costmap/scan/data_type: LaserScan
+ * /move_base/local_costmap/scan/marking: True
+ * /move_base/local_costmap/scan/sensor_frame: laser_link
+ * /move_base/local_costmap/scan/topic: scan_filtered
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/width: 2.0
+ * /move_base/oscillation_distance: 0.2
+ * /move_base/oscillation_timeout: 10.0
+ * /move_base/planner_frequency: 5.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/shutdown_costmaps: False
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/debug: False
+ * /robot_pose_ekf/freq: 200.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom
+ * /robot_pose_ekf/sensor_timeout: 1.0
+ * /robot_pose_ekf/vo_used: False
+ * /robot_state_publisher/rate: 20.0
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /rplidarNode/angle_compensate: True
+ * /rplidarNode/frame_id: laser_link
+ * /rplidarNode/inverted: False
+ * /rplidarNode/serial_baudrate: 115200
+ * /rplidarNode/serial_port: /dev/rplidar
+ * /usb_cam/camera_frame_id: usb_cam
+ * /usb_cam/camera_info_url: file:///home/abot...
+ * /usb_cam/image_height: 480
+ * /usb_cam/image_width: 640
+ * /usb_cam/io_method: mmap
+ * /usb_cam/pixel_format: yuyv
+ * /usb_cam/video_device: /dev/video0
+ * /use_sim_time: False
+
+NODES
+  /
+    abot_driver (abot_bringup/abot_driver)
+    abot_imu (abot_imu/abot_imu)
+    amcl (amcl/amcl)
+    ar_track_alvar (ar_track_alvar/individualMarkersNoKinect)
+    base_imu_to_base_link (tf/static_transform_publisher)
+    base_laser_to_base_link (tf/static_transform_publisher)
+    base_link_to_cam (tf/static_transform_publisher)
+    find_object_2d (find_object_2d/find_object_[0m[ INFO] [1794659353.700740857]: port:/dev/abot buadrate:921600[0m
+[0m[ INFO] [1794659353.704094396]: out_pid_debug_enable:0[0m
+[0m[ INFO] [1794659353.705554163]: BaseDriver startup[0m
+[0m[ INFO] [1794659353.706344283]: connected to main board[0m
+Transport main read/write started
+[33m[ WARN] [1794659354.695301378]: Camera calibration file did not specify distortion model, assuming plumb bob[0m
+[33m[ WARN] [1794659354.695395556]: [head_camera] does not match name usb_cam in file /home/abot/syd/src/track_tag/camera_calibration.yaml[0m
+[33m[ WARN] [1794659355.674934575]: unknown control 'focus_auto'
+[0m
+[33m[ WARN] [1794659356.061404159]: Calibrating accelerometer and gyroscope, make sure robot is stationary and level.[0m
+[33m[ WARN] [1794659358.384905269]: global_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1794659358.810103179]: local_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1794659363.767674587]: Still waiting for data on topic /imu/data_raw...[0m
+[0m[ INFO] [1794659355.706459884]: end sleep[0m
+[0m[ INFO] [1794659355.719041441]: robot version:v1.0.2 build time:20180730-m0e0[0m
+[0m[ INFO] [1794659355.735055486]: subscribe cmd topic on [cmd_vel][0m
+[0m[ INFO] [1794659355.737649964]: advertise odom topic on [wheel_odom][0m
+[0m[ INFO] [1794659355.757941277]: RobotParameters: 97 225 3960 10 320 2700 0 10 250 50 50 250 69[0m
+[0m[ INFO] [1794659369.297248939]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.313159806]: update_speed[0m
+[0m[ INFO] [1794659369.345119920]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.361040183]: update_speed[0m
+[0m[ INFO] [1794659369.393013161]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.408973816]: update_speed[0m
+[0m[ INFO] [1794659369.440930378]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.457193968]: update_speed[0m
+[0m[ INFO] [1794659369.488842302]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.504754292]: update_speed[0m
+[0m[ INFO] [1794659369.568680743]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.584650590]: update_speed[0m
+[0m[ INFO] [1794659369.616609260]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.633447629]: update_speed[0m
+[0m[ INFO] [1794659369.664608424]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.680645188]: update_speed[0m
+[0m[ INFO] [1794659369.712493174]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.728568276]: update_speed[0m
+[0m[ INFO] [1794659369.760371718]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.776463004]: update_speed[0m
+[0m[ INFO] [1794659369.808247219]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.826608614]: update_speed[0m
+[0m[ INFO] [1794659369.856152410]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.880490946]: update_speed[0m
+[0m[ INFO] [1794659369.920072914]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.935997020]: update_speed[0m
+[0m[ INFO] [1794659369.968142722]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659369.998753090]: update_speed[0m
+[0m[ INFO] [1794659370.031838487]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.047767421]: update_speed[0m
+[0m[ INFO] [1794659370.079740359]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.104257295]: update_speed[0m
+[0m[ INFO] [1794659370.143611830]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.143644019]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.159544459]: update_speed[0m
+[0m[ INFO] [1794659370.191583957]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.207738588]: update_speed[0m
+[0m[ INFO] [1794659370.239426455]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.255389243]: update_speed[0m
+[0m[ INFO] [1794659370.287335394]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.303316656]: update_speed[0m
+[0m[ INFO] [1794659370.335291840]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.351286938]: update_speed[0m
+[0m[ INFO] [1794659370.383325673]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.402027530]: update_speed[0m
+[0m[ INFO] [1794659370.433216691]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.448462850]: update_speed[0m
+[0m[ INFO] [1794659370.511215162]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.526886961]: update_speed[0m
+[0m[ INFO] [1794659370.558841479]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.574788315]: update_speed[0m
+[0m[ INFO] [1794659370.606757129]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.622689617]: update_speed[0m
+[0m[ INFO] [1794659370.654708529]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.670632612]: update_speed[0m
+[0m[ INFO] [1794659370.702586496]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.718607217]: update_speed[0m
+[0m[ INFO] [1794659370.751329266]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.767873117]: update_speed[0m
+[0m[ INFO] [1794659370.798432079]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.814361687]: update_speed[0m
+[0m[ INFO] [1794659370.846332594]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.862273672]: update_speed[0m
+[0m[ INFO] [1794659370.894633553]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.912184464]: update_speed[0m
+[0m[ INFO] [1794659370.942201178]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659370.958207287]: update_speed[0m
+[0m[ INFO] [1794659370.990073779]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.005970231]: update_speed[0m
+[0m[ INFO] [1794659371.037969001]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.053888199]: update_speed[0m
+[0m[ INFO] [1794659371.086287505]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.101812830]: update_speed[0m
+[0m[ INFO] [1794659371.133760285]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.149706120]: update_speed[0m
+[0m[ INFO] [1794659371.213725182]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.229583447]: update_speed[0m
+[0m[ INFO] [1794659371.261559274]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.277514183]: update_speed[0m
+[0m[ INFO] [1794659371.309499084]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.325377338]: update_speed[0m
+[0m[ INFO] [1794659371.357384303]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.373304332]: update_speed[0m
+[0m[ INFO] [1794659371.405270018]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.422277148]: update_speed[0m
+[0m[ INFO] [1794659371.453306699]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.469239730]: update_speed[0m
+[0m[ INFO] [1794659371.501120476]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.501156999]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659371.517029308]: update_speed[0m
+[0m[ INFO] [1794659371.549028732]: cmd_vel:[0.0360092 -0.0360092 0.0720184][0m
+[0m[ INFO] [1794659371.549063394]: cmd_vel:[0.0639482 -0.0639482 0.127896][0m
+[0m[ INFO] [1794659371.564978682]: update_speed[0m
+[0m[ INFO] [1794659371.597081878]: cmd_vel:[0.0877458 -0.0790131 0.27897][0m
+[0m[ INFO] [1794659371.613515928]: update_speed[0m
+[0m[ INFO] [1794659371.644895807]: cmd_vel:[0.0877158 -0.0784635 0.428224][0m
+[0m[ INFO] [1794659371.661075293]: update_speed[0m
+[0m[ INFO] [1794659371.692771199]: cmd_vel:[0.0877182 -0.0778911 0.581346][0m
+[0m[ INFO] [1794659371.708709634]: update_speed[0m
+[0m[ INFO] [1794659371.741202731]: cmd_vel:[0.0876763 -0.0774446 0.7329][0m
+[0m[ INFO] [1794659371.756639787]: update_speed[0m
+[0m[ INFO] [1794659371.788628422]: cmd_vel:[0.0875506 -0.0772275 0.879228][0m
+[0m[ INFO] [1794659371.804670985]: update_speed[0m
+[0m[ INFO] [1794659371.836595962]: cmd_vel:[0.0871438 -0.0777149 1.02818][0m
+[0m[ INFO] [1794659371.852438491]: update_speed[0m
+[0m[ INFO] [1794659371.884472624]: cmd_vel:[0.0868889 -0.0780178 1.17851][0m
+[0m[ INFO] [1794659371.900482073]: update_speed[0m
+[0m[ INFO] [1794659371.964620323]: cmd_vel:[0.0860564 -0.0808857 1.32823][0m
+[0m[ INFO] [1794659371.980253987]: update_speed[0m
+[0m[ INFO] [1794659372.012164509]: cmd_vel:[0.0854423 -0.0829131 1.47398][0m
+[0m[ INFO] [1794659372.028106137]: update_speed[0m
+[0m[ INFO] [1794659372.060111706]: cmd_vel:[0.085085 -0.0848124 1.46712][0m
+[0m[ INFO] [1794659372.076009754]: update_speed[0m
+[0m[ INFO] [1794659372.107985121]: cmd_vel:[0.0815522 -0.0903233 1.45653][0m
+[0m[ INFO] [1794659372.123939521]: update_speed[0m
+[0m[ INFO] [1794659372.155950085]: cmd_vel:[0.0761948 -0.0976438 1.44236][0m
+[0m[ INFO] [1794659372.171840850]: update_speed[0m
+[0m[ INFO] [1794659372.203878885]: cmd_vel:[0.0731864 -0.101908 1.43373][0m
+[0m[ INFO] [1794659372.220446259]: update_speed[0m
+[0m[ INFO] [1794659372.251737150]: cmd_vel:[0.0668145 -0.111947 1.4099][0m
+[0m[ INFO] [1794659372.267678394]: update_speed[0m
+[0m[ INFO] [1794659372.299664008]: cmd_vel:[0.0634821 -0.117478 1.39659][0m
+[0m[ INFO] [1794659372.315586468]: update_speed[0m
+[0m[ INFO] [1794659372.347558156]: cmd_vel:[0.055935 -0.127174 1.38024][0m
+[0m[ INFO] [1794659372.363492331]: update_speed[0m
+[0m[ INFO] [1794659372.395490676]: cmd_vel:[0.0521134 -0.132387 1.37114][0m
+[0m[ INFO] [1794659372.411402125]: update_speed[0m
+[0m[ INFO] [1794659372.443390714]: cmd_vel:[0.0402254 -0.14497 1.35651][0m
+[0m[ INFO] [1794659372.459361638]: update_speed[0m
+[0m[ INFO] [1794659372.491912514]: cmd_vel:[0.0346674 -0.151244 1.34882][0m
+[0m[ INFO] [1794659372.507277027]: update_speed[0m
+[0m[ INFO] [1794659372.541005284]: cmd_vel:[0.0222524 -0.16421 1.33675][0m
+[0m[ INFO] [1794659372.555142209]: update_speed[0m
+[0m[ INFO] [1794659372.587167245]: cmd_vel:[0.0172043 -0.170042 1.33078][0m
+[0m[ INFO] [1794659372.603143099]: update_speed[0m
+[0m[ INFO] [1794659372.635029422]: cmd_vel:[-0.00109279 -0.178819 1.31653][0m
+[0m[ INFO] [1794659372.650973884]: update_speed[0m
+[0m[ INFO] [1794659372.714895844]: cmd_vel:[-0.00843819 -0.184212 1.31296][0m
+[0m[ INFO] [1794659372.730848884]: update_speed[0m
+[0m[ INFO] [1794659372.762833916]: cmd_vel:[-0.0115615 -0.187502 1.31098][0m
+[0m[ INFO] [1794659372.778774253]: update_speed[0m
+[0m[ INFO] [1794659372.810743985]: cmd_vel:[-0.024633 -0.195337 1.23132][0m
+[0m[ INFO] [1794659372.826762706]: update_speed[0m
+[0m[ INFO] [1794659372.858676644]: cmd_vel:[-0.0303955 -0.199155 1.19537][0m
+[0m[ INFO] [1794659372.874619294]: update_speed[0m
+[0m[ INFO] [1794659372.906547993]: cmd_vel:[-0.05405 -0.206397 1.06136][0m
+[0m[ INFO] [1794659372.922572851]: update_speed[0m
+[0m[ INFO] [1794659372.954475967]: cmd_vel:[-0.0833598 -0.22025 0.909984][0m
+[0m[ INFO] [1794659372.970417744]: update_speed[0m
+[0m[ INFO] [1794659373.002398509]: cmd_vel:[-0.0944714 -0.226756 0.792451][0m
+[0m[ INFO] [1794659373.018305967]: update_speed[0m
+[0m[ INFO] [1794659373.050303941]: cmd_vel:[-0.122855 -0.247055 0.643552][0m
+[0m[ INFO] [1794659373.066281565]: update_speed[0m
+[0m[ INFO] [1794659373.098229431]: cmd_vel:[-0.134255 -0.256604 0.494053][0m
+[0m[ INFO] [1794659373.114158631]: update_speed[0m
+[0m[ INFO] [1794659373.146149134]: cmd_vel:[-0.175543 -0.269887 0.343792][0m
+[0m[ INFO] [1794659373.162083224]: update_speed[0m
+[0m[ INFO] [1794659373.194034500]: cmd_vel:[-0.191647 -0.281068 0.192526][0m
+[0m[ INFO] [1794659373.210085680]: update_speed[0m
+[0m[ INFO] [1794659373.241967939]: cmd_vel:[-0.195191 -0.256637 0.0437921][0m
+[0m[ INFO] [1794659373.257893630]: update_speed[0m
+[0m[ INFO] [1794659373.289900900]: cmd_vel:[-0.196219 -0.252151 -0.106109][0m
+[0m[ INFO] [1794659373.305869651]: update_speed[0m
+[0m[ INFO] [1794659373.337887949]: cmd_vel:[-0.197127 -0.257424 -0.171698][0m
+[0m[ INFO] [1794659373.353983414]: update_speed[0m
+[0m[ INFO] [1794659373.385721532]: cmd_vel:[-0.197042 -0.233706 -0.292634][0m
+[0m[ INFO] [1794659373.401651019]: update_speed[0m
+[0m[ INFO] [1794659373.465588210]: cmd_vel:[-0.196576 -0.2356 -0.293864][0m
+[0m[ INFO] [1794659373.481532307]: update_speed[0m
+[0m[ INFO] [1794659373.513632264]: cmd_vel:[-0.198635 -0.222474 -0.346835][0m
+[0m[ INFO] [1794659373.530340288]: update_speed[0m
+[0m[ INFO] [1794659373.563451945]: cmd_vel:[-0.196924 -0.224617 -0.346813][0m
+[0m[ INFO] [1794659373.577350053]: update_speed[0m
+[0m[ INFO] [1794659373.611463201]: cmd_vel:[-0.206205 -0.213966 -0.334685][0m
+[0m[ INFO] [1794659373.625284467]: update_speed[0m
+[0m[ INFO] [1794659373.657280194]: cmd_vel:[-0.198391 -0.213714 -0.3052][0m
+[0m[ INFO] [1794659373.673182330]: update_speed[0m
+[0m[ INFO] [1794659373.705156555]: cmd_vel:[-0.132423 -0.198137 -0.257203][0m
+[0m[ INFO] [1794659373.721091661]: update_speed[0m
+[0m[ INFO] [1794659373.753060138]: cmd_vel:[-0.0607533 -0.168385 -0.203472][0m
+[0m[ INFO] [1794659373.769007506]: update_speed[0m
+[0m[ INFO] [1794659373.801442220]: cmd_vel:[-0.0158144 -0.147122 -0.157501][0m
+[0m[ INFO] [1794659373.828183307]: update_speed[0m
+[0m[ INFO] [1794659373.864997124]: cmd_vel:[-0.010067 -0.147674 -0.118746][0m
+[0m[ INFO] [1794659373.880851871]: update_speed[0m
+[0m[ INFO] [1794659373.913435574]: cmd_vel:[0 -0.0727628 0][0m
+[0m[ INFO] [1794659373.930984181]: update_speed[0m
+[0m[ INFO] [1794659373.963056448]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659373.976672738]: update_speed[0m
+[0m[ INFO] [1794659374.008872792]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.024548784]: update_speed[0m
+[0m[ INFO] [1794659374.056662898]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.072501140]: update_speed[0m
+[0m[ INFO] [1794659374.104653838]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.120431547]: update_speed[0m
+[0m[ INFO] [1794659374.152446731]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.171288626]: update_speed[0m
+[0m[ INFO] [1794659374.200377755]: cmd_vel:[-0.0516062 0.0136337 0][0m
+[0m[ INFO] [1794659374.216222500]: update_speed[0m
+[0m[ INFO] [1794659374.248206640]: cmd_vel:[-0.0773739 -0.0370871 0][0m
+[0m[ INFO] [1794659374.264154896]: update_speed[0m
+[0m[ INFO] [1794659374.296270613]: cmd_vel:[-0.0912683 -0.0599137 0][0m
+[0m[ INFO] [1794659374.312101390]: update_speed[0m
+[0m[ INFO] [1794659374.344081232]: cmd_vel:[-0.0961423 -0.0747951 0][0m
+[0m[ INFO] [1794659374.360023250]: update_speed[0m
+[0m[ INFO] [1794659374.423981616]: cmd_vel:[-0.0473452 -0.101093 0][0m
+[0m[ INFO] [1794659374.439920113]: update_speed[0m
+[0m[ INFO] [1794659374.471820695]: cmd_vel:[0.00224809 -0.112983 0][0m
+[0m[ INFO] [1794659374.487749640]: update_speed[0m
+[0m[ INFO] [1794659374.519769348]: cmd_vel:[0 -0.0412684 0][0m
+[0m[ INFO] [1794659374.519832093]: cmd_vel:[0 -0.0106805 0][0m
+[0m[ INFO] [1794659374.519874121]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.535699882]: update_speed[0m
+[0m[ INFO] [1794659374.567701646]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.583664454]: update_speed[0m
+[0m[ INFO] [1794659374.615559904]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.632851431]: update_speed[0m
+[0m[ INFO] [1794659374.664171076]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.679418665]: update_speed[0m
+[0m[ INFO] [1794659374.711406445]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.727629328]: update_speed[0m
+[0m[ INFO] [1794659374.759333860]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.775529651]: update_speed[0m
+[0m[ INFO] [1794659374.807273005]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.823178265]: update_speed[0m
+[0m[ INFO] [1794659374.855132954]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.871209720]: update_speed[0m
+[0m[ INFO] [1794659374.903544414]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.919076849]: update_speed[0m
+[0m[ INFO] [1794659374.951292026]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659374.967004975]: update_speed[0m
+[0m[ INFO] [1794659374.999179906]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.017092093]: update_speed[0m
+[0m[ INFO] [1794659375.047303293]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.063269582]: update_speed[0m
+[0m[ INFO] [1794659375.094818243]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.110651496]: update_speed[0m
+[0m[ INFO] [1794659375.174586770]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.190524407]: update_speed[0m
+[0m[ INFO] [1794659375.222481885]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.238743100]: update_speed[0m
+[0m[ INFO] [1794659375.270420310]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.286400855]: update_speed[0m
+[0m[ INFO] [1794659375.318333418]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.336237127]: update_speed[0m
+[0m[ INFO] [1794659375.366480348]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.382188997]: update_speed[0m
+[0m[ INFO] [1794659375.414178960]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.430113883]: update_speed[0m
+[0m[ INFO] [1794659375.462128420]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.478036008]: update_speed[0m
+[0m[ INFO] [1794659375.510019515]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.525957012]: update_speed[0m
+[0m[ INFO] [1794659375.557916698]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.573994581]: update_speed[0m
+[0m[ INFO] [1794659375.606011648]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.621869956]: update_speed[0m
+[0m[ INFO] [1794659375.653819301]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.670967763]: update_speed[0m
+[0m[ INFO] [1794659375.702202767]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.717680201]: update_speed[0m
+[0m[ INFO] [1794659375.749604467]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.765535218]: update_speed[0m
+[0m[ INFO] [1794659375.797551283]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.815578821]: update_speed[0m
+[0m[ INFO] [1794659375.845912128]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.861698498]: update_speed[0m
+[0m[ INFO] [1794659375.893708601]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.909574361]: update_speed[0m
+[0m[ INFO] [1794659375.941287309]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659375.957317085---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detect]: update_speed[0m
+[0m[ INFO] [1794659375.989515469]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.005156461]: update_speed[0m
+[0m[ INFO] [1794659376.037136309]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.053052193]: update_speed[0m
+[0m[ INFO] [1794659376.117245624]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.132999833]: update_speed[0m
+[0m[ INFO] [1794659376.165147483]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.180853568]: update_speed[0m
+[0m[ INFO] [1794659376.212844699]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.228781384]: update_speed[0m
+[0m[ INFO] [1794659376.262244131]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.276699201]: update_speed[0m
+[0m[ INFO] [1794659376.308680625]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.324595041]: update_speed[0m
+[0m[ INFO] [1794659376.356626793]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.372540581]: update_speed[0m
+[0m[ INFO] [1794659376.404514486]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.420477497]: update_speed[0m
+[0m[ INFO] [1794659376.452428396]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.468595912]: update_speed[0m
+[0m[ INFO] [1794659376.500361236]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.516296456]: update_speed[0m
+[0m[ INFO] [1794659376.548468977]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.564416933]: update_speed[0m
+[0m[ INFO] [1794659376.596584350]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.612394011]: update_speed[0m
+[0m[ INFO] [1794659376.676125453]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.692016345]: update_speed[0m
+[0m[ INFO] [1794659376.723990671]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.739929613]: update_speed[0m
+[0m[ INFO] [1794659376.771915018]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.787917422]: update_speed[0m
+[0m[ INFO] [1794659376.819852619]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.835825122]: update_speed[0m
+[0m[ INFO] [1794659376.870895892]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.886298656]: update_speed[0m
+[0m[ INFO] [1794659376.915733579]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.931722751]: update_speed[0m
+[0m[ INFO] [1794659376.964099042]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659376.991769672]: update_speed[0m
+[0m[ INFO] [1794659377.027871503]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.043422706]: update_speed[0m
+[0m[ INFO] [1794659377.075481868]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.091361700]: update_speed[0m
+[0m[ INFO] [1794659377.139311185]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.139348285]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.155248409]: update_speed[0m
+[0m[ INFO] [1794659377.219175729]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.235111433]: update_speed[0m
+[0m[ INFO] [1794659377.267105031]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.283060980]: update_speed[0m
+[0m[ INFO] [1794659377.315138869]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.330996101]: update_speed[0m
+[0m[ INFO] [1794659377.362999369]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.378926582]: update_speed[0m
+[0m[ INFO] [1794659377.410882059]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.430709905]: update_speed[0m
+[0m[ INFO] [1794659377.458825080]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.474722266]: update_speed[0m
+[0m[ INFO] [1794659377.513652324]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.525453330]: update_speed[0m
+[0m[ INFO] [1794659377.554682157]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.570590458]: update_speed[0m
+[0m[ INFO] [1794659377.604935775]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.619783935]: update_speed[0m
+[0m[ INFO] [1794659377.650584656]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.666417316]: update_speed[0m
+[0m[ INFO] [1794659377.730365542]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.746336564]: update_speed[0m
+[0m[ INFO] [1794659377.778269265]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.794208971]: update_speed[0m
+[0m[ INFO] [1794659377.826187936]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.842200668]: update_speed[0m
+[0m[ INFO] [1794659377.874180614]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.890183298]: update_speed[0m
+[0m[ INFO] [1794659377.922022094]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.937983439]: update_speed[0m
+[0m[ INFO] [1794659377.970043535]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659377.986330396]: update_speed[0m
+[0m[ INFO] [1794659378.017959555]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.033884504]: update_speed[0m
+[0m[ INFO] [1794659378.069392744]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.081749334]: update_speed[0m
+[0m[ INFO] [1794659378.113775823]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.129755950]: update_speed[0m
+[0m[ INFO] [1794659378.161696391]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.177596729]: update_speed[0m
+[0m[ INFO] [1794659378.209581584]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.225531666]: update_speed[0m
+[0m[ INFO] [1794659378.257510938]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.273449457]: update_speed[0m
+[0m[ INFO] [1794659378.305439224]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.321395181]: update_speed[0m
+[0m[ INFO] [1794659378.353588734]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.369298235]: update_speed[0m
+[0m[ INFO] [1794659378.401289639]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.417256133]: update_speed[0m
+[0m[ INFO] [1794659378.481146817]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.497485527]: update_speed[0m
+[0m[ INFO] [1794659378.529073696]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.544992238]: update_speed[0m
+[0m[ INFO] [1794659378.576977677]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.592927434]: update_speed[0m
+[0m[ INFO] [1794659378.624905660]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.640863350]: update_speed[0m
+[0m[ INFO] [1794659378.673582706]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.688760892]: update_speed[0m
+[0m[ INFO] [1794659378.720747201]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.736696883]: update_speed[0m
+[0m[ INFO] [1794659378.768664670]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.784623417]: update_speed[0m
+[0m[ INFO] [1794659378.816629431]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.832536605]: update_speed[0m
+[0m[ INFO] [1794659378.864535764]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.880450780]: update_speed[0m
+[0m[ INFO] [1794659378.912986875]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.928509428]: update_speed[0m
+[0m[ INFO] [1794659378.960815433]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659378.977514408]: update_speed[0m
+[0m[ INFO] [1794659379.008638276]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.024329464]: update_speed[0m
+[0m[ INFO] [1794659379.056453619]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.072332080]: update_speed[0m
+[0m[ INFO] [1794659379.104145820]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.120105805]: update_speed[0m
+[0m[ INFO] [1794659379.152073564]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.168005281]: update_speed[0m
+[0m[ INFO] [1794659379.215984040]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.231927939]: update_speed[0m
+[0m[ INFO] [1794659379.263923206]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.279844200]: update_speed[0m
+[0m[ INFO] [1794659379.311829074]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.328070131]: update_speed[0m
+[0m[ INFO] [1794659379.359741362]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.375738452]: update_speed[0m
+[0m[ INFO] [1794659379.407669902]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.423651366]: update_speed[0m
+[0m[ INFO] [1794659379.455627023]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.471569708]: update_speed[0m
+[0m[ INFO] [1794659379.503565220]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.519502169]: update_speed[0m
+[0m[ INFO] [1794659379.551634087]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.567442498]: update_speed[0m
+[0m[ INFO] [1794659379.599385554]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.599422583]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.599439251]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.615526804]: update_speed[0m
+[0m[ INFO] [1794659379.647273630]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.663261486]: update_speed[0m
+[0m[ INFO] [1794659379.695563508]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.711143810]: update_speed[0m
+[0m[ INFO] [1794659379.746839675]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.759231410]: update_speed[0m
+[0m[ INFO] [1794659379.791116230]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.807009340]: update_speed[0m
+[0m[ INFO] [1794659379.840655060]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.856029983]: update_speed[0m
+[0m[ INFO] [1794659379.886977972]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.903411526]: update_speed[0m
+[0m[ INFO] [1794659379.934833524]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659379.950798506]: update_speed[0m
+[0m[ INFO] [1794659380.254377321]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.254547415]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.270315074]: update_speed[0m
+[0m[ INFO] [1794659380.313424654]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.319367170]: update_speed[0m
+[0m[ INFO] [1794659380.369805525]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.383762353]: update_speed[0m
+[0m[ INFO] [1794659380.414098716]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.432808622]: update_speed[0m
+[0m[ INFO] [1794659380.464877237]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.480702502]: update_speed[0m
+[0m[ INFO] [1794659380.513891957]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.530425368]: update_speed[0m
+[0m[ INFO] [1794659380.560399248]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.576113319]: update_speed[0m
+[0m[ INFO] [1794659380.616796003]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.623058116]: update_speed[0m
+[0m[ INFO] [1794659380.654867546]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.672268599]: update_speed[0m
+[0m[ INFO] [1794659380.718325080]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.734493561]: update_speed[0m
+[0m[ INFO] [1794659380.765946266]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.782745595]: update_speed[0m
+[0m[ INFO] [1794659380.832027844]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.832365151]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.847334914]: update_speed[0m
+[0m[ INFO] [1794659380.883708615]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.916476598]: update_speed[0m
+[0m[ INFO] [1794659380.964493302]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659380.976460447]: update_speed[0m
+[0m[ INFO] [1794659381.009510354]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.023161436]: update_speed[0m
+[0m[ INFO] [1794659381.053210727]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.070832012]: update_speed[0m
+[0m[ INFO] [1794659381.101253276]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.121951893]: update_speed[0m
+[0m[ INFO] [1794659381.150463294]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.165134534]: update_speed[0m
+[0m[ INFO] [1794659381.197150568]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.219712271]: update_speed[0m
+[0m[ INFO] [1794659381.264769467]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.277836838]: update_speed[0m
+[0m[ INFO] [1794659381.313775427]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.325570073]: update_speed[0m
+[0m[ INFO] [1794659381.358236325]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.373448912]: update_speed[0m
+[0m[ INFO] [1794659381.404644971]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.420521360]: update_speed[0m
+[0m[ INFO] [1794659381.473639076]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.484445898]: update_speed[0m
+[0m[ INFO] [1794659381.516441082]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.532390590]: update_speed[0m
+[0m[ INFO] [1794659381.568263967]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.580602733]: update_speed[0m
+[0m[ INFO] [1794659381.612311703]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.629924288]: update_speed[0m
+[0m[ INFO] [1794659381.660221647]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.676268331]: update_speed[0m
+[0m[ INFO] [1794659381.708183396]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.724465034]: update_speed[0m
+[0m[ INFO] [1794659381.756413615]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.772140945]: update_speed[0m
+[0m[ INFO] [1794659381.804626628]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.819991108]: update_speed[0m
+[0m[ INFO] [1794659381.851946639]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.868164296]: update_speed[0m
+[0m[ INFO] [1794659381.899911122]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.915800004]: update_speed[0m
+[0m[ INFO] [1794659381.947776631]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659381.964133627]: update_speed[0m
+[0m[ INFO] [1794659381.996426172]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.011738626]: update_speed[0m
+[0m[ INFO] [1794659382.043862569]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.059558349]: update_speed[0m
+[0m[ INFO] [1794659382.091592644]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.107516129]: update_speed[0m
+[0m[ INFO] [1794659382.139511791]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.155454309]: update_speed[0m
+[0m[ INFO] [1794659382.187460008]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.203407830]: update_speed[0m
+[0m[ INFO] [1794659382.235405367]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.251353579]: update_speed[0m
+[0m[ INFO] [1794659382.283344374]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.299302158]: update_speed[0m
+[0m[ INFO] [1794659382.331267379]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.347167248]: update_speed[0m
+[0m[ INFO] [1794659382.379126312]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.395091568]: update_speed[0m
+[0m[ INFO] [1794659382.427283144]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.443000097]: update_speed[0m
+[0m[ INFO] [1794659382.507002588]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.522889397]: update_speed[0m
+[0m[ INFO] [1794659382.554899115]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.570826268]: update_speed[0m
+[0m[ INFO] [1794659382.603230802]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.619084531]: update_speed[0m
+[0m[ INFO] [1794659382.650976425]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.666855815]: update_speed[0m
+[0m[ INFO] [1794659382.698777013]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.714740694]: update_speed[0m
+[0m[ INFO] [1794659382.746857399]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.762645351]: update_speed[0m
+[0m[ INFO] [1794659382.795064393]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.810521703]: update_speed[0m
+[0m[ INFO] [1794659382.842447915]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.858447732]: update_speed[0m
+[0m[ INFO] [1794659382.890711877]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.906311932]: update_speed[0m
+[0m[ INFO] [1794659382.938315398]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659382.954268027]: update_speed[0m
+[0m[ INFO] [1794659382.988310701]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.002224048]: update_speed[0m
+[0m[ INFO] [1794659383.034276254]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.036624126]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.036822039]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.050555104]: update_speed[0m
+[0m[ INFO] [1794659383.090165125]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.100678161]: update_speed[0m
+[0m[ INFO] [1794659383.130688600]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.146841974]: update_speed[0m
+[0m[ INFO] [1794659383.178449808]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.194063308]: update_speed[0m
+[0m[ INFO] [1794659383.257904969]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.275269761]: update_speed[0m
+[0m[ INFO] [1794659383.305839163]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.321693586]: update_speed[0m
+[0m[ INFO] [1794659383.353713124]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.371408494]: update_speed[0m
+[0m[ INFO] [1794659383.418620593]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.433534029]: update_speed[0m
+[0m[ INFO] [1794659383.465514579]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.481472869]: update_speed[0m
+[0m[ INFO] [1794659383.513499272]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.529875994]: update_speed[0m
+[0m[ INFO] [1794659383.561494600]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.577362156]: update_speed[0m
+[0m[ INFO] [1794659383.609338028]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.625287016]: update_speed[0m
+[0m[ INFO] [1794659383.658921019]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.673608369]: update_speed[0m
+[0m[ INFO] [1794659383.705422846]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.721166321]: update_speed[0m
+[0m[ INFO] [1794659383.753103645]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.770006279]: update_speed[0m
+[0m[ INFO] [1794659383.801445657]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.816967712]: update_speed[0m
+[0m[ INFO] [1794659383.848973963]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.873733159]: update_speed[0m
+[0m[ INFO] [1794659383.912873128]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.928919847]: update_speed[0m
+[0m[ INFO] [1794659383.961039479]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659383.977366371]: update_speed[0m
+[0m[ INFO] [1794659384.008833968]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.024747340]: update_speed[0m
+[0m[ INFO] [1794659384.056655528]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.072618667]: update_speed[0m
+[0m[ INFO] [1794659384.104869367]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.120540704]: update_speed[0m
+[0m[ INFO] [1794659384.152510481]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.168508733]: update_speed[0m
+[0m[ INFO] [1794659384.200799619]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.221639329]: update_speed[0m
+[0m[ INFO] [1794659384.248409966]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.264360918]: update_speed[0m
+[0m[ INFO] [1794659384.296368089]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.322760999]: update_speed[0m
+[0m[ INFO] [1794659384.360719477]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.376211060]: update_speed[0m
+[0m[ INFO] [1794659384.408233462]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.424136986]: update_speed[0m
+[0m[ INFO] [1794659384.456350082]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.472078961]: update_speed[0m
+[0m[ INFO] [1794659384.504033030]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.519991905]: update_speed[0m
+[0m[ INFO] [1794659384.554190187]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.567911298]: update_speed[0m
+[0m[ INFO] [1794659384.599909891]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.615851349]: update_speed[0m
+[0m[ INFO] [1794659384.647862927]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.663792334]: update_speed[0m
+[0m[ INFO] [1794659384.695793081]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.711733356]: update_speed[0m
+[0m[ INFO] [1794659384.743884224]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.759645008]: update_speed[0m
+[0m[ INFO] [1794659384.793400941]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.813511781]: update_speed[0m
+[0m[ INFO] [1794659384.855560133]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.871510280]: update_speed[0m
+[0m[ INFO] [1794659384.903787330]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.919534228]: update_speed[0m
+[0m[ INFO] [1794659384.951681501]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659384.967334469]: update_speed[0m
+[0m[ INFO] [1794659384.999576200]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.016305512]: update_speed[0m
+[0m[ INFO] [1794659385.047484711]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.063275159]: update_speed[0m
+[0m[ INFO] [1794659385.095450749]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.111220802]: update_speed[0m
+[0m[ INFO] [1794659385.143259243]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.160668626]: update_speed[0m
+[0m[ INFO] [1794659385.191301500]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.207401584]: update_speed[0m
+[0m[ INFO] [1794659385.238980733]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.254926040]: update_speed[0m
+[0m[ INFO] [1794659385.286929188]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.302876138]: update_speed[0m
+[0m[ INFO] [1794659385.334856220]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.352404559]: update_speed[0m
+[0m[ INFO] [1794659385.382815483]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.398762191]: update_speed[0m
+[0m[ INFO] [1794659385.430693456]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.446637110]: update_speed[0m
+[0m[ INFO] [1794659385.478635755]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.494724224]: update_speed[0m
+[0m[ INFO] [1794659385.526591769]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.542520907]: update_speed[0m
+[0m[ INFO] [1794659385.606460694]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.622405994]: update_speed[0m
+[0m[ INFO] [1794659385.654406904]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.670365452]: update_speed[0m
+[0m[ INFO] [1794659385.702353642]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.718261661]: update_speed[0m
+[0m[ INFO] [1794659385.750334585]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.766188575]: update_speed[0m
+[0m[ INFO] [1794659385.798317080]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.814149012]: update_speed[0m
+[0m[ INFO] [1794659385.857508703]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.862864701]: update_speed[0m
+[0m[ INFO] [1794659385.896013081]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.910151776]: update_speed[0m
+[0m[ INFO] [1794659385.941987381]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659385.958093923]: update_speed[0m
+[0m[ INFO] [1794659385.990031778]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.006045844]: update_speed[0m
+[0m[ INFO] [1794659386.038206197]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.053922360]: update_speed[0m
+[0m[ INFO] [1794659386.086122093]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.101842372]: update_speed[0m
+[0m[ INFO] [1794659386.134034159]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.149773696]: update_speed[0m
+[0m[ INFO] [1794659386.181667660]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.197612312]: update_speed[0m
+[0m[ INFO] [1794659386.230050072]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.245540170]: update_speed[0m
+[0m[ INFO] [1794659386.277559057]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.293566341]: update_speed[0m
+[0m[ INFO] [1794659386.357395391]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.373356036]: update_speed[0m
+[0m[ INFO] [1794659386.405484197]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.422409452]: update_speed[0m
+[0m[ INFO] [1794659386.453256008]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.469200387]: update_speed[0m
+[0m[ INFO] [1794659386.501204656]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.517413414]: update_speed[0m
+[0m[ INFO] [1794659386.549128241]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.565079905]: update_speed[0m
+[0m[ INFO] [1794659386.597070509]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.613017477]: update_speed[0m
+[0m[ INFO] [1794659386.645002195]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.660950145]: update_speed[0m
+[0m[ INFO] [1794659386.693410161]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.708872595]: update_speed[0m
+[0m[ INFO] [1794659386.740909164]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.756819683]: update_speed[0m
+[0m[ INFO] [1794659386.788780114]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.804729350]: update_speed[0m
+[0m[ INFO] [1794659386.836725062]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.853772793]: update_speed[0m
+[0m[ INFO] [1794659386.886020211]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.900731106]: update_speed[0m
+[0m[ INFO] [1794659386.933385470]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.954700874]: update_speed[0m
+[0m[ INFO] [1794659386.980668983]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659386.996572455]: update_speed[0m
+[0m[ INFO] [1794659387.029791331]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.045369271]: update_speed[0m
+[0m[ INFO] [1794659387.076396166]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.092358273]: update_speed[0m
+[0m[ INFO] [1794659387.156277860]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.172217088]: update_speed[0m
+[0m[ INFO] [1794659387.204196823]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.220164668]: update_speed[0m
+[0m[ INFO] [1794659387.252188545]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.274840117]: update_speed[0m
+[0m[ INFO] [1794659387.316086333]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.331978833]: update_speed[0m
+[0m[ INFO] [1794659387.369305616]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.384253923]: update_speed[0m
+[0m[ INFO] [1794659387.411937489]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.430913878]: update_speed[0m
+[0m[ INFO] [1794659387.459892971]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.476929499]: update_speed[0m
+[0m[ INFO] [1794659387.507833020]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.523795964]: update_speed[0m
+[0m[ INFO] [1794659387.555801306]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.573592186]: update_speed[0m
+[0m[ INFO] [1794659387.603803536]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.619605522]: update_speed[0m
+[0m[ INFO] [1794659387.651584869]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.667535947]: update_speed[0m
+[0m[ INFO] [1794659387.711178128]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.724494809]: update_speed[0m
+[0m[ INFO] [1794659387.763836356]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.779400410]: update_speed[0m
+[0m[ INFO] [1794659387.819141738]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.828506115]: update_speed[0m
+[0m[ INFO] [1794659387.859330175]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.875988634]: update_speed[0m
+[0m[ INFO] [1794659387.907455861]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.923218735]: update_speed[0m
+[0m[ INFO] [1794659387.955176688]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659387.971100136]: update_speed[0m
+[0m[ INFO] [1794659388.019191623]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.035038666]: update_speed[0m
+[0m[ INFO] [1794659388.067004063]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.082965857]: update_speed[0m
+[0m[ INFO] [1794659388.114952544]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.131042288]: update_speed[0m
+[0m[ INFO] [1794659388.162889659]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.178837072]: update_speed[0m
+[0m[ INFO] [1794659388.210827164]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.237878349]: update_speed[0m
+[0m[ INFO] [1794659388.274736134]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.290680497]: update_speed[0m
+[0m[ INFO] [1794659388.322671885]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.338663443]: update_speed[0m
+[0m[ INFO] [1794659388.370654995]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.386527117]: update_speed[0m
+[0m[ INFO] [1794659388.418527040]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.434482851]: update_speed[0m
+[0m[ INFO] [1794659388.466664904]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.482429090]: update_speed[0m
+[0m[ INFO] [1794659388.514463242]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.530500363]: update_speed[0m
+[0m[ INFO] [1794659388.562726129]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.563094043]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659388.563189154]: cmd_vel:[0.0335791 -0.0335791 -0.0671582][0m
+[0m[ INFO] [1794659388.578548023]: update_speed[0m
+[0m[ INFO] [1794659388.610526320]: cmd_vel:[0.0404822 -0.0657288 -0.131458][0m
+[0m[ INFO] [1794659388.626275349]: update_speed[0m
+[0m[ INFO] [1794659388.658540187]: cmd_vel:[0.0402882 -0.143699 -0.287398][0m
+[0m[ INFO] [1794659388.674555372]: update_speed[0m
+[0m[ INFO] [1794659388.706152064]: cmd_vel:[0.0398133 -0.187143 -0.431344][0m
+[0m[ INFO] [1794659388.722094068]: update_speed[0m
+[0m[ INFO] [1794659388.754070801]: cmd_vel:[0.0393726 -0.187865 -0.584991][0m
+[0m[ INFO] [1794659388.770113607]: update_speed[0m
+[0m[ INFO] [1794659388.802323344]: cmd_vel:[0.0391201 -0.188733 -0.731346][0m
+[0m[ INFO] [1794659388.817954790]: update_speed[0m
+[0m[ INFO] [1794659388.849958605]: cmd_vel:[0.0391449 -0.189523 -0.881307][0m
+[0m[ INFO] [1794659388.865985365]: update_speed[0m
+[0m[ INFO] [1794659388.898179469]: cmd_vel:[0.0395364 -0.190473 -1.03185][0m
+[0m[ INFO] [1794659388.913899849]: update_speed[0m
+[0m[ INFO] [1794659388.946078549]: cmd_vel:[0.0414256 -0.191499 -1.18177][0m
+[0m[ INFO] [1794659388.961877484]: update_speed[0m
+[0m[ INFO] [1794659388.994150622]: cmd_vel:[0.043959 -0.192316 -1.17211][0m
+[0m[ INFO] [1794659389.009792800]: update_speed[0m
+[0m[ INFO] [1794659389.041678818]: cmd_vel:[0.0475598 -0.191945 -1.15775][0m
+[0m[ INFO] [1794659389.057631752]: update_speed[0m
+[0m[ INFO] [1794659389.089688484]: cmd_vel:[0.0524455 -0.191649 -1.13736][0m
+[0m[ INFO] [1794659389.105635128]: update_speed[0m
+[0m[ INFO] [1794659389.137579553]: cmd_vel:[0.0550967 -0.193238 -1.11851][0m
+[0m[ INFO] [1794659389.153521060]: update_speed[0m
+[0m[ INFO] [1794659389.185828966]: cmd_vel:[0.057928 -0.194699 -1.09944][0m
+[0m[ INFO] [1794659389.201556245]: update_speed[0m
+[0m[ INFO] [1794659389.233558781]: cmd_vel:[0.0620014 -0.19393 -1.08475][0m
+[0m[ INFO] [1794659389.249460465]: update_speed[0m
+[0m[ INFO] [1794659389.281620302]: cmd_vel:[0.0665515 -0.192605 -1.07041][0m
+[0m[ INFO] [1794659389.297398067]: update_speed[0m
+[0m[ INFO] [1794659389.329604524]: cmd_vel:[0.0712457 -0.191147 -1.05603][0m
+[0m[ INFO] [1794659389.345391938]: update_speed[0m
+[0m[ INFO] [1794659389.414721043]: cmd_vel:[0.0760353 -0.189901 -1.04028][0m
+[0m[ INFO] [1794659389.425143754]: update_speed[0m
+[0m[ INFO] [1794659389.457137586]: cmd_vel:[0.0811114 -0.188201 -1.02528][0m
+[0m[ INFO] [1794659389.473068004]: update_speed[0m
+[0m[ INFO] [1794659389.505087421]: cmd_vel:[0.0851329 -0.18728 -1.0115][0m
+[0m[ INFO] [1794659389.521022374]: update_speed[0m
+[0m[ INFO] [1794659389.553030747]: cmd_vel:[0.0894828 -0.18656 -0.995367][0m
+[0m[ INFO] [1794659389.569587048]: update_speed[0m
+[0m[ INFO] [1794659389.600940161]: cmd_vel:[0.0940632 -0.184602 -0.983711][0m
+[0m[ INFO] [1794659389.616865460]: update_speed[0m
+[0m[ INFO] [1794659389.648869346]: cmd_vel:[0.0980652 -0.183074 -0.972717][0m
+[0m[ INFO] [1794659389.664805974]: update_speed[0m
+[0m[ INFO] [1794659389.696818874]: cmd_vel:[0.101563 -0.182168 -0.961194][0m
+[0m[ INFO] [1794659389.712822978]: update_speed[0m
+[0m[ INFO] [1794659389.744723937]: cmd_vel:[0.104505 -0.180922 -0.953654][0m
+[0m[ INFO] [1794659389.760916652]: update_speed[0m
+[0m[ INFO] [1794659389.792674467]: cmd_vel:[0.107646 -0.179773 -0.944802][0m
+[0m[ INFO] [1794659389.808633037]: update_speed[0m
+[0m[ INFO] [1794659389.840637369]: cmd_vel:[0.109868 -0.178749 -0.939482][0m
+[0m[ INFO] [1794659389.856553762]: update_speed[0m
+[0m[ INFO] [1794659389.888563506]: cmd_vel:[0.112374 -0.177843 -0.932368][0m
+[0m[ INFO] [1794659389.904498264]: update_speed[0m
+[0m[ INFO] [1794659389.936657679]: cmd_vel:[0.114965 -0.177231 -0.92357][0m
+[0m[ INFO] [1794659389.952434704]: update_speed[0m
+[0m[ INFO] [1794659389.984477907]: cmd_vel:[0.118044 -0.176693 -0.912278][0m
+[0m[ INFO] [1794659390.000528550]: update_speed[0m
+[0m[ INFO] [1794659390.032714650]: cmd_vel:[0.122192 -0.17432 -0.904387][0m
+[0m[ INFO] [1794659390.048342954]: update_speed[0m
+[0m[ INFO] [1794659390.080732539]: cmd_vel:[0.126557 -0.171984 -0.895375][0m
+[0m[ INFO] [1794659390.096321990]: update_speed[0m
+[0m[ INFO] [1794659390.160297278]: cmd_vel:[0.130718 -0.168984 -0.890214][0m
+[0m[ INFO] [1794659390.176165150]: update_speed[0m
+[0m[ INFO] [1794659390.208429276]: cmd_vel:[0.136479 -0.165986 -0.877932][0m
+[0m[ INFO] [1794659390.224112256]: update_speed[0m
+[0m[ INFO] [1794659390.256041998]: cmd_vel:[0.141173 -0.1643 -0.864561][0m
+[0m[ INFO] [1794659390.271986873]: update_speed[0m
+[0m[ INFO] [1794659390.304262870]: cmd_vel:[0.143331 -0.163436 -0.858816][0m
+[0m[ INFO] [1794659390.319972094]: update_speed[0m
+[0m[ INFO] [1794659390.352064903]: cmd_vel:[0.148425 -0.161104 -0.846538][0m
+[0m[ INFO] [1794659390.368002552]: update_speed[0m
+[0m[ INFO] [1794659390.400801879]: cmd_vel:[0.152865 -0.159306 -0.834796][0m
+[0m[ INFO] [1794659390.416972770]: update_speed[0m
+[0m[ INFO] [1794659390.447811280]: cmd_vel:[0.15644 -0.157187 -0.828325][0m
+[0m[ INFO] [1794659390.463810721]: update_speed[0m
+[0m[ INFO] [1794659390.497262647]: cmd_vel:[0.159857 -0.155358 -0.820951][0m
+[0m[ INFO] [1794659390.511702934]: update_speed[0m
+[0m[ INFO] [1794659390.543725895]: cmd_vel:[0.164433 -0.152774 -0.811156][0m
+[0m[ INFO] [1794659390.559603916]: update_speed[0m
+[0m[ INFO] [1794659390.591591876]: cmd_vel:[0.169034 -0.150854 -0.798287][0m
+[0m[ INFO] [1794659390.607543581]: update_speed[0m
+[0m[ INFO] [1794659390.646088285]: cmd_vel:[0.172248 -0.149052 -0.791227][0m
+[0m[ INFO] [1794659390.655469129]: update_speed[0m
+[0m[ INFO] [1794659390.687485603]: cmd_vel:[0.175106 -0.147951 -0.782804][0m
+[0m[ INFO] [1794659390.703464309]: update_speed[0m
+[0m[ INFO] [1794659390.735459934]: cmd_vel:[0.177176 -0.146865 -0.777875][0m
+[0m[ INFO] [1794659390.751454594]: update_speed[0m
+[0m[ INFO] [1794659390.783383037]: cmd_vel:[0.18048 -0.145743 -0.767455][0m
+[0m[ INFO] [1794659390.799333062]: update_speed[0m
+[0m[ INFO] [1794659390.833920617]: cmd_vel:[0.184904 -0.143883 -0.75503][0m
+[0m[ INFO] [1794659390.847225738]: update_speed[0m
+[0m[ INFO] [1794659390.879239388]: cmd_vel:[0.190675 -0.142106 -0.736311][0m
+[0m[ INFO] [1794659390.895594678]: update_speed[0m
+[0m[ INFO] [1794659390.928119013]: cmd_vel:[0.197111 -0.141469 -0.710002][0m
+[0m[ INFO] [1794659390.943312577]: update_speed[0m
+[0m[ INFO] [1794659391.007385321]: cmd_vel:[0.202255 -0.138879 -0.69763][0m
+[0m[ INFO] [1794659391.023118613]: update_speed[0m
+[0m[ INFO] [1794659391.055279322]: cmd_vel:[0.208506 -0.136603 -0.679128][0m
+[0m[ INFO] [1794659391.073379466]: update_speed[0m
+[0m[ INFO] [1794659391.103105566]: cmd_vel:[0.213089 -0.133829 -0.670141][0m
+[0m[ INFO] [1794659391.118944374]: update_speed[0m
+[0m[ INFO] [1794659391.151089057]: cmd_vel:[0.221521 -0.131353 -0.64878][0m
+[0m[ INFO] [1794659391.166891361]: update_speed[0m
+[0m[ INFO] [1794659391.198959440]: cmd_vel:[0.229968 -0.132346 -0.609382][0m
+[0m[ INFO] [1794659391.214865568]: update_speed[0m
+[0m[ INFO] [1794659391.246890267]: cmd_vel:[0.236331 -0.137662 -0.558753][0m
+[0m[ INFO] [1794659391.262725766]: update_speed[0m
+[0m[ INFO] [1794659391.294701333]: cmd_vel:[0.243148 -0.142716 -0.506634][0m
+[0m[ INFO] [1794659391.310639149]: update_speed[0m
+[0m[ INFO] [1794659391.342637670]: cmd_vel:[0.25766 -0.142324 -0.444198][0m
+[0m[ INFO] [1794659391.358575840]: update_speed[0m
+[0m[ INFO] [1794659391.390570023]: cmd_vel:[0.273462 -0.139235 -0.387852][0m
+[0m[ INFO] [1794659391.406527671]: update_speed[0m
+[0m[ INFO] [1794659391.438520804]: cmd_vel:[0.284409 -0.138794 -0.341243][0m
+[0m[ INFO] [1794659391.454491641]: update_speed[0m
+[0m[ INFO] [1794659391.486665721]: cmd_vel:[0.295802 -0.139647 -0.286852][0m
+[0m[ INFO] [1794659391.502389143]: update_speed[0m
+[0m[ INFO] [1794659391.534391624]: cmd_vel:[0 0 -0.135628][0m
+[0m[ INFO] [1794659391.550519002]: update_speed[0m
+[0m[ INFO] [1794659391.582390384]: cmd_vel:[0.0724965 -0.0724965 -0.22517][0m
+[0m[ INFO] [1794659391.598254937]: update_speed[0m
+[0m[ INFO] [1794659391.630259424]: cmd_vel:[0.148185 -0.131596 -0.180195][0m
+[0m[ INFO] [1794659391.646204693]: update_speed[0m
+[0m[ INFO] [1794659391.678186292]: cmd_vel:[0.2229 -0.126603 -0.151108][0m
+[0m[ INFO] [1794659391.694133668]: update_speed[0m
+[0m[ INFO] [1794659391.758100283]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659391.774079796]: update_speed[0m
+[0m[ INFO] [1794659391.806061888]: cmd_vel:[0.0741481 -0.0741481 -0.104828][0m
+[0m[ INFO] [1794659391.821967167]: update_speed[0m
+[0m[ INFO] [1794659391.853968218]: cmd_vel:[0.149724 -0.0905471 -0.091323][0m
+[0m[ INFO] [1794659391.873376019]: update_speed[0m
+[0m[ INFO] [1794659391.901925406]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659391.917848336]: update_speed[0m
+[0m[ INFO] [1794659391.949858610]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659391.967042601]: update_speed[0m
+[0m[ INFO] [1794659391.998051188]: cmd_vel:[0.068082 -0.0449056 -0.0397381][0m
+[0m[ INFO] [1794659392.013892884]: update_speed[0m
+[0m[ INFO] [1794659392.045729086]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.061860832]: update_speed[0m
+[0m[ INFO] [1794659392.093685160]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.110046922]: update_speed[0m
+[0m[ INFO] [1794659392.142819836]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.157530063]: update_speed[0m
+[0m[ INFO] [1794659392.189778431]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.205571512]: update_speed[0m
+[0m[ INFO] [1794659392.237683786]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.253415534]: update_speed[0m
+[0m[ INFO] [1794659392.285399934]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.301372569]: update_speed[0m
+[0m[ INFO] [1794659392.333334074]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.349295349]: update_speed[0m
+[0m[ INFO] [1794659392.381288721]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.397266976]: update_speed[0m
+[0m[ INFO] [1794659392.429240105]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.445266097]: update_speed[0m
+[0m[ INFO] [1794659392.478102232]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.493097771]: update_speed[0m
+[0m[ INFO] [1794659392.557195529]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.573092242]: update_speed[0m
+[0m[ INFO] [1794659392.605142264]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.621050888]: update_speed[0m
+[0m[ INFO] [1794659392.652991629]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.668945743]: update_speed[0m
+[0m[ INFO] [1794659392.700936896]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.716905547]: update_speed[0m
+[0m[ INFO] [1794659392.748833487]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.764765986]: update_speed[0m
+[0m[ INFO] [1794659392.796830293]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.812739617]: update_speed[0m
+[0m[ INFO] [1794659392.844849428]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.860660055]: update_speed[0m
+[0m[ INFO] [1794659392.892727077]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.908620994]: update_speed[0m
+[0m[ INFO] [1794659392.940562512]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659392.956524951]: update_speed[0m
+[0m[ INFO] [1794659392.988502798]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659393.004733734]: update_speed[0m
+[0m[ INFO] [1794659393.036720823]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659393.052400490]: update_speed[0m
+[0m[ INFO] [1794659393.084414221]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659393.084685299]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659393.084737334]: cmd_vel:[0.0144707 0 0][0m
+[0m[ INFO] [1794659393.084783629]: cmd_vel:[0.0503461 0 0][0m
+[0m[ INFO] [1794659393.100555116]: update_speed[0m
+[0m[ INFO] [1794659393.132441169]: cmd_vel:[0.119487 0 0][0m
+[0m[ INFO] [1794659393.148675027]: update_speed[0m
+[0m[ INFO] [1794659393.180556343]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.196345675]: update_speed[0m
+[0m[ INFO] [1794659393.260278574]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.276327968]: update_speed[0m
+[0m[ INFO] [1794659393.308100214]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.324053962]: update_speed[0m
+[0m[ INFO] [1794659393.356055365]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.372027967]: update_speed[0m
+[0m[ INFO] [1794659393.404818104]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.419978331]: update_speed[0m
+[0m[ INFO] [1794659393.451913038]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.467862658]: update_speed[0m
+[0m[ INFO] [1794659393.500595943]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.515827339]: update_speed[0m
+[0m[ INFO] [1794659393.548192109]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.564147013]: update_speed[0m
+[0m[ INFO] [1794659393.595807318]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.611692885]: update_speed[0m
+[0m[ INFO] [1794659393.643757387]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.659693996]: update_speed[0m
+[0m[ INFO] [1794659393.691676235]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.707599668]: update_speed[0m
+[0m[ INFO] [1794659393.739593487]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.755550923]: update_speed[0m
+[0m[ INFO] [1794659393.787535310]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.803465877]: update_speed[0m
+[0m[ INFO] [1794659393.835484973]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.851474519]: update_speed[0m
+[0m[ INFO] [1794659393.883541961]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.899433721]: update_speed[0m
+[0m[ INFO] [1794659393.933672176]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659393.947391654]: update_speed[0m
+[0m[ INFO] [1794659394.011526319]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.027260596]: update_speed[0m
+[0m[ INFO] [1794659394.059191909]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [179465939ed.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (96.806732,178.642303) (502.672636,-211.847508) (121.086486,226.793083) (180.832818,246.226821)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (110.949753,180.703903) (176.424745,159.347964) (107.203430,242.877622) (186.175969,271.865983)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (88.573143,173.215149) (227.107039,108.558238) (112.206418,234.075195776]: update_speed[0m
+[0m[ INFO] [1794659394.107238534]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.123161812]: update_speed[0m
+[0m[ INFO] [1794659394.155366192]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.171052488]: update_speed[0m
+[0m[ INFO] [1794659394.203101651]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.219049661]: update_speed[0m
+[0m[ INFO] [1794659394.251086061]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.267145201]: update_speed[0m
+[0m[ INFO] [1794659394.299054380]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.314870540]: update_speed[0m
+[0m[ INFO] [1794659394.346913533]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.363088450]: update_speed[0m
+[0m[ INFO] [1794659394.394965703]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.410976978]: update_speed[0m
+[0m[ INFO] [1794659394.443028189]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.458696073]: update_speed[0m
+[0m[ INFO] [1794659394.490695781]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.506697059]: update_speed[0m
+[0m[ INFO] [1794659394.538610455]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.554654531]: update_speed[0m
+[0m[ INFO] [1794659394.586568337]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.611461520]: update_speed[0m
+[0m[ INFO] [1794659394.653424024]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.669430526]: update_speed[0m
+[0m[ INFO] [1794659394.698517465]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.714356877]: update_speed[0m
+[0m[ INFO] [1794659394.746360384]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.762329843]: update_speed[0m
+[0m[ INFO] [1794659394.794299461]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.810280784]: update_speed[0m
+[0m[ INFO] [1794659394.842228754]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.858214970]: update_speed[0m
+[0m[ INFO] [1794659394.890246434]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.906136535]: update_speed[0m
+[0m[ INFO] [1794659394.938372088]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659394.957374916]: update_speed[0m
+[0m[ INFO] [1794659394.986080748]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659395.002092252]: update_speed[0m
+[0m[ INFO] [1794659395.034271644]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659395.050468118]: update_speed[0m
+[0m[ INFO] [1794659395.081946068]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659395.097998818]: update_speed[0m
+[0m[ INFO] [1794659395.161956625]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659395.178779021]: update_speed[0m
+[0m[ INFO] [1794659395.209922672]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659395.225862264]: update_speed[0m
+[0m[ INFO] [1794659395.257942299]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659395.273713089]: update_speed[0m
+[0m[ INFO] [1794659395.306989377]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659395.321645580]: update_speed[0m
+[0m[ INFO] [1794659395.353720323]: cmd_vel:[0.130489 0 0][0m
+[0m[ INFO] [1794659395.369630953]: update_speed[0m
+[0m[ INFO] [1794659395.401619591]: cmd_vel:[0.133225 0 0][0m
+[0m[ INFO] [1794659395.417553398]: update_speed[0m
+[0m[ INFO] [1794659395.450376934]: cmd_vel:[0.113376 0 0][0m
+[0m[ INFO] [1794659395.465839453]: update_speed[0m
+[0m[ INFO] [1794659395.497689026]: cmd_vel:[0.118631 0 0][0m
+[0m[ INFO] [1794659395.513969381]: update_speed[0m
+[0m[ INFO] [1794659395.545657232]: cmd_vel:[0.11828 0 0][0m
+[0m[ INFO] [1794659395.561535818]: update_speed[0m
+[0m[ INFO] [1794659395.593598729]: cmd_vel:[0.0925533 0 0][0m
+[0m[ INFO] [1794659395.609358433]: update_speed[0m
+[0m[ INFO] [1794659395.641276819]: cmd_vel:[0.0966265 0 0][0m
+[0m[ INFO] [1794659395.657232448]: update_speed[0m
+[0m[ INFO] [1794659395.689227001]: cmd_vel:[0.0990704 0 0][0m
+[0m[ INFO] [1794659395.708446057]: update_speed[0m
+[0m[ INFO] [1794659395.737156010]: cmd_vel:[0.089782 0 0][0m
+[0m[ INFO] [1794659395.753107813]: update_speed[0m
+[0m[ INFO] [1794659395.785087906]: cmd_vel:[0.0968518 0 0][0m
+[0m[ INFO] [1794659395.801063498]: update_speed[0m
+[0m[ INFO] [1794659395.833061982]: cmd_vel:[0.0924403 0 0][0m
+[0m[ INFO] [1794659395.849109169]: update_speed[0m
+[0m[ INFO] [1794659395.912926506]: cmd_vel:[0.0989416 0 0][0m
+[0m[ INFO] [1794659395.928883569]: update_speed[0m
+[0m[ INFO] [1794659395.960893447]: cmd_vel:[0.102127 0 0][0m
+[0m[ INFO] [1794659395.977597473]: update_speed[0m
+[0m[ INFO] [1794659396.008932430]: cmd_vel:[0.104104 0 0][0m
+[0m[ INFO] [1794659396.025516802]: update_speed[0m
+[0m[ INFO] [1794659396.057132613]: cmd_vel:[0.10553 0 0][0m
+[0m[ INFO] [1794659396.072727963]: update_speed[0m
+[0m[ INFO] [1794659396.104881668]: cmd_vel:[0.0930318 0 0][0m
+[0m[ INFO] [1794659396.122921017]: update_speed[0m
+[0m[ INFO] [1794659396.152664195]: cmd_vel:[0.0938915 0 0][0m
+[0m[ INFO] [1794659396.168788096]: update_speed[0m
+[0m[ INFO] [1794659396.201109572]: cmd_vel:[0.0946208 0 0][0m
+[0m[ INFO] [1794659396.216783050]: update_speed[0m
+[0m[ INFO] [1794659396.248564800]: cmd_vel:[0.0850612 0 0][0m
+[0m[ INFO] [1794659396.264559270]: update_speed[0m
+[0m[ INFO] [1794659396.297322785]: cmd_vel:[0.085207 0 0][0m
+[0m[ INFO] [1794659396.312565495]: update_speed[0m
+[0m[ INFO] [1794659396.346749324]: cmd_vel:[0.0666131 0 0][0m
+[0m[ INFO] [1794659396.361920374]: update_speed[0m
+[0m[ INFO] [1794659396.392448171]: cmd_vel:[0.0674151 0 0][0m
+[0m[ INFO] [1794659396.408323228]: update_speed[0m
+[0m[ INFO] [1794659396.440369676]: cmd_vel:[0.0694525 0 0][0m
+[0m[ INFO] [1794659396.456252753]: update_speed[0m
+[0m[ INFO] [1794659396.488244928]: cmd_vel:[0 0.0857835 0][0m
+[0m[ INFO] [1794659396.504197406]: update_speed[0m
+[0m[ INFO] [1794659396.536260050]: cmd_vel:[0 0.15 0][0m
+[0m[ INFO] [1794659396.552326565]: update_speed[0m
+[0m[ INFO] [1794659396.593398968]: cmd_vel:[0 0.0832681 0][0m
+[0m[ INFO] [1794659396.601571868]: update_speed[0m
+[0m[ INFO] [1794659396.632345614]: cmd_vel:[0 0.0104236 0][0m
+[0m[ INFO] [1794659396.648153971]: update_speed[0m
+[0m[ INFO] [1794659396.680404249]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659396.699874881]: update_speed[0m
+[0m[ INFO] [1794659396.731775992]: cmd_vel:[0.0411482 0 0][0m
+[0m[ INFO] [1794659396.743906971]: update_speed[0m
+[0m[ INFO] [1794659396.807867425]: cmd_vel:[0.0463702 0 0][0m
+[0m[ INFO] [1794659396.823811973]: update_speed[0m
+[0m[ INFO] [1794659396.855952978]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659396.871756254]: update_speed[0m
+[0m[ INFO] [1794659396.903779018]: cmd_vel:[0.0204641 0 0][0m
+[0m[ INFO] [1794659396.919707954]: update_speed[0m
+[0m[ INFO] [1794659396.951690854]: cmd_vel:[0.0229084 0 0][0m
+[0m[ INFO] [1794659396.967727644]: update_speed[0m
+[0m[ INFO] [1794659396.999809063]: cmd_vel:[0.035825 0 0][0m
+[0m[ INFO] [1794659397.015665330]: update_speed[0m
+[0m[ INFO] [1794659397.047669430]: cmd_vel:[0.035825 0 0][0m
+[0m[ INFO] [1794659397.063639309]: update_speed[0m
+[0m[ INFO] [1794659397.095547558]: cmd_vel:[0.0495365 0 0][0m
+[0m[ INFO] [1794659397.111614956]: update_speed[0m
+[0m[ INFO] [1794659397.143493916]: cmd_vel:[0.0495365 0 0][0m
+[0m[ INFO] [1794659397.159428868]: update_speed[0m
+[0m[ INFO] [1794659397.191450762]: cmd_vel:[0.0495365 0 0][0m
+[0m[ INFO] [1794659397.207473493]: update_speed[0m
+[0m[ INFO] [1794659397.239417265]: cmd_vel:[0.0567427 0 0][0m
+[0m[ INFO] [1794659397.255380993]: update_speed[0m
+[0m[ INFO] [1794659397.287292477]: cmd_vel:[0.0567427 0 0][0m
+[0m[ INFO] [1794659397.303252552]: update_speed[0m
+[0m[ INFO] [1794659397.335700098]: cmd_vel:[0.126 0 0][0m
+[0m[ INFO] [1794659397.351262629]: update_speed[0m
+[0m[ INFO] [1794659397.383287153]: cmd_vel:[0.126 0 0][0m
+[0m[ INFO] [1794659397.399121161]: update_speed[0m
+[0m[ INFO] [1794659397.431134723]: cmd_vel:[0.126 0 0][0m
+[0m[ INFO] [1794659397.447076811]: update_speed[0m
+[0m[ INFO] [1794659397.479087831]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659397.495043378]: update_speed[0m
+[0m[ INFO] [1794659397.559007610]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659397.574932662]: update_speed[0m
+[0m[ INFO] [1794659397.606973535]: cmd_vel:[0.0867571 0 0][0m
+[0m[ INFO] [1794659397.622872893]: update_speed[0m
+[0m[ INFO] [1794659397.654868740]: 0.691120) (171.905473,242.384454)
+---
+Object 31 detected, Qt corners at (85.144684,168.933365) (175.001643,163.628626) (97.528653,244.287992) (169.509612,241.742233)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (100.557968,179.866287) (168.583386,172.756837) (81.992101,249.439952) (178.748665,258.718494)
+---
+Object 31 detected, Qt corners at (96.408409,173.669388) (154.471580,184.443627) (-521.919610,792.834852) (172.668347,258.290443)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (87.320114,175.357529) (155.720021,173.856577) (64.663247,274.382203) (171.944775,248.522205)
+---
+Object 31 detected, Qt corners at (68.131699,154.618317) (171.033226,176.721538) (69.917675,244.890028) (155.939645,236.608568)
+---
+Object 31 detected, Qt corners at (84.521461,166.082428) (190.158717,154.601775) (89.836702,234.760961) (156.694840,250.490721)
+---
+Object 31 detected, Qt corners at (43.022667,160.332031) (256.511930,82.209607) (93.230363,232.429187) (146.687242,230.536687)
+---
+Object 31 detected, Qt corners at (74.525703,174.556488) (147.672970,182.950315) (45.030120,267.465753) (150.471304,254.095597)
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (48.057449,170.206390) (150.489281,158.332708) (66.595391,244.703000) (131.816211,245.599143)
+---
+Object 31 detected, Qt corners at (42.839603,177.713943) (202.952337,108.882042) (68.994055,242.770107) (130.256788,251.874541)
+---
+Object 31 detected, Qt corners at (40.532497,183.022522) (137.563992,185.530374) (46.698852,254.895396) (122.065512,253.091665)
+---
+Object 31 detected, Qt corners at (42.590900,191.977905) (115.632936,205.033707) (-7.651874,314.779052) (123.582407,266.129861)
+---
+Object 31 detected, Qt corners at (45.843521,196.042328) (122.320691,208.891580) (24.433614,286.847080) (121.841810,284.448714)
+---
+Object 31 detected, Qt corners at (38.821644,199.133972) (129.405069,201.156773) (45.681392,279.921497) (113.666953,292.136496)
+---
+Object 31 detected, Qt corners at (32.315468,219.964935) (108.018989,225.487674) (24.993478,307.961530) (116.839533,293.272743)
+---
+Object 31 detected, Qt corners at (19.106480,217.368393) (117.734753,229.420908) (37.778974,302.176798) (110.293845,297.602603)
+---
+Object 31 detected, Qt corners at (-40.859287,175.380630) (140.256443,213.608911) (49.171509,299.666973) (105.391438,297.458627)
+---
+Object 31 detected, Qt corners at (40.328159,232.305267) (109.667516,234.149272) (34.868585,316.326748) (114.823424,311.991334)
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (49.124596,179.402710) (133.119087,181.031613) (43.181742,258.853985) (130.755331,260.185177)
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (111.980049,217.510559) (191.574522,215.902167) (103.534183,300.025919) (200.355009,296.013396)
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (200.874405,169.453232) (317.840347,141.088378) (227.756525,237.376098) (284.942218,228.926868)
+---
+Object 31 detected, Qt corners at (202.776047,175.776474) (339.927055,148.415250) (237.559977,242.344564) (302.982557,238.802651)
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (373.568817,177.419083) (457.500039,188.509574) (356.534898,279.220134) (462.698019,249.554436)
+---
+Object 31 detected, Qt corners at (319.827118,149.704300) (479.933224,167.727810) (390.494499,243.482173) (455.121776,243.067557)
+---
+Object 31 detected, Qt corners at (379.024475,183.881607) (450.681109,175.471889) (365.261069,257.809220) (469.666681,262.837439)
+---
+Object 31 detected, Qt corners at (324.910797,146.182190) (448.544241,164.651108) (363.231377,240.952082) (430.226491,222.765379)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (339.684418,153.639069) (426.589671,152.965940) (336.679509,226.051574) (42cmd_vel:[0.0120633 0 0][0m
+[0m[ INFO] [1794659397.670811926]: update_speed[0m
+[0m[ INFO] [1794659397.702811661]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659397.718749247]: update_speed[0m
+[0m[ INFO] [1794659397.750799351]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659397.766717656]: update_speed[0m
+[0m[ INFO] [1794659397.798711431]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659397.814641138]: update_speed[0m
+[0m[ INFO] [1794659397.846627228]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659397.863524336]: update_speed[0m
+[0m[ INFO] [1794659397.894604108]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659397.910516211]: update_speed[0m
+[0m[ INFO] [1794659397.942536117]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659397.958464149]: update_speed[0m
+[0m[ INFO] [1794659397.990485221]: cmd_vel:[0.079029 0 0][0m
+[0m[ INFO] [1794659398.006424408]: update_speed[0m
+[0m[ INFO] [1794659398.038428075]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659398.054375918]: update_speed[0m
+[0m[ INFO] [1794659398.086383878]: cmd_vel:[0.0774048 0 0][0m
+[0m[ INFO] [1794659398.102343284]: update_speed[0m
+[0m[ INFO] [1794659398.134351396]: cmd_vel:[0.00196531 0 0][0m
+[0m[ INFO] [1794659398.153379688]: update_speed[0m
+[0m[ INFO] [1794659398.182228670]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659398.198204844]: update_speed[0m
+[0m[ INFO] [1794659398.231729179]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659398.246464137]: update_speed[0m
+[0m[ INFO] [1794659398.278115042]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659398.294063795]: update_speed[0m
+[0m[ INFO] [1794659398.358023406]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659398.373962173]: update_speed[0m
+[0m[ INFO] [1794659398.405975452]: cmd_vel:[0.0741584 0 0][0m
+[0m[ INFO] [1794659398.421933121]: update_speed[0m
+[0m[ INFO] [1794659398.453908387]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659398.469853137]: update_speed[0m
+[0m[ INFO] [1794659398.501866226]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659398.517833942]: update_speed[0m
+[0m[ INFO] [1794659398.549805294]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659398.565904559]: update_speed[0m
+[0m[ INFO] [1794659398.597780824]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659398.613737122]: update_speed[0m
+[0m[ INFO] [1794659398.645691829]: cmd_vel:[0.0710054 0 0][0m
+[0m[ INFO] [1794659398.661765099]: update_speed[0m
+[0m[ INFO] [1794659398.693680217]: cmd_vel:[0.00050261 0 0][0m
+[0m[ INFO] [1794659398.709598629]: update_speed[0m
+[0m[ INFO] [1794659398.741617095]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659398.757681883]: update_speed[0m
+[0m[ INFO] [1794659398.789569607]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659398.805503258]: update_speed[0m
+[0m[ INFO] [1794659398.840235863]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659398.853446394]: update_speed[0m
+[0m[ INFO] [1794659398.885428993]: cmd_vel:[0.0762269 0 0][0m
+[0m[ INFO] [1794659398.901405003]: update_speed[0m
+[0m[ INFO] [1794659398.965374198]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659398.981388625]: update_speed[0m
+[0m[ INFO] [1794659399.013629319]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659399.029339608]: update_speed[0m
+[0m[ INFO] [1794659399.061538290]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659399.077244719]: update_speed[0m
+[0m[ INFO] [1794659399.109190464]: cmd_vel:[0.15 0 0][0m
+[0m[ INFO] [1794659399.109257943]: cmd_vel:[0.114363 0 0][0m
+[0m[ INFO] [1794659399.125218023]: update_speed[0m
+[0m[ INFO] [1794659399.189096496]: cmd_vel:[0.0314113 0 0][0m
+[0m[ INFO] [1794659399.189189871]: cmd_vel:[0.018522 0 0][0m
+[0m[ INFO] [1794659399.189221695]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.205067717]: update_speed[0m
+[0m[ INFO] [1794659399.237361812]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.253040127]: update_speed[0m
+[0m[ INFO] [1794659399.285191242]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.300935453]: update_speed[0m
+[0m[ INFO] [1794659399.381002872]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.397623204]: update_speed[0m
+[0m[ INFO] [1794659399.429867678]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.447883616]: update_speed[0m
+[0m[ INFO] [1794659399.477033108]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.492781438]: update_speed[0m
+[0m[ INFO] [1794659399.524970670]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.543250799]: update_speed[0m
+[0m[ INFO] [1794659399.572703840]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.588630175]: update_speed[0m
+[0m[ INFO] [1794659399.620627251]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.636530717]: update_speed[0m
+[0m[ INFO] [1794659399.668961399]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.685791584]: update_speed[0m
+[0m[ INFO] [1794659399.717827426]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.732508869]: update_speed[0m
+[0m[ INFO] [1794659399.764707560]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.780497331]: update_speed[0m
+[0m[ INFO] [1794659399.812639171]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.828385712]: update_speed[0m
+[0m[ INFO] [1794659399.861241775]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.881626683]: update_speed[0m
+[0m[ INFO] [1794659399.908517528]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.924325741]: update_speed[0m
+[0m[ INFO] [1794659399.956467960]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659399.972242544]: update_speed[0m
+[0m[ INFO] [1794659400.004166666]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.020124789]: update_speed[0m
+[0m[ INFO] [1794659400.052343907]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.068117818]: update_speed[0m
+[0m[ INFO] [1794659400.100112497]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.116060833]: update_speed[0m
+[0m[ INFO] [1794659400.435949633]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.451685187]: update_speed[0m
+[0m[ INFO] [1794659400.579452267]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.598376475]: update_speed[0m
+[0m[ INFO] [1794659400.630852805]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.643362933]: update_speed[0m
+[0m[ INFO] [1794659400.772667418]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.787285432]: update_speed[0m
+[0m[ INFO] [1794659400.915087406]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.931111782]: update_speed[0m
+[0m[ INFO] [1794659400.979099202]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659400.979159448]: cmd_vel:[0 -0.03 -0.01009][0m
+[0m[ INFO] [1794659400.979184444]: cmd_vel:[0 -0.03 0.0118848][0m
+[0m[ INFO] [1794659400.979197988]: cmd_vel:[0 -0.03 0.0778307][0m
+[0m[ INFO] [1794659400.996764492]: update_speed[0m
+[0m[ INFO] [1794659401.030617678]: cmd_vel:[0 -0.03 0.145121][0m
+[0m[ INFO] [1794659401.042892654]: update_speed[0m
+[0m[ INFO] [1794659401.106862963]: cmd_vel:[0 -0.03 0.138156][0m
+[0m[ INFO] [1794659401.122814293]: update_speed[0m
+[0m[ INFO] [1794659401.154811204]: cmd_vel:[0 -0.03 0.0636955][0m
+[0m[ INFO] [1794659401.170785500]: update_speed[0m
+[0m[ INFO] [1794659401.203049867]: cmd_vel:[0 -0.03 0][0m
+[0m[ INFO] [1794659401.218733383]: update_speed[0m
+[0m[ INFO] [1794659401.250759066]: cmd_vel:[0 -0.03 -0.0705687][0m
+[0m[ INFO] [1794659401.266639696]: update_speed[0m
+[0m[ INFO] [1794659401.298691156]: cmd_vel:[0 0.03 -0.0338024][0m
+[0m[ INFO] [1794659401.314602145]: update_speed[0m
+[0m[ INFO] [1794659401.346590215]: cmd_vel:[0 0.03 0.0774241][0m
+[0m[ INFO] [1794659401.362594168]: update_speed[0m
+[0m[ INFO] [1794659401.394536098]: cmd_vel:[0 0.03 0.188651][0m
+[0m[ INFO] [1794659401.421372042]: update_speed[0m
+[0m[ INFO] [1794659401.458470052]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.474416843]: update_speed[0m
+[0m[ INFO] [1794659401.508854623]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.522351211]: update_speed[0m
+[0m[ INFO] [1794659401.554384449]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.570304948]: update_speed[0m
+[0m[ INFO] [1794659401.602336668]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.618235641]: update_speed[0m
+[0m[ INFO] [1794659401.650285104]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.666194826]: update_speed[0m
+[0m[ INFO] [1794659401.698393712]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.714241331]: update_speed[0m
+[0m[ INFO] [1794659401.746181193]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.762195505]: update_spee6.475371,228.893172)
+---
+Object 31 detected, Qt corners at (320.999664,153.829910) (448.845082,128.260599) (338.213603,215.013858) (413.456394,225.053015)
+---
+Object 31 detected, Qt corners at (324.831665,152.241135) (411.478721,155.181206) (322.455490,238.802586) (414.164356,229.414754)
+---
+Object 31 detected, Qt corners at (319.130981,156.304749) (423.372159,151.624255) (335.720261,230.175440) (416.059038,225.570484)
+---
+Object 31 detected, Qt corners at (321.144257,153.529312) (424.198433,156.099260) (335.945398,238.587348) (415.538706,235.226670)
+---
+Object 31 detected, Qt corners at (305.368927,137.772186) (417.029199,167.312862) (330.473000,243.736251) (404.090909,228.787565)
+---
+Object 31 detected, Qt corners at (334.348999,165.436523) (424.548937,160.129883) (336.719765,240.727817) (422.553525,245.091138)
+---
+Object 31 detected, Qt corners at (328.312561,158.383331) (415.147657,170.292068) (325.469846,248.299525) (420.873949,235.777800)
+---
+Object 31 detected, Qt corners at (327.153870,149.411469) (426.831450,159.853479) (331.482506,232.051483) (416.499754,227.626445)
+---
+Object 31 detected, Qt corners at (332.703094,155.371964) (428.275713,149.460373) (341.082200,225.220158) (422.609490,228.431550)
+---
+Object 31 detected, Qt corners at (326.905365,147.141083) (424.862067,148.004116) (336.236149,226.397667) (415.688058,228.036437)
+---
+Object 31 detected, Qt corners at (318.023590,145.577652) (426.366416,147.657317) (331.728019,225.190225) (408.751314,225.601649)
+---
+Object 31 detected, Qt corners at (316.036072,146.709839) (419.699559,149.225822) (330.944009,225.593700) (408.403529,226.409533)
+---
+Object 31 detected, Qt corners at (321.719971,149.825912) (416.348851,152.726590) (328.061488,228.755721) (410.721822,228.102421)
+---
+Object 31 detected, Qt corners at (311.665100,143.449631) (416.451683,152.047253) (320.869619,227.209438) (407.471620,224.545915)
+---
+Object 31 detected, Qt corners at (320.778015,148.689041) (410.353384,150.883484) (320.832187,226.620007) (408.346089,228.266755)
+---
+Object 31 detected, Qt corners at (324.316650,159.215378) (387.583834,160.941172) (274.803416,260.160119) (423.438488,243.377191)
+---
+Object 31 detected, Qt corners at (306.257202,158.565720) (389.325689,148.260703) (300.912084,230.409810) (395.749074,232.206003)
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (182.187531,174.388382) (277.702634,183.558517) (186.940421,255.872785) (269.257244,245.489121)
+---
+Object 31 detected, Qt corners at (181.246979,192.761276) (265.583618,193.430945) (176.973772,269.150149) (269.130874,262.945396)
+---
+Object 31 detected, Qt corners at (166.076843,194.380112) (264.042204,203.679783) (179.613902,274.277653) (258.619412,265.831904)
+---
+Object 31 detected, Qt corners at (184.665237,207.304398) (283.807904,188.715803) (196.552405,272.270198) (268.295846,282.656945)
+---
+Object 31 detected, Qt corners at (169.464447,196.734589) (454.791519,55.384942) (203.811163,267.682822) (255.255048,280.769828)
+---
+Object 31 detected, Qt corners at (187.754837,229.026306) (234.642718,226.172369) (96.470395,353.292856) (312.134064,364.612793)
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (75.366440,171.540878) (208.942098,219.790149) (127.248099,284.842096) (189.048032,270.502361)
+---
+Object 31 detected, Qt corners at (129.054382,223.674561) (208.819730,214.986509) (127.756884,290.097647) (222.626908,303.947143)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (135.283752,214.557312) (214.968924,221.699912) (131.404937,288.509975) (214.639383,288.545849)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (146.705460,213.069138) (247.143777,205.065760) (147.716892,278.958994) (225.362231,283.795639)
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (160.378311,211.156784) (235.911328,217.459487) (138.191827,298.537136) (243.635328,286.853723)
+---
+Object 31 detected, Qt corners at (165.187439,206.878052) (244.682856,205.627298) (144.741565,293.948675) (241.060457,287.d[0m
+[0m[ INFO] [1794659401.794215853]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.810110420]: update_speed[0m
+[0m[ INFO] [1794659401.842009559]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.857988994]: update_speed[0m
+[0m[ INFO] [1794659401.890006952]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.905973259]: update_speed[0m
+[0m[ INFO] [1794659401.937923402]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659401.953863136]: update_speed[0m
+[0m[ INFO] [1794659401.986561085]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.001823554]: update_speed[0m
+[0m[ INFO] [1794659402.033859961]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.049745040]: update_speed[0m
+[0m[ INFO] [1794659402.089265718]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.109161802]: update_speed[0m
+[0m[ INFO] [1794659402.145703998]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.161764122]: update_speed[0m
+[0m[ INFO] [1794659402.193649354]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.209568854]: update_speed[0m
+[0m[ INFO] [1794659402.243257019]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.258106417]: update_speed[0m
+[0m[ INFO] [1794659402.289509935]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.305444168]: update_speed[0m
+[0m[ INFO] [1794659402.337424659]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.353405796]: update_speed[0m
+[0m[ INFO] [1794659402.385408408]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.401455817]: update_speed[0m
+[0m[ INFO] [1794659402.433355578]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.449297407]: update_speed[0m
+[0m[ INFO] [1794659402.481285326]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.497383407]: update_speed[0m
+[0m[ INFO] [1794659402.529568392]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.545161095]: update_speed[0m
+[0m[ INFO] [1794659402.577703006]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.597769562]: update_speed[0m
+[0m[ INFO] [1794659402.625393364]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.641062409]: update_speed[0m
+[0m[ INFO] [1794659402.673598481]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.689366553]: update_speed[0m
+[0m[ INFO] [1794659402.752972088]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.768970797]: update_speed[0m
+[0m[ INFO] [1794659402.801212976]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.822255589]: update_speed[0m
+[0m[ INFO] [1794659402.848906826]: cmd_vel:[0 0.03 0.2][0m
+[0m[ INFO] [1794659402.864881250]: update_speed[0m
+[0m[ INFO] [1794659402.897395238]: cmd_vel:[0 0.03 0.16162][0m
+[0m[ INFO] [1794659402.912969365]: update_speed[0m
+[0m[ INFO] [1794659402.944843392]: cmd_vel:[0 0 0.0065526][0m
+[0m[ INFO] [1794659402.960928049]: update_speed[0m
+[0m[ INFO] [1794659402.992775063]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.009648783]: update_speed[0m
+[0m[ INFO] [1794659403.040746089]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.056694055]: update_speed[0m
+[0m[ INFO] [1794659403.120974343]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.136538589]: update_speed[0m
+[0m[ INFO] [1794659403.168529132]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.184615158]: update_speed[0m
+[0m[ INFO] [1794659403.217549455]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.232569545]: update_speed[0m
+[0m[ INFO] [1794659403.264423648]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.285971917]: update_speed[0m
+[0m[ INFO] [1794659403.313496449]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.328336461]: update_speed[0m
+[0m[ INFO] [1794659403.360687958]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.376305684]: update_speed[0m
+[0m[ INFO] [1794659403.409757276]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.424262178]: update_speed[0m
+[0m[ INFO] [1794659403.456344385]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.472233742]: update_speed[0m
+[0m[ INFO] [1794659403.506145259]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.520124827]: update_speed[0m
+[0m[ INFO] [1794659403.552193900]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.568233355]: update_speed[0m
+[0m[ INFO] [1794659403.600739526]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.616126776]: update_speed[0m
+[0m[ INFO] [1794659403.648153942]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.664062153]: update_speed[0m
+[0m[ INFO] [1794659403.698302413]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.711998638]: update_speed[0m
+[0m[ INFO] [1794659403.744172627]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.759977447]: update_speed[0m
+[0m[ INFO] [1794659403.792305212]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.807819011]: update_speed[0m
+[0m[ INFO] [1794659403.841700868]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.855866084]: update_speed[0m
+[0m[ INFO] [1794659403.889437468]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.903736151]: update_speed[0m
+[0m[ INFO] [1794659403.935725793]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659403.951671994]: update_speed[0m
+[0m[ INFO] [1794659404.282847609]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659404.296859392]: update_speed[0m
+[0m[ INFO] [1794659404.399202428]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659404.415131126]: update_speed[0m
+[0m[ INFO] [1794659404.448078807]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659404.463188708]: update_speed[0m
+[0m[ INFO] [1794659404.527084166]: cmd_vel:[0 0 0][0m
+[0m[ INFO] [1794659404.544749195]: update_speed[0m
+[0m[ INFO] [1794659404.574993925]: cmd_vel:[0 0.0741209 -0.107507][0m
+[0m[ INFO] [1794659404.575049298]: cmd_vel:[0 0.08 -0.16292][0m
+[0m[ INFO] [1794659404.590990164]: update_speed[0m
+[0m[ INFO] [1794659404.622979719]: cmd_vel:[0 0.0201681 -0.182449][0m
+[0m[ INFO] [1794659404.638896143]: update_speed[0m
+[0m[ INFO] [1794659404.702924127]: cmd_vel:[0 -0.03 -0.083657][0m
+[0m[ INFO] [1794659404.718823874]: update_speed[0m
+[0m[ INFO] [1794659404.750939357]: cmd_vel:[0 -0.03 -0.0121307][0m
+[0m[ INFO] [1794659404.766856827]: update_speed[0m
+[0m[ INFO] [1794659404.798757594]: cmd_vel:[0 -0.03 0.0860037][0m
+[0m[ INFO] [1794659404.814705914]: update_speed[0m
+[0m[ INFO] [1794659404.847549218]: cmd_vel:[0 -0.03 0.170785][0m
+[0m[ INFO] [1794659404.864028987]: update_speed[0m
+[0m[ INFO] [1794659404.894711447]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659404.910601865]: update_speed[0m
+[0m[ INFO] [1794659404.942606790]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659404.958554963]: update_speed[0m
+[0m[ INFO] [1794659404.990579693]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659405.006708272]: update_speed[0m
+[0m[ INFO] [1794659405.049561880]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.057162058]: update_speed[0m
+[0m[ INFO] [1794659405.086499520]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.105085256]: update_speed[0m
+[0m[ INFO] [1794659405.135010596]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.150710412]: update_speed[0m
+[0m[ INFO] [1794659405.182347635]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.198314158]: update_speed[0m
+[0m[ INFO] [1794659405.230300020]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.249825484]: update_speed[0m
+[0m[ INFO] [1794659405.278226560]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.309483142]: update_speed[0m
+[0m[ INFO] [1794659405.342146442]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.358129975]: update_speed[0m
+[0m[ INFO] [1794659405.390325792]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.406056144]: update_speed[0m
+[0m[ INFO] [1794659405.438302202]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.453993297]: update_speed[0m
+[0m[ INFO] [1794659405.486051878]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.502004893]: update_speed[0m
+[0m[ INFO] [1794659405.536512040]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.549920612]: update_speed[0m
+[0m[ INFO] [1794659405.589895615]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.599879426]: update_speed[0m
+[0m[ INFO] [1794659405.629880755]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.647231804]: update_speed[0m
+[0m[ INFO] [1794659405.677781799]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.693740242]: update_speed[0m
+[0m[ INFO] [1794659405.725736310]: cmd_vel:[0 0 0.2][0m
+[0m[ INFO] [1794659405.765374801]: update_speed[0m
+[0m[ INFO] [1794[0m[ INFO] [1794659354.095513989]: BOX filter started[0m
+[0m[ INFO] [1794659354.096641128]: invert filter not set, assuming false[0m
+terminate called after throwing an instance of 'class_loader::LibraryUnloadException'
+  what():  Attempt to unload library that class_loader is unaware of.
+terminate called after throwing an instance of 'class_loader::LibraryUnloadException'
+  what():  Attempt to unload library that class_loader is unaware of.
+[0m[ INFO] [1794659358.408272164]: global_costmap: Using plugin "static_layer"[0m
+[0m[ INFO] [1794659358.416003607]: Requesting the map...[0m
+[0m[ INFO] [1794659358.618854813]: Resizing costmap to 736 X 736 at 0.020000 m/pix[0m
+[0m[ INFO] [1794659358.718482801]: Received a 736 X 736 map at 0.020000 m/pix[0m
+[0m[ INFO] [1794659358.721822053]: global_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1794659358.725154822]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1794659358.746982599]: global_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1794659358.823583088]: local_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1794659358.839018542]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1794659358.854323286]: local_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1794659358.903905049]: Created local_planner dwa_local_planner/DWAPlannerROS[0m
+[0m[ INFO] [1794659358.907628668]: Sim period is set to 0.10[0m
+[0m[ INFO] [1794659359.017901076]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1794659359.022695984]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1794659359.125972914]: odom received![0m
+[0m[ INFO] [1794659353.719056596]: Starting ImuFilter[0m
+[0m[ INFO] [1794659353.730090765]: Using dt computed from message headers[0m
+[0m[ INFO] [1794659353.730115775]: The gravity vector is kept in the IMU message.[0m
+[0m[ INFO] [1794659353.759780283]: Imu filter gain set to 0.100000[0m
+[0m[ INFO] [1794659353.759802877]: Gyro drift bias set to 0.000000[0m
+[0m[ INFO] [1794659353.759821907]: Magnetometer bias values: 0.000000 0.000000 0.000000[0m
+[0m[ INFO] [1794659373.466191706]: First IMU message received.[0m
+[0m[ INFO] [1794659353.746617192]: output frame: odom[0m
+[0m[ INFO] [1794659353.749579854]: base frame: base_footprint[0m
+[0m[ INFO] [1794659356.046538799]: Initializing Odom sensor[0m
+[0m[ INFO] [1794659356.078342963]: Odom sensor activated[0m
+[0m[ INFO] [1794659356.079757217]: Kalman filter initialized with odom measurement[0m
+[0m[ INFO] [1794659373.466575393]: Initializing Imu sensor[0m
+[0m[ INFO] [1794659373.517272389]: Imu sensor activated[0m
+[0m[ INFO] [1794659353.670999739]: IMU calibration found.[0m
+[0m[ INFO] [1794659353.681559212]: Starting Raw Imu Bridge.[0m
+[0m[ INFO] [1794659373.435215583]: Calibrating accelerometer and gyroscope complete.[0m
+[0m[ INFO] [1794659373.435243716]: Bias values can be saved for reuse.[0m
+[0m[ INFO] [1794659373.435260867]: Accelerometer: x: -0.062489, y: -0.185439, z: -0.612822[0m
+[0m[ INFO] [1794659373.435273494]: Gyroscope: x: -0.061575, y: 0.000266, z: 0.017277[0m
+659405.805660589]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659405.821644525]: update_speed[0m
+[0m[ INFO] [1794659405.853741635]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659405.872575009]: update_speed[0m
+[0m[ INFO] [1794659405.901585188]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659405.917497259]: update_speed[0m
+[0m[ INFO] [1794659405.949497308]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659405.969360469]: update_speed[0m
+[0m[ INFO] [1794659405.997479850]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659406.013470531]: update_speed[0m
+[0m[ INFO] [1794659406.045427445]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659406.061471340]: update_speed[0m
+[0m[ INFO] [1794659406.093476885]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659406.109814900]: update_speed[0m
+[0m[ INFO] [1794659406.141940165]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659406.159318128]: update_speed[0m
+[0m[ INFO] [1794659406.189306405]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659406.205414449]: update_speed[0m
+[0m[ INFO] [1794659406.237489356]: cmd_vel:[0 -0.03 0.2][0m
+[0m[ INFO] [1794659406.253452413]: update_speed[0m
+[0m[ INFO] [1794659406.285765310]: cmd_vel:[0 0 0.175632][0m
+[0m[ INFO] [1794659406.301254336]: update_speed[0m
+[0m[ INFO] [1794659406.333435116]: cmd_vel:[0 -0.03 0.142231][0m
+[0m[ INFO] [1794659406.349222566]: update_speed[0m
+[0m[ INFO] [1794659406.381873146]: cmd_vel:[0 -0.03 0.10883][0m
+[0m[ INFO] [1794659406.397649184]: update_speed[0m
+[0m[ INFO] [1794659406.429028060]: cmd_vel:[0 -0.03 0.111986][0m
+[0m[ INFO] [1794659406.445067073]: update_speed[0m
+[0m[ INFO] [1794659406.476955390]: cmd_vel:[0 -0.03 0.115142][0m
+[0m[ INFO] [1794659406.493173955]: update_speed[0m
+[INFO] [1794659356.134344]: Publishing combined odometry on
+[0m[ INFO] [1794659353.848728203]: RPLIDAR running on ROS package rplidar_ros. SDK Version:1.7.0[0m
+RPLIDAR S/N: 8451FA86C2E392D0A5E59FF713855C60
+[0m[ INFO] [1794659356.356403028]: Firmware Ver: 1.29[0m
+[0m[ INFO] [1794659356.356429291]: Hardware Rev: 7[0m
+[0m[ INFO] [1794659356.357836982]: RPLidar health status : 0[0m
+[0m[ INFO] [1794659356.939636762]: current scan mode: Sensitivity, max_distance: 12.0 m, Point number: 7.9K , angle_compensate: 2[0m

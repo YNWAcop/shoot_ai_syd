@@ -1,0 +1,325 @@
+[31mWARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+warning: xacro.py is deprecated; please use xacro instead
+... logging to /home/abot/.ros/log/715a5ce4-e01a-11f1-9c98-24418c8a26ae/roslaunch-abot-robot-22325.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/abot/syd/src/shoot_race/launch/bringup.launch
+[1mstarted roslaunch server http://abot-robot:42923/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /amcl/
+
+PARAMETERS
+ * /abot_driver/base_frame: base_link
+ * /abot_driver/buadrate: 921600
+ * /abot_driver/cmd_vel_topic: cmd_vel
+ * /abot_driver/odom_frame: odom
+ * /abot_driver/odom_topic: wheel_odom
+ * /abot_driver/out_pid_debug_enable: False
+ * /abot_driver/port: /dev/abot
+ * /abot_driver/publish_tf: False
+ * /abot_imu/imu/accelerometer_bias/x: 0.005436
+ * /abot_imu/imu/accelerometer_bias/y: 0.014684
+ * /abot_imu/imu/accelerometer_bias/z: -0.395418
+ * /abot_imu/imu/gyroscope_bias/x: -0.035592
+ * /abot_imu/imu/gyroscope_bias/y: 0.08067
+ * /abot_imu/imu/gyroscope_bias/z: 0.001216
+ * /abot_imu/imu/perform_calibration: True
+ * /amcl/gui_publish_rate: 10.0
+ * /amcl/kld_err: 0.05
+ * /amcl/kld_z: 0.99
+ * /amcl/laser_lambda_short: 0.1
+ * /amcl/laser_likelihood_max_dist: 2.0
+ * /amcl/laser_max_beams: 60
+ * /amcl/laser_max_range: 12.0
+ * /amcl/laser_model_type: likelihood_field
+ * /amcl/laser_sigma_hit: 0.2
+ * /amcl/laser_z_hit: 0.5
+ * /amcl/laser_z_max: 0.05
+ * /amcl/laser_z_rand: 0.5
+ * /amcl/laser_z_short: 0.05
+ * /amcl/max_particles: 2000
+ * /amcl/min_particles: 500
+ * /amcl/odom_alpha1: 0.2
+ * /amcl/odom_alpha2: 0.2
+ * /amcl/odom_alpha3: 0.2
+ * /amcl/odom_alpha4: 0.2
+ * /amcl/odom_alpha5: 0.1
+ * /amcl/odom_frame_id: odom
+ * /amcl/odom_model_type: omni
+ * /amcl/recovery_alpha_fast: 0.0
+ * /amcl/recovery_alpha_slow: 0.0
+ * /amcl/resample_interval: 1
+ * /amcl/transform_tolerance: 1.0
+ * /amcl/update_min_a: 0.2
+ * /amcl/update_min_d: 0.25
+ * /amcl/use_map_topic: False
+ * /ar_track_alvar/marker_size: 9.0
+ * /ar_track_alvar/max_frequency: 30.0
+ * /ar_track_alvar/max_new_marker_error: 0.08
+ * /ar_track_alvar/max_track_error: 0.2
+ * /ar_track_alvar/output_frame: /usb_cam
+ * /find_object_2d/gui: True
+ * /find_object_2d/objects_path: /home/abot/syd/sr...
+ * /find_object_2d/settings_path: ~/.ros/find_objec...
+ * /imu_filter_madgwick/publish_tf: False
+ * /imu_filter_madgwick/use_mag: False
+ * /joint_state_publisher/rate: 20.0
+ * /laser_filter/scan_filter_chain: [{'type': 'laser_...
+ * /move_base/DWAPlannerROS/acc_lim_theta: 3.0
+ * /move_base/DWAPlannerROS/acc_lim_x: 2.5
+ * /move_base/DWAPlannerROS/acc_lim_y: 2.5
+ * /move_base/DWAPlannerROS/controller_frequency: 10.0
+ * /move_base/DWAPlannerROS/forward_point_distance: 0.325
+ * /move_base/DWAPlannerROS/goal_distance_bias: 24.0
+ * /move_base/DWAPlannerROS/holonomic_robot: True
+ * /move_base/DWAPlannerROS/latch_xy_goal_tolerance: False
+ * /move_base/DWAPlannerROS/max_scaling_factor: 0.2
+ * /move_base/DWAPlannerROS/max_vel_theta: 2
+ * /move_base/DWAPlannerROS/max_vel_trans: 0.5
+ * /move_base/DWAPlannerROS/max_vel_x: 0.4
+ * /move_base/DWAPlannerROS/max_vel_y: 0.3
+ * /move_base/DWAPlannerROS/min_vel_theta: 1
+ * /move_base/DWAPlannerROS/min_vel_trans: 0.05
+ * /move_base/DWAPlannerROS/min_vel_x: -0.4
+ * /move_base/DWAPlannerROS/min_vel_y: -0.3
+ * /move_base/DWAPlannerROS/occdist_scale: 0.03
+ * /move_base/DWAPlannerROS/oscillation_reset_dist: 0.05
+ * /move_base/DWAPlannerROS/path_distance_bias: 32.0
+ * /move_base/DWAPlannerROS/publish_cost_grid_pc: True
+ * /move_base/DWAPlannerROS/publish_traj_pc: True
+ * /move_base/DWAPlannerROS/scaling_speed: 0.25
+ * /move_base/DWAPlannerROS/sim_time: 2.0
+ * /move_base/DWAPlannerROS/stop_time_buffer: 0.2
+ * /move_base/DWAPlannerROS/vth_samples: 20
+ * /move_base/DWAPlannerROS/vx_samples: 10
+ * /move_base/DWAPlannerROS/vy_samples: 0
+ * /move_base/DWAPlannerROS/xy_goal_tolerance: 0.14
+ * /move_base/DWAPlannerROS/yaw_goal_tolerance: 0.15
+ * /move_base/GlobalPlanner/allow_unknown: True
+ * /move_base/GlobalPlanner/cost_factor: 3.0
+ * /move_base/GlobalPlanner/default_tolerance: 0.5
+ * /move_base/GlobalPlanner/lethal_cost: 253
+ * /move_base/GlobalPlanner/neutral_cost: 50
+ * /move_base/GlobalPlanner/old_navfn_behavior: False
+ * /move_base/GlobalPlanner/planner_costmap_publish_frequency: 0.0
+ * /move_base/GlobalPlanner/planner_window_x: 0.0
+ * /move_base/GlobalPlanner/planner_window_y: 0.0
+ * /move_base/GlobalPlanner/publish_potential: True
+ * /move_base/GlobalPlanner/publish_scale: 100
+ * /move_base/GlobalPlanner/use_dijkstra: True
+ * /move_base/GlobalPlanner/use_grid_path: False
+ * /move_base/GlobalPlanner/use_quadratic: True
+ * /move_base/base_global_planner: global_planner/Gl...
+ * /move_base/base_local_planner: dwa_local_planner...
+ * /move_base/controller_frequency: 10.0
+ * /move_base/controller_patience: 15.0
+ * /move_base/global_costmap/cost_scaling_factor: 0.05
+ * /move_base/global_costmap/footprint: [[-0.17, -0.15], ...
+ * /move_base/global_costmap/global_frame: map
+ * /move_base/global_costmap/inflation_radius: 0.05
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/observation_sources: scan
+ * /move_base/global_costmap/obstacle_range: 3.0
+ * /move_base/global_costmap/publish_frequency: 10.0
+ * /move_base/global_costmap/raytrace_range: 3.5
+ * /move_base/global_costmap/resolution: 0.1
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/scan/clearing: True
+ * /move_base/global_costmap/scan/data_type: LaserScan
+ * /move_base/global_costmap/scan/marking: True
+ * /move_base/global_costmap/scan/sensor_frame: laser_link
+ * /move_base/global_costmap/scan/topic: scan_filtered
+ * /move_base/global_costmap/static_map: True
+ * /move_base/global_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/cost_scaling_factor: 0.05
+ * /move_base/local_costmap/footprint: [[-0.17, -0.15], ...
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 2.0
+ * /move_base/local_costmap/inflation_radius: 0.05
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/observation_sources: scan
+ * /move_base/local_costmap/obstacle_range: 3.0
+ * /move_base/local_costmap/publish_frequency: 10.0
+ * /move_base/local_costmap/raytrace_range: 3.5
+ * /move_base/local_costmap/resolution: 0.02
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/scan/clearing: True
+ * /move_base/local_costmap/scan/data_type: LaserScan
+ * /move_base/local_costmap/scan/marking: True
+ * /move_base/local_costmap/scan/sensor_frame: laser_link
+ * /move_base/local_costmap/scan/topic: scan_filtered
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/width: 2.0
+ * /move_base/oscillation_distance: 0.2
+ * /move_base/oscillation_timeout: 10.0
+ * /move_base/planner_frequency: 5.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/shutdown_costmaps: False
+ * /robot_description: <?xml version="1....
+ * /robot_pose_ekf/base_footprint_frame: base_footprint
+ * /robot_pose_ekf/debug: False
+ * /robot_pose_ekf/freq: 200.0
+ * /robot_pose_ekf/imu_used: True
+ * /robot_pose_ekf/odom_used: True
+ * /robot_pose_ekf/output_frame: odom
+ * /robot_pose_ekf/sensor_timeout: 1.0
+ * /robot_pose_ekf/vo_used: False
+ * /robot_state_publisher/rate: 20.0
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /rplidarNode/angle_compensate: True
+ * /rplidarNode/frame_id: laser_link
+ * /rplidarNode/inverted: False
+ * /rplidarNode/serial_baudrate: 115200
+ * /rplidarNode/serial_port: /dev/rplidar
+ * /usb_cam/camera_frame_id: usb_cam
+ * /usb_cam/camera_info_url: file:///home/abot...
+ * /usb_cam/image_height: 480
+ * /usb_cam/image_width: 640
+ * /usb_cam/io_method: mmap
+ * /usb_cam/pixel_format: yuyv
+ * /usb_cam/video_device: /dev/video0
+ * /use_sim_time: False
+
+NODES
+  /
+    abot_driver (abot_bringup/abot_driver)
+    abot_imu (abot_imu/abot_imu)
+    amcl (amcl/amcl)
+    ar_track_alvar (ar_track_alvar/individualMarkersNoKinect)
+    base_imu_to_base_link (tf/static_transform_publisher)
+    base_laser_to_base_link (tf/static_transform_publisher)
+    base_link_to_cam (tf/static_transform_publisher)
+    find_object_2d (find_object_2d/find_object_[0m[ INFO] [1794653963.986826741]: port:/dev/abot buadrate:921600[0m
+[0m[ INFO] [1794653963.992909085]: out_pid_debug_enable:0[0m
+[0m[ INFO] [1794653963.994536234]: BaseDriver startup[0m
+[0m[ INFO] [1794653963.995803918]: connected to main board[0m
+Transport main read/write started
+[33m[ WARN] [1794653965.006385114]: Camera calibration file did not specify distortion model, assuming plumb bob[0m
+[33m[ WARN] [1794653965.006486081]: [head_camera] does not match name usb_cam in file /home/abot/syd/src/track_tag/camera_calibration.yaml[0m
+[33m[ WARN] [1794653966.138839178]: unknown control 'focus_auto'
+[0m
+[33m[ WARN] [1794653966.358114284]: Calibrating accelerometer and gyroscope, make sure robot is stationary and level.[0m
+[33m[ WARN] [1794653968.603359425]: global_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1794653969.081587348]: local_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1794653974.035712108]: Still waiting for data on topic /imu/data_raw...[0m
+[0m[ INFO] [1794653964.223134017]: BOX filter started[0m
+[0m[ INFO] [1794653964.224305084]: invert filter not set, assuming false[0m
+terminate called after throwing an instance of 'class_loader::LibraryUnloadException'
+  what():  Attempt to unload library that class_loader is unaware of.
+[0m[ INFO] [1794653968.625133683]: global_costmap: Using plugin "static_layer"[0m
+[0m[ INFO] [1794653968.660176450]: Requesting the map...[0m
+[0m[ INFO] [1794653968.868153197]: Resizing costmap to 736 X 736 at 0.020000 m/pix[0m
+[0m[ INFO] [1794653968.967366981]: Received a 736 X 736 map at 0.020000 m/pix[0m
+[0m[ INFO] [1794653968.970816556]: global_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1794653968.974407202]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1794653969.006688606]: global_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1794653969.096966593]: local_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1794653969.101152217]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1794653969.136138473]: local_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1794653969.191246899]: Created local_planner dwa_local_planner/DWAPlannerROS[0m
+[0m[ INFO] [1794653969.194022733]: Sim period is set to 0.10[0m
+[0m[ INFO] [1794653969.399047432]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1794653969.411772561]: Recovery behavior will clear layer 'obstacles'[0m
+[0m[ INFO] [1794653969.471999916]: odom received![0m
+[0m[ INFO] [1794653964.015362967]: Starting ImuFilter[0m
+[0m[ INFO] [1794653964.020167646]: Using dt computed from message headers[0m
+[0m[ INFO] [1794653964.020191691]: The gravity vector is kept in the IMU message.[0m
+[0m[ INFO] [1794653964.027368823]: Imu filter gain set to 0.100000[0m
+[0m[ INFO] [1794653964.027397503]: Gyro drift bias set to 0.000000[0m
+[0m[ INFO] [1794653964.027411370]: Magnetometer bias values: 0.000000 0.000000 0.000000[0m
+[0m[ INFO] [1794653982.609496433]: First IMU message received.[0m
+terminate called after throwing an instance of 'class_loader::LibraryUnloadException'
+  what():  Attempt to unload library that class_loader is unaware of.
+[0m[ INFO] [1794653964.050043158]: output frame: odom[0m
+[0m[ INFO] [1794653964.051097235]: base frame: base_footprint[0m
+[0m[ INFO] [1794653966.341360471]: Initializing Odom sensor[0m
+[0m[ INFO] [1794653966.341394232]: Odom sensor activated[0m
+[0m[ INFO] [1794653966.346300292]: Kalman filter initialized with odom measurement[0m
+[0m[ INFO] [1794653982.609729727]: Initializing Imu sensor[0m
+[0m[ INFO] [1794653982.642613442]: Imu sensor activated[0m
+[INFO] [1794653966.381888]: Publishing combined odometry on
+[0m[ INFO] [1794653965.995970743]: end sleep[0m
+[0m[ INFO] [1794653966.014195573]: robot version:v1.0.2 build time:20180730-m0e0[0m
+[0m[ INFO] [1794653966.030157808]: subscribe cmd topic on [cmd_vel][0m
+[0m[ INFO] [1794653966.032751801]: advertise odom topic on [wheel_odom][0m
+[0m[ INFO] [1794653966.053188863]: RobotParameters: 97 225 3960 10 320 2700 0 10 250 50 50 250 69[0m
+[0m[ INFO] [1794653963.962282541]: IMU calibration found.[0m
+[0m[ INFO] [1794653963.973147383]: Starting Raw Imu Bridge.[0m
+[0m[ INFO] [1794653982.577335057]: Calibrating accelerometer and gyroscope complete.[0m
+[0m[ INFO] [1794653982.577360471]: Bias values can be saved for reuse.[0m
+[0m[ INFO] [1794653982.577375677]: Accelerometer: x: -0.001864, y: -0.254346, z: -0.672353[0m
+[0m[ INFO] [1794653982.577385608]: Gyroscope: x: -0.065319, y: 0.013944, z: -0.153893[0m
+[0m[ INFO] [1794653964.104909968]: RPLIDAR running on ROS package rplidar_ros. SDK Version:1.7.0[0m
+RPLIDAR S/N: 8451FA86C2E392D0A5E59FF713855C60
+[0m[ INFO] [1794653966.611673324]: Firmware Ver: 1.29[0m
+[0m[ INFO] [1794653966.611696952]: Hardware Rev: 7[0m
+[0m[ INFO] [1794653966.613092744]: RPLidar health status : 0[0m
+[0m[ INFO] [1794653967.155734046]: current scan mode: Sensitivity, max_distance: 12.0 m, Point number: 7.9K , angle_compensate: 2[0m
+2d)
+    imu_filter_madgwick (imu_filter_madgwick/imu_filter_node)
+    joint_state_publisher (joint_state_publisher/joint_state_publisher)
+    laser_filter (laser_filters/scan_to_scan_filter_chain)
+    map_server (map_server/map_server)
+    move_base (move_base/move_base)
+    odom_ekf (abot_bringup/odom_ekf.py)
+    print_objects_detected (find_object_2d/print_objects_detected)
+    robot_pose_ekf (robot_pose_ekf/robot_pose_ekf)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    rplidarNode (rplidar_ros/rplidarNode)
+    usb_cam (usb_cam/usb_cam_node)
+    world_to_map (tf/static_transform_publisher)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/abot/syd/src/shoot_race/launch/bringup.launch http://localhost:11311
+[1mprocess[abot_driver-1]: started with pid [22356][0m
+[1mprocess[abot_imu-2]: started with pid [22357][0m
+[1mprocess[base_imu_to_base_link-3]: started with pid [22358][0m
+[1mprocess[base_laser_to_base_link-4]: started with pid [22368][0m
+[1mprocess[imu_filter_madgwick-5]: started with pid [22370][0m
+[1mprocess[robot_pose_ekf-6]: started with pid [22371][0m
+[1mprocess[odom_ekf-7]: started with pid [22382][0m
+[1mprocess[joint_state_publisher-8]: started with pid [22389][0m
+[1mprocess[robot_state_publisher-9]: started with pid [22396][0m
+[1mprocess[rplidarNode-10]: started with pid [22399][0m
+[1mprocess[laser_filter-11]: started with pid [22400][0m
+[1mprocess[map_server-12]: started with pid [22406][0m
+[1mprocess[move_base-13]: started with pid [22408][0m
+[1mprocess[amcl-14]: started with pid [22423][0m
+[1mprocess[usb_cam-15]: started with pid [22429][0m
+[1mprocess[world_to_map-16]: started with pid [22435][0m
+[1mprocess[base_link_to_cam-17]: started with pid [22444][0m
+[1mprocess[ar_track_alvar-18]: started with pid [22450][0m
+[1mprocess[find_object_2d-19]: started with pid [22464][0m
+[1mprocess[print_objects_detected-20]: started with pid [22469][0m
+[print_objects_detected-20] killing on exit
+[find_object_2d-19] killing on exit
+[ar_track_alvar-18] killing on exit
+[base_link_to_cam-17] killing on exit
+[world_to_map-16] killing on exit
+[usb_cam-15] killing on exit
+[amcl-14] killing on exit
+[move_base-13] killing on exit
+[map_server-12] killing on exit
+[laser_filter-11] killing on exit
+[rplidarNode-10] killing on exit
+[robot_state_publisher-9] killing on exit
+[joint_state_publisher-8] killing on exit
+[odom_ekf-7] killing on exit
+[robot_pose_ekf-6] killing on exit
+[imu_filter_madgwick-5] killing on exit
+[base_laser_to_base_link-4] killing on exit
+[base_imu_to_base_link-3] killing on exit
+[abot_imu-2] killing on exit
+[abot_driver-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

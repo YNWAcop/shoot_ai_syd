@@ -1,0 +1,220 @@
+[rospy.client][INFO] 2026-11-14 21:06:38,240: init_node, name[/shoot_race], pid[26750]
+[xmlrpc][INFO] 2026-11-14 21:06:38,261: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-14 21:06:38,261: Started XML-RPC server [http://abot-robot:38945/]
+[rospy.impl.masterslave][INFO] 2026-11-14 21:06:38,263: _ready: http://abot-robot:38945/
+[rospy.init][INFO] 2026-11-14 21:06:38,261: ROS Slave URI: [http://abot-robot:38945/]
+[xmlrpc][INFO] 2026-11-14 21:06:38,270: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2026-11-14 21:06:38,271: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2026-11-14 21:06:38,363: registered with master
+[rospy.rosout][INFO] 2026-11-14 21:06:38,363: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-11-14 21:06:38,374: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-11-14 21:06:38,377: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2026-11-14 21:06:38,599: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2026-11-14 21:06:38,761: [  -1.0s] 日志目录：/home/abot/race_logs/20261114_210638
+[rosout][INFO] 2026-11-14 21:06:38,768: [  -1.0s] config | override mission.rehearsal_pause_s: 0 -> 0
+[rospy.internal][INFO] 2026-11-14 21:06:38,790: topic[/object_position] adding connection to [http://abot-robot:41765/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:38,793: topic[/usb_cam/image_raw] adding connection to [http://abot-robot:42633/], count 0
+[rosout][INFO] 2026-11-14 21:06:38,798: [  -1.0s] 串口 /dev/shoot 已打开
+[rospy.internal][INFO] 2026-11-14 21:06:38,837: topic[/ar_pose_marker] adding connection to [http://abot-robot:45255/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:38,866: topic[/tf_static] adding connection to [http://abot-robot:40231/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:38,868: topic[/tf] adding connection to [http://abot-robot:33105/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:38,878: topic[/tf] adding connection to [http://abot-robot:33285/], count 1
+[rospy.internal][INFO] 2026-11-14 21:06:38,883: topic[/tf] adding connection to [http://abot-robot:38105/], count 2
+[rospy.internal][INFO] 2026-11-14 21:06:38,939: topic[/tf] adding connection to [http://abot-robot:36163/], count 3
+[rospy.internal][INFO] 2026-11-14 21:06:38,952: topic[/tf] adding connection to [http://abot-robot:40673/], count 4
+[rospy.internal][INFO] 2026-11-14 21:06:38,959: topic[/tf] adding connection to [http://abot-robot:40231/], count 5
+[rospy.internal][INFO] 2026-11-14 21:06:38,961: topic[/tf] adding connection to [http://abot-robot:41275/], count 6
+[rospy.internal][INFO] 2026-11-14 21:06:38,969: topic[/tf] adding connection to [http://abot-robot:37223/], count 7
+[rospy.internal][INFO] 2026-11-14 21:06:38,974: topic[/tf] adding connection to [http://abot-robot:33817/], count 8
+[rospy.internal][INFO] 2026-11-14 21:06:38,974: topic[/tf] adding connection to [http://abot-robot:45255/], count 9
+[rospy.internal][INFO] 2026-11-14 21:06:38,986: topic[/tf] adding connection to [http://abot-robot:39861/], count 10
+[rospy.internal][INFO] 2026-11-14 21:06:38,992: topic[/wheel_odom] adding connection to [http://abot-robot:33285/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:38,998: topic[/scan_filtered] adding connection to [http://abot-robot:40095/], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:39,079: topic[/initialpose] adding connection to [/amcl], count 0
+[rospy.internal][INFO] 2026-11-14 21:06:39,108: topic[/cmd_vel] adding connection to [/abot_driver], count 0
+[rosout][INFO] 2026-11-14 21:06:41,533: [  -1.0s] ========== 开局自检 ==========
+[rosout][INFO] 2026-11-14 21:06:41,535: [  -1.0s] [通过] 配置文件  无错误
+[rosout][INFO] 2026-11-14 21:06:41,536: [  -1.0s] [通过] 发射器串口  /dev/shoot
+[rosout][INFO] 2026-11-14 21:06:41,537: [  -1.0s] [通过] 激光雷达  0.0 秒前
+[rosout][INFO] 2026-11-14 21:06:41,539: [  -1.0s] [通过] 轮速里程计  0.0 秒前
+[rosout][INFO] 2026-11-14 21:06:41,541: [  -1.0s] [通过] 相机图像  0.0 秒前
+[rosout][INFO] 2026-11-14 21:06:41,542: [  -1.0s] [通过] AR码识别  0.1 秒前
+[rosout][INFO] 2026-11-14 21:06:41,544: [  -1.0s] [通过] AMCL 定位(TF map→base_link)  x=0.01 y=-0.03
+[rosout][INFO] 2026-11-14 21:06:41,545: [  -1.0s] [通过] 播报音频  齐全
+[rosout][INFO] 2026-11-14 21:06:41,547: [  -1.0s] [通过] 播放器 mplayer  
+[rosout][INFO] 2026-11-14 21:06:41,548: [  -1.0s] [通过] 离线卡片模板  已加载
+[rosout][INFO] 2026-11-14 21:06:41,553: [  -1.0s] [通过] 豆包 API  已配置
+[rosout][INFO] 2026-11-14 21:06:41,554: [  -1.0s] ==============================
+[rosout][INFO] 2026-11-14 21:06:41,561: [  -1.0s] 已设置初始位姿：起点 (-0.06, 0.09)
+[rosout][INFO] 2026-11-14 21:06:41,562: [  -1.0s] >>> 准备就绪：输入 1 并回车开始比赛 <<<
+[rosout][INFO] 2026-11-14 21:06:46,666: [   0.0s] say_start | start 播报比赛开始
+[rosout][INFO] 2026-11-14 21:06:46,923: [   0.3s] say_start | play 00.mp3
+[rosout][INFO] 2026-11-14 21:06:48,875: [   2.2s] say_start | done 用时 2.20 秒
+[rosout][INFO] 2026-11-14 21:06:48,884: [   2.2s] go_recog | start 去识别区
+[rosout][INFO] 2026-11-14 21:06:48,900: [   2.2s] go_recog | profile 第 1 段：normal（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:06:52,676: [   6.0s] go_recog | done 用时 3.78 秒
+[rosout][INFO] 2026-11-14 21:06:52,683: [   6.0s] go_recog | pose x=0.306 y=-0.121 yaw=86.4deg
+[rosout][INFO] 2026-11-14 21:06:52,689: [   6.0s] align_recog | start 识别区精定位
+[rosout][INFO] 2026-11-14 21:06:53,782: [   7.1s] align_recog | done 用时 1.09 秒
+[rosout][INFO] 2026-11-14 21:06:53,793: [   7.1s] align_recog | align_error front=0.8cm left=0.9cm yaw=-1.1deg
+[rosout][INFO] 2026-11-14 21:06:53,801: [   7.1s] align_recog | pose box=recog ok=1 x=0.324 y=-0.133 yaw=89.0deg
+[rosout][INFO] 2026-11-14 21:06:53,807: [   7.1s] recognize | start 识别卡片
+[rosout][INFO] 2026-11-14 21:06:56,907: [  10.2s] recognize | targets rotating=3 moving=7 source=vlm
+[rosout][INFO] 2026-11-14 21:06:56,916: [  10.3s] recognize | done 用时 3.10 秒
+[rosout][INFO] 2026-11-14 21:06:56,923: [  10.3s] say_targets | start 播报靶号
+[rosout][INFO] 2026-11-14 21:06:56,933: [  10.3s] say_targets | play x3.mp3 y7.mp3
+[rosout][INFO] 2026-11-14 21:07:02,459: [  15.8s] say_targets | done 用时 5.52 秒
+[rosout][INFO] 2026-11-14 21:07:02,467: [  15.8s] go_p1 | start 去1号点
+[rosout][INFO] 2026-11-14 21:07:02,481: [  15.8s] go_p1 | profile 第 1 段：normal（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:07:06,657: [  20.0s] go_p1 | done 用时 4.18 秒
+[rosout][INFO] 2026-11-14 21:07:06,667: [  20.0s] go_p1 | pose x=0.943 y=-0.358 yaw=7.5deg
+[rosout][INFO] 2026-11-14 21:07:06,688: [  20.0s] align_p1 | start 1号点精定位
+[rosout][INFO] 2026-11-14 21:07:09,421: [  22.8s] align_p1 | boost 车不动，最小速度加大到 1.5 倍
+[rosout][INFO] 2026-11-14 21:07:11,220: [  24.6s] align_p1 | boost 车不动，最小速度加大到 2.2 倍
+[rosout][INFO] 2026-11-14 21:07:11,815: [  25.2s] align_p1 | boost 车不动，最小速度加大到 2.5 倍
+[rosout][INFO] 2026-11-14 21:07:12,512: [  25.9s] align_p1 | done 用时 5.81 秒
+[rosout][INFO] 2026-11-14 21:07:12,522: [  25.9s] align_p1 | align_error back=0.3cm right=0.5cm yaw=-0.4deg
+[rosout][INFO] 2026-11-14 21:07:12,533: [  25.9s] align_p1 | pose box=p1 ok=1 x=0.945 y=-0.345 yaw=-1.5deg
+[rosout][INFO] 2026-11-14 21:07:12,546: [  25.9s] shoot_ring | start 打环形靶
+[rosout][INFO] 2026-11-14 21:07:12,562: [  25.9s] shoot_ring | aim 横向位置用 right 墙测量
+[rosout][INFO] 2026-11-14 21:07:12,569: [  25.9s] shoot_ring | aim reason=settling state=look
+[rosout][INFO] 2026-11-14 21:07:12,903: [  26.2s] shoot_ring | aim fresh=0 reason=waiting_frames state=look
+[rosout][INFO] 2026-11-14 21:07:13,020: [  26.4s] shoot_ring | aim fresh=1 reason=waiting_frames state=look
+[rosout][INFO] 2026-11-14 21:07:13,162: [  26.5s] shoot_ring | aim fresh=2 reason=waiting_frames state=look
+[rosout][INFO] 2026-11-14 21:07:13,372: [  26.7s] shoot_ring | aim err_px=6.750 frames=3 looks=1 shift_mm=-25.000 shifts=0 sigma_px=0.361 state=look
+[rosout][INFO] 2026-11-14 21:07:13,393: [  26.7s] shoot_ring | aim left_mm=-25.000 state=shift
+[rosout][INFO] 2026-11-14 21:07:15,175: [  28.5s] shoot_ring | aim left_mm=1.562 reason=shift_done state=look
+[rosout][INFO] 2026-11-14 21:07:15,223: [  28.6s] shoot_ring | aim reason=settling state=look
+[rosout][INFO] 2026-11-14 21:07:15,814: [  29.2s] shoot_ring | aim fresh=0 reason=waiting_frames state=look
+[rosout][INFO] 2026-11-14 21:07:15,930: [  29.3s] shoot_ring | aim fresh=1 reason=waiting_frames state=look
+[rosout][INFO] 2026-11-14 21:07:16,073: [  29.4s] shoot_ring | aim err_px=-1.474 frames=2 looks=2 shifts=1 sigma_px=0.438 state=look
+[rosout][INFO] 2026-11-14 21:07:16,152: [  29.5s] shoot_ring | 开火 target=ring trigger=aimed err_px=-1.474 frames=2 looks=2 shifts=1 sigma_px=0.438 state=look shot=1/2 sent=True
+[rosout][INFO] 2026-11-14 21:07:17,430: [  30.8s] shoot_ring | 开火 target=ring trigger=aimed err_px=-1.474 frames=2 looks=2 shifts=1 sigma_px=0.438 state=look shot=2/2 sent=True
+[rosout][INFO] 2026-11-14 21:07:18,133: [  31.5s] shoot_ring | done 用时 5.58 秒
+[rosout][INFO] 2026-11-14 21:07:18,145: [  31.5s] go_p2 | start 去2号点
+[rosout][INFO] 2026-11-14 21:07:18,155: [  31.5s] go_p2 | lane 通道按激光量后墙定位：墙距 1.215 米，通道点挪 -0.1 cm
+[rosout][INFO] 2026-11-14 21:07:18,161: [  31.5s] go_p2 | profile 第 1 段：burst（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:07:23,022: [  36.4s] go_p2 | profile 第 3 段：normal（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:07:25,819: [  39.2s] go_p2 | done 用时 7.67 秒
+[rosout][INFO] 2026-11-14 21:07:25,829: [  39.2s] go_p2 | pose x=0.913 y=-1.602 yaw=2.3deg
+[rosout][INFO] 2026-11-14 21:07:25,837: [  39.2s] align_p2 | start 2号点精定位
+[rosout][INFO] 2026-11-14 21:07:28,032: [  41.4s] align_p2 | boost 车不动，最小速度加大到 1.5 倍
+[rosout][INFO] 2026-11-14 21:07:28,725: [  42.1s] align_p2 | done 用时 2.88 秒
+[rosout][INFO] 2026-11-14 21:07:28,732: [  42.1s] align_p2 | align_error back=0.1cm right=-0.8cm yaw=0.3deg
+[rosout][INFO] 2026-11-14 21:07:28,745: [  42.1s] align_p2 | pose box=p2 ok=1 x=0.927 y=-1.634 yaw=0.5deg
+[rosout][INFO] 2026-11-14 21:07:28,752: [  42.1s] shoot_rot | start 打旋转靶
+[rosout][INFO] 2026-11-14 21:07:28,759: [  42.1s] shoot_rot | marker id=3 最多等 47.9 秒
+[rosout][INFO] 2026-11-14 21:07:28,784: [  42.1s] shoot_rot | aim 横向位置用 right 墙测量
+[rosout][INFO] 2026-11-14 21:07:28,790: [  42.1s] shoot_rot | heading 车头相对侧墙 -1.0 度（扭的上限按正对侧墙算）
+[rosout][INFO] 2026-11-14 21:07:28,846: [  42.2s] shoot_rot | aim center=362.1;192.4 err_px=-15.019 k_px_deg=8.800 omega_deg_s=15.329 radius=27.579 reach_px=73.081 reason=plan shifted_mm=0.000 side=left state=align twisted_deg=-1.026 wait_s=4.845
+[rosout][INFO] 2026-11-14 21:07:28,862: [  42.2s] shoot_rot | aim coast_s=0.800 err_px=-14.856 lead_s=4.501 predicted_px=-12.065 rate_px_s=3.488 reason=twist shifted_mm=-0.000 side=left state=align twisted_deg=-1.023
+[rosout][INFO] 2026-11-14 21:07:29,627: [  43.0s] shoot_rot | aim err_px=-10.580 lead_s=3.734 rate_px_s=14.999 reason=coasting shifted_mm=-0.000 side=left state=align twisted_deg=-0.371
+[rosout][INFO] 2026-11-14 21:07:30,179: [  43.5s] shoot_rot | aim coast_s=0.400 err_px=-4.059 lead_s=3.169 predicted_px=-3.314 rate_px_s=1.863 reason=shift shifted_mm=-0.000 side=left state=align twisted_deg=0.235
+[rosout][INFO] 2026-11-14 21:07:31,231: [  44.6s] shoot_rot | aim err_px=-4.200 lead_s=2.199 rate_px_s=8.510 reason=coasting shifted_mm=9.971 side=left state=align twisted_deg=0.249
+[rosout][INFO] 2026-11-14 21:07:31,629: [  45.0s] shoot_rot | aim err_px=-2.905 lead_s=1.807 rate_px_s=1.252 reason=holding shifted_mm=9.971 side=left state=align twisted_deg=0.259
+[rosout][INFO] 2026-11-14 21:07:32,007: [  45.3s] shoot_rot | aim err_px=-2.828 lead_s=1.421 rate_px_s=0.312 reason=aligned shifted_mm=9.971 side=left state=wait twisted_deg=0.258
+[rosout][INFO] 2026-11-14 21:07:32,031: [  45.4s] shoot_rot | aim err_px=-2.826 lead_s=1.386 miss_px=9.177 rate_px_s=0.260 reason=waiting shifted_mm=9.971 side=left state=wait twisted_deg=0.258
+[rosout][INFO] 2026-11-14 21:07:33,427: [  46.8s] shoot_rot | aim aligns=1 err_px=-2.609 flips=0 k_px_deg=8.690 lat_coast_s=0.400 lat_px_cm=2.348 lead_s=-0.011 miss_px=2.563 misses=0 rate_px_s=0.463 reason=fire shifted_mm=9.971 side=left state=wait twisted_deg=0.262 yaw_coast_s=0.617
+[rosout][INFO] 2026-11-14 21:07:33,505: [  46.8s] shoot_rot | 开火 target=rotating trigger=predicted aligns=1 err_px=-2.609 flips=0 k_px_deg=8.690 lat_coast_s=0.400 lat_px_cm=2.348 lead_s=-0.011 miss_px=2.563 misses=0 rate_px_s=0.463 reason=fire shifted_mm=9.971 side=left state=wait twisted_deg=0.262 yaw_coast_s=0.617 shot=1/1 sent=True
+[rosout][INFO] 2026-11-14 21:07:33,821: [  47.2s] shoot_rot | done 用时 5.06 秒
+[rosout][INFO] 2026-11-14 21:07:33,829: [  47.2s] go_p3 | start 去3号点
+[rosout][INFO] 2026-11-14 21:07:33,838: [  47.2s] go_p3 | lane 通道按激光量后墙定位：墙距 1.204 米，通道点挪 -1.6 cm
+[rosout][INFO] 2026-11-14 21:07:33,848: [  47.2s] go_p3 | profile 第 1 段：burst（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:07:39,209: [  52.5s] go_p3 | profile 第 3 段：normal（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:07:42,156: [  55.5s] go_p3 | done 用时 8.32 秒
+[rosout][INFO] 2026-11-14 21:07:42,163: [  55.5s] go_p3 | pose x=0.956 y=-2.828 yaw=1.2deg
+[rosout][INFO] 2026-11-14 21:07:42,169: [  55.5s] align_p3 | start 3号点精定位
+[rosout][INFO] 2026-11-14 21:07:44,614: [  58.0s] align_p3 | done 用时 2.43 秒
+[rosout][INFO] 2026-11-14 21:07:44,623: [  58.0s] align_p3 | align_error back=0.3cm left=0.3cm yaw=-0.0deg
+[rosout][INFO] 2026-11-14 21:07:44,631: [  58.0s] align_p3 | pose box=p3 ok=1 x=0.992 y=-2.870 yaw=0.1deg
+[rosout][INFO] 2026-11-14 21:07:44,637: [  58.0s] shoot_move | start 打移动靶
+[rosout][INFO] 2026-11-14 21:07:44,644: [  58.0s] shoot_move | marker id=7
+[rosout][INFO] 2026-11-14 21:07:44,652: [  58.0s] shoot_move | aim age=0.048 err_px=-77.953 reason=few_samples samples=11 speed=-15.532 u=274.877 v=201.695
+[rosout][INFO] 2026-11-14 21:07:44,707: [  58.0s] shoot_move | aim age=0.035 err_px=-77.538 lead_s=-6.392 reason=missed samples=13 speed=-12.130 u=274.782 v=201.692
+[rosout][INFO] 2026-11-14 21:07:44,757: [  58.1s] shoot_move | aim age=0.017 err_px=-75.762 reason=slow samples=15 speed=-5.058 u=275.497 v=201.689
+[rosout][INFO] 2026-11-14 21:07:45,259: [  58.6s] shoot_move | aim age=0.019 err_px=-68.651 reason=turning samples=26 speed=13.552 u=279.817 v=201.705
+[rosout][INFO] 2026-11-14 21:07:45,515: [  58.9s] shoot_move | aim age=0.064 err_px=-63.332 lead_s=3.588 reason=waiting samples=30 speed=17.651 u=284.521 v=201.721
+[rosout][INFO] 2026-11-14 21:07:48,909: [  62.2s] shoot_move | aim age=0.052 delay_s=0.036 err_px=0.000 lead_s=0.036 reason=fire samples=129 speed=18.323 u=347.086 v=201.250
+[rosout][INFO] 2026-11-14 21:07:49,024: [  62.4s] shoot_move | 开火 target=moving trigger=predicted age=0.052 delay_s=0.036 err_px=0.000 lead_s=0.036 reason=fire samples=129 speed=18.323 u=347.086 v=201.250 shot=1/1 sent=True
+[rosout][INFO] 2026-11-14 21:07:49,334: [  62.7s] shoot_move | done 用时 4.69 秒
+[rosout][INFO] 2026-11-14 21:07:49,355: [  62.7s] go_end | start 去终点
+[rosout][INFO] 2026-11-14 21:07:49,363: [  62.7s] go_end | profile 第 1 段：burst（最高 0.50 m/s）
+[rosout][INFO] 2026-11-14 21:07:53,172: [  66.5s] go_end | done 用时 3.81 秒
+[rosout][INFO] 2026-11-14 21:07:53,178: [  66.5s] go_end | pose x=0.134 y=-3.246 yaw=-0.2deg
+[rosout][INFO] 2026-11-14 21:07:53,185: [  66.5s] align_end | start 终点精定位
+[rosout][INFO] 2026-11-14 21:07:56,474: [  69.8s] align_end | done 用时 3.28 秒
+[rosout][INFO] 2026-11-14 21:07:56,480: [  69.8s] align_end | align_error back=-0.5cm right=0.3cm yaw=0.3deg
+[rosout][INFO] 2026-11-14 21:07:56,491: [  69.8s] align_end | pose box=end ok=1 x=0.025 y=-3.265 yaw=-1.5deg
+[rosout][INFO] 2026-11-14 21:07:56,498: [  69.8s] say_end | start 播报比赛结束
+[rosout][INFO] 2026-11-14 21:07:56,511: [  69.8s] say_end | play final.mp3
+[rosout][INFO] 2026-11-14 21:07:58,720: [  72.1s] say_end | done 用时 2.22 秒
+[rosout][INFO] 2026-11-14 21:07:58,727: [  72.1s] mission | end 总用时 72.1 秒
+[rosout][INFO] 2026-11-14 21:07:58,730: ==================== 本局用时 ====================
+[rosout][INFO] 2026-11-14 21:07:58,731: 步骤               用时(秒)  结果   备注
+[rosout][INFO] 2026-11-14 21:07:58,733: say_start         2.20       
+[rosout][INFO] 2026-11-14 21:07:58,734: go_recog          3.78       
+[rosout][INFO] 2026-11-14 21:07:58,737: align_recog       1.09       误差 front=0.8cm left=0.9cm yaw=-1.1deg
+[rosout][INFO] 2026-11-14 21:07:58,741: recognize         3.10       
+[rosout][INFO] 2026-11-14 21:07:58,742: say_targets       5.52       
+[rosout][INFO] 2026-11-14 21:07:58,744: go_p1             4.18       
+[rosout][INFO] 2026-11-14 21:07:58,746: align_p1          5.81       误差 back=0.3cm right=0.5cm yaw=-0.4deg；蹭不动加大最小速度 3 次
+[rosout][INFO] 2026-11-14 21:07:58,749: shoot_ring        5.58       
+[rosout][INFO] 2026-11-14 21:07:58,750: go_p2             7.67       通道按激光量后墙定位：墙距 1.215 米，通道点挪 -0.1 cm
+[rosout][INFO] 2026-11-14 21:07:58,751: align_p2          2.88       误差 back=0.1cm right=-0.8cm yaw=0.3deg；蹭不动加大最小速度 1 次
+[rosout][INFO] 2026-11-14 21:07:58,753: shoot_rot         5.06       
+[rosout][INFO] 2026-11-14 21:07:58,755: go_p3             8.32       通道按激光量后墙定位：墙距 1.204 米，通道点挪 -1.6 cm
+[rosout][INFO] 2026-11-14 21:07:58,766: align_p3          2.43       误差 back=0.3cm left=0.3cm yaw=-0.0deg
+[rosout][INFO] 2026-11-14 21:07:58,767: shoot_move        4.69       
+[rosout][INFO] 2026-11-14 21:07:58,775: go_end            3.81       
+[rosout][INFO] 2026-11-14 21:07:58,780: align_end         3.28       误差 back=-0.5cm right=0.3cm yaw=0.3deg
+[rosout][INFO] 2026-11-14 21:07:58,782: say_end           2.22       
+[rosout][INFO] 2026-11-14 21:07:58,784: --------------------------------------------------
+[rosout][INFO] 2026-11-14 21:07:58,786: 行驶 27.8  精定位 15.5  播报/识别 13.0  打靶/停靠 15.3  （路上 = 行驶 + 精定位 43.2 秒）
+[rosout][INFO] 2026-11-14 21:07:58,794: 总用时 72.1 秒；超时：无
+[rosout][INFO] 2026-11-14 21:07:58,806: [  72.1s] 程序结束，记录保存在 /home/abot/race_logs/20261114_210638
+[rospy.core][INFO] 2026-11-14 21:07:58,811: signal_shutdown [atexit]
+[rospy.internal][INFO] 2026-11-14 21:07:58,818: topic[/initialpose] removing connection to /amcl
+[rospy.internal][INFO] 2026-11-14 21:07:58,818: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2026-11-14 21:07:58,819: topic[/cmd_vel] removing connection to /abot_driver
+[rospy.internal][INFO] 2026-11-14 21:07:58,820: topic[/usb_cam/image_raw] removing connection to http://abot-robot:42633/
+[rospy.internal][INFO] 2026-11-14 21:07:58,820: topic[/usb_cam/image_raw] removing connection to http://abot-robot:42633/
+[rospy.topics][ERROR] 2026-11-14 21:07:58,820: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2026-11-14 21:07:58,820: topic[/ar_pose_marker] removing connection to http://abot-robot:45255/
+[rospy.internal][INFO] 2026-11-14 21:07:58,821: topic[/tf] removing connection to http://abot-robot:33105/
+[rospy.internal][INFO] 2026-11-14 21:07:58,821: topic[/tf] removing connection to http://abot-robot:33285/
+[rospy.internal][INFO] 2026-11-14 21:07:58,821: topic[/tf] removing connection to http://abot-robot:38105/
+[rospy.internal][INFO] 2026-11-14 21:07:58,822: topic[/tf] removing connection to http://abot-robot:36163/
+[rospy.internal][INFO] 2026-11-14 21:07:58,822: topic[/tf] removing connection to http://abot-robot:40673/
+[rospy.internal][INFO] 2026-11-14 21:07:58,822: topic[/tf] removing connection to http://abot-robot:40231/
+[rospy.internal][INFO] 2026-11-14 21:07:58,822: topic[/tf] removing connection to http://abot-robot:41275/
+[rospy.internal][INFO] 2026-11-14 21:07:58,822: topic[/tf] removing connection to http://abot-robot:37223/
+[rospy.internal][INFO] 2026-11-14 21:07:58,822: topic[/tf] removing connection to http://abot-robot:33817/
+[rospy.internal][INFO] 2026-11-14 21:07:58,823: topic[/tf] removing connection to http://abot-robot:45255/
+[rospy.internal][INFO] 2026-11-14 21:07:58,825: topic[/tf] removing connection to http://abot-robot:39861/
+[rospy.internal][INFO] 2026-11-14 21:07:58,825: topic[/tf_static] removing connection to http://abot-robot:40231/
+[rospy.internal][INFO] 2026-11-14 21:07:58,826: topic[/tf_static] removing connection to http://abot-robot:40231/
+[rospy.topics][ERROR] 2026-11-14 21:07:58,826: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2026-11-14 21:07:58,827: topic[/scan_filtered] removing connection to http://abot-robot:40095/
+[rospy.internal][INFO] 2026-11-14 21:07:58,827: topic[/scan_filtered] removing connection to http://abot-robot:40095/
+[rospy.topics][ERROR] 2026-11-14 21:07:58,827: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2026-11-14 21:07:58,827: topic[/wheel_odom] removing connection to http://abot-robot:33285/
+[rospy.internal][INFO] 2026-11-14 21:07:58,828: topic[/object_position] removing connection to http://abot-robot:41765/
+[rospy.impl.masterslave][INFO] 2026-11-14 21:07:58,828: atexit

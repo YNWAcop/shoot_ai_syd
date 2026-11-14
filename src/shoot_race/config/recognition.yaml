@@ -56,12 +56,12 @@ offline:
   min_margin: 0.08             # 比第二名高出这么多才算可信
 
 # ---------- 豆包视觉模型（火山方舟）----------
-# API Key 不要写在这里：放到环境变量 ARK_API_KEY，或文件 ~/.ark_api_key（只有一行 key）。
+# API Key 不要写在这里：放到环境变量 SYD_ARK_API_KEY，或文件 ~/.ark_api_key_syd（只有一行 key）。
 vlm:
   base_url: https://ark.cn-beijing.volces.com/api/v3
-  model: ep-20261025102352-j8gp4            # 你在火山方舟创建的推理接入点，形如 ep-2026xxxxxxxx-xxxxx
-  api_key_env: ARK_API_KEY
-  api_key_file: ~/.ark_api_key
+  model: doubao-seed-2-1-pro-260915
+  api_key_env: SYD_ARK_API_KEY
+  api_key_file: ~/.ark_api_key_syd
   request_timeout_s: 15         # 单次请求超时
   wait_s: 10                    # vlm_first 策略下最多等豆包多久，之后改用离线结果
   max_image_width: 1024        # 发送前把图片缩到这个宽度以内，减少上传时间

@@ -1,0 +1,3 @@
+match_time,step,target,trigger,detail
+34.17,shoot_ring,ring,max_shift,err_px=8.790 frames=2 looks=2 reason=max_shift_reached shifts=1 sigma_px=0.438 state=look shot=1/2 sent=True
+35.45,shoot_ring,ring,max_shift,err_px=8.790 frames=2 looks=2 reason=max_shift_reached shifts=1 sigma_px=0.438 state=look shot=2/2 sent=True

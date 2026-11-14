@@ -1,0 +1,51 @@
+match_time,step,event,detail
+-1.00,config,override,mission.rehearsal_pause_s: 0 -> 0
+0.00,say_start,start,播报比赛开始
+0.26,say_start,play,00.mp3
+2.21,say_start,done,用时 2.20 秒
+2.22,go_recog,start,去识别区
+2.23,go_recog,profile,第 1 段：normal（最高 0.50 m/s）
+5.21,go_recog,done,用时 2.98 秒
+5.22,go_recog,pose,x=0.298 y=-0.113 yaw=92.6deg
+5.23,align_recog,start,识别区精定位
+10.26,align_recog,timeout,超过 5.0 秒
+10.27,align_recog,align_error,
+10.28,align_recog,pose,box=recog ok=0 x=0.328 y=-0.134 yaw=83.8deg
+10.28,recognize,start,识别卡片
+13.70,recognize,targets,rotating=3 moving=7 source=vlm
+13.71,recognize,done,用时 3.42 秒
+13.72,say_targets,start,播报靶号
+13.72,say_targets,play,x3.mp3 y7.mp3
+19.25,say_targets,done,用时 5.53 秒
+19.26,go_p1,start,去1号点
+19.27,go_p1,profile,第 1 段：normal（最高 0.50 m/s）
+23.75,go_p1,near_goal,离终点 0.11 米处被墙挡住，交给精定位
+23.76,go_p1,done,用时 4.49 秒
+23.77,go_p1,pose,x=0.864 y=-0.363 yaw=1.9deg
+23.78,align_p1,start,1号点精定位
+27.20,align_p1,wall_rejected,right 墙拟合偏角 -1.9 度，按定位应约 -14.6 度，这面墙只用距离、不按它转向
+29.80,align_p1,timeout,超过 6.0 秒
+29.81,align_p1,align_error,back=-14.6cm
+29.82,align_p1,pose,box=p1 ok=0 x=1.389 y=-0.400 yaw=9.9deg
+29.83,shoot_ring,start,打环形靶
+29.84,shoot_ring,aim,横向位置用 left 墙测量
+29.87,shoot_ring,aim,reason=settling state=look
+31.15,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+31.29,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+31.49,shoot_ring,aim,fresh=2 reason=waiting_frames state=look
+31.60,shoot_ring,aim,err_px=14.750 frames=3 looks=1 reason=no_wall shifts=0 sigma_px=0.361 state=look
+31.63,shoot_ring,aim,err_px=14.750 frames=3 looks=1 shift_mm=-25.000 shifts=0 sigma_px=0.361 state=look
+31.67,shoot_ring,aim,left_mm=-25.000 state=shift
+33.65,shoot_ring,aim,left_mm=393.770 reason=shift_stalled state=look
+33.70,shoot_ring,aim,reason=settling state=look
+34.97,shoot_ring,aim,fresh=0 reason=waiting_frames state=look
+35.10,shoot_ring,aim,fresh=1 reason=waiting_frames state=look
+35.22,shoot_ring,aim,err_px=-93.250 frames=2 looks=1 overshoots=1 shift_mm=50.000 shifts=1 sigma_px=0.442 state=look
+35.25,shoot_ring,aim,left_mm=50.000 state=shift
+35.73,shoot_ring,aim,reason=no_wall state=shift
+36.48,shoot_ring,aim,left_mm=-181.797 state=shift
+37.88,shoot_ring,aim,left_mm=-83.975 reason=shift_stalled state=look
+37.92,shoot_ring,timeout,超过 8.0 秒
+39.78,shoot_ring,photo,没有相机画面
+39.79,shoot_ring,photo,没有相机画面
+39.79,mission,end,总用时 39.8 秒

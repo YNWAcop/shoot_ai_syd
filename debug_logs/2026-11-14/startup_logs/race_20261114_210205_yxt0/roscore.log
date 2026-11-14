@@ -1,0 +1,31 @@
+[31mWARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+... logging to /home/abot/.ros/log/97a2141c-e02b-11f1-a3c9-24418c8a26ae/roslaunch-abot-robot-15492.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;roscore
+[1mstarted roslaunch server http://abot-robot:36409/[0m
+ros_comm version 1.14.13
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+
+auto-starting new master
+[1mprocess[master]: started with pid [15523][0m
+[1mROS_MASTER_URI=http://abot-robot:11311/[0m
+]2;roscore http://abot-robot:11311/
+[1msetting /run_id to 97a2141c-e02b-11f1-a3c9-24418c8a26ae[0m
+[1mprocess[rosout-1]: started with pid [15547][0m
+started core service [/rosout]
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
