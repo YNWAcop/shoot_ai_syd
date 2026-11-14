@@ -115,6 +115,14 @@ python src/shoot_race/tests/test_mission_sim.py
 
 仿真使用假设场地及硬件模型，实车表现需在现场验证。详细功能、参数及示教操作见 [shoot_race 说明](src/shoot_race/README.md)。独立大模型工具见 [VLM 说明](vlm_shoot/README.md)。
 
+### 2026-11-14 验证结果
+
+- 根目录离线回归测试在本地通过，共 40 项。
+- `shoot_race/tests/test_units.py` 在原车 Python 2 环境通过，共 163 项。
+- `shoot_race/tests/test_mission_sim.py` 在原车退出码为 1。已有失败涉及识别区精定位超时、仿真碰撞帧、仿真环形靶参数与 YAML 不一致、环形靶精度/时序，以及终点朝向误差 6.5 度超过测试阈值 4 度。这些结果来自原车现有源码和配置。
+- 本地 Windows Python 环境运行主程序测试时遇到默认 GBK 编码和缺少 OpenCV 的问题，因此主程序两项测试使用原车兼容环境执行。
+- 本次完成源码整理、密钥外置和离线检查。全工作空间重新编译与实车完整比赛尚未验证。
+
 ## 本次整理范围
 
 保留车端源码布局与配套运行资源，排除 catkin 构建目录、运行日志、缓存、备份、临时拍摄图和大模型权重。`src/CMakeLists.txt` 原为指向车端 catkin 的绝对符号链接，仓库保存其对应文件内容。`run_vlm.sh` 使用相对仓库目录的包装脚本。独立 VLM 的 API 密钥配置改为环境变量读取。
