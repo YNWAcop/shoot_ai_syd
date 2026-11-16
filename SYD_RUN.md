@@ -4,6 +4,10 @@
 
 ## 启动
 
+2026-11-16 更新：单终端入口默认在小车 Ubuntu 桌面打开 RViz（与原版 748573 使用相同的 AR 相机配置）和图像识别窗口。Ubuntu 桌面需已登录；SSH 中运行时窗口显示在小车桌面，比赛仍在启动终端输入 `1`。RViz 随本次底层节点一起退出。
+
+如需临时关闭 RViz，可运行 `SYD_RVIZ=false bash /home/abot/syd/start_syd.sh`。手动三个终端启动时，在底层命令添加 `rviz:=true`，即 `roslaunch shoot_race bringup.launch rviz:=true`。
+
 SSH 登录小车，在交互终端执行。
 
 ```bash

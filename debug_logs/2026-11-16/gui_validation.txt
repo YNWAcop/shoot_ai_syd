@@ -1,0 +1,57 @@
+Validation only: no ROS nodes started, no motion or firing.
+Backup: /home/abot/syd/.change_backups/gui_20261116_142326
+DISPLAY=:0
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+DESKTOP_ACCESS=0
+/abot_driver
+/abot_imu
+/base_imu_to_base_link
+/base_laser_to_base_link
+/imu_filter_madgwick
+/robot_pose_ekf
+/odom_ekf
+/joint_state_publisher
+/robot_state_publisher
+/rplidarNode
+/laser_filter
+/map_server
+/move_base
+/amcl
+/usb_cam
+/world_to_map
+/base_link_to_cam
+/ar_track_alvar
+/rviz
+/find_object_2d
+/print_objects_detected
+PARSE_GUI=0
+/abot_driver
+/abot_imu
+/base_imu_to_base_link
+/base_laser_to_base_link
+/imu_filter_madgwick
+/robot_pose_ekf
+/odom_ekf
+/joint_state_publisher
+/robot_state_publisher
+/rplidarNode
+/laser_filter
+/map_server
+/move_base
+/amcl
+/usb_cam
+/world_to_map
+/base_link_to_cam
+/ar_track_alvar
+/find_object_2d
+/print_objects_detected
+PARSE_NO_GUI=0
+/home/abot/race_logs/20261116_134940
+/home/abot/race_logs/20261116_134555
+/home/abot/race_logs/20261116_141257
+/home/abot/race_logs/20261116_140849
+/home/abot/syd/run_logs/race_20261116_134927_IWrV
+/home/abot/syd/run_logs/race_20261116_134541_F2NL
+/home/abot/syd/run_logs/race_20261116_140836_QlYK
+warning: xacro.py is deprecated; please use xacro instead
+warning: xacro.py is deprecated; please use xacro instead

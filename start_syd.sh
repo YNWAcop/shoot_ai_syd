@@ -4,6 +4,11 @@ set -e
 WS="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 test -f "$WS/devel_syd/setup.bash" || { echo 'Missing devel_syd/setup.bash'; exit 1; }
 source "$WS/env_syd.sh"
+RVIZ_ENABLED="${SYD_RVIZ:-true}"
+case "$RVIZ_ENABLED" in
+    true|false) ;;
+    *) echo 'SYD_RVIZ must be true or false.'; exit 1 ;;
+esac
 
 test "$(rospack find shoot_race)" = "$WS/src/shoot_race" || { echo 'Wrong shoot_race package path'; exit 1; }
 exec 9>"$WS/.race.lock"
@@ -48,9 +53,10 @@ if [ "$READY" != 1 ]; then
     cat "$LOG_DIR/roscore.log"
     exit 1
 fi
-roslaunch shoot_race bringup.launch >"$LOG_DIR/bringup.log" 2>&1 &
+roslaunch shoot_race bringup.launch rviz:="$RVIZ_ENABLED" >"$LOG_DIR/bringup.log" 2>&1 &
 BRINGUP_PID=$!
 echo "Starting sensors. Log: $LOG_DIR/bringup.log"
+echo "Ubuntu desktop: DISPLAY=$DISPLAY, RViz=$RVIZ_ENABLED, image recognition GUI enabled."
 sleep 8
 if ! kill -0 "$BRINGUP_PID" 2>/dev/null; then
     tail -n 60 "$LOG_DIR/bringup.log"

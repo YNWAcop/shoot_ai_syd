@@ -2,7 +2,7 @@
   bringup.launch：比赛需要的全部底层节点（不含主程序）。
   和旧 N8NNWC.sh 的区别：
     - 不再启动 abot_bringup/shoot.launch（串口只由主程序使用，避免两个程序同时占用 /dev/shoot）；
-    - AR 识别不再开 rviz，省下 CPU，降低识别延迟；
+    - RViz 可通过 rviz 参数启用；start_syd.sh 默认打开原版 AR 可视化窗口；
     - 不启动语音唤醒和语音识别（2026 规则改为识别卡片）。
 -->
 <launch>
@@ -12,6 +12,7 @@
        启动时打印 "QObject::connect: No such slot FindObjectROS::detect"，之后永远不做识别（2026-10-16 实测）。
        有界面时走另一条代码路径，旧程序一直是这样用的。界面窗口会显示在车自己的桌面上（DISPLAY=:0）。 -->
   <arg name="find_object_gui" default="true"/>
+  <arg name="rviz" default="false"/>
 
   <!-- 底盘驱动 + IMU + 里程计融合 + 车体模型 + 激光雷达（含车身滤波 /scan_filtered） -->
   <include file="$(find abot_bringup)/launch/robot_with_imu.launch"/>
@@ -24,7 +25,7 @@
   <!-- 相机（640x480，带标定文件） -->
   <include file="$(find track_tag)/launch/usb_cam_with_calibration.launch"/>
 
-  <!-- AR 码识别：与 track_tag/ar_track_camera.launch 相同，但不开 rviz -->
+  <!-- AR 码识别：与 track_tag/ar_track_camera.launch 相同 -->
   <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0.0 0 0 0 world map 10"/>
   <node pkg="tf" type="static_transform_publisher" name="base_link_to_cam" args="0 0 0.3 0 1.57 -1.57 base_link usb_cam 10"/>
   <node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkersNoKinect" respawn="false" output="screen">
@@ -37,6 +38,10 @@
     <remap from="camera_image" to="/usb_cam/image_raw"/>
     <remap from="camera_info" to="/usb_cam/camera_info"/>
   </node>
+
+  <!-- 使用原版 748573.sh 间接启动的同一份 RViz 配置。 -->
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find track_tag)/rviz/ar_track_camera.rviz" output="screen"/>
 
   <!-- 环形靶识别：find_object（模板在 abot_find/object）。界面开关见上面 find_object_gui 的说明 -->
   <!-- 注意：用的是工作空间里 abot_find 包（包名 find_object_2d）自带的 launch，
