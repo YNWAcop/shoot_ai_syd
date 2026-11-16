@@ -25,7 +25,7 @@ cd /home/abot/syd
 bash ./start_syd.sh
 ```
 
-单终端入口默认在小车 Ubuntu 桌面打开原版 AR 相机 RViz 和图像识别窗口；桌面需已登录。需要关闭 RViz 时使用 `SYD_RVIZ=false bash ./start_syd.sh`。
+入口默认在小车 Ubuntu 桌面打开原版布局的八个终端标签页，以及 AR 相机 RViz 和图像识别窗口；桌面需已登录。在 Competition 标签页输入 `1` 开赛。使用 `bash ./start_syd.sh --terminal` 可保留 SSH 单终端方式。需要关闭 RViz 时使用 `SYD_RVIZ=false bash ./start_syd.sh`。
 
 将车摆回已示教的起点，启动期间保持车身静止。程序等待 IMU 校准后发布的数据连续正常更新，再进行自检、设置初始定位。出现准备就绪提示后输入 `1`，会实际行驶并执行三个软弹打靶环节。输入后再次检查 IMU，未就绪则取消启动。无需手动增加固定 30 秒等待。
 

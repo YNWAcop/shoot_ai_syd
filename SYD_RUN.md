@@ -4,7 +4,11 @@
 
 ## 启动
 
-2026-11-16 更新：单终端入口默认在小车 Ubuntu 桌面打开 RViz（与原版 748573 使用相同的 AR 相机配置）和图像识别窗口。Ubuntu 桌面需已登录；SSH 中运行时窗口显示在小车桌面，比赛仍在启动终端输入 `1`。RViz 随本次底层节点一起退出。
+2026-11-16 更新：默认入口在小车 Ubuntu 桌面打开原版布局的八个终端标签页，以及 RViz 和图像识别窗口。八个标签页分别为 ROS master、底盘与 IMU、射击日志、导航、相机、AR 与 RViz、图像识别、比赛。所有模块统一使用 syd 环境。Ubuntu 桌面需已登录；SSH 中执行启动命令后，在 Ubuntu 的 Competition 标签页输入 `1`。IMU 校准就绪检查仍然生效。
+
+比赛标签页运行会话管理程序，其他标签页实时显示各模块日志。射击日志来自比赛主程序，不重复启动旧射击串口节点。在比赛标签页按 `Ctrl+C` 停止整套程序；其他标签页的 `Ctrl+C` 只关闭日志查看。比赛结束后日志标签页按回车关闭。
+
+如需保留原来的 SSH 单终端运行方式，使用 `bash /home/abot/syd/start_syd.sh --terminal`。
 
 如需临时关闭 RViz，可运行 `SYD_RVIZ=false bash /home/abot/syd/start_syd.sh`。手动三个终端启动时，在底层命令添加 `rviz:=true`，即 `roslaunch shoot_race bringup.launch rviz:=true`。
 

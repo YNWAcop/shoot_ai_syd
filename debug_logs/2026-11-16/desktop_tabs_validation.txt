@@ -1,0 +1,17 @@
+Static validation only. No ROS nodes or desktop windows started.
+Backup: /home/abot/syd/.change_backups/desktop_tabs_20261116_143143
+MODULE abot_bringup robot_with_imu.launch: /abot_driver,/abot_imu,/base_imu_to_base_link,/base_laser_to_base_link,/imu_filter_madgwick,/robot_pose_ekf,/odom_ekf,/joint_state_publisher,/robot_state_publisher,/rplidarNode,/laser_filter
+MODULE robot_slam navigation.launch: /map_server,/move_base,/amcl
+MODULE track_tag usb_cam_with_calibration.launch: /usb_cam
+MODULE shoot_race ar_visualization.launch: /world_to_map,/base_link_to_cam,/ar_track_alvar,/rviz
+MODULE find_object_2d find_object_2d.launch: /find_object_2d,/print_objects_detected
+NODE_SET_MATCH: 21 nodes, no duplicate nodes
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+warning: xacro.py is deprecated; please use xacro instead
+warning: xacro.py is deprecated; please use xacro instead
+
+RC=0
