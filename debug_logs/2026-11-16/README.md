@@ -26,3 +26,7 @@
 车端 Bash 语法和 Python 2 参数测试通过；独立模块展开后的 21 个底层节点与集中 bringup 的节点集合完全一致，没有重复。验证记录见 `desktop_tabs_validation.txt`。未实际启动这套窗口或比赛；测试不作为实车运行成功证据。备份路径记录在验证文件中。
 
 `manifest.json` 为本日首次归档快照；本节后续修改以 Git 提交及 `desktop_tabs_validation.txt` 为准。
+
+## 启动脚本格式
+
+按用户要求，`start_syd.sh` 改为与原版相同的显式多行 `gnome-terminal --window ... --tab ...` 写法，八个标签页直接列在脚本中。路径与参数先进行 shell 引号处理；底层模块仍由 syd 会话管理，IMU 和比赛逻辑不变。

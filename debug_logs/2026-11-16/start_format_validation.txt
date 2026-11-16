@@ -1,0 +1,6 @@
+Backup: /home/abot/syd/.change_backups/start_format_20261116_144438
+Opening syd desktop tabs. Enter 1 in the Competition tab after IMU readiness checks.
+Logs: /tmp/syd format jx84i8ul/run_logs/race_20261116_144440_2UPi
+PASS: Bash syntax; eight explicit tabs; roles; quoted paths and arguments. No GUI or ROS started.
+
+RC=0

@@ -67,6 +67,9 @@ def watch(logdir, stream):
 
 def main():
     mode = sys.argv[1]
+    if mode == 'command':
+        print(command_for(sys.argv[2:]))
+        return 0
     if mode == 'open':
         return subprocess.call(terminal_args(sys.argv[2], sys.argv[3], sys.argv[4:]))
     if mode == 'watch':
