@@ -1,0 +1,1059 @@
+[31mWARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+/home/abot/snap/code/common/.cache/gio-modules/libgiolibproxy.so: undefined symbol: g_task_set_name
+Failed to load module: /home/abot/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/abot/snap/code/common/.cache/gio-modules/libgiognomeproxy.so: undefined symbol: g_task_set_name
+Failed to load module: /home/abot/snap/code/common/.cache/gio-modules/libgiognomeproxy.so
+/usr/lib/x86_64-linux-gnu/libgnutls.so.30: version `GNUTLS_3_6_3' not found (required by /home/abot/snap/code/common/.cache/gio-modules/libgiognutls.so)
+Failed to load module: /home/abot/snap/code/common/.cache/gio-modules/libgiognutls.so
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+Object 31 detected, Qt corners at (418.185181,170.930588) (616.158302,123.326758) (438.519971,226.454855) (505.578668,234.386656)
+---
+Object 31 detected, Qt corners at (403.708679,163.260162) (500.517072,170.981051) (410.454434,241.795300) (489.446810,248.410802)
+---
+Object 31 detected, Qt corners at (385.649475,166.895508) (488.174469,169.742893) (394.779561,242.381635) (477.193622,244.668477)
+---
+Object 31 detected, Qt corners at (376.245026,164.067749) (476.652239,166.870092) (383.883840,245.553098) (465.548881,246.180992)
+---
+Object 31 detected, Qt corners at (355.383881,164.179184) (457.138690,175.831565) (360.223070,246.889067) (449.330719,241.879071)
+---
+Object 31 detected, Qt corners at (347.104340,168.015335) (444.539988,169.970465) (353.704483,245.284637) (438.470845,245.597168)
+---
+Object 31 detected, Qt corners at (335.711975,170.165756) (421.557387,178.454905) (315.169344,261.129310) (427.263308,248.385719)
+---
+Object 31 detected, Qt corners at (316.877625,166.616135) (428.592624,151.681983) (328.902440,238.250872) (406.229200,251.538177)
+---
+Object 31 detected, Qt corners at (307.071075,170.162354) (425.928497,139.019160) (322.631023,236.569092) (397.500322,251.556313)
+---
+Object 31 detected, Qt corners at (296.325867,163.738342) (390.062939,169.126385) (296.401934,254.166759) (386.768279,247.553485)
+---
+Object 31 detected, Qt corners at (294.375061,165.646240) (385.687488,176.739621) (288.915299,250.799381) (385.473290,247.884104)
+---
+Object 31 detected, Qt corners at (288.784058,166.597809) (391.489918,165.498394) (297.873869,247.366243) (384.368697,244.900115)
+---
+Object 31 detected, Qt corners at (293.009796,169.060303) (385.656833,171.262823) (289.523281,250.264944) (385.392036,247.529987)
+---
+Object 31 detected, Qt corners at (283.384949,160.950058) (398.236166,155.643022) (303.130065,241.114759) (379.947253,245.480150)
+---
+Object 31 detected, Qt corners at (298.304657,169.358597) (382.535616,172.333020) (285.041331,252.879231) (384.670840,253.052760)
+---
+Object 31 detected, Qt corners at (286.761841,160.492538) (382.907507,173.824627) (285.483279,251.153180) (378.277400,244.884235)
+---
+Object 31 detected, Qt corners at (297.169342,170.748734) (371.479949,181.384742) (162.219680,355.876136) (386.572596,252.764472)
+---
+Object 31 detected, Qt corners at (298.499512,170.436325) (372.328586,180.076849) (194.351796,331.536234) (387.408340,255.446044)
+---
+Object 31 detected, Qt corners at (291.532074,164.837936) (383.000506,174.481454) (276.161099,259.876439) (381.775096,247.822100)
+---
+Object 31 detected, Qt corners at (294.839630,164.848190) (397.321151,159.579383) (305.566010,243.555150) (387.474747,249.229109)
+---
+Object 31 detected, Qt corners at (293.615448,161.437759) (404.399743,164.401827) (306.291655,242.040514) (387.397726,244.336583)
+---
+Object 31 detected, Qt corners at (302.793732,161.572723) (406.650353,161.666786) (315.389556,246.251283) (396.848017,247.069080)
+---
+Object 31 detected, Qt corners at (311.271332,164.879120) (410.135218,170.464058) (314.991920,247.248735) (402.573133,245.006842)
+---
+Object 31 detected, Qt corners at (321.912872,173.414932) (400.024170,180.182942) (264.533118,288.288981) (415.953363,254.118644)
+---
+Object 31 detected, Qt corners at (329.429749,173.180359) (405.330335,175.129094) (303.798265,259.148189) (414.737241,261.006098)
+---
+Object 31 detected, Qt corners at (315.992371,164.686630) (400.774595,177.917199) (275.814492,286.455964) (405.912181,248.242337)
+---
+Object 31 detected, Qt corners at (312.054993,164.895691) (413.126723,169.067521) (318.284770,246.954786) (406.825655,246.277883)
+---
+Object 31 detected, Qt corners at (316.184662,166.729416) (410.317725,169.805373) (313.844356,250.929544) (406.913470,248.312896)
+---
+Object 31 detected, Qt corners at (316.490570,162.833191) (416.891361,162.829647) (318.426753,244.282474) (401.024624,252.830073)
+---
+Object 31 detected, Qt corners at (316.433990,174.986938) (399.678008,166.727343) (306.239839,246.521129) (406.956896,261.193032)
+---
+Object 31 detected, Qt corners at (297.881714,162.399277) (389.898147,168.740607) (297.740744,251.593059) (387.857120,249.200453)
+---
+Object 31 detected, Qt corners at (291.950439,164.184250) (392.721942,168.160764) (297.276991,245.823795) (385.506941,246.081283)
+---
+Object 31 detected, Qt corners at (294.523712,164.444763) (385.923682,169.212215) (294.606238,252.470380) (386.172514,248.149181)
+---
+Object 31 detected, Qt corners at (294.769287,165.071701) (381.116221,174.892592) (289.075593,255.988537) (386.321666,247.700850)
+---
+Object 31 detected, Qt corners at (299.472290,167.777618) (386.867133,169.934133) (295.163886,250.023272) (388.508675,251.638963)
+---
+Object 31 detected, Qt corners at (290.585907,160.928436) (385.943156,174.207893) (285.591023,255.093886) (382.234177,244.796733)
+---
+Object 31 detected, Qt corners at (297.946991,168.537216) (386.931272,171.202450) (293.699065,250.357902) (387.515736,248.296687)
+---
+Object 31 detected, Qt corners at (292.901642,160.209091) (395.140301,167.388952) (299.505063,243.360722) (381.669659,247.237005)
+---
+Object 31 detected, Qt corners at (292.131897,164.848465) (399.803661,158.399341) (305.757613,242.136881) (385.913233,246.317713)
+---
+Object 31 detected, Qt corners at (285.261963,161.335938) (431.878030,131.102328) (313.263342,233.451578) (382.387918,244.534847)
+---
+Object 31 detected, Qt corners at (292.052338,163.461349) (390.544174,168.244711) (297.940635,246.949829) (384.391246,247.532586)
+---
+Object 31 detected, Qt corners at (299.351166,164.888962) (395.724132,164.929021) (299.947530,246.037947) (388.134109,250.598022)
+---
+Object 31 detected, Qt corners at (295.199280,161.316422) (383.619411,178.506285) (285.934179,259.483921) (388.499780,246.898000)
+---
+Object 31 detected, Qt corners at (299.278107,164.328476) (388.148627,171.963476) (296.350108,253.470395) (390.299075,249.163774)
+---
+Object 31 detected, Qt corners at (296.549225,165.465866) (404.480394,159.605712) (309.302402,239.377382) (390.565940,246.952659)
+---
+Object 31 detected, Qt corners at (289.391541,161.291275) (403.814638,156.948062) (312.185052,240.325850) (388.003220,242.522755)
+---
+Object 31 detected, Qt corners at (285.336548,152.377090) (411.926132,162.372258) (306.037984,238.653288) (383.071628,240.597899)
+---
+Object 31 detected, Qt corners at (308.950928,171.442719) (389.728774,172.163971) (293.006813,253.579695) (394.506903,255.491833)
+---
+Object 31 detected, Qt corners at (294.300079,159.676743) (406.953295,159.694951) (309.256042,239.661695) (386.009005,245.266682)
+---
+Object 31 detected, Qt corners at (308.871704,171.650589) (395.165493,170.451054) (300.774290,245.702032) (393.596042,252.528992)
+---
+Object 31 detected, Qt corners at (293.471558,161.676682) (391.081619,170.250547) (297.905475,251.423724) (387.134710,244.357530)
+---
+Object 31 detected, Qt corners at (307.763641,168.411118) (390.708646,171.573404) (293.796139,253.196537) (392.201354,255.798978)
+---
+Object 31 detected, Qt corners at (295.169220,161.394241) (394.303199,169.849664) (299.335891,248.173382) (387.149348,245.767812)
+---
+Object 31 detected, Qt corners at (292.774475,160.204849) (395.341857,168.100501) (301.413228,247.293638) (386.365285,244.510782)
+---
+Object 31 detected, Qt corners at (307.257141,169.934784) (393.759164,167.498819) (300.495776,248.259484) (396.508768,258.271934)
+---
+Object 31 detected, Qt corners at (295.177979,161.074066) (393.208646,171.074234) (297.478714,249.045388) (386.863221,245.880278)
+---
+Object 31 detected, Qt corners at (291.774292,160.079803) (408.433003,165.132103) (302.087361,240.585579) (385.232543,242.476826)
+---
+Object 31 detected, Qt corners at (299.603149,165.624268) (391.602408,167.039051) (300.986112,250.955642) (391.863001,249.889132)
+---
+Object 31 detected, Qt corners at (307.041412,172.335327) (392.966175,171.020591) (297.114594,248.540476) (398.412235,255.745517)
+---
+Object 31 detected, Qt corners at (298.925659,165.069077) (396.973995,168.281103) (300.710905,245.635504) (390.223429,248.621455)
+---
+Object 31 detected, Qt corners at (296.262756,161.873291) (392.829141,168.698143) (299.603568,249.354982) (389.016594,247.792992)
+---
+Object 31 detected, Qt corners at (301.437866,164.623352) (393.540938,167.765056) (299.592567,249.812130) (390.199316,251.263317)
+---
+Object 31 detected, Qt corners at (290.074799,157.100159) (394.562653,172.193322) (299.244876,246.006192) (384.546391,243.182877)
+---
+Object 31 detected, Qt corners at (298.391998,163.732758) (394.022717,169.762383) (298.412140,248.760386) (388.664911,247.790377)
+---
+Object 31 detected, Qt corners at (304.925262,170.020218) (394.962391,170.453997) (296.938426,247.823282) (393.794436,252.384521)
+---
+Object 31 detected, Qt corners at (294.764313,165.527252) (391.490723,167.878359) (299.310191,252.028818) (391.045819,244.410897)
+---
+Object 31 detected, Qt corners at (305.461395,162.706390) (405.861191,167.881438) (311.458384,243.642725) (395.776480,242.242588)
+---
+Object 31 detected, Qt corners at (305.495728,158.573532) (421.102486,157.274194) (328.803927,236.902366) (399.589568,240.481623)
+---
+Object 31 detected, Qt corners at (323.581696,168.677277) (436.493831,152.032882) (330.818752,235.977323) (408.750186,253.263741)
+---
+Object 31 detected, Qt corners at (331.716309,170.766693) (409.611580,167.188160) (325.259212,242.151205) (405.934413,256.685339)
+---
+Object 31 detected, Qt corners at (317.564301,165.132446) (400.798440,176.116543) (316.763665,257.015339) (398.061469,244.045625)
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects detected.
+---
+No objects dterminate called after throwing an instance of 'class_loader::LibraryUnloadException'
+  what():  Attempt to unload library that class_loader is unaware of.
+... logging to /home/abot/.ros/log/dbf10f80-e290-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-15533.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/abot/syd/src/abot_find/launch/find_object_2d.launch
+[1mstarted roslaunch server http://abot-robot:37657/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /find_object_2d/gui: True
+ * /find_object_2d/objects_path: /home/abot/syd/sr...
+ * /find_object_2d/settings_path: ~/.ros/find_objec...
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    find_object_2d (find_object_2d/find_object_2d)
+    print_objects_detected (find_object_2d/print_objects_detected)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/abot/syd/src/abot_find/launch/find_object_2d.launch http://localhost:11311
+[1mprocess[find_object_2d-1]: started with pid [15713][0m
+[1mprocess[print_objects_detected-2]: started with pid [15724][0m
+[print_objects_detected-2] killing on exit
+[find_object_2d-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

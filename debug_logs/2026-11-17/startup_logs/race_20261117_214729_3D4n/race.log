@@ -1,0 +1,205 @@
+[31mWARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[INFO] [1794923267.083926]: [  -1.0s] 日志目录：/home/abot/race_logs/20261117_214746
+[INFO] [1794923267.098378]: [  -1.0s] config | override mission.rehearsal_pause_s: 0 -> 0
+[INFO] [1794923267.105909]: [  -1.0s] preflight | imu_wait 等待 IMU 校准完成及数据稳定，请保持车身静止；最长等待 60 秒
+[INFO] [1794923272.105933]: [  -1.0s] IMU 尚未就绪，继续保持静止（已等待 5 秒）
+[INFO] [1794923277.107636]: [  -1.0s] IMU 尚未就绪，继续保持静止（已等待 10 秒）
+[INFO] [1794923281.870998]: [  -1.0s] preflight | imu_ready IMU 原始及融合数据已连续更新至少 1 秒，等待用时 14.8 秒
+[INFO] [1794923281.941117]: [  -1.0s] 串口 /dev/shoot 已打开
+[INFO] [1794923285.356154]: [  -1.0s] ========== 开局自检 ==========
+[INFO] [1794923285.357764]: [  -1.0s] [通过] 配置文件  无错误
+[INFO] [1794923285.365613]: [  -1.0s] [通过] 发射器串口  /dev/shoot
+[INFO] [1794923285.372694]: [  -1.0s] [通过] 激光雷达  0.1 秒前
+[INFO] [1794923285.385179]: [  -1.0s] [通过] 轮速里程计  0.0 秒前
+[INFO] [1794923285.398716]: [  -1.0s] [通过] 相机图像  0.0 秒前
+[INFO] [1794923285.405248]: [  -1.0s] [通过] AR码识别  0.0 秒前
+[INFO] [1794923285.414808]: [  -1.0s] [通过] AMCL 定位(TF map→base_link)  x=0.01 y=-0.01
+[INFO] [1794923285.422692]: [  -1.0s] [通过] 播报音频  齐全
+[INFO] [1794923285.439674]: [  -1.0s] [通过] 播放器 mplayer  
+[INFO] [1794923285.444401]: [  -1.0s] [通过] 离线卡片模板  已加载
+[INFO] [1794923285.446384]: [  -1.0s] [通过] 豆包 API  已配置
+[INFO] [1794923285.448907]: [  -1.0s] ==============================
+[INFO] [1794923285.450484]: [  -1.0s] 已设置初始位姿：起点 (-0.06, 0.09)
+[INFO] [1794923285.452056]: [  -1.0s] >>> 准备就绪：输入 1 并回车开始比赛 <<<
+[INFO] [1794923285.474992]: [  -1.0s] preflight | imu_wait 等待 IMU 校准完成及数据稳定，请保持车身静止；最长等待 60 秒
+[INFO] [1794923286.809435]: [  -1.0s] preflight | imu_ready IMU 原始及融合数据已连续更新至少 1 秒，等待用时 1.3 秒
+[INFO] [1794923286.819264]: [   0.0s] say_start | start 播报比赛开始
+[INFO] [1794923287.076439]: [   0.3s] say_start | play 00.mp3
+[INFO] [1794923289.477717]: [   2.7s] say_start | done 用时 2.65 秒
+[INFO] [1794923289.490414]: [   2.7s] go_recog | start 去识别区
+[INFO] [1794923289.497277]: [   2.7s] go_recog | profile 第 1 段：normal（最高 0.50 m/s）
+[INFO] [1794923293.176564]: [   6.4s] go_recog | done 用时 3.68 秒
+[INFO] [1794923293.185252]: [   6.4s] go_recog | pose x=0.305 y=-0.135 yaw=86.0deg
+[INFO] [1794923293.191652]: [   6.4s] align_recog | start 识别区精定位
+[INFO] [1794923294.745055]: [   7.9s] align_recog | done 用时 1.53 秒
+[INFO] [1794923294.751754]: [   7.9s] align_recog | align_error front=-0.1cm left=1.0cm yaw=-0.4deg
+[INFO] [1794923294.758557]: [   7.9s] align_recog | pose box=recog ok=1 x=0.331 y=-0.092 yaw=89.7deg
+[INFO] [1794923294.772361]: [   8.0s] recognize | start 识别卡片
+[INFO] [1794923298.667082]: [  11.9s] recognize | targets rotating=4 moving=6 source=vlm
+[INFO] [1794923298.677658]: [  11.9s] recognize | done 用时 3.90 秒
+[INFO] [1794923298.689083]: [  11.9s] say_targets | start 播报靶号
+[INFO] [1794923298.696358]: [  11.9s] say_targets | play x4.mp3 y6.mp3
+[INFO] [1794923304.315615]: [  17.5s] say_targets | done 用时 5.62 秒
+[INFO] [1794923304.323264]: [  17.5s] go_p1 | start 去1号点
+[INFO] [1794923304.332793]: [  17.5s] go_p1 | profile 第 1 段：normal（最高 0.50 m/s）
+[INFO] [1794923308.518030]: [  21.7s] go_p1 | done 用时 4.19 秒
+[INFO] [1794923308.526523]: [  21.7s] go_p1 | pose x=0.943 y=-0.355 yaw=6.3deg
+[INFO] [1794923308.534709]: [  21.7s] align_p1 | start 1号点精定位
+[INFO] [1794923311.003650]: [  24.2s] align_p1 | boost 车不动，最小速度加大到 1.5 倍
+[INFO] [1794923311.571434]: [  24.8s] align_p1 | boost 车不动，最小速度加大到 2.2 倍
+[INFO] [1794923313.220993]: [  26.4s] align_p1 | boost 车不动，最小速度加大到 2.5 倍
+[INFO] [1794923314.531771]: [  27.7s] align_p1 | done 用时 5.99 秒
+[INFO] [1794923314.538144]: [  27.7s] align_p1 | align_error back=0.2cm right=-0.2cm yaw=-0.3deg
+[INFO] [1794923314.545334]: [  27.7s] align_p1 | pose box=p1 ok=1 x=0.954 y=-0.337 yaw=-3.3deg
+[INFO] [1794923314.554258]: [  27.7s] shoot_ring | start 打环形靶
+[INFO] [1794923314.570033]: [  27.8s] shoot_ring | aim 横向位置用 right 墙测量
+[INFO] [1794923314.576936]: [  27.8s] shoot_ring | aim reason=settling state=look
+[INFO] [1794923315.038042]: [  28.2s] shoot_ring | aim fresh=0 reason=waiting_frames state=look
+[INFO] [1794923315.202629]: [  28.4s] shoot_ring | aim fresh=1 reason=waiting_frames state=look
+[INFO] [1794923315.409136]: [  28.6s] shoot_ring | aim fresh=2 reason=waiting_frames state=look
+[INFO] [1794923315.602270]: [  28.8s] shoot_ring | aim err_px=-3.500 frames=3 looks=1 shift_mm=14.150 shifts=0 sigma_px=0.361 state=look
+[INFO] [1794923315.658348]: [  28.8s] shoot_ring | aim left_mm=14.038 state=shift
+[INFO] [1794923317.700857]: [  30.9s] shoot_ring | aim left_mm=-2.804 reason=shift_done state=look
+[INFO] [1794923317.737577]: [  30.9s] shoot_ring | aim reason=settling state=look
+[INFO] [1794923318.387544]: [  31.6s] shoot_ring | aim fresh=0 reason=waiting_frames state=look
+[INFO] [1794923318.563659]: [  31.7s] shoot_ring | aim fresh=1 reason=waiting_frames state=look
+[INFO] [1794923318.746043]: [  31.9s] shoot_ring | aim err_px=-4.130 frames=2 looks=2 shift_mm=10.850 shifts=1 sigma_px=0.437 state=look
+[INFO] [1794923318.880513]: [  32.1s] shoot_ring | aim left_mm=10.734 state=shift
+[INFO] [1794923320.380794]: [  33.6s] shoot_ring | aim left_mm=1.137 reason=shift_done state=look
+[INFO] [1794923320.426133]: [  33.6s] shoot_ring | aim reason=settling state=look
+[INFO] [1794923320.812688]: [  34.0s] shoot_ring | aim fresh=0 reason=waiting_frames state=look
+[INFO] [1794923320.978253]: [  34.2s] shoot_ring | aim fresh=1 reason=waiting_frames state=look
+[INFO] [1794923321.173469]: [  34.4s] shoot_ring | aim err_px=-2.712 frames=2 looks=3 reason=max_shift_reached shifts=2 sigma_px=0.435 state=look
+[INFO] [1794923321.254096]: [  34.4s] shoot_ring | 开火 target=ring trigger=max_shift err_px=-2.712 frames=2 looks=3 reason=max_shift_reached shifts=2 sigma_px=0.435 state=look shot=1/2 sent=True
+[INFO] [1794923322.544123]: [  35.7s] shoot_ring | 开火 target=ring trigger=max_shift err_px=-2.712 frames=2 looks=3 reason=max_shift_reached shifts=2 sigma_px=0.435 state=look shot=2/2 sent=True
+[INFO] [1794923323.387634]: [  36.6s] shoot_ring | done 用时 8.82 秒
+[INFO] [1794923323.395045]: [  36.6s] go_p2 | start 去2号点
+[INFO] [1794923323.408647]: [  36.6s] go_p2 | lane 通道按激光量后墙定位：墙距 1.221 米，通道点挪 -0.4 cm
+[INFO] [1794923323.415352]: [  36.6s] go_p2 | profile 第 1 段：burst（最高 0.50 m/s）
+[INFO] [1794923326.431179]: [  39.6s] go_p2 | blocked 前方有障碍，停车等待
+[INFO] [1794923328.629612]: [  41.8s] go_p2 | profile 第 3 段：normal（最高 0.50 m/s）
+[INFO] [1794923331.279026]: [  44.5s] go_p2 | done 用时 7.87 秒
+[INFO] [1794923331.289608]: [  44.5s] go_p2 | pose x=0.910 y=-1.594 yaw=2.0deg
+[INFO] [1794923331.299501]: [  44.5s] align_p2 | start 2号点精定位
+[INFO] [1794923334.237867]: [  47.4s] align_p2 | done 用时 2.92 秒
+[INFO] [1794923334.266621]: [  47.4s] align_p2 | align_error back=0.2cm right=-0.6cm yaw=-0.5deg
+[INFO] [1794923334.276112]: [  47.5s] align_p2 | pose box=p2 ok=1 x=0.915 y=-1.616 yaw=-0.1deg
+[INFO] [1794923334.283364]: [  47.5s] shoot_rot | start 打旋转靶
+[INFO] [1794923334.290486]: [  47.5s] shoot_rot | marker id=4 最多等 42.5 秒
+[INFO] [1794923334.309323]: [  47.5s] shoot_rot | aim 横向位置用 right 墙测量
+[INFO] [1794923334.317638]: [  47.5s] shoot_rot | heading 车头相对侧墙 -1.8 度（扭的上限按正对侧墙算）
+[INFO] [1794923334.377683]: [  47.6s] shoot_rot | aim center=347.4;191.1 err_px=-31.471 k_px_deg=8.800 omega_deg_s=13.347 radius=29.584 reach_px=79.950 reason=plan shifted_mm=0.000 side=left state=align twisted_deg=-1.806 wait_s=12.061
+[INFO] [1794923334.407339]: [  47.6s] shoot_rot | aim coast_s=0.800 err_px=-31.454 lead_s=11.828 predicted_px=-31.504 rate_px_s=-0.062 reason=twist shifted_mm=0.000 side=left state=align twisted_deg=-1.803
+[INFO] [1794923335.324452]: [  48.5s] shoot_rot | aim err_px=-20.287 lead_s=11.085 rate_px_s=27.206 reason=coasting shifted_mm=-0.000 side=left state=align twisted_deg=-0.473
+[INFO] [1794923336.021769]: [  49.2s] shoot_rot | aim coast_s=0.400 err_px=-6.953 lead_s=10.310 predicted_px=-6.494 rate_px_s=1.147 reason=shift shifted_mm=-0.001 side=left state=align twisted_deg=0.890
+[INFO] [1794923337.397464]: [  50.6s] shoot_rot | aim err_px=-5.789 lead_s=8.927 limit=lat rate_px_s=5.432 reason=coasting shifted_mm=21.281 side=left state=align twisted_deg=0.955
+[INFO] [1794923337.946808]: [  51.1s] shoot_rot | aim err_px=-2.834 lead_s=8.438 rate_px_s=1.644 reason=holding shifted_mm=21.281 side=left state=align twisted_deg=1.156
+[INFO] [1794923338.297239]: [  51.5s] shoot_rot | aim err_px=-2.828 lead_s=8.006 rate_px_s=0.797 reason=aligned shifted_mm=21.281 side=left state=wait twisted_deg=1.168
+[INFO] [1794923338.347410]: [  51.5s] shoot_rot | aim err_px=-2.879 lead_s=7.964 miss_px=44.340 rate_px_s=-0.559 reason=waiting shifted_mm=21.281 side=left state=wait twisted_deg=1.166
+[INFO] [1794923340.591988]: [  53.8s] shoot_rot | aim err_px=-4.144 lead_s=5.696 miss_px=33.006 rate_px_s=-2.841 reason=realign shifted_mm=21.281 side=left state=align twisted_deg=1.167
+[INFO] [1794923340.615339]: [  53.8s] shoot_rot | aim err_px=-2.999 lead_s=5.581 rate_px_s=-1.182 reason=holding shifted_mm=21.281 side=left state=align twisted_deg=1.169
+[INFO] [1794923340.953874]: [  54.1s] shoot_rot | aim err_px=-2.835 lead_s=5.200 rate_px_s=0.849 reason=aligned shifted_mm=21.281 side=left state=wait twisted_deg=1.166
+[INFO] [1794923341.027900]: [  54.2s] shoot_rot | aim err_px=-2.875 lead_s=5.176 miss_px=31.699 rate_px_s=2.310 reason=waiting shifted_mm=21.281 side=left state=wait twisted_deg=1.165
+[INFO] [1794923341.660351]: [  54.8s] shoot_rot | aim err_px=-4.231 lead_s=4.527 miss_px=26.417 rate_px_s=-5.579 reason=realign shifted_mm=21.281 side=left state=align twisted_deg=1.153
+[INFO] [1794923341.704338]: [  54.9s] shoot_rot | aim coast_s=0.400 err_px=-4.214 lead_s=4.480 predicted_px=-6.691 rate_px_s=-6.193 reason=shift shifted_mm=21.281 side=left state=align twisted_deg=1.151
+[INFO] [1794923342.099987]: [  55.3s] shoot_rot | aim err_px=-2.938 lead_s=4.043 rate_px_s=5.398 reason=coasting shifted_mm=21.281 side=left state=align twisted_deg=1.156
+[INFO] [1794923342.512686]: [  55.7s] shoot_rot | aim err_px=-2.836 lead_s=3.607 rate_px_s=-0.089 reason=holding shifted_mm=21.281 side=left state=align twisted_deg=1.163
+[INFO] [1794923342.861566]: [  56.0s] shoot_rot | aim err_px=-2.901 lead_s=3.285 rate_px_s=0.781 reason=aligned shifted_mm=21.281 side=left state=wait twisted_deg=1.163
+[INFO] [1794923342.919215]: [  56.1s] shoot_rot | aim err_px=-3.146 lead_s=3.438 miss_px=21.714 rate_px_s=2.553 reason=waiting shifted_mm=21.281 side=left state=wait twisted_deg=1.164
+[INFO] [1794923346.218892]: [  59.4s] shoot_rot | aim aligns=3 err_px=-2.143 flips=0 k_px_deg=8.950 lat_coast_s=0.400 lat_px_cm=2.348 lead_s=0.018 miss_px=2.042 misses=0 rate_px_s=0.429 reason=fire shifted_mm=21.281 side=left state=wait twisted_deg=1.165 yaw_coast_s=0.645
+[INFO] [1794923346.300102]: [  59.5s] shoot_rot | 开火 target=rotating trigger=predicted aligns=3 err_px=-2.143 flips=0 k_px_deg=8.950 lat_coast_s=0.400 lat_px_cm=2.348 lead_s=0.018 miss_px=2.042 misses=0 rate_px_s=0.429 reason=fire shifted_mm=21.281 side=left state=wait twisted_deg=1.165 yaw_coast_s=0.645 shot=1/1 sent=True
+[INFO] [1794923346.619912]: [  59.8s] shoot_rot | done 用时 12.33 秒
+[INFO] [1794923346.627825]: [  59.8s] go_p3 | start 去3号点
+[INFO] [1794923346.637841]: [  59.8s] go_p3 | lane 通道按激光量后墙定位：墙距 1.201 米，通道点挪 -3.2 cm
+[INFO] [1794923346.647512]: [  59.8s] go_p3 | profile 第 1 段：burst（最高 0.50 m/s）
+[INFO] [1794923351.617601]: [  64.8s] go_p3 | profile 第 3 段：normal（最高 0.50 m/s）
+[INFO] [1794923354.661825]: [  67.8s] go_p3 | done 用时 8.03 秒
+[INFO] [1794923354.672221]: [  67.9s] go_p3 | pose x=0.959 y=-2.837 yaw=1.0deg
+[INFO] [1794923354.683298]: [  67.9s] align_p3 | start 3号点精定位
+[INFO] [1794923356.918261]: [  70.1s] align_p3 | boost 车不动，最小速度加大到 1.5 倍
+[INFO] [1794923358.353873]: [  71.5s] align_p3 | near 误差都在"差一点"范围内（墙距 1.6 倍、朝向 1.3 倍容差）、车已不动，算到位
+[INFO] [1794923358.791920]: [  72.0s] align_p3 | done 用时 4.09 秒
+[INFO] [1794923358.804749]: [  72.0s] align_p3 | align_error back=-0.8cm left=0.8cm yaw=-0.2deg
+[INFO] [1794923358.818312]: [  72.0s] align_p3 | pose box=p3 ok=1 x=0.946 y=-2.857 yaw=-0.1deg
+[INFO] [1794923358.825324]: [  72.0s] shoot_move | start 打移动靶
+[INFO] [1794923358.831549]: [  72.0s] shoot_move | marker id=6
+[INFO] [1794923358.916758]: [  72.1s] shoot_move | aim age=0.058 err_px=-29.215 reason=few_samples samples=8 speed=-15.357 u=323.589 v=202.378
+[INFO] [1794923359.067497]: [  72.3s] shoot_move | aim age=0.042 err_px=-30.928 lead_s=-2.251 reason=missed samples=13 speed=-13.740 u=321.633 v=202.378
+[INFO] [1794923363.681755]: [  76.9s] shoot_move | aim age=0.052 err_px=-94.068 reason=slow samples=137 speed=-5.546 u=257.264 v=203.112
+[INFO] [1794923364.282368]: [  77.5s] shoot_move | aim age=0.082 err_px=-88.591 reason=turning samples=154 speed=8.096 u=260.695 v=203.120
+[INFO] [1794923364.515440]: [  77.7s] shoot_move | aim age=0.028 err_px=-84.067 lead_s=6.481 reason=waiting samples=163 speed=12.972 u=264.487 v=203.112
+[INFO] [1794923370.422000]: [  83.6s] shoot_move | aim age=0.065 delay_s=0.029 err_px=0.000 lead_s=0.029 reason=fire samples=328 speed=13.232 u=348.130 v=202.407
+[INFO] [1794923370.536700]: [  83.7s] shoot_move | 开火 target=moving trigger=predicted age=0.065 delay_s=0.029 err_px=0.000 lead_s=0.029 reason=fire samples=328 speed=13.232 u=348.130 v=202.407 shot=1/1 sent=True
+[INFO] [1794923370.838720]: [  84.0s] shoot_move | done 用时 12.00 秒
+[INFO] [1794923370.846232]: [  84.0s] go_end | start 去终点
+[INFO] [1794923370.853768]: [  84.0s] go_end | profile 第 1 段：burst（最高 0.50 m/s）
+[INFO] [1794923374.375951]: [  87.6s] go_end | done 用时 3.52 秒
+[INFO] [1794923374.383315]: [  87.6s] go_end | pose x=0.142 y=-3.237 yaw=-0.8deg
+[INFO] [1794923374.390702]: [  87.6s] align_end | start 终点精定位
+[INFO] [1794923377.530370]: [  90.7s] align_end | done 用时 3.13 秒
+[INFO] [1794923377.536575]: [  90.7s] align_end | align_error back=-0.6cm right=-0.3cm yaw=0.5deg
+[INFO] [1794923377.543538]: [  90.7s] align_end | pose box=end ok=1 x=-0.025 y=-3.219 yaw=-4.7deg
+[INFO] [1794923377.553955]: [  90.7s] say_end | start 播报比赛结束
+[INFO] [1794923377.560623]: [  90.7s] say_end | play final.mp3
+[INFO] [1794923379.974381]: [  93.2s] say_end | done 用时 2.41 秒
+[INFO] [1794923379.982216]: [  93.2s] mission | end 总用时 93.2 秒
+[INFO] [1794923379.985570]: ==================== 本局用时 ====================
+[INFO] [1794923379.987450]: 步骤               用时(秒)  结果   备注
+[INFO] [1794923379.989279]: say_start         2.65       
+[INFO] [1794923379.991544]: go_recog          3.68       
+[INFO] [1794923380.022828]: align_recog       1.53       误差 front=-0.1cm left=1.0cm yaw=-0.4deg
+[INFO] [1794923380.024414]: recognize         3.90       
+[INFO] [1794923380.026011]: say_targets       5.62       
+[INFO] [1794923380.028658]: go_p1             4.19       
+[INFO] [1794923380.031557]: align_p1          5.99       误差 back=0.2cm right=-0.2cm yaw=-0.3deg；蹭不动加大最小速度 3 次
+[INFO] [1794923380.036174]: shoot_ring        8.82       
+[INFO] [1794923380.037281]: go_p2             7.87       被安全检查挡住 1 次；通道按激光量后墙定位：墙距 1.221 米，通道点挪 -0.4 cm
+[INFO] [1794923380.038856]: align_p2          2.92       误差 back=0.2cm right=-0.6cm yaw=-0.5deg
+[INFO] [1794923380.040052]: shoot_rot        12.33       
+[INFO] [1794923380.041804]: go_p3             8.03       通道按激光量后墙定位：墙距 1.201 米，通道点挪 -3.2 cm
+[INFO] [1794923380.043247]: align_p3          4.09       误差都在"差一点"范围内（墙距 1.6 倍、朝向 1.3 倍容差）、车已不动，算到位；误差 back=-0.8cm left=0.8cm yaw=-0.2deg；蹭不动加大最小速度 1 次
+[INFO] [1794923380.044487]: shoot_move       12.00       
+[INFO] [1794923380.046010]: go_end            3.52       
+[INFO] [1794923380.047290]: align_end         3.13       误差 back=-0.6cm right=-0.3cm yaw=0.5deg
+[INFO] [1794923380.057452]: say_end           2.41       
+[INFO] [1794923380.070173]: --------------------------------------------------
+[INFO] [1794923380.075529]: 行驶 27.3  精定位 17.7  播报/识别 14.6  打靶/停靠 33.1  （路上 = 行驶 + 精定位 45.0 秒）
+[INFO] [1794923380.078237]: 总用时 93.2 秒；超时：无
+[INFO] [1794923380.095142]: [  93.3s] 程序结束，记录保存在 /home/abot/race_logs/20261117_214746
+[31m================================================================================REQUIRED process [shoot_race-1] has died!
+process has finished cleanly
+log file: /home/abot/.ros/log/6fdb7860-e28d-11f1-a7a1-24418c8a26ae/shoot_race-1*.log
+Initiating shutdown!
+================================================================================[0m
+... logging to /home/abot/.ros/log/6fdb7860-e28d-11f1-a7a1-24418c8a26ae/roslaunch-abot-robot-12754.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/abot/syd/src/shoot_race/launch/race.launch
+[1mstarted roslaunch server http://abot-robot:38967/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /shoot_race/auto_start: False
+ * /shoot_race/dry_fire: False
+ * /shoot_race/force: False
+ * /shoot_race/from_step: 
+ * /shoot_race/set: mission.rehearsal...
+ * /shoot_race/to_step: 
+
+NODES
+  /
+    shoot_race (shoot_race/race_node.py)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/abot/syd/src/shoot_race/launch/race.launch http://localhost:11311
+[1mprocess[shoot_race-1]: started with pid [12824][0m
+[shoot_race-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

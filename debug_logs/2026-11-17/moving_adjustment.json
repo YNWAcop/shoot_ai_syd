@@ -1,0 +1,81 @@
+{
+  "change": "moving.aim_u_px",
+  "before": 350.5,
+  "after": 351.5,
+  "burst_s": 0.07,
+  "backup": "/home/abot/syd/.change_backups/moving_right_20261117_221614",
+  "validation": "Loaded via production Python 2 load_config; only moving.aim_u_px changed on vehicle. No motion or firing test.",
+  "effective_moving": {
+    "aim_u_px": 351.5,
+    "aim_v_px": 199.5,
+    "end_margin_px": 6.0,
+    "end_margin_s": 0.15,
+    "fire": {
+      "burst_s": 0.07,
+      "interval_s": 1.2,
+      "post_fire_wait_s": 0.2,
+      "shots": 1
+    },
+    "fit_window_s": 0.3,
+    "fuse_codes": [
+      6,
+      7,
+      8
+    ],
+    "fuse_layout_px": {
+      "6": 0.0,
+      "7": 27.1,
+      "8": 53.2
+    },
+    "fuse_min_pairs": 3,
+    "history_s": 16.0,
+    "hit_tolerance_px": 4.0,
+    "intercept": {
+      "buffer_s": 0.5,
+      "dwell_s": 0.4,
+      "enabled": false,
+      "end_margin_px": 15.0,
+      "max_turn_deg": 8.0,
+      "max_twist_deg": 6.0,
+      "max_twists": 2,
+      "min_gain_s": 2.5,
+      "min_span_s": 0.5,
+      "settle_s": 1.2,
+      "stroke_heading_deg": -2.0,
+      "stroke_px": {
+        "6": [
+          254.0,
+          363.0
+        ],
+        "7": [
+          281.0,
+          390.0
+        ],
+        "8": [
+          307.0,
+          416.0
+        ]
+      },
+      "twist_coast_s": 0.5,
+      "twist_margin_deg": 0.8,
+      "twist_min_rate": 0.4,
+      "twist_px_per_deg": 8.8,
+      "twist_rate_deg_s": 4.0,
+      "twist_start_s": 0.8,
+      "twist_timeout_s": 5.0,
+      "unsure_margin_px": 8.0
+    },
+    "latency_s": 0.15,
+    "max_sample_age_s": 0.3,
+    "max_speed_px_s": 120.0,
+    "min_samples": 4,
+    "min_speed_px_s": 8.0,
+    "outlier_px": 8.0,
+    "run_window_s": 0.6,
+    "settle_s": 0.3,
+    "static_speed_px_s": 2.0,
+    "target_distance_m": 1.5,
+    "tolerance_v_px": 8.0,
+    "use_v": false
+  }
+}

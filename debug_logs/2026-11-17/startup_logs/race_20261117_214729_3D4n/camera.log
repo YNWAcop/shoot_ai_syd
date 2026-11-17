@@ -1,0 +1,37 @@
+[31mWARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+[33m[ WARN] [1794923258.133199644]: Camera calibration file did not specify distortion model, assuming plumb bob[0m
+[33m[ WARN] [1794923258.133322898]: [head_camera] does not match name usb_cam in file /home/abot/syd/src/track_tag/camera_calibration.yaml[0m
+[33m[ WARN] [1794923259.291846544]: unknown control 'focus_auto'
+[0m
+... logging to /home/abot/.ros/log/6fdb7860-e28d-11f1-a7a1-24418c8a26ae/roslaunch-abot-robot-12266.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/abot/syd/src/track_tag/launch/usb_cam_with_calibration.launch
+[1mstarted roslaunch server http://abot-robot:42971/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /usb_cam/camera_frame_id: usb_cam
+ * /usb_cam/camera_info_url: file:///home/abot...
+ * /usb_cam/image_height: 480
+ * /usb_cam/image_width: 640
+ * /usb_cam/io_method: mmap
+ * /usb_cam/pixel_format: yuyv
+ * /usb_cam/video_device: /dev/video0
+
+NODES
+  /
+    usb_cam (usb_cam/usb_cam_node)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/abot/syd/src/track_tag/launch/usb_cam_with_calibration.launch http://localhost:11311
+[1mprocess[usb_cam-1]: started with pid [12367][0m
+[usb_cam-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

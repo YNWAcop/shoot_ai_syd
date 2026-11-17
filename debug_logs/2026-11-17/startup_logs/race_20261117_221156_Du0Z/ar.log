@@ -1,0 +1,60 @@
+[31mWARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+/home/abot/snap/code/common/.cache/gio-modules/libgiolibproxy.so: undefined symbol: g_task_set_name
+Failed to load module: /home/abot/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+/home/abot/snap/code/common/.cache/gio-modules/libgiognomeproxy.so: undefined symbol: g_task_set_name
+Failed to load module: /home/abot/snap/code/common/.cache/gio-modules/libgiognomeproxy.so
+/usr/lib/x86_64-linux-gnu/libgnutls.so.30: version `GNUTLS_3_6_3' not found (required by /home/abot/snap/code/common/.cache/gio-modules/libgiognutls.so)
+Failed to load module: /home/abot/snap/code/common/.cache/gio-modules/libgiognutls.so
+QObject::connect: Cannot queue arguments of type 'QVector<int>'
+(Make sure 'QVector<int>' is registered using qRegisterMetaType().)
+QObject::connect: Cannot queue arguments of type 'QVector<int>'
+(Make sure 'QVector<int>' is registered using qRegisterMetaType().)
+terminate called after throwing an instance of 'class_loader::LibraryUnloadException'
+  what():  Attempt to unload library that class_loader is unaware of.
+[0m[ INFO] [1794924729.246258228]: rviz version 1.13.30[0m
+[0m[ INFO] [1794924729.246298681]: compiled against Qt version 5.9.5[0m
+[0m[ INFO] [1794924729.246307217]: compiled against OGRE version 1.9.0 (Ghadamon)[0m
+[0m[ INFO] [1794924729.257806762]: Forcing OpenGl version 0.[0m
+[0m[ INFO] [1794924730.152386489]: Stereo is NOT SUPPORTED[0m
+[0m[ INFO] [1794924730.152484675]: OpenGL device: Mesa DRI Intel(R) Iris(R) Plus Graphics 640 (Kaby Lake GT3e) (KBL GT3)[0m
+[0m[ INFO] [1794924730.152532972]: OpenGl version: 3.0 (GLSL 1.3).[0m
+[0m[ INFO] [1794924732.210123302]: Creating 1 swatches[0m
+... logging to /home/abot/.ros/log/dbf10f80-e290-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-15532.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+]2;/home/abot/syd/src/shoot_race/launch/ar_visualization.launch
+[1mstarted roslaunch server http://abot-robot:37733/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /ar_track_alvar/marker_size: 9.0
+ * /ar_track_alvar/max_frequency: 30.0
+ * /ar_track_alvar/max_new_marker_error: 0.08
+ * /ar_track_alvar/max_track_error: 0.2
+ * /ar_track_alvar/output_frame: /usb_cam
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    ar_track_alvar (ar_track_alvar/individualMarkersNoKinect)
+    base_link_to_cam (tf/static_transform_publisher)
+    rviz (rviz/rviz)
+    world_to_map (tf/static_transform_publisher)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/abot/syd/src/shoot_race/launch/ar_visualization.launch http://localhost:11311
+[1mprocess[world_to_map-1]: started with pid [15765][0m
+[1mprocess[base_link_to_cam-2]: started with pid [15768][0m
+[1mprocess[ar_track_alvar-3]: started with pid [15783][0m
+[1mprocess[rviz-4]: started with pid [15795][0m
+[rviz-4] killing on exit
+[ar_track_alvar-3] killing on exit
+[base_link_to_cam-2] killing on exit
+[world_to_map-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
