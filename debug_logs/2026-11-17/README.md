@@ -24,4 +24,10 @@
 
 备份：`/home/abot/syd/.change_backups/ring_right_20261117_223545/shooting.yaml`；验证记录：`aim_adjustment_20261117_223545.json`。
 
+## 22:45 第一靶追加 2 像素水平补偿
+
+按用户要求，沿此前偏右的补偿方向，将 `ring.rings.aim_x_px` 从 355.0 增至 357.0。第三靶仍为 353.5，高低参数及发射时长不变。已确认无示教配置覆盖，实车 Python 2 生产配置加载验证通过，结构比对确认仅改变这一项。未执行行驶或发射测试，重新启动程序后生效，实际效果待观察。
+
+备份：`/home/abot/syd/.change_backups/ring_right_20261117_224511/shooting.yaml`；验证记录：`aim_adjustment_20261117_224511.json`。
+
 `race_logs/`、`startup_logs/`、`ros_logs/` 仅归档本日记录；`manifest.json` 记录车端导出快照的文件哈希及脱敏情况，其中 `code/` 条目是导出时的源代码清单。密钥、历史日期日志、构建产物及备份不上传。

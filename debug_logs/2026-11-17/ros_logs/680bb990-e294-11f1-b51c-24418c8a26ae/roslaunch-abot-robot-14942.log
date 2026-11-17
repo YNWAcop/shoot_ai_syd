@@ -1,0 +1,68 @@
+[roslaunch][INFO] 2026-11-17 22:37:35,794: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][ERROR] 2026-11-17 22:37:35,978: WARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.
+[roslaunch][INFO] 2026-11-17 22:37:35,978: roslaunch starting with args ['/opt/ros/melodic/bin/roslaunch', 'shoot_race', 'race.launch', 'dry_fire:=false', 'auto_start:=false', 'force:=false', 'set:=mission.rehearsal_pause_s=0']
+[roslaunch][INFO] 2026-11-17 22:37:35,978: roslaunch env is {'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 54121 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/680bb990-e294-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-14942.log', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '15', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 54121 192.168.114.79 22'}
+[roslaunch][INFO] 2026-11-17 22:37:35,979: starting in server mode
+[roslaunch.parent][INFO] 2026-11-17 22:37:35,979: starting roslaunch parent run
+[roslaunch][INFO] 2026-11-17 22:37:35,979: loading roscore config file /opt/ros/melodic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-11-17 22:37:36,970: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2026-11-17 22:37:36,970: loading config file /home/abot/syd/src/shoot_race/launch/race.launch
+[roslaunch][INFO] 2026-11-17 22:37:36,972: Added node of type [shoot_race/race_node.py] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:37:36,972: ... selected machine [] for node of type [shoot_race/race_node.py]
+[roslaunch.pmon][INFO] 2026-11-17 22:37:36,973: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-11-17 22:37:36,973: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-11-17 22:37:36,974: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-11-17 22:37:36,974: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-11-17 22:37:36,974: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-11-17 22:37:36,974: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-11-17 22:37:36,974: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-17 22:37:36,975: Started XML-RPC server [http://abot-robot:42853/]
+[xmlrpc][INFO] 2026-11-17 22:37:36,975: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-11-17 22:37:36,997: started roslaunch server http://abot-robot:42853/
+[roslaunch.parent][INFO] 2026-11-17 22:37:36,997: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-11-17 22:37:36,997: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:37:37,005: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:37:37,007: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2026-11-17 22:37:37,012: setting /roslaunch/uris/host_abot_robot__42853' to http://abot-robot:42853/
+[roslaunch][INFO] 2026-11-17 22:37:37,013: load_parameters starting ...
+[roslaunch][INFO] 2026-11-17 22:37:37,027: ... load_parameters complete
+[roslaunch][INFO] 2026-11-17 22:37:37,027: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2026-11-17 22:37:37,028: ... preparing to launch node of type [shoot_race/race_node.py]
+[roslaunch][INFO] 2026-11-17 22:37:37,028: create_node_process: package[shoot_race] type[race_node.py] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:37:37,028: process[shoot_race-1]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 54121 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/680bb990-e294-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-14942.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '15', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 54121 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:37:37,165: process[shoot_race-1]: args[[u'/home/abot/syd/src/shoot_race/scripts/race_node.py', u'__name:=shoot_race']]
+[roslaunch][INFO] 2026-11-17 22:37:37,165: ... created process [shoot_race-1]
+[roslaunch.pmon][INFO] 2026-11-17 22:37:37,165: ProcessMonitor.register[shoot_race-1]
+[roslaunch.pmon][INFO] 2026-11-17 22:37:37,165: ProcessMonitor.register[shoot_race-1] complete
+[roslaunch][INFO] 2026-11-17 22:37:37,165: ... registered process [shoot_race-1]
+[roslaunch][INFO] 2026-11-17 22:37:37,165: process[shoot_race-1]: starting os process
+[roslaunch][INFO] 2026-11-17 22:37:37,166: process[shoot_race-1]: start w/ args [[u'/home/abot/syd/src/shoot_race/scripts/race_node.py', u'__name:=shoot_race', u'__log:=/home/abot/.ros/log/680bb990-e294-11f1-b51c-24418c8a26ae/shoot_race-1.log']]
+[roslaunch][INFO] 2026-11-17 22:37:37,166: process[shoot_race-1]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:37:37,170: process[shoot_race-1]: started with pid [15058]
+[roslaunch][INFO] 2026-11-17 22:37:37,171: ... successfully launched [shoot_race-1]
+[roslaunch][INFO] 2026-11-17 22:37:37,171: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2026-11-17 22:37:37,171: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 139931411916544)>
+[roslaunch.parent][INFO] 2026-11-17 22:37:37,171: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2026-11-17 22:37:37,171: spin
+[roslaunch][ERROR] 2026-11-17 22:39:24,492: ================================================================================REQUIRED process [shoot_race-1] has died!
+process has finished cleanly
+log file: /home/abot/.ros/log/680bb990-e294-11f1-b51c-24418c8a26ae/shoot_race-1*.log
+Initiating shutdown!
+================================================================================
+[roslaunch.pmon][INFO] 2026-11-17 22:39:24,592: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139931411916544)>
+[roslaunch.pmon][INFO] 2026-11-17 22:39:24,593: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139931411916544)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7f4449fc4e50>]
+[roslaunch.pmon][INFO] 2026-11-17 22:39:24,597: ProcessMonitor exit: killing shoot_race-1
+[roslaunch][INFO] 2026-11-17 22:39:24,597: [shoot_race-1] killing on exit
+[roslaunch.pmon][INFO] 2026-11-17 22:39:24,651: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2026-11-17 22:39:24,651: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2026-11-17 22:39:24,692: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2026-11-17 22:39:24,692: runner.stop()
+[roslaunch][INFO] 2026-11-17 22:39:24,692: shutting down processing monitor...
+[roslaunch][INFO] 2026-11-17 22:39:24,692: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 139931411916544)>
+[roslaunch.pmon][INFO] 2026-11-17 22:39:24,692: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139931411916544)>
+[roslaunch][INFO] 2026-11-17 22:39:24,693: ... shutting down processing monitor complete
+[roslaunch][INFO] 2026-11-17 22:39:24,693: done
+[roslaunch.pmon][INFO] 2026-11-17 22:39:24,693: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139931411916544)>
+[rospy.core][INFO] 2026-11-17 22:39:24,693: signal_shutdown [atexit]

@@ -1,0 +1,39 @@
+{
+  "policy": "vlm_first", 
+  "offline": {
+    "seconds": 1.242, 
+    "index": 3, 
+    "score": 0.1317242532968521, 
+    "margin": 0.05530163645744324, 
+    "scores": [
+      0.042, 
+      0.076, 
+      -0.013, 
+      0.132, 
+      -0.068, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0
+    ]
+  }, 
+  "vlm": {
+    "answer": 4, 
+    "text": "{\"answer\": 4, \"fruit\": \"榴莲\"}", 
+    "fruit": "durian", 
+    "seconds": 6.123
+  }, 
+  "final": {
+    "rotating": 4, 
+    "answer": 4, 
+    "fruit": "durian", 
+    "moving": 6, 
+    "source": "vlm"
+  }
+}

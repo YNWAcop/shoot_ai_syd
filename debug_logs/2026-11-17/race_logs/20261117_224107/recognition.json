@@ -1,0 +1,34 @@
+{
+  "policy": "vlm_first", 
+  "offline": {
+    "seconds": 1.325, 
+    "index": 3, 
+    "score": 0.2618201673030853, 
+    "margin": 0.08452638983726501, 
+    "scores": [
+      0.036, 
+      0.027, 
+      -0.001, 
+      0.262, 
+      -0.05, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      -1.0, 
+      0.177, 
+      -1.0, 
+      -1.0, 
+      -1.0
+    ]
+  }, 
+  "vlm": null, 
+  "final": {
+    "rotating": 4, 
+    "answer": 4, 
+    "fruit": "durian", 
+    "moving": 6, 
+    "source": "offline_guess"
+  }
+}

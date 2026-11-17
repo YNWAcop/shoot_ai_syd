@@ -1,0 +1,5 @@
+match_time,step,target,trigger,detail
+33.64,shoot_ring,ring,max_shift,err_px=-5.926 frames=2 looks=2 reason=max_shift_reached shifts=1 sigma_px=0.438 state=look shot=1/2 sent=True
+34.91,shoot_ring,ring,max_shift,err_px=-5.926 frames=2 looks=2 reason=max_shift_reached shifts=1 sigma_px=0.438 state=look shot=2/2 sent=True
+61.09,shoot_rot,rotating,predicted,aligns=1 err_px=-0.908 flips=0 k_px_deg=8.829 lat_coast_s=0.495 lat_px_cm=2.112 lead_s=0.019 miss_px=0.984 misses=0 rate_px_s=-0.735 reason=fire shifted_mm=11.170 side=left state=wait twisted_deg=1.215 yaw_coast_s=0.639 shot=1/1 sent=True
+76.73,shoot_move,moving,predicted,age=0.058 delay_s=0.021 err_px=0.000 lead_s=0.021 reason=fire samples=133 speed=14.912 u=350.953 v=202.331 shot=1/1 sent=True
