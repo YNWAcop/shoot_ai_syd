@@ -1,0 +1,20 @@
+{
+  "changes": {
+    "ring.rings.aim_x_px": [
+      353.0,
+      354.0
+    ],
+    "moving.aim_u_px": [
+      351.5,
+      352.5
+    ]
+  },
+  "backup": "/home/abot/syd/.change_backups/aim_right_20261117_222717",
+  "validation": {
+    "moving_aim_u_px": 352.5,
+    "ring_aim_x_px": 354.0,
+    "burst_s": 0.07
+  },
+  "vertical_parameters_changed": false,
+  "motion_or_firing_test": false
+}

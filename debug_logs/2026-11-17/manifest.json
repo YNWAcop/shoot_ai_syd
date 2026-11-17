@@ -3226,8 +3226,8 @@
       "path": "code/src/shoot_race/config/shooting.yaml",
       "group": "source",
       "bytes": 29144,
-      "sha256": "e07f23c25838f831dc537a247fd85f3f4eb536e63c00ab9050db9ac2dc3bb464",
-      "original_sha256": "e07f23c25838f831dc537a247fd85f3f4eb536e63c00ab9050db9ac2dc3bb464"
+      "sha256": "f07848d0f783786f7241811fede6744ba8cf36a5eadced784df058c49cf1f3d7",
+      "original_sha256": "f07848d0f783786f7241811fede6744ba8cf36a5eadced784df058c49cf1f3d7"
     },
     {
       "path": "code/src/shoot_race/config/system.yaml",
@@ -4175,6 +4175,76 @@
       "original_sha256": "f114257b1ccf4d89381bd5d9300693bd4060af92821ad124c4402d848e2aca36"
     },
     {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/config_snapshot.yaml",
+      "group": "race_logs",
+      "bytes": 14558,
+      "sha256": "f49bb990877d602572011b98629c3427eaa444e56f273f43faaa014c44804e34",
+      "original_sha256": "f49bb990877d602572011b98629c3427eaa444e56f273f43faaa014c44804e34"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/events.csv",
+      "group": "race_logs",
+      "bytes": 8079,
+      "sha256": "8a0b9a762def92f7d7f47aa9e0dc41b9f6f363861ef4599e85e61d86bc6fd580",
+      "original_sha256": "8a0b9a762def92f7d7f47aa9e0dc41b9f6f363861ef4599e85e61d86bc6fd580"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/recognition.jpg",
+      "group": "race_logs",
+      "bytes": 59577,
+      "sha256": "04d2329b0566e6af0c0754fcc835f7fe43f0492e7eaf07f084f88fd01bedb5c1",
+      "original_sha256": "04d2329b0566e6af0c0754fcc835f7fe43f0492e7eaf07f084f88fd01bedb5c1"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/recognition.json",
+      "group": "race_logs",
+      "bytes": 637,
+      "sha256": "43d1d6cdaea7fe0483919d53f2f8b9b793a04001bb7ee2cb5dfb18a96da0df84",
+      "original_sha256": "43d1d6cdaea7fe0483919d53f2f8b9b793a04001bb7ee2cb5dfb18a96da0df84"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/shot_shoot_move_1.jpg",
+      "group": "race_logs",
+      "bytes": 60368,
+      "sha256": "3c773873f82f92947ce5f974aaa60a30291a640ceab66967dc33f1a5807fc594",
+      "original_sha256": "3c773873f82f92947ce5f974aaa60a30291a640ceab66967dc33f1a5807fc594"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/shot_shoot_ring_1.jpg",
+      "group": "race_logs",
+      "bytes": 64158,
+      "sha256": "33ba45b6222c34d3343bea75818abb98af0e70ef8137a6c0f6eb7da9c1158a6d",
+      "original_sha256": "33ba45b6222c34d3343bea75818abb98af0e70ef8137a6c0f6eb7da9c1158a6d"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/shot_shoot_ring_2.jpg",
+      "group": "race_logs",
+      "bytes": 64015,
+      "sha256": "752ad0715ff9a9012fdaed703a9107d5727f3254890e70fe701cc6c13418ead8",
+      "original_sha256": "752ad0715ff9a9012fdaed703a9107d5727f3254890e70fe701cc6c13418ead8"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/shot_shoot_rot_1.jpg",
+      "group": "race_logs",
+      "bytes": 63880,
+      "sha256": "c9ae1d7cdeca0a3e98082b7ac20b040c077c7e3e0135ca5030e60762f537e623",
+      "original_sha256": "c9ae1d7cdeca0a3e98082b7ac20b040c077c7e3e0135ca5030e60762f537e623"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/shots.csv",
+      "group": "race_logs",
+      "bytes": 759,
+      "sha256": "f3d3187de2917109264add7401f66f04f38d89b4676627c2b01952d821edc686",
+      "original_sha256": "f3d3187de2917109264add7401f66f04f38d89b4676627c2b01952d821edc686"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222147/summary.txt",
+      "group": "race_logs",
+      "bytes": 1340,
+      "sha256": "d936032b7a3e8e0ab954705d57401d3e4394c26ca3490557e23734d167ef6c44",
+      "original_sha256": "d936032b7a3e8e0ab954705d57401d3e4394c26ca3490557e23734d167ef6c44"
+    },
+    {
       "path": "debug_logs/2026-11-17/startup_logs/race_20261117_214729_3D4n/ar.log",
       "group": "startup_logs",
       "bytes": 3166,
@@ -4296,6 +4366,167 @@
     {
       "path": "debug_logs/2026-11-17/startup_logs/race_20261117_221156_Du0Z/started",
       "group": "startup_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222133_RlPI/bringup.log",
+      "group": "startup_logs",
+      "bytes": 295826,
+      "sha256": "e6d0be99f355b42482ec307f0b40a9ec4094524b03be4527cabb614027519972",
+      "original_sha256": "e6d0be99f355b42482ec307f0b40a9ec4094524b03be4527cabb614027519972"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222133_RlPI/finished",
+      "group": "startup_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222133_RlPI/race.log",
+      "group": "startup_logs",
+      "bytes": 17764,
+      "sha256": "97da0824dcfb7f600982d57b97dc7b7de1623b78ded101acd45028c0bc51a506",
+      "original_sha256": "97da0824dcfb7f600982d57b97dc7b7de1623b78ded101acd45028c0bc51a506"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222133_RlPI/roscore.log",
+      "group": "startup_logs",
+      "bytes": 963,
+      "sha256": "57330d030bb523c9db092697cfa9a69bf58da5d46707175ab8569b4e3a24832d",
+      "original_sha256": "57330d030bb523c9db092697cfa9a69bf58da5d46707175ab8569b4e3a24832d"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222133_RlPI/started",
+      "group": "startup_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/amcl-14-stdout.log",
+      "group": "ros_logs",
+      "bytes": 435,
+      "sha256": "0dc215c1cec502f22e59d25f2e7febf8425d56cdf541773b1a4b2ff1a1250e78",
+      "original_sha256": "0dc215c1cec502f22e59d25f2e7febf8425d56cdf541773b1a4b2ff1a1250e78"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/base_imu_to_base_link-3-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/base_laser_to_base_link-4-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/base_link_to_cam-17-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/find_object_2d-20-stdout.log",
+      "group": "ros_logs",
+      "bytes": 173912,
+      "sha256": "854e2fc00cc8dad7edca44054bed32053047b7488269c7fcb6933b293fac8def",
+      "original_sha256": "854e2fc00cc8dad7edca44054bed32053047b7488269c7fcb6933b293fac8def"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/joint_state_publisher-8-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/joint_state_publisher-8.log",
+      "group": "ros_logs",
+      "bytes": 1610,
+      "sha256": "a94249c622afc05880718cbc79820143066225f97cf8b902cca90464b076466c",
+      "original_sha256": "a94249c622afc05880718cbc79820143066225f97cf8b902cca90464b076466c"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/map_server-12-stdout.log",
+      "group": "ros_logs",
+      "bytes": 242,
+      "sha256": "aec7c3b73195b561273b737d94a87dda4c054a6c60be9b0c38a0ceedf35f9034",
+      "original_sha256": "aec7c3b73195b561273b737d94a87dda4c054a6c60be9b0c38a0ceedf35f9034"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/master.log",
+      "group": "ros_logs",
+      "bytes": 285028,
+      "sha256": "0747f54de7e071319a8283cd0c94935922e136148e85141dc9f7f2cb364c092a",
+      "original_sha256": "0747f54de7e071319a8283cd0c94935922e136148e85141dc9f7f2cb364c092a"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/odom_ekf-7.log",
+      "group": "ros_logs",
+      "bytes": 2307,
+      "sha256": "b3beb9b1fac8330446f70cb1488ad96716275fdb7f28bf461339042cba600033",
+      "original_sha256": "b3beb9b1fac8330446f70cb1488ad96716275fdb7f28bf461339042cba600033"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/robot_state_publisher-9-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-18804.log",
+      "group": "ros_logs",
+      "bytes": 11304,
+      "sha256": "35a419cbec27088f202ea9249e1b8bd1ad2ef5ae8325e6a4db1b1cf99ae5f12f",
+      "original_sha256": "35a419cbec27088f202ea9249e1b8bd1ad2ef5ae8325e6a4db1b1cf99ae5f12f"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-18898.log",
+      "group": "ros_logs",
+      "bytes": 90685,
+      "sha256": "328c4ef6a37c025db1d44eecd458904d6633a1270fe3eaeceb8e4650000b6eb4",
+      "original_sha256": "328c4ef6a37c025db1d44eecd458904d6633a1270fe3eaeceb8e4650000b6eb4"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-19390.log",
+      "group": "ros_logs",
+      "bytes": 9772,
+      "sha256": "b98c018674cf1cfc340919c425ac219d36b4fa53fb3fbb7644e40e2a5ec486a0",
+      "original_sha256": "b98c018674cf1cfc340919c425ac219d36b4fa53fb3fbb7644e40e2a5ec486a0"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/rosout-1-stdout.log",
+      "group": "ros_logs",
+      "bytes": 150,
+      "sha256": "032ecbba4c7ce41b6e0d90da64d0ba7d823321da50b4f3770d7748ed0c7ae6bb",
+      "original_sha256": "032ecbba4c7ce41b6e0d90da64d0ba7d823321da50b4f3770d7748ed0c7ae6bb"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/rosout.log",
+      "group": "ros_logs",
+      "bytes": 1148607,
+      "sha256": "bbf2aea95182656fce4a5007ce61c1a5e1df912bdea309236134a2b8888f08cb",
+      "original_sha256": "bbf2aea95182656fce4a5007ce61c1a5e1df912bdea309236134a2b8888f08cb"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/shoot_race-1.log",
+      "group": "ros_logs",
+      "bytes": 30788,
+      "sha256": "4a6fa72f2bb509de4c1bbc55b44e1317cd8292c77d040111dbd90ad66036733f",
+      "original_sha256": "4a6fa72f2bb509de4c1bbc55b44e1317cd8292c77d040111dbd90ad66036733f"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/world_to_map-16-stdout.log",
+      "group": "ros_logs",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
