@@ -205,7 +205,7 @@ rotating:
 # 2025 场地实测（moving2.bag）：匀速往返约 18 像素/秒（≈ 4 cm/s），单程约 6.8 秒、行程约 121 像素；
 # 到端点立即换向，换向（速度低于一半）约 0.5 秒。车不动，预测到达时刻开火，避开换向（见 aiming.MovingPredictor）。
 moving:
-  aim_u_px: 352.5                # 弹着点像素。同 rotating（2026-10-23 按新子弹改，原 361.5，见 rotating.aim_u_px）。弹孔偏右 → 增大；偏左 → 减小
+  aim_u_px: 353.5                # 弹着点像素。同 rotating（2026-10-23 按新子弹改，原 361.5，见 rotating.aim_u_px）。弹孔偏右 → 增大；偏左 → 减小
   target_distance_m: 1.5         # 车到滑轨的距离（米，规则值）。菜单 20 / 22 像素 ↔ 厘米换算用（以前缺这项，菜单 20 标移动靶会报错）
   aim_v_px: 199.5                # 只在 use_v 为 true 时用。同 rotating；落点比码中心（v≈195）低约 4 像素，在码上
   use_v: false                   # 移动靶只在水平方向运动，不卡高度

@@ -3226,8 +3226,8 @@
       "path": "code/src/shoot_race/config/shooting.yaml",
       "group": "source",
       "bytes": 29144,
-      "sha256": "f07848d0f783786f7241811fede6744ba8cf36a5eadced784df058c49cf1f3d7",
-      "original_sha256": "f07848d0f783786f7241811fede6744ba8cf36a5eadced784df058c49cf1f3d7"
+      "sha256": "a5c23d136074f290b3d4ad232a1292e6225d7826effb2f35d47b4c3d08221f43",
+      "original_sha256": "a5c23d136074f290b3d4ad232a1292e6225d7826effb2f35d47b4c3d08221f43"
     },
     {
       "path": "code/src/shoot_race/config/system.yaml",
@@ -4245,6 +4245,76 @@
       "original_sha256": "d936032b7a3e8e0ab954705d57401d3e4394c26ca3490557e23734d167ef6c44"
     },
     {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/config_snapshot.yaml",
+      "group": "race_logs",
+      "bytes": 14558,
+      "sha256": "377245a18c7f31c63ba97ba0c5274ac45c18f3cd591046294e26182140a107a2",
+      "original_sha256": "377245a18c7f31c63ba97ba0c5274ac45c18f3cd591046294e26182140a107a2"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/events.csv",
+      "group": "race_logs",
+      "bytes": 6088,
+      "sha256": "0c188aa305251b81a052fc30f048b95eac621673e89ebd1eda63e7a2cc3ddda4",
+      "original_sha256": "0c188aa305251b81a052fc30f048b95eac621673e89ebd1eda63e7a2cc3ddda4"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/recognition.jpg",
+      "group": "race_logs",
+      "bytes": 61829,
+      "sha256": "fa7ca6d6916a6c857c8a5a9824ed05a67b48f289d3a649a12c8524ce91e2ebb1",
+      "original_sha256": "fa7ca6d6916a6c857c8a5a9824ed05a67b48f289d3a649a12c8524ce91e2ebb1"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/recognition.json",
+      "group": "race_logs",
+      "bytes": 634,
+      "sha256": "7aab5347a5378a4896a2607535b5ae805d9d748394d15bbb1f08458c46568767",
+      "original_sha256": "7aab5347a5378a4896a2607535b5ae805d9d748394d15bbb1f08458c46568767"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/shot_shoot_move_1.jpg",
+      "group": "race_logs",
+      "bytes": 61450,
+      "sha256": "aaa17e195e6541dfaa6d80630d650a17a48d30bea8d4ddd31f067fc0e7a4bd96",
+      "original_sha256": "aaa17e195e6541dfaa6d80630d650a17a48d30bea8d4ddd31f067fc0e7a4bd96"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/shot_shoot_ring_1.jpg",
+      "group": "race_logs",
+      "bytes": 63720,
+      "sha256": "891b833759d0915890fc4a76aae149ee4d47a4b16c44f68d000e1ee5487b424b",
+      "original_sha256": "891b833759d0915890fc4a76aae149ee4d47a4b16c44f68d000e1ee5487b424b"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/shot_shoot_ring_2.jpg",
+      "group": "race_logs",
+      "bytes": 63483,
+      "sha256": "9ba8db8fdc71350ce84ad908096446822d70b538143acc1373a663923825fa50",
+      "original_sha256": "9ba8db8fdc71350ce84ad908096446822d70b538143acc1373a663923825fa50"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/shot_shoot_rot_1.jpg",
+      "group": "race_logs",
+      "bytes": 61449,
+      "sha256": "78975accb4455ab5c2f07b946607a169d47f1c3463ec90f3d98f012217740b48",
+      "original_sha256": "78975accb4455ab5c2f07b946607a169d47f1c3463ec90f3d98f012217740b48"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/shots.csv",
+      "group": "race_logs",
+      "bytes": 697,
+      "sha256": "823a6c62f768da18f2816d44d9c92833e75ac185e433e86fbd1abff4eda062f0",
+      "original_sha256": "823a6c62f768da18f2816d44d9c92833e75ac185e433e86fbd1abff4eda062f0"
+    },
+    {
+      "path": "debug_logs/2026-11-17/race_logs/20261117_222953/summary.txt",
+      "group": "race_logs",
+      "bytes": 1437,
+      "sha256": "29c4982f37ca6ad813e59adb4190c23825532a277393849c1b193aac3705f57d",
+      "original_sha256": "29c4982f37ca6ad813e59adb4190c23825532a277393849c1b193aac3705f57d"
+    },
+    {
       "path": "debug_logs/2026-11-17/startup_logs/race_20261117_214729_3D4n/ar.log",
       "group": "startup_logs",
       "bytes": 3166,
@@ -4406,6 +4476,41 @@
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222938_5m9f/bringup.log",
+      "group": "startup_logs",
+      "bytes": 238267,
+      "sha256": "d1bad631552a33aab43d3c8850cdfbe4d8099bc2878f376954280a67592a57e7",
+      "original_sha256": "d1bad631552a33aab43d3c8850cdfbe4d8099bc2878f376954280a67592a57e7"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222938_5m9f/finished",
+      "group": "startup_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222938_5m9f/race.log",
+      "group": "startup_logs",
+      "bytes": 16028,
+      "sha256": "951e6863bc5ad4b0ba639a451dd9723a8b0b1857c78092df0db3ab60edc237ee",
+      "original_sha256": "951e6863bc5ad4b0ba639a451dd9723a8b0b1857c78092df0db3ab60edc237ee"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222938_5m9f/roscore.log",
+      "group": "startup_logs",
+      "bytes": 957,
+      "sha256": "67adf2f8e2cbf77e78afd3f7f6ebcab37b79794f38c29cf4b9b8219d6ea7b0b6",
+      "original_sha256": "67adf2f8e2cbf77e78afd3f7f6ebcab37b79794f38c29cf4b9b8219d6ea7b0b6"
+    },
+    {
+      "path": "debug_logs/2026-11-17/startup_logs/race_20261117_222938_5m9f/started",
+      "group": "startup_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/amcl-14-stdout.log",
       "group": "ros_logs",
       "bytes": 435,
@@ -4526,6 +4631,132 @@
     },
     {
       "path": "debug_logs/2026-11-17/ros_logs/30f9d2b8-e292-11f1-b51c-24418c8a26ae/world_to_map-16-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/amcl-14-stdout.log",
+      "group": "ros_logs",
+      "bytes": 435,
+      "sha256": "1097398d1636b2596c6cc4a5562fbef1ba5d76a7755b41b933c739043de1e08e",
+      "original_sha256": "1097398d1636b2596c6cc4a5562fbef1ba5d76a7755b41b933c739043de1e08e"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/base_imu_to_base_link-3-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/base_laser_to_base_link-4-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/base_link_to_cam-17-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/find_object_2d-20-stdout.log",
+      "group": "ros_logs",
+      "bytes": 141802,
+      "sha256": "36b4f9e355d45d50234ddcbd5609a3a3d097ca4030dfcb859904e591f056d6b6",
+      "original_sha256": "36b4f9e355d45d50234ddcbd5609a3a3d097ca4030dfcb859904e591f056d6b6"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/joint_state_publisher-8-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/joint_state_publisher-8.log",
+      "group": "ros_logs",
+      "bytes": 1608,
+      "sha256": "4f3ec1217f2408fd8fa54707469be8af20cb386ea0ecfe34633cf6aa8f557f49",
+      "original_sha256": "4f3ec1217f2408fd8fa54707469be8af20cb386ea0ecfe34633cf6aa8f557f49"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/map_server-12-stdout.log",
+      "group": "ros_logs",
+      "bytes": 242,
+      "sha256": "9a579391a7f061be73c078c520baeacc1e51d3bcc9ea7741118551b185bdd4fa",
+      "original_sha256": "9a579391a7f061be73c078c520baeacc1e51d3bcc9ea7741118551b185bdd4fa"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/master.log",
+      "group": "ros_logs",
+      "bytes": 284481,
+      "sha256": "1962db97ba3f9cfd7d704a80f744826fc251d6b0cf0ae9723f711269fb3315cc",
+      "original_sha256": "1962db97ba3f9cfd7d704a80f744826fc251d6b0cf0ae9723f711269fb3315cc"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/odom_ekf-7.log",
+      "group": "ros_logs",
+      "bytes": 2305,
+      "sha256": "e9a5608e4c1f724474f2a52efa3a478048442bbc3ecdfad2d5aa9feea9d9b355",
+      "original_sha256": "e9a5608e4c1f724474f2a52efa3a478048442bbc3ecdfad2d5aa9feea9d9b355"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/robot_state_publisher-9-stdout.log",
+      "group": "ros_logs",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-1168.log",
+      "group": "ros_logs",
+      "bytes": 9771,
+      "sha256": "dc08c15a09bbc760d597c0434a692062ed75bbd022d51a13658da4fff7e088a5",
+      "original_sha256": "dc08c15a09bbc760d597c0434a692062ed75bbd022d51a13658da4fff7e088a5"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-499.log",
+      "group": "ros_logs",
+      "bytes": 11282,
+      "sha256": "3987d8c9d32f81a37774b74ca6c3bcf3ea6e86fad8e7678aeb79d1c4dc94d4d1",
+      "original_sha256": "3987d8c9d32f81a37774b74ca6c3bcf3ea6e86fad8e7678aeb79d1c4dc94d4d1"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log",
+      "group": "ros_logs",
+      "bytes": 90453,
+      "sha256": "4c7c2c41d25ebba40583170601078fe2fe7974d674ae6c991b42f99cacb00f1c",
+      "original_sha256": "4c7c2c41d25ebba40583170601078fe2fe7974d674ae6c991b42f99cacb00f1c"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/rosout-1-stdout.log",
+      "group": "ros_logs",
+      "bytes": 150,
+      "sha256": "2bcf9295cc24ac4f121bb1ced7cfe9c0f5d58d2022ad03a84554b7d2692b2288",
+      "original_sha256": "2bcf9295cc24ac4f121bb1ced7cfe9c0f5d58d2022ad03a84554b7d2692b2288"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/rosout.log",
+      "group": "ros_logs",
+      "bytes": 918964,
+      "sha256": "577e71ea76f6226a35af1cfb201253cee5d9d5dc072cc16504e23c646722d9d1",
+      "original_sha256": "577e71ea76f6226a35af1cfb201253cee5d9d5dc072cc16504e23c646722d9d1"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/shoot_race-1.log",
+      "group": "ros_logs",
+      "bytes": 25366,
+      "sha256": "8978d94bc1334bb597e58341cee235a720d9ce8ac6e40b721a928eeafc856c20",
+      "original_sha256": "8978d94bc1334bb597e58341cee235a720d9ce8ac6e40b721a928eeafc856c20"
+    },
+    {
+      "path": "debug_logs/2026-11-17/ros_logs/5223c5d8-e293-11f1-b51c-24418c8a26ae/world_to_map-16-stdout.log",
       "group": "ros_logs",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

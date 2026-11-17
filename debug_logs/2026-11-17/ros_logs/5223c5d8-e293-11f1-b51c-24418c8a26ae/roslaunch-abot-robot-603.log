@@ -1,0 +1,488 @@
+[roslaunch][INFO] 2026-11-17 22:29:41,073: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][ERROR] 2026-11-17 22:29:41,169: WARNING: disk usage in log directory [/home/abot/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.
+[roslaunch][INFO] 2026-11-17 22:29:41,169: roslaunch starting with args ['/opt/ros/melodic/bin/roslaunch', 'shoot_race', 'bringup.launch', 'rviz:=true']
+[roslaunch][INFO] 2026-11-17 22:29:41,169: roslaunch env is {'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}
+[roslaunch][INFO] 2026-11-17 22:29:41,169: starting in server mode
+[roslaunch.parent][INFO] 2026-11-17 22:29:41,170: starting roslaunch parent run
+[roslaunch][INFO] 2026-11-17 22:29:41,170: loading roscore config file /opt/ros/melodic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-11-17 22:29:41,897: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2026-11-17 22:29:41,898: loading config file /home/abot/syd/src/shoot_race/launch/bringup.launch
+[roslaunch][INFO] 2026-11-17 22:29:41,948: Added node of type [abot_bringup/abot_driver] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:41,949: Added node of type [abot_imu/abot_imu] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:41,950: Added node of type [tf/static_transform_publisher] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:41,950: Added node of type [tf/static_transform_publisher] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:41,950: Added node of type [imu_filter_madgwick/imu_filter_node] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:41,950: Added node of type [robot_pose_ekf/robot_pose_ekf] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:41,950: Added node of type [abot_bringup/odom_ekf.py] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,028: Added node of type [joint_state_publisher/joint_state_publisher] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,028: Added node of type [robot_state_publisher/robot_state_publisher] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,030: Added node of type [rplidar_ros/rplidarNode] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,032: Added node of type [laser_filters/scan_to_scan_filter_chain] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,033: Added node of type [map_server/map_server] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,050: Added node of type [move_base/move_base] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,052: Added node of type [amcl/amcl] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,053: Added node of type [usb_cam/usb_cam_node] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,053: Added node of type [tf/static_transform_publisher] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,054: Added node of type [tf/static_transform_publisher] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,054: Added node of type [ar_track_alvar/individualMarkersNoKinect] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,055: Added node of type [rviz/rviz] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,056: Added node of type [find_object_2d/find_object_2d] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: Added node of type [find_object_2d/print_objects_detected] in namespace [/]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [abot_bringup/abot_driver]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [abot_imu/abot_imu]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [imu_filter_madgwick/imu_filter_node]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [robot_pose_ekf/robot_pose_ekf]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [abot_bringup/odom_ekf.py]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [joint_state_publisher/joint_state_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [rplidar_ros/rplidarNode]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [laser_filters/scan_to_scan_filter_chain]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [map_server/map_server]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [move_base/move_base]
+[roslaunch][INFO] 2026-11-17 22:29:42,057: ... selected machine [] for node of type [amcl/amcl]
+[roslaunch][INFO] 2026-11-17 22:29:42,058: ... selected machine [] for node of type [usb_cam/usb_cam_node]
+[roslaunch][INFO] 2026-11-17 22:29:42,058: ... selected machine [] for node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,058: ... selected machine [] for node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,058: ... selected machine [] for node of type [ar_track_alvar/individualMarkersNoKinect]
+[roslaunch][INFO] 2026-11-17 22:29:42,058: ... selected machine [] for node of type [rviz/rviz]
+[roslaunch][INFO] 2026-11-17 22:29:42,058: ... selected machine [] for node of type [find_object_2d/find_object_2d]
+[roslaunch][INFO] 2026-11-17 22:29:42,058: ... selected machine [] for node of type [find_object_2d/print_objects_detected]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,059: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,059: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,059: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-11-17 22:29:42,059: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-11-17 22:29:42,059: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-11-17 22:29:42,059: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-11-17 22:29:42,059: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-17 22:29:42,060: Started XML-RPC server [http://abot-robot:46533/]
+[xmlrpc][INFO] 2026-11-17 22:29:42,060: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-11-17 22:29:42,071: started roslaunch server http://abot-robot:46533/
+[roslaunch.parent][INFO] 2026-11-17 22:29:42,071: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-11-17 22:29:42,073: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,074: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,075: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2026-11-17 22:29:42,076: setting /roslaunch/uris/host_abot_robot__46533' to http://abot-robot:46533/
+[roslaunch][INFO] 2026-11-17 22:29:42,077: load_parameters starting ...
+[roslaunch][INFO] 2026-11-17 22:29:42,109: ... load_parameters complete
+[roslaunch][INFO] 2026-11-17 22:29:42,110: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2026-11-17 22:29:42,110: ... preparing to launch node of type [abot_bringup/abot_driver]
+[roslaunch][INFO] 2026-11-17 22:29:42,110: create_node_process: package[abot_bringup] type[abot_driver] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,110: process[abot_driver-1]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,161: process[abot_driver-1]: args[[u'/home/abot/syd/devel_syd/lib/abot_bringup/abot_driver', u'__name:=abot_driver']]
+[roslaunch][INFO] 2026-11-17 22:29:42,161: ... created process [abot_driver-1]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,161: ProcessMonitor.register[abot_driver-1]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,161: ProcessMonitor.register[abot_driver-1] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,161: ... registered process [abot_driver-1]
+[roslaunch][INFO] 2026-11-17 22:29:42,161: process[abot_driver-1]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,161: process[abot_driver-1]: start w/ args [[u'/home/abot/syd/devel_syd/lib/abot_bringup/abot_driver', u'__name:=abot_driver', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/abot_driver-1.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,161: process[abot_driver-1]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,165: process[abot_driver-1]: started with pid [650]
+[roslaunch][INFO] 2026-11-17 22:29:42,165: ... successfully launched [abot_driver-1]
+[roslaunch][INFO] 2026-11-17 22:29:42,165: ... preparing to launch node of type [abot_imu/abot_imu]
+[roslaunch][INFO] 2026-11-17 22:29:42,165: create_node_process: package[abot_imu] type[abot_imu] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,166: process[abot_imu-2]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,166: process[abot_imu-2]: args[[u'/home/abot/syd/devel_syd/lib/abot_imu/abot_imu', u'__name:=abot_imu']]
+[roslaunch][INFO] 2026-11-17 22:29:42,167: ... created process [abot_imu-2]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,167: ProcessMonitor.register[abot_imu-2]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,167: ProcessMonitor.register[abot_imu-2] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,167: ... registered process [abot_imu-2]
+[roslaunch][INFO] 2026-11-17 22:29:42,167: process[abot_imu-2]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,167: process[abot_imu-2]: start w/ args [[u'/home/abot/syd/devel_syd/lib/abot_imu/abot_imu', u'__name:=abot_imu', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/abot_imu-2.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,167: process[abot_imu-2]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,171: process[abot_imu-2]: started with pid [651]
+[roslaunch][INFO] 2026-11-17 22:29:42,171: ... successfully launched [abot_imu-2]
+[roslaunch][INFO] 2026-11-17 22:29:42,172: ... preparing to launch node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,172: create_node_process: package[tf] type[static_transform_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,172: process[base_imu_to_base_link-3]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,173: process[base_imu_to_base_link-3]: args[[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0.04', '0', '0', '0', '0', '0', '/base_link', '/imu_link', '40', u'__name:=base_imu_to_base_link']]
+[roslaunch][INFO] 2026-11-17 22:29:42,173: ... created process [base_imu_to_base_link-3]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,174: ProcessMonitor.register[base_imu_to_base_link-3]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,174: ProcessMonitor.register[base_imu_to_base_link-3] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,174: ... registered process [base_imu_to_base_link-3]
+[roslaunch][INFO] 2026-11-17 22:29:42,174: process[base_imu_to_base_link-3]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,174: process[base_imu_to_base_link-3]: start w/ args [[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0.04', '0', '0', '0', '0', '0', '/base_link', '/imu_link', '40', u'__name:=base_imu_to_base_link', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/base_imu_to_base_link-3.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,174: process[base_imu_to_base_link-3]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,181: process[base_imu_to_base_link-3]: started with pid [652]
+[roslaunch][INFO] 2026-11-17 22:29:42,182: ... successfully launched [base_imu_to_base_link-3]
+[roslaunch][INFO] 2026-11-17 22:29:42,182: ... preparing to launch node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,182: create_node_process: package[tf] type[static_transform_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,182: process[base_laser_to_base_link-4]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,183: process[base_laser_to_base_link-4]: args[[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0.06', '0', '0.19', '0', '0', '0', '/laser_link', '/imu_link', '40', u'__name:=base_laser_to_base_link']]
+[roslaunch][INFO] 2026-11-17 22:29:42,184: ... created process [base_laser_to_base_link-4]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,184: ProcessMonitor.register[base_laser_to_base_link-4]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,184: ProcessMonitor.register[base_laser_to_base_link-4] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,184: ... registered process [base_laser_to_base_link-4]
+[roslaunch][INFO] 2026-11-17 22:29:42,184: process[base_laser_to_base_link-4]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,184: process[base_laser_to_base_link-4]: start w/ args [[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0.06', '0', '0.19', '0', '0', '0', '/laser_link', '/imu_link', '40', u'__name:=base_laser_to_base_link', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/base_laser_to_base_link-4.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,184: process[base_laser_to_base_link-4]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,189: process[base_laser_to_base_link-4]: started with pid [654]
+[roslaunch][INFO] 2026-11-17 22:29:42,190: ... successfully launched [base_laser_to_base_link-4]
+[roslaunch][INFO] 2026-11-17 22:29:42,190: ... preparing to launch node of type [imu_filter_madgwick/imu_filter_node]
+[roslaunch][INFO] 2026-11-17 22:29:42,190: create_node_process: package[imu_filter_madgwick] type[imu_filter_node] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,190: process[imu_filter_madgwick-5]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,191: process[imu_filter_madgwick-5]: args[[u'/opt/ros/melodic/lib/imu_filter_madgwick/imu_filter_node', u'__name:=imu_filter_madgwick']]
+[roslaunch][INFO] 2026-11-17 22:29:42,192: ... created process [imu_filter_madgwick-5]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,192: ProcessMonitor.register[imu_filter_madgwick-5]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,192: ProcessMonitor.register[imu_filter_madgwick-5] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,192: ... registered process [imu_filter_madgwick-5]
+[roslaunch][INFO] 2026-11-17 22:29:42,192: process[imu_filter_madgwick-5]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,192: process[imu_filter_madgwick-5]: start w/ args [[u'/opt/ros/melodic/lib/imu_filter_madgwick/imu_filter_node', u'__name:=imu_filter_madgwick', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/imu_filter_madgwick-5.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,192: process[imu_filter_madgwick-5]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,204: process[imu_filter_madgwick-5]: started with pid [660]
+[roslaunch][INFO] 2026-11-17 22:29:42,205: ... successfully launched [imu_filter_madgwick-5]
+[roslaunch][INFO] 2026-11-17 22:29:42,205: ... preparing to launch node of type [robot_pose_ekf/robot_pose_ekf]
+[roslaunch][INFO] 2026-11-17 22:29:42,205: create_node_process: package[robot_pose_ekf] type[robot_pose_ekf] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,205: process[robot_pose_ekf-6]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,206: process[robot_pose_ekf-6]: args[[u'/opt/ros/melodic/lib/robot_pose_ekf/robot_pose_ekf', u'odom:=wheel_odom', u'imu_data:=imu/data', u'__name:=robot_pose_ekf']]
+[roslaunch][INFO] 2026-11-17 22:29:42,207: ... created process [robot_pose_ekf-6]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,207: ProcessMonitor.register[robot_pose_ekf-6]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,207: ProcessMonitor.register[robot_pose_ekf-6] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,207: ... registered process [robot_pose_ekf-6]
+[roslaunch][INFO] 2026-11-17 22:29:42,207: process[robot_pose_ekf-6]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,207: process[robot_pose_ekf-6]: start w/ args [[u'/opt/ros/melodic/lib/robot_pose_ekf/robot_pose_ekf', u'odom:=wheel_odom', u'imu_data:=imu/data', u'__name:=robot_pose_ekf', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/robot_pose_ekf-6.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,207: process[robot_pose_ekf-6]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,216: process[robot_pose_ekf-6]: started with pid [666]
+[roslaunch][INFO] 2026-11-17 22:29:42,216: ... successfully launched [robot_pose_ekf-6]
+[roslaunch][INFO] 2026-11-17 22:29:42,216: ... preparing to launch node of type [abot_bringup/odom_ekf.py]
+[roslaunch][INFO] 2026-11-17 22:29:42,217: create_node_process: package[abot_bringup] type[odom_ekf.py] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,217: process[odom_ekf-7]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,218: process[odom_ekf-7]: args[[u'/home/abot/syd/src/abot_base/abot_bringup/scripts/odom_ekf.py', u'input:=robot_pose_ekf/odom_combined', u'output:=odom', u'__name:=odom_ekf']]
+[roslaunch][INFO] 2026-11-17 22:29:42,219: ... created process [odom_ekf-7]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,219: ProcessMonitor.register[odom_ekf-7]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,219: ProcessMonitor.register[odom_ekf-7] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,219: ... registered process [odom_ekf-7]
+[roslaunch][INFO] 2026-11-17 22:29:42,219: process[odom_ekf-7]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,219: process[odom_ekf-7]: start w/ args [[u'/home/abot/syd/src/abot_base/abot_bringup/scripts/odom_ekf.py', u'input:=robot_pose_ekf/odom_combined', u'output:=odom', u'__name:=odom_ekf', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/odom_ekf-7.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,219: process[odom_ekf-7]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,236: process[odom_ekf-7]: started with pid [671]
+[roslaunch][INFO] 2026-11-17 22:29:42,237: ... successfully launched [odom_ekf-7]
+[roslaunch][INFO] 2026-11-17 22:29:42,237: ... preparing to launch node of type [joint_state_publisher/joint_state_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,237: create_node_process: package[joint_state_publisher] type[joint_state_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,237: process[joint_state_publisher-8]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,238: process[joint_state_publisher-8]: args[[u'/opt/ros/melodic/lib/joint_state_publisher/joint_state_publisher', u'__name:=joint_state_publisher']]
+[roslaunch][INFO] 2026-11-17 22:29:42,238: ... created process [joint_state_publisher-8]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,238: ProcessMonitor.register[joint_state_publisher-8]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,239: ProcessMonitor.register[joint_state_publisher-8] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,239: ... registered process [joint_state_publisher-8]
+[roslaunch][INFO] 2026-11-17 22:29:42,239: process[joint_state_publisher-8]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,239: process[joint_state_publisher-8]: start w/ args [[u'/opt/ros/melodic/lib/joint_state_publisher/joint_state_publisher', u'__name:=joint_state_publisher', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/joint_state_publisher-8.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,239: process[joint_state_publisher-8]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,247: process[joint_state_publisher-8]: started with pid [677]
+[roslaunch][INFO] 2026-11-17 22:29:42,247: ... successfully launched [joint_state_publisher-8]
+[roslaunch][INFO] 2026-11-17 22:29:42,247: ... preparing to launch node of type [robot_state_publisher/robot_state_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,247: create_node_process: package[robot_state_publisher] type[robot_state_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,248: process[robot_state_publisher-9]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,249: process[robot_state_publisher-9]: args[[u'/opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher', u'__name:=robot_state_publisher']]
+[roslaunch][INFO] 2026-11-17 22:29:42,249: ... created process [robot_state_publisher-9]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,249: ProcessMonitor.register[robot_state_publisher-9]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,249: ProcessMonitor.register[robot_state_publisher-9] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,249: ... registered process [robot_state_publisher-9]
+[roslaunch][INFO] 2026-11-17 22:29:42,249: process[robot_state_publisher-9]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,249: process[robot_state_publisher-9]: start w/ args [[u'/opt/ros/melodic/lib/robot_state_publisher/robot_state_publisher', u'__name:=robot_state_publisher', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/robot_state_publisher-9.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,249: process[robot_state_publisher-9]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,269: process[robot_state_publisher-9]: started with pid [683]
+[roslaunch][INFO] 2026-11-17 22:29:42,269: ... successfully launched [robot_state_publisher-9]
+[roslaunch][INFO] 2026-11-17 22:29:42,269: ... preparing to launch node of type [rplidar_ros/rplidarNode]
+[roslaunch][INFO] 2026-11-17 22:29:42,269: create_node_process: package[rplidar_ros] type[rplidarNode] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,270: process[rplidarNode-10]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,272: process[rplidarNode-10]: args[[u'/opt/ros/melodic/lib/rplidar_ros/rplidarNode', u'__name:=rplidarNode']]
+[roslaunch][INFO] 2026-11-17 22:29:42,272: ... created process [rplidarNode-10]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,272: ProcessMonitor.register[rplidarNode-10]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,272: ProcessMonitor.register[rplidarNode-10] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,272: ... registered process [rplidarNode-10]
+[roslaunch][INFO] 2026-11-17 22:29:42,272: process[rplidarNode-10]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,273: process[rplidarNode-10]: start w/ args [[u'/opt/ros/melodic/lib/rplidar_ros/rplidarNode', u'__name:=rplidarNode', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/rplidarNode-10.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,273: process[rplidarNode-10]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,280: process[rplidarNode-10]: started with pid [688]
+[roslaunch][INFO] 2026-11-17 22:29:42,281: ... successfully launched [rplidarNode-10]
+[roslaunch][INFO] 2026-11-17 22:29:42,281: ... preparing to launch node of type [laser_filters/scan_to_scan_filter_chain]
+[roslaunch][INFO] 2026-11-17 22:29:42,281: create_node_process: package[laser_filters] type[scan_to_scan_filter_chain] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,281: process[laser_filter-11]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,282: process[laser_filter-11]: args[[u'/opt/ros/melodic/lib/laser_filters/scan_to_scan_filter_chain', u'__name:=laser_filter']]
+[roslaunch][INFO] 2026-11-17 22:29:42,282: ... created process [laser_filter-11]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,282: ProcessMonitor.register[laser_filter-11]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,283: ProcessMonitor.register[laser_filter-11] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,283: ... registered process [laser_filter-11]
+[roslaunch][INFO] 2026-11-17 22:29:42,283: process[laser_filter-11]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,283: process[laser_filter-11]: start w/ args [[u'/opt/ros/melodic/lib/laser_filters/scan_to_scan_filter_chain', u'__name:=laser_filter', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/laser_filter-11.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,283: process[laser_filter-11]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,300: process[laser_filter-11]: started with pid [695]
+[roslaunch][INFO] 2026-11-17 22:29:42,300: ... successfully launched [laser_filter-11]
+[roslaunch][INFO] 2026-11-17 22:29:42,301: ... preparing to launch node of type [map_server/map_server]
+[roslaunch][INFO] 2026-11-17 22:29:42,301: create_node_process: package[map_server] type[map_server] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,301: process[map_server-12]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,302: process[map_server-12]: args[[u'/opt/ros/melodic/lib/map_server/map_server', '/home/abot/syd/src/robot_slam/maps/sheji_lab.yaml', u'__name:=map_server']]
+[roslaunch][INFO] 2026-11-17 22:29:42,302: ... created process [map_server-12]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,302: ProcessMonitor.register[map_server-12]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,303: ProcessMonitor.register[map_server-12] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,303: ... registered process [map_server-12]
+[roslaunch][INFO] 2026-11-17 22:29:42,303: process[map_server-12]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,303: process[map_server-12]: start w/ args [[u'/opt/ros/melodic/lib/map_server/map_server', '/home/abot/syd/src/robot_slam/maps/sheji_lab.yaml', u'__name:=map_server', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/map_server-12.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,303: process[map_server-12]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,312: process[map_server-12]: started with pid [697]
+[roslaunch][INFO] 2026-11-17 22:29:42,312: ... successfully launched [map_server-12]
+[roslaunch][INFO] 2026-11-17 22:29:42,313: ... preparing to launch node of type [move_base/move_base]
+[roslaunch][INFO] 2026-11-17 22:29:42,313: create_node_process: package[move_base] type[move_base] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,313: process[move_base-13]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,314: process[move_base-13]: args[[u'/opt/ros/melodic/lib/move_base/move_base', u'/cmd_vel:=/cmd_vel', u'/odom:=/odom', u'__name:=move_base']]
+[roslaunch][INFO] 2026-11-17 22:29:42,314: ... created process [move_base-13]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,315: ProcessMonitor.register[move_base-13]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,315: ProcessMonitor.register[move_base-13] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,315: ... registered process [move_base-13]
+[roslaunch][INFO] 2026-11-17 22:29:42,315: process[move_base-13]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,315: process[move_base-13]: start w/ args [[u'/opt/ros/melodic/lib/move_base/move_base', u'/cmd_vel:=/cmd_vel', u'/odom:=/odom', u'__name:=move_base', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/move_base-13.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,315: process[move_base-13]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,328: process[move_base-13]: started with pid [698]
+[roslaunch][INFO] 2026-11-17 22:29:42,328: ... successfully launched [move_base-13]
+[roslaunch][INFO] 2026-11-17 22:29:42,328: ... preparing to launch node of type [amcl/amcl]
+[roslaunch][INFO] 2026-11-17 22:29:42,328: create_node_process: package[amcl] type[amcl] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,329: process[amcl-14]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,330: process[amcl-14]: args[[u'/opt/ros/melodic/lib/amcl/amcl', u'scan:=scan_filtered', u'__name:=amcl']]
+[roslaunch][INFO] 2026-11-17 22:29:42,330: ... created process [amcl-14]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,330: ProcessMonitor.register[amcl-14]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,331: ProcessMonitor.register[amcl-14] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,331: ... registered process [amcl-14]
+[roslaunch][INFO] 2026-11-17 22:29:42,331: process[amcl-14]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,331: process[amcl-14]: start w/ args [[u'/opt/ros/melodic/lib/amcl/amcl', u'scan:=scan_filtered', u'__name:=amcl', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/amcl-14.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,331: process[amcl-14]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,352: process[amcl-14]: started with pid [700]
+[roslaunch][INFO] 2026-11-17 22:29:42,353: ... successfully launched [amcl-14]
+[roslaunch][INFO] 2026-11-17 22:29:42,353: ... preparing to launch node of type [usb_cam/usb_cam_node]
+[roslaunch][INFO] 2026-11-17 22:29:42,353: create_node_process: package[usb_cam] type[usb_cam_node] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,354: process[usb_cam-15]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,355: process[usb_cam-15]: args[[u'/opt/ros/melodic/lib/usb_cam/usb_cam_node', u'__name:=usb_cam']]
+[roslaunch][INFO] 2026-11-17 22:29:42,355: ... created process [usb_cam-15]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,355: ProcessMonitor.register[usb_cam-15]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,355: ProcessMonitor.register[usb_cam-15] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,355: ... registered process [usb_cam-15]
+[roslaunch][INFO] 2026-11-17 22:29:42,355: process[usb_cam-15]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,356: process[usb_cam-15]: start w/ args [[u'/opt/ros/melodic/lib/usb_cam/usb_cam_node', u'__name:=usb_cam', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/usb_cam-15.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,356: process[usb_cam-15]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,374: process[usb_cam-15]: started with pid [712]
+[roslaunch][INFO] 2026-11-17 22:29:42,374: ... successfully launched [usb_cam-15]
+[roslaunch][INFO] 2026-11-17 22:29:42,374: ... preparing to launch node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,375: create_node_process: package[tf] type[static_transform_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,375: process[world_to_map-16]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,376: process[world_to_map-16]: args[[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0', '0', '0.0', '0', '0', '0', 'world', 'map', '10', u'__name:=world_to_map']]
+[roslaunch][INFO] 2026-11-17 22:29:42,377: ... created process [world_to_map-16]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,377: ProcessMonitor.register[world_to_map-16]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,377: ProcessMonitor.register[world_to_map-16] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,377: ... registered process [world_to_map-16]
+[roslaunch][INFO] 2026-11-17 22:29:42,377: process[world_to_map-16]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,377: process[world_to_map-16]: start w/ args [[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0', '0', '0.0', '0', '0', '0', 'world', 'map', '10', u'__name:=world_to_map', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/world_to_map-16.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,377: process[world_to_map-16]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,403: process[world_to_map-16]: started with pid [717]
+[roslaunch][INFO] 2026-11-17 22:29:42,403: ... successfully launched [world_to_map-16]
+[roslaunch][INFO] 2026-11-17 22:29:42,404: ... preparing to launch node of type [tf/static_transform_publisher]
+[roslaunch][INFO] 2026-11-17 22:29:42,404: create_node_process: package[tf] type[static_transform_publisher] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,404: process[base_link_to_cam-17]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,405: process[base_link_to_cam-17]: args[[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0', '0', '0.3', '0', '1.57', '-1.57', 'base_link', 'usb_cam', '10', u'__name:=base_link_to_cam']]
+[roslaunch][INFO] 2026-11-17 22:29:42,406: ... created process [base_link_to_cam-17]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,406: ProcessMonitor.register[base_link_to_cam-17]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,406: ProcessMonitor.register[base_link_to_cam-17] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,406: ... registered process [base_link_to_cam-17]
+[roslaunch][INFO] 2026-11-17 22:29:42,406: process[base_link_to_cam-17]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,406: process[base_link_to_cam-17]: start w/ args [[u'/opt/ros/melodic/lib/tf/static_transform_publisher', '0', '0', '0.3', '0', '1.57', '-1.57', 'base_link', 'usb_cam', '10', u'__name:=base_link_to_cam', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/base_link_to_cam-17.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,406: process[base_link_to_cam-17]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,421: process[base_link_to_cam-17]: started with pid [722]
+[roslaunch][INFO] 2026-11-17 22:29:42,422: ... successfully launched [base_link_to_cam-17]
+[roslaunch][INFO] 2026-11-17 22:29:42,422: ... preparing to launch node of type [ar_track_alvar/individualMarkersNoKinect]
+[roslaunch][INFO] 2026-11-17 22:29:42,422: create_node_process: package[ar_track_alvar] type[individualMarkersNoKinect] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,422: process[ar_track_alvar-18]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,424: process[ar_track_alvar-18]: args[[u'/opt/ros/melodic/lib/ar_track_alvar/individualMarkersNoKinect', u'camera_image:=/usb_cam/image_raw', u'camera_info:=/usb_cam/camera_info', u'__name:=ar_track_alvar']]
+[roslaunch][INFO] 2026-11-17 22:29:42,424: ... created process [ar_track_alvar-18]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,424: ProcessMonitor.register[ar_track_alvar-18]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,424: ProcessMonitor.register[ar_track_alvar-18] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,425: ... registered process [ar_track_alvar-18]
+[roslaunch][INFO] 2026-11-17 22:29:42,425: process[ar_track_alvar-18]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,425: process[ar_track_alvar-18]: start w/ args [[u'/opt/ros/melodic/lib/ar_track_alvar/individualMarkersNoKinect', u'camera_image:=/usb_cam/image_raw', u'camera_info:=/usb_cam/camera_info', u'__name:=ar_track_alvar', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/ar_track_alvar-18.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,425: process[ar_track_alvar-18]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,453: process[ar_track_alvar-18]: started with pid [724]
+[roslaunch][INFO] 2026-11-17 22:29:42,453: ... successfully launched [ar_track_alvar-18]
+[roslaunch][INFO] 2026-11-17 22:29:42,454: ... preparing to launch node of type [rviz/rviz]
+[roslaunch][INFO] 2026-11-17 22:29:42,454: create_node_process: package[rviz] type[rviz] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,454: process[rviz-19]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,459: process[rviz-19]: args[[u'/opt/ros/melodic/lib/rviz/rviz', '-d', '/home/abot/syd/src/track_tag/rviz/ar_track_camera.rviz', u'__name:=rviz']]
+[roslaunch][INFO] 2026-11-17 22:29:42,459: ... created process [rviz-19]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,459: ProcessMonitor.register[rviz-19]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,459: ProcessMonitor.register[rviz-19] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,460: ... registered process [rviz-19]
+[roslaunch][INFO] 2026-11-17 22:29:42,460: process[rviz-19]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,460: process[rviz-19]: start w/ args [[u'/opt/ros/melodic/lib/rviz/rviz', '-d', '/home/abot/syd/src/track_tag/rviz/ar_track_camera.rviz', u'__name:=rviz', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/rviz-19.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,460: process[rviz-19]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,493: process[rviz-19]: started with pid [728]
+[roslaunch][INFO] 2026-11-17 22:29:42,493: ... successfully launched [rviz-19]
+[roslaunch][INFO] 2026-11-17 22:29:42,493: ... preparing to launch node of type [find_object_2d/find_object_2d]
+[roslaunch][INFO] 2026-11-17 22:29:42,493: create_node_process: package[find_object_2d] type[find_object_2d] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,493: process[find_object_2d-20]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,500: process[find_object_2d-20]: args[[u'/home/abot/syd/devel_syd/lib/find_object_2d/find_object_2d', u'image:=/usb_cam/image_raw', u'__name:=find_object_2d']]
+[roslaunch][INFO] 2026-11-17 22:29:42,500: ... created process [find_object_2d-20]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,501: ProcessMonitor.register[find_object_2d-20]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,501: ProcessMonitor.register[find_object_2d-20] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,501: ... registered process [find_object_2d-20]
+[roslaunch][INFO] 2026-11-17 22:29:42,501: process[find_object_2d-20]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,501: process[find_object_2d-20]: start w/ args [[u'/home/abot/syd/devel_syd/lib/find_object_2d/find_object_2d', u'image:=/usb_cam/image_raw', u'__name:=find_object_2d', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/find_object_2d-20.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,501: process[find_object_2d-20]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,524: process[find_object_2d-20]: started with pid [740]
+[roslaunch][INFO] 2026-11-17 22:29:42,525: ... successfully launched [find_object_2d-20]
+[roslaunch][INFO] 2026-11-17 22:29:42,525: ... preparing to launch node of type [find_object_2d/print_objects_detected]
+[roslaunch][INFO] 2026-11-17 22:29:42,525: create_node_process: package[find_object_2d] type[print_objects_detected] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2026-11-17 22:29:42,525: process[print_objects_detected-21]: env[{'PYTHONIOENCODING': 'utf-8', 'ROS_DISTRO': 'melodic', 'SSH_CLIENT': '192.168.114.9 62579 22', 'LOGNAME': 'abot', 'USER': 'abot', 'PATH': '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'HOME': '/home/abot', 'CMAKE_PREFIX_PATH': '/home/abot/syd/devel_syd:/opt/ros/melodic', 'ROS_LOG_FILENAME': '/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/roslaunch-abot-robot-603.log', 'LANG': 'zh_CN.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LANGUAGE': 'zh_CN:zh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/abot/syd/devel_syd/lib:/opt/ros/melodic/lib', 'ROS_MASTER_URI': 'http://localhost:11311', 'ROS_PYTHON_VERSION': '2', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/abot/syd/devel_syd/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/melodic/share/ros', 'PKG_CONFIG_PATH': '/home/abot/syd/devel_syd/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/abot/syd/src:/opt/ros/melodic/share', 'XDG_SESSION_ID': '11', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_': '/opt/ros/melodic/bin/roslaunch', 'DISPLAY': ':0', 'SSH_TTY': '/dev/pts/2', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/abot/syd/devel_syd/share/common-lisp', 'PWD': '/home/abot', 'ROS_ETC_DIR': '/opt/ros/melodic/etc/ros', 'ROS_VERSION': '1', 'MAIL': '/var/mail/abot', 'SSH_CONNECTION': '192.168.114.9 62579 192.168.114.79 22'}]
+[roslaunch][INFO] 2026-11-17 22:29:42,529: process[print_objects_detected-21]: args[[u'/home/abot/syd/devel_syd/lib/find_object_2d/print_objects_detected', u'__name:=print_objects_detected']]
+[roslaunch][INFO] 2026-11-17 22:29:42,529: ... created process [print_objects_detected-21]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,530: ProcessMonitor.register[print_objects_detected-21]
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,530: ProcessMonitor.register[print_objects_detected-21] complete
+[roslaunch][INFO] 2026-11-17 22:29:42,530: ... registered process [print_objects_detected-21]
+[roslaunch][INFO] 2026-11-17 22:29:42,530: process[print_objects_detected-21]: starting os process
+[roslaunch][INFO] 2026-11-17 22:29:42,530: process[print_objects_detected-21]: start w/ args [[u'/home/abot/syd/devel_syd/lib/find_object_2d/print_objects_detected', u'__name:=print_objects_detected', u'__log:=/home/abot/.ros/log/5223c5d8-e293-11f1-b51c-24418c8a26ae/print_objects_detected-21.log']]
+[roslaunch][INFO] 2026-11-17 22:29:42,530: process[print_objects_detected-21]: cwd will be [/home/abot/.ros]
+[roslaunch][INFO] 2026-11-17 22:29:42,580: process[print_objects_detected-21]: started with pid [750]
+[roslaunch][INFO] 2026-11-17 22:29:42,580: ... successfully launched [print_objects_detected-21]
+[roslaunch][INFO] 2026-11-17 22:29:42,580: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2026-11-17 22:29:42,580: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 139743037753088)>
+[roslaunch.parent][INFO] 2026-11-17 22:29:42,580: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2026-11-17 22:29:42,580: spin
+[roslaunch.pmon][INFO] 2026-11-17 22:31:23,914: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 139743037753088)>
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,004: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139743037753088)>
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,004: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139743037753088)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7f186dcc3b90>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dd1da50>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dfdbf90>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dd3ad50>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dd1dd10>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dd1db90>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dd2dcd0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dcfa890>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dcfa990>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dcfa3d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dd96250>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186dd96750>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da25090>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da25510>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da255d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da252d0>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da25810>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da25210>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da25a10>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da25d10>, <roslaunch.nodeprocess.LocalProcess object at 0x7f186da25a90>]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,005: ProcessMonitor exit: killing print_objects_detected-21
+[roslaunch][INFO] 2026-11-17 22:31:24,005: [print_objects_detected-21] killing on exit
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,005: ProcessMonitor exit: killing find_object_2d-20
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,005: ProcessMonitor exit: killing rviz-19
+[roslaunch][INFO] 2026-11-17 22:31:24,005: process[print_objects_detected-21]: killing os process with pid[750] pgid[750]
+[roslaunch][INFO] 2026-11-17 22:31:24,006: [print_objects_detected-21] sending SIGINT to pgid [750]
+[roslaunch][INFO] 2026-11-17 22:31:24,006: [rviz-19] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,005: [find_object_2d-20] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,006: [print_objects_detected-21] sent SIGINT to pgid [750]
+[roslaunch][INFO] 2026-11-17 22:31:24,006: process[find_object_2d-20]: killing os process with pid[740] pgid[740]
+[roslaunch][INFO] 2026-11-17 22:31:24,006: process[rviz-19]: killing os process with pid[728] pgid[728]
+[roslaunch][INFO] 2026-11-17 22:31:24,006: [find_object_2d-20] sending SIGINT to pgid [740]
+[roslaunch][INFO] 2026-11-17 22:31:24,007: [rviz-19] sending SIGINT to pgid [728]
+[roslaunch][INFO] 2026-11-17 22:31:24,008: [find_object_2d-20] sent SIGINT to pgid [740]
+[roslaunch][INFO] 2026-11-17 22:31:24,008: [rviz-19] sent SIGINT to pgid [728]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,012: ProcessMonitor exit: killing ar_track_alvar-18
+[roslaunch][INFO] 2026-11-17 22:31:24,012: [ar_track_alvar-18] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,012: process[ar_track_alvar-18]: killing os process with pid[724] pgid[724]
+[roslaunch][INFO] 2026-11-17 22:31:24,012: [ar_track_alvar-18] sending SIGINT to pgid [724]
+[roslaunch][INFO] 2026-11-17 22:31:24,012: [ar_track_alvar-18] sent SIGINT to pgid [724]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,012: ProcessMonitor exit: killing base_link_to_cam-17
+[roslaunch][INFO] 2026-11-17 22:31:24,012: [base_link_to_cam-17] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,012: process[base_link_to_cam-17]: killing os process with pid[722] pgid[722]
+[roslaunch][INFO] 2026-11-17 22:31:24,012: [base_link_to_cam-17] sending SIGINT to pgid [722]
+[roslaunch][INFO] 2026-11-17 22:31:24,013: [base_link_to_cam-17] sent SIGINT to pgid [722]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,014: ProcessMonitor exit: killing world_to_map-16
+[roslaunch][INFO] 2026-11-17 22:31:24,015: [world_to_map-16] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,015: process[world_to_map-16]: killing os process with pid[717] pgid[717]
+[roslaunch][INFO] 2026-11-17 22:31:24,015: [world_to_map-16] sending SIGINT to pgid [717]
+[roslaunch][INFO] 2026-11-17 22:31:24,015: [world_to_map-16] sent SIGINT to pgid [717]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,015: ProcessMonitor exit: killing usb_cam-15
+[roslaunch][INFO] 2026-11-17 22:31:24,016: [usb_cam-15] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,016: process[usb_cam-15]: killing os process with pid[712] pgid[712]
+[roslaunch][INFO] 2026-11-17 22:31:24,016: [usb_cam-15] sending SIGINT to pgid [712]
+[roslaunch][INFO] 2026-11-17 22:31:24,016: [usb_cam-15] sent SIGINT to pgid [712]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,016: ProcessMonitor exit: killing amcl-14
+[roslaunch][INFO] 2026-11-17 22:31:24,016: [amcl-14] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,016: process[amcl-14]: killing os process with pid[700] pgid[700]
+[roslaunch][INFO] 2026-11-17 22:31:24,016: [amcl-14] sending SIGINT to pgid [700]
+[roslaunch][INFO] 2026-11-17 22:31:24,016: [amcl-14] sent SIGINT to pgid [700]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,017: ProcessMonitor exit: killing move_base-13
+[roslaunch][INFO] 2026-11-17 22:31:24,017: [move_base-13] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,017: process[move_base-13]: killing os process with pid[698] pgid[698]
+[roslaunch][INFO] 2026-11-17 22:31:24,017: [move_base-13] sending SIGINT to pgid [698]
+[roslaunch][INFO] 2026-11-17 22:31:24,017: [move_base-13] sent SIGINT to pgid [698]
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,018: ProcessMonitor exit: killing map_server-12
+[roslaunch][INFO] 2026-11-17 22:31:24,018: [map_server-12] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,018: process[map_server-12]: killing os process with pid[697] pgid[697]
+[roslaunch][INFO] 2026-11-17 22:31:24,018: [map_server-12] sending SIGINT to pgid [697]
+[roslaunch][INFO] 2026-11-17 22:31:24,018: [map_server-12] sent SIGINT to pgid [697]
+[roslaunch][INFO] 2026-11-17 22:31:24,213: process[base_link_to_cam-17]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,213: ProcessMonitor exit: killing laser_filter-11
+[roslaunch][INFO] 2026-11-17 22:31:24,213: [laser_filter-11] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,214: process[laser_filter-11]: killing os process with pid[695] pgid[695]
+[roslaunch][INFO] 2026-11-17 22:31:24,214: [laser_filter-11] sending SIGINT to pgid [695]
+[roslaunch][INFO] 2026-11-17 22:31:24,214: [laser_filter-11] sent SIGINT to pgid [695]
+[roslaunch][INFO] 2026-11-17 22:31:24,218: process[map_server-12]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,219: ProcessMonitor exit: killing rplidarNode-10
+[roslaunch][INFO] 2026-11-17 22:31:24,219: [rplidarNode-10] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,219: process[rplidarNode-10]: killing os process with pid[688] pgid[688]
+[roslaunch][INFO] 2026-11-17 22:31:24,219: [rplidarNode-10] sending SIGINT to pgid [688]
+[roslaunch][INFO] 2026-11-17 22:31:24,219: [rplidarNode-10] sent SIGINT to pgid [688]
+[roslaunch][INFO] 2026-11-17 22:31:24,317: process[world_to_map-16]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,317: ProcessMonitor exit: killing robot_state_publisher-9
+[roslaunch][INFO] 2026-11-17 22:31:24,318: [robot_state_publisher-9] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,318: process[robot_state_publisher-9]: killing os process with pid[683] pgid[683]
+[roslaunch][INFO] 2026-11-17 22:31:24,318: [robot_state_publisher-9] sending SIGINT to pgid [683]
+[roslaunch][INFO] 2026-11-17 22:31:24,318: [robot_state_publisher-9] sent SIGINT to pgid [683]
+[roslaunch][INFO] 2026-11-17 22:31:24,420: process[amcl-14]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,420: ProcessMonitor exit: killing joint_state_publisher-8
+[roslaunch][INFO] 2026-11-17 22:31:24,420: [joint_state_publisher-8] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,420: process[joint_state_publisher-8]: killing os process with pid[677] pgid[677]
+[roslaunch][INFO] 2026-11-17 22:31:24,421: [joint_state_publisher-8] sending SIGINT to pgid [677]
+[roslaunch][INFO] 2026-11-17 22:31:24,421: [joint_state_publisher-8] sent SIGINT to pgid [677]
+[roslaunch][INFO] 2026-11-17 22:31:24,435: process[rviz-19]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,435: ProcessMonitor exit: killing odom_ekf-7
+[roslaunch][INFO] 2026-11-17 22:31:24,436: [odom_ekf-7] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,436: process[odom_ekf-7]: killing os process with pid[671] pgid[671]
+[roslaunch][INFO] 2026-11-17 22:31:24,436: [odom_ekf-7] sending SIGINT to pgid [671]
+[roslaunch][INFO] 2026-11-17 22:31:24,436: [odom_ekf-7] sent SIGINT to pgid [671]
+[roslaunch][INFO] 2026-11-17 22:31:24,509: process[print_objects_detected-21]: SIGINT killed with return value -6
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,509: ProcessMonitor exit: killing robot_pose_ekf-6
+[roslaunch][INFO] 2026-11-17 22:31:24,509: [robot_pose_ekf-6] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,509: process[robot_pose_ekf-6]: killing os process with pid[666] pgid[666]
+[roslaunch][INFO] 2026-11-17 22:31:24,509: [robot_pose_ekf-6] sending SIGINT to pgid [666]
+[roslaunch][INFO] 2026-11-17 22:31:24,509: [robot_pose_ekf-6] sent SIGINT to pgid [666]
+[roslaunch][INFO] 2026-11-17 22:31:24,509: process[find_object_2d-20]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,510: ProcessMonitor exit: killing imu_filter_madgwick-5
+[roslaunch][INFO] 2026-11-17 22:31:24,510: [imu_filter_madgwick-5] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,510: process[imu_filter_madgwick-5]: killing os process with pid[660] pgid[660]
+[roslaunch][INFO] 2026-11-17 22:31:24,510: [imu_filter_madgwick-5] sending SIGINT to pgid [660]
+[roslaunch][INFO] 2026-11-17 22:31:24,510: [imu_filter_madgwick-5] sent SIGINT to pgid [660]
+[roslaunch][INFO] 2026-11-17 22:31:24,525: process[laser_filter-11]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,525: ProcessMonitor exit: killing base_laser_to_base_link-4
+[roslaunch][INFO] 2026-11-17 22:31:24,525: [base_laser_to_base_link-4] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,525: process[base_laser_to_base_link-4]: killing os process with pid[654] pgid[654]
+[roslaunch][INFO] 2026-11-17 22:31:24,525: [base_laser_to_base_link-4] sending SIGINT to pgid [654]
+[roslaunch][INFO] 2026-11-17 22:31:24,525: [base_laser_to_base_link-4] sent SIGINT to pgid [654]
+[roslaunch][INFO] 2026-11-17 22:31:24,712: process[robot_pose_ekf-6]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,712: ProcessMonitor exit: killing base_imu_to_base_link-3
+[roslaunch][INFO] 2026-11-17 22:31:24,712: [base_imu_to_base_link-3] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,712: process[base_imu_to_base_link-3]: killing os process with pid[652] pgid[652]
+[roslaunch][INFO] 2026-11-17 22:31:24,712: [base_imu_to_base_link-3] sending SIGINT to pgid [652]
+[roslaunch][INFO] 2026-11-17 22:31:24,712: [base_imu_to_base_link-3] sent SIGINT to pgid [652]
+[roslaunch][INFO] 2026-11-17 22:31:24,712: process[imu_filter_madgwick-5]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,713: ProcessMonitor exit: killing abot_imu-2
+[roslaunch][INFO] 2026-11-17 22:31:24,713: [abot_imu-2] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,713: process[abot_imu-2]: killing os process with pid[651] pgid[651]
+[roslaunch][INFO] 2026-11-17 22:31:24,713: [abot_imu-2] sending SIGINT to pgid [651]
+[roslaunch][INFO] 2026-11-17 22:31:24,713: [abot_imu-2] sent SIGINT to pgid [651]
+[roslaunch][INFO] 2026-11-17 22:31:24,723: process[move_base-13]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 22:31:24,723: ProcessMonitor exit: killing abot_driver-1
+[roslaunch][INFO] 2026-11-17 22:31:24,723: [abot_driver-1] killing on exit
+[roslaunch][INFO] 2026-11-17 22:31:24,723: process[abot_driver-1]: killing os process with pid[650] pgid[650]
+[roslaunch][INFO] 2026-11-17 22:31:24,723: [abot_driver-1] sending SIGINT to pgid [650]
+[roslaunch][INFO] 2026-11-17 22:31:24,723: [abot_driver-1] sent SIGINT to pgid [650]
+[roslaunch][INFO] 2026-11-17 22:31:24,726: process[base_laser_to_base_link-4]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:24,726: process[robot_state_publisher-9]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:24,913: process[base_imu_to_base_link-3]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:24,913: process[abot_imu-2]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:25,025: process[abot_driver-1]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:25,030: process[rplidarNode-10]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:25,137: process[odom_ekf-7]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:25,227: process[joint_state_publisher-8]: SIGINT killed with return value 0
+[roslaunch][INFO] 2026-11-17 22:31:25,627: process[usb_cam-15]: SIGINT killed with return value -11
+[roslaunch][INFO] 2026-11-17 22:31:26,620: process[ar_track_alvar-18]: SIGINT killed with return value -6
+[roslaunch.pmon][INFO] 2026-11-17 22:31:26,620: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2026-11-17 22:31:26,620: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2026-11-17 22:31:26,648: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2026-11-17 22:31:26,648: runner.stop()
+[roslaunch][INFO] 2026-11-17 22:31:26,648: shutting down processing monitor...
+[roslaunch][INFO] 2026-11-17 22:31:26,648: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 139743037753088)>
+[roslaunch.pmon][INFO] 2026-11-17 22:31:26,648: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139743037753088)>
+[roslaunch][INFO] 2026-11-17 22:31:26,648: ... shutting down processing monitor complete
+[roslaunch][INFO] 2026-11-17 22:31:26,648: done
+[roslaunch.pmon][INFO] 2026-11-17 22:31:26,648: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139743037753088)>
+[rospy.core][INFO] 2026-11-17 22:31:26,649: signal_shutdown [atexit]

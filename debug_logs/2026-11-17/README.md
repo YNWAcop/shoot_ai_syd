@@ -12,4 +12,10 @@
 
 确认车端没有 `shooting_taught.yaml` 覆盖文件，第一靶使用 `detector: rings`、`mode: vision`；实车 Python 2 配置加载验证通过，结构比对确认仅上述两项变化。未运行行驶或发射测试，需重启比赛程序后观察补偿效果。备份位于 `/home/abot/syd/.change_backups/aim_right_20261117_222717/shooting.yaml`，详情见 `aim_adjustment_20261117_222717.json`。
 
+## 22:33 第三靶继续水平补偿
+
+用户反馈第三靶仍有少量偏差，沿前次偏右方向再补偿 1 像素：`moving.aim_u_px` 从 352.5 调至 353.5。第一靶保持 354.0，高低参数及 0.07 秒发射时长均不变。车端生产 Python 2 配置加载验证通过，结构比对确认仅此一项变化。未执行行驶或发射测试，需重启程序后观察实际效果。
+
+备份：`/home/abot/syd/.change_backups/moving_right_20261117_223339/shooting.yaml`；验证记录：`aim_adjustment_20261117_223339.json`。
+
 `race_logs/`、`startup_logs/`、`ros_logs/` 仅归档本日记录；`manifest.json` 记录车端导出快照的文件哈希及脱敏情况，其中 `code/` 条目是导出时的源代码清单。密钥、历史日期日志、构建产物及备份不上传。
