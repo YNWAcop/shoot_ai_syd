@@ -3226,8 +3226,8 @@
       "path": "code/src/shoot_race/config/shooting.yaml",
       "group": "source",
       "bytes": 29144,
-      "sha256": "a5c23d136074f290b3d4ad232a1292e6225d7826effb2f35d47b4c3d08221f43",
-      "original_sha256": "a5c23d136074f290b3d4ad232a1292e6225d7826effb2f35d47b4c3d08221f43"
+      "sha256": "29f9f82e09d4fe5d87fc1e31917c9161333d5caac576cc53e3b8c9070927a192",
+      "original_sha256": "29f9f82e09d4fe5d87fc1e31917c9161333d5caac576cc53e3b8c9070927a192"
     },
     {
       "path": "code/src/shoot_race/config/system.yaml",
